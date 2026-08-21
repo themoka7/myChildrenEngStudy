@@ -254,10 +254,10 @@ def main():
 <div class="wrap">
 
   <header>
-    <p class="eyebrow"><a href="index.html">← 영어 모험 지도</a></p>
-    <h1>{html.escape(data["subtitle"])}</h1>
-    <p class="tagline">부모용 목록입니다 — 학습 날짜와 걸린 시간, 상태별 필터.
-      아이 화면은 <a href="index.html">영어 모험 지도</a> 쪽입니다.</p>
+    <p class="eyebrow"><a href="index.html">← {html.escape(data["subtitle"])}</a></p>
+    <h1>부모용 목록</h1>
+    <p class="tagline">학습 날짜와 걸린 시간, 상태별 필터.
+      아이 화면은 <a href="index.html">{html.escape(data["subtitle"])}</a> 쪽입니다.</p>
     <div class="summary">
       <div class="stat done"><b>{counts['done']}</b><span>학습완료</span></div>
       <div class="stat doing"><b>{counts['doing']}</b><span>학습중</span></div>

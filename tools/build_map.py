@@ -802,7 +802,7 @@ def main():
 
 <footer>
   <div class="wrap">
-    <div class="made">집에서 만든 아빠표 영어 자료</div>
+    <div class="made">집에서 만든 영어 공부 자료</div>
     본문 출처 · EBS 초등 「Touch! 초등 영어 — 펀리딩」<br>
     인쇄는 A4 세로, 배율 100%, 배경 그래픽 켜기
   </div>

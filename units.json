@@ -1,6 +1,7 @@
 {
   "course": "EBS 초등 영어 읽기",
-  "subtitle": "아빠표 영어 공부",
+  "subtitle": "영어 모험 지도",
+  "_subtitle": "자료 전체의 이름. 목록 제목·브라우저 탭에 쓰인다",
   "_status": "done = 학습완료, doing = 학습중, todo = 아직",
   "_ico": "아이가 누를 칸에 찍히는 그림. 지도(index.html)에 쓴다",
   "_ready": "true 면 읽기 페이지 + A4 문제지가 만들어져 있다는 뜻",
