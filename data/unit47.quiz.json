@@ -1,0 +1,70 @@
+{
+  "title": "Gymnastics",
+  "title_ko": "체조",
+
+  "paras": [
+    ["Exercises for boys were created in the 1800s.", "They came from old exercises from Greece.", "This would become gymnastics."],
+    ["Gymnasts have 8 stations.", "Women use 4 of them for events.", "Men use 6.", "They share 2 stations."],
+    ["Nadia Comaneci shocked the world in 1976.", "She is the first to get a perfect score at the Olympics.", "She got 7 of them."],
+    ["Kohei Uchimura won world titles five years in a row.", "He won the all-around from 2009 to 2013.", "He is the first to do this."],
+    ["Gabby Douglas made history in 2012.", "She won Olympic gold for all-around.", "She was the first black woman to do this."],
+    ["Vitaly Scherbo had one of the best Olympics in 1992.", "He won 6 out of 8 events.", "He won the team gold.", "He also won 5 solo events.", "Only two swimmers have won more in one Olympics."],
+    ["Team USA is fighting for gold in 1996.", "The last event is the vault.", "Kerri Strug is America's last hope."],
+    ["She falls on her first go.", "She hurts her ankle.", "She must go again.", "She limps to the start."],
+    ["She runs.", "She lands.", "She scores a 9.712!", "USA wins its first gold in team gymnastics!", "Strug has to be carried to the medal stand."]
+  ],
+
+  "match": [
+    {"en": "shocked", "ko": "놀라게 했다"},
+    {"en": "perfect", "ko": "완벽한, 만점의"},
+    {"en": "vault",   "ko": "도마"},
+    {"en": "ankle",   "ko": "발목"}
+  ],
+  "match_ko_order": ["완벽한, 만점의", "발목", "놀라게 했다", "도마"],
+
+  "phonics": [
+    {"q": "l_nds",  "a": "a", "ko": "착지하다"},
+    {"q": "b_st",   "a": "e", "ko": "최고의"},
+    {"q": "l_mps",  "a": "i", "ko": "절뚝이며 걷다"},
+    {"q": "g_t",    "a": "o", "ko": "받았다, 얻었다"},
+    {"q": "m_st",   "a": "u", "ko": "~해야 한다"},
+    {"q": "m_n",    "a": "e", "ko": "남자들"}
+  ],
+
+  "scan": [
+    {"q": "체조 종목대는 모두 몇 개인가요?",              "a": "8",         "sent": "4"},
+    {"q": "나디아 코마네치는 몇 년에 세상을 놀라게 했나요?", "a": "1976",      "sent": "8"},
+    {"q": "케리 스트럭의 마지막 종목은 무엇이었나요?",      "a": "the vault", "sent": "23"},
+    {"q": "케리 스트럭은 몇 점을 받았나요?",               "a": "9.712",     "sent": "31"}
+  ],
+
+  "tf": [
+    {"en": "Men use 6 stations.", "answer": "O",
+     "why": "남자 선수는 6개를 써요.", "sent": "6"},
+    {"en": "Kerri Strug hurts her ankle.", "answer": "O",
+     "why": "첫 시도에서 넘어져 발목을 다쳤어요.", "sent": "26"},
+    {"en": "Nadia Comaneci got only 1 perfect score.", "gloss": "only 오직", "answer": "X",
+     "why": "만점을 7번 받았어요.", "sent": "10"},
+    {"en": "Strug walks away by herself.", "gloss": "by herself 혼자서", "answer": "X",
+     "why": "업혀서 시상대에 올라갔어요.", "sent": "33"}
+  ],
+
+  "fill_bank": ["Greece", "2012", "gymnastics", "vault"],
+  "fill": [
+    {"en": "They came from old exercises from ___.",       "a": "Greece",     "ko": "그리스의 옛 운동에서 왔어요."},
+    {"en": "Gabby Douglas made history in ___.",           "a": "2012",       "ko": "개비 더글러스는 2012년에 역사를 만들었어요."},
+    {"en": "USA wins its first gold in team ___!",          "a": "gymnastics", "ko": "미국이 단체 체조에서 첫 금메달을 땄어요!"}
+  ],
+
+  "trace": [
+    {"en": "Kerri Strug is America's last hope.", "ko": "케리 스트럭이 미국의 마지막 희망이에요."},
+    {"en": "She lands.", "ko": "착지해요."}
+  ],
+
+  "notes": {
+    "phonics": "<b>l_nds·b_st·l_mps·m_st</b>이 모두 자음 두 개로 끝납니다. 끝소리를 먼저 읽고 가운데 모음을 넣게 해 주세요. b_st와 m_n이 둘 다 e예요.",
+    "scan": "이 지문은 <b>지금까지 중 가장 깁니다</b>(33문장). 문항 넷이 지문 앞·중간·끝에 골고루 있으니, 답을 하나 찾을 때마다 쉬어 가도 됩니다. 넷 다 답이 숫자나 짧은 낱말이에요.",
+    "tf": "이 지문의 마지막 열두 문장은 <b>케리 스트럭 이야기</b>입니다 — 발목을 다치고도 다시 뛰어 금메달을 딴 이야기예요. 4번을 맞히려면 <b>마지막 문장까지</b> 읽어야 합니다. \"그래서 혼자 걸어갔어?\" 하고 물어봐 주세요.",
+    "trace": "두 번째는 <b>두 낱말</b>뿐입니다. 짧지만 이 이야기에서 가장 중요한 순간이에요 — 다친 발목으로 착지한 장면이지요."
+  }
+}

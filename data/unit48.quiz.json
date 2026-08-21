@@ -1,0 +1,68 @@
+{
+  "title": "Baseball",
+  "title_ko": "야구",
+
+  "paras": [
+    ["Baseball began in the United States.", "The rules were written in 1845.", "Most of the rules are the same today."],
+    ["Fenway Park is in Boston.", "It is the oldest baseball stadium in the United States.", "It opened in 1912."],
+    ["Nolan Ryan had a 100-mile-per-hour (161 km/h) fastball.", "He has the record for most strikeouts.", "He has seven games where no one got a hit."],
+    ["Joe DiMaggio got a hit in 56 games in a row.", "He got a hit every game for two months."],
+    ["Cal Ripken Jr. played in the most games without missing one.", "He played in 2,632 games in a row.", "He played every game for more than 16 years."],
+    ["The New York Mets earned the name 'Miracle Mets' in 1969.", "They had never had a winning season.", "This season started the same.", "The Mets had 18 wins after 41 games.", "Then they surprised everybody.", "They went on to win the World Series!"],
+    ["1990 was a bad year for Atlanta and Minnesota.", "They ended their seasons in last place.", "Things changed the next year.", "Both teams played in the 1991 World Series.", "They went from bad to best in one year.", "Minnesota won.", "It took 7 games."]
+  ],
+
+  "match": [
+    {"en": "rules",      "ko": "규칙"},
+    {"en": "stadium",    "ko": "경기장"},
+    {"en": "strikeouts", "ko": "삼진"},
+    {"en": "surprised",  "ko": "놀라게 했다"}
+  ],
+  "match_ko_order": ["경기장", "놀라게 했다", "규칙", "삼진"],
+
+  "phonics": [
+    {"q": "h_d",   "a": "a", "ko": "가지고 있었다"},
+    {"q": "h_t",   "a": "i", "ko": "안타, 치다"},
+    {"q": "g_t",   "a": "o", "ko": "얻었다"},
+    {"q": "b_d",   "a": "a", "ko": "나쁜"},
+    {"q": "w_ns",  "a": "i", "ko": "승리"},
+    {"q": "b_st",  "a": "e", "ko": "최고의"}
+  ],
+
+  "scan": [
+    {"q": "야구 규칙은 몇 년에 쓰였나요?",                "a": "1845",     "sent": "2"},
+    {"q": "펜웨이 파크는 어느 도시에 있나요?",             "a": "Boston",   "sent": "4"},
+    {"q": "칼 립켄 주니어는 몇 경기를 연속으로 뛰었나요?",  "a": "2,632",    "sent": "13"},
+    {"q": "1991년 월드시리즈는 몇 경기까지 갔나요?",       "a": "7 games",  "sent": "27"}
+  ],
+
+  "tf": [
+    {"en": "Baseball began in the United States.", "answer": "O",
+     "why": "야구는 미국에서 시작했어요.", "sent": "1"},
+    {"en": "Joe DiMaggio got a hit in 56 games in a row.", "answer": "O",
+     "why": "56경기 연속으로 안타를 쳤어요.", "sent": "10"},
+    {"en": "Nolan Ryan had a slow fastball.", "gloss": "slow 느린", "answer": "X",
+     "why": "시속 161km나 되는 아주 빠른 공이었어요.", "sent": "7"},
+    {"en": "The Mets had a winning season every year.", "gloss": "every year 매년", "answer": "X",
+     "why": "그전까지 이기는 시즌이 한 번도 없었어요.", "sent": "16"}
+  ],
+
+  "fill_bank": ["oldest", "Series", "year", "record"],
+  "fill": [
+    {"en": "It is the ___ baseball stadium in the United States.", "a": "oldest", "ko": "미국에서 가장 오래된 야구장이에요."},
+    {"en": "They went on to win the World ___!",                   "a": "Series", "ko": "월드시리즈에서 우승했어요!"},
+    {"en": "Things changed the next ___.",                          "a": "year",   "ko": "다음 해에 사정이 달라졌어요."}
+  ],
+
+  "trace": [
+    {"en": "Most of the rules are the same today.", "ko": "규칙 대부분은 오늘날과 같아요."},
+    {"en": "Minnesota won.", "ko": "미네소타가 이겼어요."}
+  ],
+
+  "notes": {
+    "phonics": "이 지문에는 짧은 u 소리 단어가 없어서 <b>a와 i를 두 번씩</b> 냈습니다. <b>h_d·h_t·g_t·b_d</b>가 모양이 비슷하니 <b>뜻을 먼저 읽고</b> 모음을 고르게 해 주세요.",
+    "scan": "네 문항 모두 <b>답이 숫자나 도시 이름</b>입니다. 이 지문은 숫자가 아주 많으니(1845·1912·56·2,632·1969·7) 어느 숫자를 묻는지 손가락으로 짚어 주세요.",
+    "tf": "4번은 <b>never(한 번도 없다)를 every year(매년)로</b> 뒤집었습니다. '기적의 메츠'라는 이름이 왜 붙었는지가 여기에 있어요 — 한 번도 못 이기던 팀이 갑자기 우승했으니까요. 맞히면 그 얘기를 해 주세요.",
+    "trace": "두 번째는 <b>두 낱말</b>뿐입니다. 대문자와 마침표만 봐 주세요."
+  }
+}

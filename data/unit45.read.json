@@ -1,0 +1,66 @@
+{
+  "title": "Butterflies",
+  "eyebrow": "Unit 45 · Nonfiction · Insects",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "insects":      {"ipa": "ˈɪnsekts",       "pos": "명사",   "ko": "곤충"},
+    "beetles":      {"ipa": "ˈbiːtəlz",       "pos": "명사",   "ko": "딱정벌레"},
+    "dragonflies":  {"ipa": "ˈdræɡənflaɪz",   "pos": "명사",   "ko": "잠자리"},
+    "caterpillars": {"ipa": "ˈkætərpɪlərz",   "pos": "명사",   "ko": "애벌레"},
+    "chrysalis":    {"ipa": "ˈkrɪsəlɪs",      "pos": "명사",   "ko": "고치, 번데기"},
+    "shell":        {"ipa": "ʃel",            "pos": "명사",   "ko": "껍데기"},
+    "adult":        {"ipa": "əˈdʌlt",         "pos": "형용사", "ko": "어른의, 다 자란"},
+    "patterns":     {"ipa": "ˈpætərnz",       "pos": "명사",   "ko": "무늬"},
+    "thorax":       {"ipa": "ˈθɔːræks",       "pos": "명사",   "ko": "가슴 (곤충의 가운데 부분)"},
+    "abdomen":      {"ipa": "ˈæbdəmən",       "pos": "명사",   "ko": "배 (곤충의 뒷부분)"},
+    "antennae":     {"ipa": "ænˈteni",        "pos": "명사",   "ko": "더듬이"},
+    "nectar":       {"ipa": "ˈnektər",        "pos": "명사",   "ko": "꽃의 꿀"},
+    "juices":       {"ipa": "ˈdʒuːsɪz",       "pos": "명사",   "ko": "즙"},
+    "pollen":       {"ipa": "ˈpɑːlən",        "pos": "명사",   "ko": "꽃가루"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Butterflies are insects.", "ko": "나비는 곤충이에요."},
+      {"en": "Beetles, dragonflies, and ants are all insects too.", "ko": "딱정벌레와 잠자리, 개미도 모두 곤충이에요."}
+    ]},
+    {"sents": [
+      {"en": "All butterflies were once caterpillars.", "ko": "모든 나비는 원래 애벌레였어요."},
+      {"en": "A caterpillar forms a chrysalis.", "ko": "애벌레는 고치를 만들어요."},
+      {"en": "It is like a shell.", "ko": "껍데기 같은 거예요."},
+      {"en": "A lot of changes happen inside.", "ko": "그 안에서 많은 변화가 일어나요."},
+      {"en": "Now it is an adult butterfly!", "ko": "이제 어른 나비가 되었어요!"}
+    ]},
+    {"sents": [
+      {"en": "Butterflies live in many places.", "ko": "나비는 여러 곳에 살아요."},
+      {"en": "You will often find them near flowers and plants.", "ko": "꽃과 식물 가까이에서 자주 볼 수 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Butterflies come in all sizes and colors.", "ko": "나비는 크기와 색이 아주 다양해요."},
+      {"en": "Some butterflies have beautiful patterns on their wings.", "ko": "어떤 나비는 날개에 아름다운 무늬가 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Butterflies have three main body parts.", "ko": "나비의 몸은 크게 세 부분이에요."},
+      {"en": "They are the head, thorax, and the abdomen.", "ko": "머리, 가슴, 배예요."},
+      {"en": "Butterflies have two large eyes and two antennae.", "ko": "나비는 큰 눈 두 개와 더듬이 두 개가 있어요."},
+      {"en": "They have six legs and four wings.", "ko": "다리는 여섯 개, 날개는 네 개예요."}
+    ]},
+    {"sents": [
+      {"en": "Butterflies drink nectar and plant juices.", "ko": "나비는 꽃의 꿀과 식물의 즙을 마셔요."}
+    ]},
+    {"sents": [
+      {"en": "A butterfly moves pollen from flower to flower.", "ko": "나비는 꽃에서 꽃으로 꽃가루를 옮겨요."},
+      {"en": "This helps plants to grow.", "ko": "그래서 식물이 자라는 데 도움이 돼요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Wow! Butterflies have an interesting life cycle.", "ko": "와! 나비의 생애는 정말 흥미로워요."},
+      {"en": "They change from a caterpillar to a beautiful butterfly.", "ko": "애벌레에서 아름다운 나비로 변해요."},
+      {"en": "I hope you see a butterfly today.", "ko": "오늘 나비를 보면 좋겠어요."},
+      {"en": "They are so pretty. Bye!", "ko": "정말 예뻐요. 안녕!"}
+    ]}
+  ]
+}

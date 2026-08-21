@@ -1,0 +1,78 @@
+{
+  "title": "Cubes",
+  "eyebrow": "Unit 49 · Story · Solid Shapes",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "shape":   {"ipa": "ʃeɪp",       "pos": "명사",   "ko": "모양"},
+    "corners": {"ipa": "ˈkɔːrnərz",  "pos": "명사",   "ko": "모서리, 꼭짓점"},
+    "nooks":   {"ipa": "nʊks",       "pos": "명사",   "ko": "구석"},
+    "faces":   {"ipa": "ˈfeɪsɪz",    "pos": "명사",   "ko": "면"},
+    "blocks":  {"ipa": "blɑːks",     "pos": "명사",   "ko": "블록"},
+    "stack":   {"ipa": "stæk",       "pos": "동사",   "ko": "쌓다"},
+    "chill":   {"ipa": "tʃɪl",       "pos": "동사",   "ko": "시원하게 하다"},
+    "tasty":   {"ipa": "ˈteɪsti",    "pos": "형용사", "ko": "맛있는"},
+    "volume":  {"ipa": "ˈvɑːljuːm",  "pos": "명사",   "ko": "부피"},
+    "brim":    {"ipa": "brɪm",       "pos": "명사",   "ko": "(그릇의) 가장자리"},
+    "sweeten": {"ipa": "ˈswiːtən",   "pos": "동사",   "ko": "달게 만들다"},
+    "wrapped": {"ipa": "ræpt",       "pos": "동사",   "ko": "포장된"},
+    "tears":   {"ipa": "terz",       "pos": "동사",   "ko": "뜯다, 찢다"},
+    "clown":   {"ipa": "klaʊn",      "pos": "명사",   "ko": "광대"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "This shape is square on each side.", "ko": "이 모양은 어느 면이나 정사각형이에요."},
+      {"en": "Find the cubes.", "ko": "정육면체를 찾아보세요."},
+      {"en": "Don't let them hide.", "ko": "숨지 못하게 해요."}
+    ]},
+    {"sents": [
+      {"en": "Look around for this shape's look.", "ko": "이 모양을 주위에서 찾아보세요."},
+      {"en": "Search for cubes inside this book.", "ko": "이 책 안에서 정육면체를 찾아보세요."}
+    ]},
+    {"sents": [
+      {"en": "Cubes have eight corners, also named nooks.", "ko": "정육면체는 모서리가 여덟 개예요. 구석이라고도 불러요."},
+      {"en": "The nooks in this cube hold toys and books.", "ko": "이 정육면체의 구석에는 장난감과 책이 들어 있어요."}
+    ]},
+    {"sents": [
+      {"en": "A cube's six faces are the same.", "ko": "정육면체의 여섯 면은 모두 같아요."},
+      {"en": "Blocks can stack to build a game.", "ko": "블록을 쌓아서 놀이를 만들 수 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Shake your glass. Here clink, clink, clink.", "ko": "컵을 흔들어 보세요. 짤랑, 짤랑, 짤랑."},
+      {"en": "Ice cubes chill your tasty drink!", "ko": "얼음이 맛있는 음료를 시원하게 해 줘요!"}
+    ]},
+    {"sents": [
+      {"en": "This cube is a place where fish like to swim.", "ko": "이 정육면체는 물고기가 헤엄치기 좋아하는 곳이에요."},
+      {"en": "Its space is called volume, filled to the brim.", "ko": "그 공간을 부피라고 불러요. 가장자리까지 가득 찼어요."}
+    ]},
+    {"sents": [
+      {"en": "Let's have a party with tea for two.", "ko": "둘이서 차를 마시며 파티를 해요."},
+      {"en": "Cube table and chairs for me and you.", "ko": "정육면체 탁자와 의자가 나와 너를 위해 있어요."},
+      {"en": "Ben pours tea in a little teacup.", "ko": "벤이 작은 찻잔에 차를 따라요."},
+      {"en": "Add sugar cubes to sweeten it up.", "ko": "각설탕을 넣어 달게 만들어요."}
+    ]},
+    {"sents": [
+      {"en": "A gift wrapped in a pretty box.", "ko": "예쁜 상자에 포장된 선물이에요."},
+      {"en": "Jill tears it open. Cubes on socks!", "ko": "질이 뜯어서 열어요. 양말에 정육면체 무늬가 있어요!"}
+    ]},
+    {"sents": [
+      {"en": "This cube makes Ben smile and shout.", "ko": "이 정육면체는 벤을 웃고 소리치게 해요."},
+      {"en": "Wind it up. A clown pops out!", "ko": "감아 올려 보세요. 광대가 튀어나와요!"}
+    ]},
+    {"sents": [
+      {"en": "Cubes aren't just inside this book.", "ko": "정육면체는 이 책 안에만 있는 게 아니에요."},
+      {"en": "They're all around you.", "ko": "우리 주위 어디에나 있어요."},
+      {"en": "Take a look!", "ko": "한번 둘러보세요!"}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Wow, there are so many cube-shaped items at home.", "ko": "와, 집에도 정육면체 모양이 정말 많네요."},
+      {"en": "Where else can we find the cubes?", "ko": "또 어디에서 정육면체를 찾을 수 있을까요?"},
+      {"en": "Look for some cubes outside today.", "ko": "오늘 밖에서도 정육면체를 찾아보세요."},
+      {"en": "I found one already.", "ko": "저는 벌써 하나 찾았어요."}
+    ]}
+  ]
+}

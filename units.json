@@ -101,21 +101,21 @@
       "units": [
         {"n": 43, "en": "Ants", "ko": "개미", "status": "todo", "min": 14, "ready": true},
         {"n": 44, "en": "Bees", "ko": "벌", "status": "todo", "min": 14, "ready": true},
-        {"n": 45, "en": "Butterflies", "ko": "나비", "status": "todo", "min": 14},
-        {"n": 46, "en": "Mosquitoes", "ko": "모기", "status": "todo", "min": 14}
+        {"n": 45, "en": "Butterflies", "ko": "나비", "status": "todo", "min": 14, "ready": true},
+        {"n": 46, "en": "Mosquitoes", "ko": "모기", "status": "todo", "min": 14, "ready": true}
       ]
     },
     {
       "theme": "운동",
       "units": [
-        {"n": 47, "en": "Gymnastics", "ko": "체조", "status": "todo", "min": 15},
-        {"n": 48, "en": "Baseball", "ko": "야구", "status": "todo", "min": 14}
+        {"n": 47, "en": "Gymnastics", "ko": "체조", "status": "todo", "min": 15, "ready": true},
+        {"n": 48, "en": "Baseball", "ko": "야구", "status": "todo", "min": 14, "ready": true}
       ]
     },
     {
       "theme": "입체도형",
       "units": [
-        {"n": 49, "en": "Cubes", "ko": "정육면체", "status": "todo", "min": 15},
+        {"n": 49, "en": "Cubes", "ko": "정육면체", "status": "todo", "min": 15, "ready": true},
         {"n": 50, "en": "Pyramids", "ko": "각뿔", "status": "todo", "min": 15},
         {"n": 51, "en": "Cones", "ko": "원뿔", "status": "todo", "min": 14},
         {"n": 52, "en": "Cylinders", "ko": "원기둥", "status": "todo", "min": 15}

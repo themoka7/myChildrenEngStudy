@@ -1,0 +1,71 @@
+{
+  "title": "Cubes",
+  "title_ko": "정육면체",
+
+  "paras": [
+    ["This shape is square on each side.", "Find the cubes.", "Don't let them hide."],
+    ["Look around for this shape's look.", "Search for cubes inside this book."],
+    ["Cubes have eight corners, also named nooks.", "The nooks in this cube hold toys and books."],
+    ["A cube's six faces are the same.", "Blocks can stack to build a game."],
+    ["Shake your glass. Here clink, clink, clink.", "Ice cubes chill your tasty drink!"],
+    ["This cube is a place where fish like to swim.", "Its space is called volume, filled to the brim."],
+    ["Let's have a party with tea for two.", "Cube table and chairs for me and you.", "Ben pours tea in a little teacup.", "Add sugar cubes to sweeten it up."],
+    ["A gift wrapped in a pretty box.", "Jill tears it open. Cubes on socks!"],
+    ["This cube makes Ben smile and shout.", "Wind it up. A clown pops out!"],
+    ["Cubes aren't just inside this book.", "They're all around you.", "Take a look!"]
+  ],
+
+  "match": [
+    {"en": "corners", "ko": "모서리"},
+    {"en": "faces",   "ko": "면"},
+    {"en": "volume",  "ko": "부피"},
+    {"en": "stack",   "ko": "쌓다"}
+  ],
+  "match_ko_order": ["면", "쌓다", "모서리", "부피"],
+
+  "phonics": [
+    {"q": "gl_ss",  "a": "a", "ko": "컵, 유리잔"},
+    {"q": "B_n",    "a": "e", "ko": "벤 (사람 이름)"},
+    {"q": "s_x",    "a": "i", "ko": "여섯"},
+    {"q": "b_x",    "a": "o", "ko": "상자"},
+    {"q": "j_st",   "a": "u", "ko": "단지, 그냥"},
+    {"q": "dr_nk",  "a": "i", "ko": "음료"}
+  ],
+
+  "scan": [
+    {"q": "정육면체의 공간을 무엇이라고 부르나요?",   "a": "volume",          "sent": "13"},
+    {"q": "벤은 무엇에 차를 따르나요?",              "a": "a little teacup", "sent": "16"},
+    {"q": "질이 상자를 열었을 때 무엇이 있었나요?",   "a": "cubes on socks",  "sent": "19"},
+    {"q": "감아 올리면 무엇이 튀어나오나요?",         "a": "a clown",         "sent": "21"}
+  ],
+
+  "tf": [
+    {"en": "Cubes have eight corners.", "answer": "O",
+     "why": "정육면체는 모서리가 여덟 개예요.", "sent": "6"},
+    {"en": "A cube's six faces are the same.", "answer": "O",
+     "why": "여섯 면이 모두 같아요.", "sent": "8"},
+    {"en": "Ice cubes warm your drink.", "gloss": "warm 따뜻하게 하다", "answer": "X",
+     "why": "반대예요. 얼음은 음료를 시원하게 해 줘요.", "sent": "11"},
+    {"en": "Cubes are only inside this book.", "gloss": "only 오직", "answer": "X",
+     "why": "책 안에만 있는 게 아니라 우리 주위 어디에나 있어요.", "sent": "22"}
+  ],
+
+  "fill_bank": ["square", "toys", "sweeten", "nooks"],
+  "fill": [
+    {"en": "This shape is ___ on each side.",              "a": "square",  "ko": "이 모양은 어느 면이나 정사각형이에요."},
+    {"en": "The nooks in this cube hold ___ and books.",   "a": "toys",    "ko": "구석에는 장난감과 책이 들어 있어요."},
+    {"en": "Add sugar cubes to ___ it up.",                "a": "sweeten", "ko": "각설탕을 넣어 달게 만들어요."}
+  ],
+
+  "trace": [
+    {"en": "This cube is a place where fish like to swim.", "ko": "이 정육면체는 물고기가 헤엄치기 좋아하는 곳이에요."},
+    {"en": "They're all around you.", "ko": "우리 주위 어디에나 있어요."}
+  ],
+
+  "notes": {
+    "phonics": "여섯 문항이 <b>a·e·i·o·u 다섯 소리를 모두</b> 담고 있습니다. <b>b_x와 s_x가 나란히</b> 나오니 끝소리를 고정해 두고 가운데 소리만 듣게 해 주세요 — 상자(box)와 여섯(six).",
+    "scan": "이 지문은 <b>운문(시)</b>이라 두 줄씩 끝소리가 맞습니다 — hide/side, book/look, nooks/books, box/socks. 답을 찾을 때 <b>소리 나게 읽어 주면</b> 훨씬 쉽습니다.",
+    "tf": "1번과 2번이 <b>정육면체의 숫자 두 개</b>입니다 — 모서리 여덟, 면 여섯. 아이가 헷갈리면 주사위를 가져와 함께 세어 보세요. 3번은 지문과 반대고, 4번은 마지막 세 문장을 읽어야 걸립니다.",
+    "trace": "첫 문장은 <b>어항</b> 이야기예요. 정육면체가 물고기 집이 될 수 있다는 게 이 시에서 가장 재미있는 대목이니, 쓰고 나서 \"또 뭐가 정육면체지?\" 하고 물어봐 주세요."
+  }
+}

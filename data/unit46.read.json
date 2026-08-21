@@ -1,0 +1,67 @@
+{
+  "title": "Mosquitoes",
+  "eyebrow": "Unit 46 · Nonfiction · Insects",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "insects":    {"ipa": "ˈɪnsekts",     "pos": "명사",   "ko": "곤충"},
+    "beetles":    {"ipa": "ˈbiːtəlz",     "pos": "명사",   "ko": "딱정벌레"},
+    "everywhere": {"ipa": "ˈevriwer",     "pos": "부사",   "ko": "어디에나"},
+    "ponds":      {"ipa": "pɑːndz",       "pos": "명사",   "ko": "연못"},
+    "brightly":   {"ipa": "ˈbraɪtli",     "pos": "부사",   "ko": "밝게"},
+    "thorax":     {"ipa": "ˈθɔːræks",     "pos": "명사",   "ko": "가슴 (곤충의 가운데 부분)"},
+    "abdomen":    {"ipa": "ˈæbdəmən",     "pos": "명사",   "ko": "배 (곤충의 뒷부분)"},
+    "antennae":   {"ipa": "ænˈteni",      "pos": "명사",   "ko": "더듬이"},
+    "mouthpart":  {"ipa": "ˈmaʊθpɑːrt",   "pos": "명사",   "ko": "입 부분"},
+    "straw":      {"ipa": "strɔː",        "pos": "명사",   "ko": "빨대"},
+    "nectar":     {"ipa": "ˈnektər",      "pos": "명사",   "ko": "꽃의 꿀"},
+    "female":     {"ipa": "ˈfiːmeɪl",     "pos": "형용사", "ko": "암컷의"},
+    "blood":      {"ipa": "blʌd",         "pos": "명사",   "ko": "피"},
+    "humans":     {"ipa": "ˈhjuːmənz",    "pos": "명사",   "ko": "사람"},
+    "important":  {"ipa": "ɪmˈpɔːrtənt",  "pos": "형용사", "ko": "중요한"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Mosquitoes are insects.", "ko": "모기는 곤충이에요."},
+      {"en": "Ants, bees, and beetles are insects too.", "ko": "개미와 벌, 딱정벌레도 곤충이에요."}
+    ]},
+    {"sents": [
+      {"en": "Mosquitoes live almost everywhere on Earth.", "ko": "모기는 지구 거의 모든 곳에 살아요."},
+      {"en": "They are often found near lakes and ponds.", "ko": "호수와 연못 가까이에서 자주 볼 수 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Most mosquitoes are white, gray, or brown.", "ko": "대부분의 모기는 흰색, 회색, 갈색이에요."},
+      {"en": "Some mosquitoes are brightly colored.", "ko": "어떤 모기는 밝은 색이에요."}
+    ]},
+    {"sents": [
+      {"en": "Mosquitoes have three main body parts.", "ko": "모기의 몸은 크게 세 부분이에요."},
+      {"en": "They are the head, thorax, and abdomen.", "ko": "머리, 가슴, 배예요."},
+      {"en": "Mosquitoes have six legs and two wings.", "ko": "모기는 다리가 여섯 개, 날개가 두 개예요."},
+      {"en": "They have two eyes and two antennae.", "ko": "눈은 두 개, 더듬이는 두 개예요."}
+    ]},
+    {"sents": [
+      {"en": "A mosquito has a special mouthpart.", "ko": "모기는 특별한 입을 가지고 있어요."},
+      {"en": "It looks like a straw.", "ko": "빨대처럼 생겼어요."}
+    ]},
+    {"sents": [
+      {"en": "All mosquitoes eat nectar and plant juices.", "ko": "모든 모기는 꽃의 꿀과 식물의 즙을 먹어요."},
+      {"en": "Only female mosquitoes bite and drink blood.", "ko": "암컷 모기만 물어서 피를 마셔요."},
+      {"en": "They bite humans and animals.", "ko": "사람과 동물을 물어요."}
+    ]},
+    {"sents": [
+      {"en": "Mosquitoes are important.", "ko": "모기도 중요해요."},
+      {"en": "They are food for many animals and other insects.", "ko": "많은 동물과 다른 곤충의 먹이가 되니까요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Oh! I thought mosquitoes only drink blood.", "ko": "오! 저는 모기가 피만 마시는 줄 알았어요."},
+      {"en": "But mosquitoes drink from plants too.", "ko": "그런데 식물에서도 마시네요."},
+      {"en": "I still don't like that they bite my arms and legs though.", "ko": "그래도 팔과 다리를 물리는 건 싫어요."},
+      {"en": "I hope you don't get bitten.", "ko": "여러분은 물리지 않기를 바라요."},
+      {"en": "I'll see you next time! Have a nice day!", "ko": "다음에 또 만나요! 좋은 하루 보내세요!"}
+    ]}
+  ]
+}

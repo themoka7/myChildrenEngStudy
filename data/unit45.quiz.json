@@ -1,0 +1,68 @@
+{
+  "title": "Butterflies",
+  "title_ko": "나비",
+
+  "paras": [
+    ["Butterflies are insects.", "Beetles, dragonflies, and ants are all insects too."],
+    ["All butterflies were once caterpillars.", "A caterpillar forms a chrysalis.", "It is like a shell.", "A lot of changes happen inside.", "Now it is an adult butterfly!"],
+    ["Butterflies live in many places.", "You will often find them near flowers and plants."],
+    ["Butterflies come in all sizes and colors.", "Some butterflies have beautiful patterns on their wings."],
+    ["Butterflies have three main body parts.", "They are the head, thorax, and the abdomen.", "Butterflies have two large eyes and two antennae.", "They have six legs and four wings."],
+    ["Butterflies drink nectar and plant juices."],
+    ["A butterfly moves pollen from flower to flower.", "This helps plants to grow."]
+  ],
+
+  "match": [
+    {"en": "caterpillars", "ko": "애벌레"},
+    {"en": "chrysalis",    "ko": "고치 (번데기)"},
+    {"en": "patterns",     "ko": "무늬"},
+    {"en": "nectar",       "ko": "꽃의 꿀"}
+  ],
+  "match_ko_order": ["무늬", "꽃의 꿀", "애벌레", "고치 (번데기)"],
+
+  "phonics": [
+    {"q": "pl_nts",  "a": "a", "ko": "식물"},
+    {"q": "sh_ll",   "a": "e", "ko": "껍데기"},
+    {"q": "s_x",     "a": "i", "ko": "여섯"},
+    {"q": "l_t",     "a": "o", "ko": "많음 (a lot of)"},
+    {"q": "ad_lt",   "a": "u", "ko": "어른의"},
+    {"q": "l_gs",    "a": "e", "ko": "다리"}
+  ],
+
+  "scan": [
+    {"q": "모든 나비는 원래 무엇이었나요?",              "a": "caterpillars",           "sent": "3"},
+    {"q": "애벌레는 무엇을 만드나요?",                   "a": "a chrysalis",            "sent": "4"},
+    {"q": "나비는 눈과 더듬이가 각각 몇 개인가요?",       "a": "two eyes / two antennae","sent": "14"},
+    {"q": "나비는 무엇을 마시나요?",                     "a": "nectar and plant juices","sent": "16"}
+  ],
+
+  "tf": [
+    {"en": "Butterflies are insects.", "answer": "O",
+     "why": "나비는 곤충이에요.", "sent": "1"},
+    {"en": "Butterflies have six legs and four wings.", "answer": "O",
+     "why": "다리 여섯 개, 날개 네 개예요.", "sent": "15"},
+    {"en": "A butterfly moves water from flower to flower.", "gloss": "water 물", "answer": "X",
+     "why": "꽃가루(pollen)를 옮겨요. 물이 아니에요.", "sent": "17"},
+    {"en": "Butterflies stop plants from growing.", "gloss": "stop 막다", "answer": "X",
+     "why": "반대예요. 식물이 자라는 데 도움이 돼요.", "sent": "18"}
+  ],
+
+  "fill_bank": ["inside", "body", "colors", "shell"],
+  "fill": [
+    {"en": "A lot of changes happen ___.",              "a": "inside", "ko": "그 안에서 많은 변화가 일어나요."},
+    {"en": "Butterflies come in all sizes and ___.",    "a": "colors", "ko": "나비는 크기와 색이 아주 다양해요."},
+    {"en": "Butterflies have three main ___ parts.",     "a": "body",   "ko": "나비의 몸은 크게 세 부분이에요."}
+  ],
+
+  "trace": [
+    {"en": "Beetles, dragonflies, and ants are all insects too.", "ko": "딱정벌레와 잠자리, 개미도 모두 곤충이에요."},
+    {"en": "Now it is an adult butterfly!", "ko": "이제 어른 나비가 되었어요!"}
+  ],
+
+  "notes": {
+    "phonics": "<b>ad_lt은 두 번째 모음</b>을 채웁니다 — a-d-u-l-t. sh_ll과 l_gs가 둘 다 e예요. l_t은 lot·let·lit이 다 단어이니 옆의 한글 뜻을 보게 하세요.",
+    "scan": "1번과 2번이 <b>나비의 한살이</b>입니다 — 애벌레 → 고치 → 나비. 답을 찾은 뒤 순서대로 짚어 주면 이 유닛의 핵심이 그대로 정리됩니다.",
+    "tf": "3번이 중요합니다 — 나비가 옮기는 건 물이 아니라 <b>꽃가루</b>예요. <b>Unit 44(벌)에도 똑같은 문항</b>이 있습니다. 벌과 나비가 같은 일을 한다는 걸 알면 4번(식물을 돕는다)도 자연스럽게 이해됩니다.",
+    "trace": "첫 문장에 <b>곤충 친구들 이름</b>이 또 나옵니다. Unit 43(개미)의 따라쓰기 문장과 짝이니, 두 장을 나란히 놓고 \"곤충이 이렇게 많네\" 하고 얘기해 주세요."
+  }
+}

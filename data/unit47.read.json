@@ -1,0 +1,87 @@
+{
+  "title": "Gymnastics",
+  "eyebrow": "Unit 47 · Nonfiction · Sports",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "exercises":  {"ipa": "ˈeksərsaɪzɪz",  "pos": "명사",   "ko": "운동"},
+    "gymnastics": {"ipa": "dʒɪmˈnæstɪks",  "pos": "명사",   "ko": "체조"},
+    "gymnasts":   {"ipa": "ˈdʒɪmnæsts",    "pos": "명사",   "ko": "체조 선수"},
+    "stations":   {"ipa": "ˈsteɪʃənz",     "pos": "명사",   "ko": "종목대, 기구"},
+    "events":     {"ipa": "ɪˈvents",       "pos": "명사",   "ko": "경기 종목"},
+    "shocked":    {"ipa": "ʃɑːkt",         "pos": "동사",   "ko": "놀라게 했다"},
+    "perfect":    {"ipa": "ˈpɜːrfɪkt",     "pos": "형용사", "ko": "완벽한, 만점의"},
+    "score":      {"ipa": "skɔːr",         "pos": "명사",   "ko": "점수"},
+    "titles":     {"ipa": "ˈtaɪtəlz",      "pos": "명사",   "ko": "우승, 타이틀"},
+    "all-around": {"ipa": "ˌɔːl əˈraʊnd",  "pos": "명사",   "ko": "개인종합"},
+    "solo":       {"ipa": "ˈsoʊloʊ",       "pos": "형용사", "ko": "개인의, 혼자 하는"},
+    "vault":      {"ipa": "vɔːlt",         "pos": "명사",   "ko": "도마"},
+    "ankle":      {"ipa": "ˈæŋkəl",        "pos": "명사",   "ko": "발목"},
+    "limps":      {"ipa": "lɪmps",         "pos": "동사",   "ko": "절뚝이며 걷다"},
+    "medal":      {"ipa": "ˈmedəl",        "pos": "명사",   "ko": "메달"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Exercises for boys were created in the 1800s.", "ko": "남자아이들을 위한 운동이 1800년대에 만들어졌어요."},
+      {"en": "They came from old exercises from Greece.", "ko": "그리스의 옛 운동에서 왔어요."},
+      {"en": "This would become gymnastics.", "ko": "이것이 나중에 체조가 되었어요."}
+    ]},
+    {"sents": [
+      {"en": "Gymnasts have 8 stations.", "ko": "체조 선수에게는 종목대가 8개 있어요."},
+      {"en": "Women use 4 of them for events.", "ko": "여자 선수는 그중 4개로 경기해요."},
+      {"en": "Men use 6.", "ko": "남자 선수는 6개를 써요."},
+      {"en": "They share 2 stations.", "ko": "2개는 함께 써요."}
+    ]},
+    {"sents": [
+      {"en": "Nadia Comaneci shocked the world in 1976.", "ko": "나디아 코마네치는 1976년에 세상을 놀라게 했어요."},
+      {"en": "She is the first to get a perfect score at the Olympics.", "ko": "올림픽에서 처음으로 만점을 받은 선수예요."},
+      {"en": "She got 7 of them.", "ko": "만점을 7번이나 받았어요."}
+    ]},
+    {"sents": [
+      {"en": "Kohei Uchimura won world titles five years in a row.", "ko": "우치무라 고헤이는 5년 연속 세계 대회에서 우승했어요."},
+      {"en": "He won the all-around from 2009 to 2013.", "ko": "2009년부터 2013년까지 개인종합에서 우승했어요."},
+      {"en": "He is the first to do this.", "ko": "이걸 처음으로 해낸 선수예요."}
+    ]},
+    {"sents": [
+      {"en": "Gabby Douglas made history in 2012.", "ko": "개비 더글러스는 2012년에 역사를 만들었어요."},
+      {"en": "She won Olympic gold for all-around.", "ko": "올림픽 개인종합에서 금메달을 땄어요."},
+      {"en": "She was the first black woman to do this.", "ko": "흑인 여성으로는 처음이었어요."}
+    ]},
+    {"sents": [
+      {"en": "Vitaly Scherbo had one of the best Olympics in 1992.", "ko": "비탈리 셰르보는 1992년에 최고의 올림픽을 보냈어요."},
+      {"en": "He won 6 out of 8 events.", "ko": "8개 종목 중 6개에서 우승했어요."},
+      {"en": "He won the team gold.", "ko": "단체전 금메달을 땄어요."},
+      {"en": "He also won 5 solo events.", "ko": "개인 종목 5개에서도 우승했어요."},
+      {"en": "Only two swimmers have won more in one Olympics.", "ko": "한 올림픽에서 그보다 많이 딴 사람은 수영 선수 두 명뿐이에요."}
+    ]},
+    {"sents": [
+      {"en": "Team USA is fighting for gold in 1996.", "ko": "1996년, 미국 팀이 금메달을 다투고 있어요."},
+      {"en": "The last event is the vault.", "ko": "마지막 종목은 도마예요."},
+      {"en": "Kerri Strug is America's last hope.", "ko": "케리 스트럭이 미국의 마지막 희망이에요."}
+    ]},
+    {"sents": [
+      {"en": "She falls on her first go.", "ko": "첫 시도에서 넘어져요."},
+      {"en": "She hurts her ankle.", "ko": "발목을 다쳤어요."},
+      {"en": "She must go again.", "ko": "다시 뛰어야 해요."},
+      {"en": "She limps to the start.", "ko": "절뚝이며 출발선으로 걸어가요."}
+    ]},
+    {"sents": [
+      {"en": "She runs.", "ko": "달려요."},
+      {"en": "She lands.", "ko": "착지해요."},
+      {"en": "She scores a 9.712!", "ko": "9.712점을 받았어요!"},
+      {"en": "USA wins its first gold in team gymnastics!", "ko": "미국이 단체 체조에서 첫 금메달을 땄어요!"},
+      {"en": "Strug has to be carried to the medal stand.", "ko": "스트럭은 업혀서 시상대에 올라갔어요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Wow, gymnasts are very amazing.", "ko": "와, 체조 선수들은 정말 대단해요."},
+      {"en": "I can't believe they jump so high and move like that.", "ko": "그렇게 높이 뛰고 그렇게 움직인다니 믿기지 않아요."},
+      {"en": "The movement looked very hard.", "ko": "동작이 아주 어려워 보였어요."},
+      {"en": "I'm going to practise, so I can do stuff like that.", "ko": "저도 그렇게 할 수 있게 연습할 거예요."},
+      {"en": "You should try it, too.", "ko": "여러분도 한번 해 보세요."}
+    ]}
+  ]
+}

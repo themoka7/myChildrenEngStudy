@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Cubes 워크시트 (A4 인쇄용)</title>
+<style>
+  @page { size: A4 portrait; margin: 12mm 11mm; }
+  :root{
+    --ink:#1f2937; --sub:#6b7280; --line:#b9c7d6; --base:#8ba0b6;
+    --blue:#2f6fb0; --bluebg:#e8f0f9; --purplebg:#efeaf7; --rule:#d6dee7;
+  }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    font-family:"Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+    color:var(--ink); background:#f3f4f6;
+    -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  .en{ font-family:"Trebuchet MS","Segoe UI",Verdana,sans-serif; }
+
+  .toolbar{
+    position:sticky; top:0; z-index:50; background:#111827; color:#fff;
+    padding:10px 16px; display:flex; gap:12px; align-items:center; font-size:14px;
+  }
+  .toolbar b{ font-size:15px; }
+  .toolbar .sp{ flex:1; }
+  .toolbar button{
+    font:inherit; font-weight:700; cursor:pointer; background:#fbbf24;
+    color:#111827; border:0; padding:8px 16px; border-radius:8px;
+  }
+  .toolbar label{ display:flex; gap:6px; align-items:center; cursor:pointer; }
+
+  .page{
+    width:210mm; height:297mm; padding:12mm 11mm; margin:16px auto;
+    background:#fff; box-shadow:0 2px 12px rgba(0,0,0,.15);
+    display:flex; flex-direction:column; overflow:hidden;
+  }
+  .body{ flex:1 1 auto; }
+
+  .head{
+    display:flex; align-items:flex-end; gap:8mm;
+    border-bottom:1mm solid var(--blue); padding-bottom:2.2mm; margin-bottom:4mm;
+  }
+  .head .tag{
+    background:var(--blue); color:#fff; font-weight:700; font-size:3.1mm;
+    padding:1mm 2.5mm; border-radius:1mm; letter-spacing:.3mm; white-space:nowrap;
+  }
+  .head h1{ margin:0; font-size:6.6mm; letter-spacing:-.2mm; }
+  .head h1 small{ font-size:3.4mm; color:var(--sub); font-weight:600; margin-left:2mm; }
+  .head .meta{ margin-left:auto; font-size:3.1mm; color:var(--sub); white-space:nowrap; }
+  .head .meta span{ display:inline-block; border-bottom:.3mm solid var(--rule); width:22mm; }
+
+  .passage{
+    border:.4mm solid #cfdcea; border-left:1.6mm solid var(--blue);
+    background:#fafcff; border-radius:1.5mm; padding:3.2mm 4mm 2.6mm; margin-bottom:5mm;
+  }
+  .passage .plabel{ font-size:3.1mm; font-weight:800; color:var(--blue); margin-bottom:2mm; }
+  .passage .cols{ columns:2; column-gap:7mm; }
+  .passage p{
+    margin:0 0 1.8mm; font-size:3.25mm; line-height:1.55;
+    break-inside:avoid; -webkit-column-break-inside:avoid;
+  }
+  .passage .n{ font-size:2.5mm; font-weight:800; color:var(--blue); vertical-align:super; margin-right:.7mm; }
+
+  .q{ margin-bottom:5mm; }
+  .q > h2{ display:flex; align-items:center; gap:2.5mm; margin:0 0 2.6mm; font-size:4.2mm; }
+  .q > h2 .no{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:6.2mm; height:6.2mm; flex:0 0 6.2mm; background:var(--blue); color:#fff;
+    border-radius:1.4mm; font-size:3.7mm; font-weight:800;
+  }
+  .q > h2 .ko{ font-weight:800; }
+  .q > h2 .hint{ font-weight:600; font-size:3.1mm; color:var(--sub); }
+
+  /* 선 잇기 : 행 높이를 고정해야 좌우 점이 수평으로 맞는다 */
+  .match{ display:flex; gap:10mm; padding:0 3mm; }
+  .match .col{ flex:1; display:flex; flex-direction:column; gap:2.8mm; }
+  .match .row{ display:flex; align-items:center; gap:2.5mm; height:8.6mm; }
+  .match .col.right .row{ flex-direction:row-reverse; }
+  .chip{
+    flex:1; text-align:center; padding:1.7mm 2mm; border-radius:4.3mm; height:100%;
+    display:flex; align-items:center; justify-content:center;
+    font-size:4.2mm; font-weight:700; line-height:1.15;
+  }
+  .chip.l{ background:var(--bluebg); border:.3mm solid #b9d0e8; }
+  .chip.r{ background:var(--purplebg); border:.3mm solid #cabfe3; }
+  .dot{ font-size:2.6mm; color:#94a3b8; flex:0 0 auto; }
+
+  .vowels{
+    text-align:center; font-size:4.6mm; font-weight:800; letter-spacing:3mm;
+    color:var(--blue); background:#eef6ff; border:.4mm solid #bcd7f0;
+    border-radius:1.5mm; padding:1.6mm; margin-bottom:3mm;
+  }
+  .phon{ display:grid; grid-template-columns:repeat(3,1fr); gap:3.5mm 5mm; padding:0 2mm; }
+  .phon .cell{ border:.4mm dashed #c7d2de; border-radius:2mm; padding:2.6mm 2mm 2.2mm; text-align:center; }
+  .phon .word{ font-size:7.4mm; font-weight:700; letter-spacing:1mm; line-height:1; }
+  .phon .word u{ text-decoration:none; display:inline-block; width:8mm; border-bottom:.6mm solid var(--blue); }
+  .phon .ko{ margin-top:1.8mm; font-size:3.2mm; color:var(--sub); font-weight:600; }
+
+  /* li 에 display:flex 를 주면 렌더러에 따라 번호가 사라진다 → 안쪽 래퍼로 */
+  .scan li{ margin-bottom:3.6mm; font-size:3.9mm; }
+  .scan .r{ display:flex; align-items:baseline; gap:2mm; }
+  .scan .ask{ font-weight:600; }
+  .scan .ans{ flex:1; border-bottom:.4mm solid var(--base); min-width:28mm; height:5.4mm; }
+  .scan .ref{ font-size:3mm; color:var(--sub); white-space:nowrap; }
+  .scan .ref i{ font-style:normal; display:inline-block; width:9mm; border-bottom:.3mm solid var(--rule); }
+  ol{ margin:0; padding-left:7mm; }
+  ol li::marker{ font-weight:700; color:var(--blue); }
+
+  .tf li{ margin-bottom:3mm; font-size:4.3mm; }
+  .tf .r{ display:flex; align-items:center; gap:3mm; }
+  .tf .gl{ font-size:3mm; color:var(--sub); font-weight:600; }
+  .tf .box{ margin-left:auto; display:flex; gap:2mm; }
+  .tf .box i{
+    font-style:normal; width:7.4mm; height:7.4mm; border:.4mm solid #9aa8b6;
+    border-radius:1.5mm; display:inline-flex; align-items:center; justify-content:center;
+    font-size:3.8mm; font-weight:800; color:#9aa8b6;
+  }
+
+  .bank{
+    display:flex; gap:3mm; justify-content:center; flex-wrap:wrap;
+    background:#fdf2f8; border:.4mm solid #f0c8dd; border-radius:2mm;
+    padding:2.4mm; margin-bottom:3.4mm;
+  }
+  .bank b{ font-size:4.2mm; letter-spacing:.3mm; padding:0 2mm; }
+  .bank .lbl{ font-size:3.1mm; color:var(--sub); font-weight:700; align-self:center; }
+  .fill li{ margin-bottom:3.4mm; font-size:4.2mm; }
+  .blank{ display:inline-block; width:26mm; border-bottom:.5mm solid var(--base); margin:0 1mm; }
+  .fill .ko{ font-size:3.1mm; color:var(--sub); font-weight:600; margin-left:2mm; }
+
+  .w4{ position:relative; height:11mm; margin:1mm 0 2mm; }
+  .w4 .ln{ position:absolute; left:0; right:0; }
+  .w4 .ln.top{ top:0.8mm; border-top:.3mm solid var(--line); }
+  .w4 .ln.mid{ top:5mm;   border-top:.25mm dashed #dbe3ec; }
+  .w4 .ln.bot{ top:9.2mm; border-top:.45mm solid var(--base); }
+  .w4 .trace{
+    position:absolute; left:2.5mm; bottom:0.5mm; font-size:6.2mm; line-height:1;
+    color:#d3d8de; letter-spacing:.4mm; white-space:nowrap;
+  }
+  .trace-ko{ font-size:3.1mm; color:var(--sub); font-weight:600; margin:0 0 .3mm 1mm; }
+
+  .foot{
+    flex:0 0 auto; display:flex; align-items:center; gap:3mm;
+    border-top:.3mm solid var(--rule); padding-top:2mm; font-size:3mm; color:var(--sub);
+  }
+  .foot .stars{ margin-left:auto; font-size:4.5mm; letter-spacing:1mm; color:#d1d5db; }
+
+  .answer{ background:#fffdf5; }
+  .answer .head{ border-bottom-color:#d97706; }
+  .answer .head .tag{ background:#d97706; }
+  .answer .q > h2 .no{ background:#d97706; }
+  .answer .q{ margin-bottom:3.8mm; }
+  .answer .q > h2{ margin-bottom:1.8mm; font-size:3.9mm; }
+  .akey{ font-size:3.4mm; line-height:1.6; }
+  .akey b{ color:#b45309; }
+  .akey .en{ font-weight:700; }
+  .akey .note{ color:#6b7280; }
+  .tips{ margin-top:3mm; background:#eef6ff; border:.4mm solid #bcd7f0; border-radius:2mm; padding:3.4mm; }
+  .tips h3{ margin:0 0 2.2mm; font-size:3.9mm; color:var(--blue); }
+  .tips ol{ padding-left:6mm; }
+  .tips li{ font-size:3.4mm; line-height:1.7; }
+  .tips .warn{ margin:2.5mm 0 0; font-size:3.2mm; color:#9a3412; line-height:1.6; }
+
+  @media print{
+    body{ background:#fff; }
+    .toolbar{ display:none !important; }
+    .page{ margin:0; box-shadow:none; width:auto; height:273mm; padding:0; }
+    .page + .page{ page-break-before:always; }
+    body.hideAnswer .answer{ display:none; }
+  }
+</style>
+<style>.toolbar a.sitenav{color:#fbbf24;font-weight:700;text-decoration:none;font-size:14px}</style>
+</head>
+<body>
+<div class="toolbar"><a class="sitenav" data-nav="index" href="../index.html">← 목차</a><a class="sitenav" data-nav="read" href="../read/unit49.html">📖 읽기</a><b>Cubes 워크시트</b><span style="color:#9ca3af">A4 · 문제 2장 + 정답 1장</span><span class="sp"></span><label><input type="checkbox" id="hideAns"> 정답지 빼고 인쇄</label><button onclick="window.print()">🖨 인쇄하기</button></div><section class="page"><div class="head"><span class="tag">Reading Worksheet 1</span><h1 class="en">Cubes <small>정육면체</small></h1><div class="meta">이름 <span></span> &nbsp; 날짜 <span></span></div></div><div class="body"><div class="passage"><div class="plabel">📖 소리 내어 두 번 읽어요</div><div class="cols en"><p><span class="n">1</span>This shape is square on each side. <span class="n">2</span>Find the cubes. <span class="n">3</span>Don't let them hide.</p><p><span class="n">4</span>Look around for this shape's look. <span class="n">5</span>Search for cubes inside this book.</p><p><span class="n">6</span>Cubes have eight corners, also named nooks. <span class="n">7</span>The nooks in this cube hold toys and books.</p><p><span class="n">8</span>A cube's six faces are the same. <span class="n">9</span>Blocks can stack to build a game.</p><p><span class="n">10</span>Shake your glass. Here clink, clink, clink. <span class="n">11</span>Ice cubes chill your tasty drink!</p><p><span class="n">12</span>This cube is a place where fish like to swim. <span class="n">13</span>Its space is called volume, filled to the brim.</p><p><span class="n">14</span>Let's have a party with tea for two. <span class="n">15</span>Cube table and chairs for me and you. <span class="n">16</span>Ben pours tea in a little teacup. <span class="n">17</span>Add sugar cubes to sweeten it up.</p><p><span class="n">18</span>A gift wrapped in a pretty box. <span class="n">19</span>Jill tears it open. Cubes on socks!</p><p><span class="n">20</span>This cube makes Ben smile and shout. <span class="n">21</span>Wind it up. A clown pops out!</p><p><span class="n">22</span>Cubes aren't just inside this book. <span class="n">23</span>They're all around you. <span class="n">24</span>Take a look!</p></div></div><div class="q"><h2><span class="no">1</span><span class="ko">단어와 뜻을 선으로 이으세요.</span></h2><div class="match"><div class="col left"><div class="row"><span class="chip l en">corners</span><span class="dot">●</span></div><div class="row"><span class="chip l en">faces</span><span class="dot">●</span></div><div class="row"><span class="chip l en">volume</span><span class="dot">●</span></div><div class="row"><span class="chip l en">stack</span><span class="dot">●</span></div></div><div class="col right"><div class="row"><span class="chip r">면</span><span class="dot">●</span></div><div class="row"><span class="chip r">쌓다</span><span class="dot">●</span></div><div class="row"><span class="chip r">모서리</span><span class="dot">●</span></div><div class="row"><span class="chip r">부피</span><span class="dot">●</span></div></div></div></div><div class="q"><h2><span class="no">2</span><span class="ko">빠진 모음을 쓰세요.</span><span class="hint">소리 내어 읽으면서 골라요</span></h2><div class="vowels en">a e i o u</div><div class="phon"><div class="cell"><div class="word en">gl<u></u>ss</div><div class="ko">컵, 유리잔</div></div><div class="cell"><div class="word en">B<u></u>n</div><div class="ko">벤 (사람 이름)</div></div><div class="cell"><div class="word en">s<u></u>x</div><div class="ko">여섯</div></div><div class="cell"><div class="word en">b<u></u>x</div><div class="ko">상자</div></div><div class="cell"><div class="word en">j<u></u>st</div><div class="ko">단지, 그냥</div></div><div class="cell"><div class="word en">dr<u></u>nk</div><div class="ko">음료</div></div></div></div></div><div class="foot"><span>Cubes · 1쪽</span><span class="stars">☆ ☆ ☆ ☆ ☆</span></div></section><section class="page"><div class="head"><span class="tag">Reading Worksheet 2</span><h1 class="en">Cubes <small>정육면체</small></h1><div class="meta">이름 <span></span> &nbsp; 날짜 <span></span></div></div><div class="body"><div class="q"><h2><span class="no">3</span><span class="ko">지문에서 찾아 영어로 쓰세요.</span><span class="hint">몇 번 문장에서 찾았는지도 적어요</span></h2><ol class="scan"><li><span class="r"><span class="ask">정육면체의 공간을 무엇이라고 부르나요?</span><span class="ans"></span><span class="ref">문장 <i></i>번</span></span></li><li><span class="r"><span class="ask">벤은 무엇에 차를 따르나요?</span><span class="ans"></span><span class="ref">문장 <i></i>번</span></span></li><li><span class="r"><span class="ask">질이 상자를 열었을 때 무엇이 있었나요?</span><span class="ans"></span><span class="ref">문장 <i></i>번</span></span></li><li><span class="r"><span class="ask">감아 올리면 무엇이 튀어나오나요?</span><span class="ans"></span><span class="ref">문장 <i></i>번</span></span></li></ol></div><div class="q"><h2><span class="no">4</span><span class="ko">맞으면 O, 틀리면 X 하세요.</span></h2><ol class="tf"><li><span class="r"><span class="en">Cubes have eight corners.</span><span class="box"><i>O</i><i>X</i></span></span></li><li><span class="r"><span class="en">A cube's six faces are the same.</span><span class="box"><i>O</i><i>X</i></span></span></li><li><span class="r"><span class="en">Ice cubes warm your drink.</span><span class="gl">warm 따뜻하게 하다</span><span class="box"><i>O</i><i>X</i></span></span></li><li><span class="r"><span class="en">Cubes are only inside this book.</span><span class="gl">only 오직</span><span class="box"><i>O</i><i>X</i></span></span></li></ol></div><div class="q"><h2><span class="no">5</span><span class="ko">보기에서 골라 빈칸에 쓰세요.</span></h2><div class="bank"><span class="lbl">보기</span><b class="en">square</b><b class="en">toys</b><b class="en">sweeten</b><b class="en">nooks</b></div><ol class="fill"><li><span class="en">This shape is <span class="blank"></span> on each side.</span><span class="ko">이 모양은 어느 면이나 정사각형이에요.</span></li><li><span class="en">The nooks in this cube hold <span class="blank"></span> and books.</span><span class="ko">구석에는 장난감과 책이 들어 있어요.</span></li><li><span class="en">Add sugar cubes to <span class="blank"></span> it up.</span><span class="ko">각설탕을 넣어 달게 만들어요.</span></li></ol></div><div class="q"><h2><span class="no">6</span><span class="ko">따라 쓰고, 아래 줄에 한 번 더 쓰세요.</span></h2><p class="trace-ko">이 정육면체는 물고기가 헤엄치기 좋아하는 곳이에요.</p><div class="w4"><span class="ln top"></span><span class="ln mid"></span><span class="ln bot"></span><span class="trace en">This cube is a place where fish like to swim.</span></div><div class="w4"><span class="ln top"></span><span class="ln mid"></span><span class="ln bot"></span></div><p class="trace-ko">우리 주위 어디에나 있어요.</p><div class="w4"><span class="ln top"></span><span class="ln mid"></span><span class="ln bot"></span><span class="trace en">They're all around you.</span></div><div class="w4"><span class="ln top"></span><span class="ln mid"></span><span class="ln bot"></span></div></div></div><div class="foot"><span>Cubes · 2쪽</span><span class="stars">☆ ☆ ☆ ☆ ☆</span></div></section><section class="page answer"><div class="head"><span class="tag">Answer Key · 부모용</span><h1 class="en">Cubes <small>정답 &amp; 지도 노트</small></h1></div><div class="body"><div class="q"><h2><span class="no">1</span><span class="ko">단어와 뜻 연결</span></h2><div class="akey"><span class="en">corners</span> 모서리 &nbsp;·&nbsp; <span class="en">faces</span> 면 &nbsp;·&nbsp; <span class="en">volume</span> 부피 &nbsp;·&nbsp; <span class="en">stack</span> 쌓다</div></div><div class="q"><h2><span class="no">2</span><span class="ko">빠진 모음</span></h2><div class="akey">gl<b>a</b>ss &nbsp;·&nbsp; B<b>e</b>n &nbsp;·&nbsp; s<b>i</b>x &nbsp;·&nbsp; b<b>o</b>x &nbsp;·&nbsp; j<b>u</b>st &nbsp;·&nbsp; dr<b>i</b>nk<br><span class="note">여섯 문항이 <b>a·e·i·o·u 다섯 소리를 모두</b> 담고 있습니다. <b>b_x와 s_x가 나란히</b> 나오니 끝소리를 고정해 두고 가운데 소리만 듣게 해 주세요 — 상자(box)와 여섯(six).</span></div></div><div class="q"><h2><span class="no">3</span><span class="ko">지문에서 찾아 쓰기</span></h2><div class="akey">1. <b>volume</b> (13번) &nbsp;&nbsp; 2. <b>a little teacup</b> (16번) &nbsp;&nbsp; 3. <b>cubes on socks</b> (19번) &nbsp;&nbsp; 4. <b>a clown</b> (21번)<br><span class="note">이 지문은 <b>운문(시)</b>이라 두 줄씩 끝소리가 맞습니다 — hide/side, book/look, nooks/books, box/socks. 답을 찾을 때 <b>소리 나게 읽어 주면</b> 훨씬 쉽습니다.</span></div></div><div class="q"><h2><span class="no">4</span><span class="ko">O / X</span></h2><div class="akey">1. <b>O</b> — 정육면체는 모서리가 여덟 개예요. (6번)<br>2. <b>O</b> — 여섯 면이 모두 같아요. (8번)<br>3. <b>X</b> — 반대예요. 얼음은 음료를 시원하게 해 줘요. (11번)<br>4. <b>X</b> — 책 안에만 있는 게 아니라 우리 주위 어디에나 있어요. (22번)<br><span class="note">1번과 2번이 <b>정육면체의 숫자 두 개</b>입니다 — 모서리 여덟, 면 여섯. 아이가 헷갈리면 주사위를 가져와 함께 세어 보세요. 3번은 지문과 반대고, 4번은 마지막 세 문장을 읽어야 걸립니다.</span></div></div><div class="q"><h2><span class="no">5</span><span class="ko">빈칸 채우기</span></h2><div class="akey">1. <b>square</b> &nbsp;·&nbsp; 2. <b>toys</b> &nbsp;·&nbsp; 3. <b>sweeten</b></div></div><div class="q"><h2><span class="no">6</span><span class="ko">따라 쓰기</span></h2><div class="akey"><span class="en">This cube is a place where fish like to swim.</span> 이 정육면체는 물고기가 헤엄치기 좋아하는 곳이에요.<br><span class="en">They're all around you.</span> 우리 주위 어디에나 있어요.<br><span class="note">첫 문장은 <b>어항</b> 이야기예요. 정육면체가 물고기 집이 될 수 있다는 게 이 시에서 가장 재미있는 대목이니, 쓰고 나서 "또 뭐가 정육면체지?" 하고 물어봐 주세요.</span></div></div><div class="tips"><h3>20분 진행 순서</h3><ol><li><b>0~3분</b> 파닉스 워밍업 — ②번 단어를 소리로 먼저 읽히기 (/h/-/o/-/p/ → hop)</li><li><b>3~8분</b> 1쪽 지문 소리 내어 읽기 2회. 부모가 못 읽어도 됩니다 — 아이가 읽고 부모가 듣기</li><li><b>8~17분</b> 1쪽 → 2쪽 순서로 손으로 풀기 (③번은 지문을 다시 봐도 됩니다)</li><li><b>17~19분</b> ⑥번 문장을 지문 안 보고 말해 보기</li><li><b>19~20분</b> 별점 색칠 + "오늘 새로 안 단어 하나만 말해줘"</li></ol><p class="warn">※ 이 워크시트에는 <b>조동사(can) · 동사 과거형 · 복수형 규칙</b>을 일부러 넣지 않았습니다. -s가 붙은 단어는 "그냥 그 단어"로 통째로 읽히시고, 규칙 설명은 하지 마세요. 지금은 <b>소리(파닉스) + 단어 + 지문에서 찾기</b> 세 가지면 충분합니다.</p></div></div><div class="foot"><span>Cubes · 정답 &amp; 지도 노트</span></div></section><script>var cb=document.getElementById('hideAns');if(cb){cb.addEventListener('change',function(e){document.body.classList.toggle('hideAnswer',e.target.checked);});}</script>
+</body>
+</html>

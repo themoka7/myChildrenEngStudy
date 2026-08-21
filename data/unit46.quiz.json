@@ -1,0 +1,68 @@
+{
+  "title": "Mosquitoes",
+  "title_ko": "모기",
+
+  "paras": [
+    ["Mosquitoes are insects.", "Ants, bees, and beetles are insects too."],
+    ["Mosquitoes live almost everywhere on Earth.", "They are often found near lakes and ponds."],
+    ["Most mosquitoes are white, gray, or brown.", "Some mosquitoes are brightly colored."],
+    ["Mosquitoes have three main body parts.", "They are the head, thorax, and abdomen.", "Mosquitoes have six legs and two wings.", "They have two eyes and two antennae."],
+    ["A mosquito has a special mouthpart.", "It looks like a straw."],
+    ["All mosquitoes eat nectar and plant juices.", "Only female mosquitoes bite and drink blood.", "They bite humans and animals."],
+    ["Mosquitoes are important.", "They are food for many animals and other insects."]
+  ],
+
+  "match": [
+    {"en": "ponds",      "ko": "연못"},
+    {"en": "brightly",   "ko": "밝게"},
+    {"en": "mouthpart",  "ko": "입 부분"},
+    {"en": "blood",      "ko": "피"}
+  ],
+  "match_ko_order": ["밝게", "피", "연못", "입 부분"],
+
+  "phonics": [
+    {"q": "h_s",     "a": "a", "ko": "가지고 있다"},
+    {"q": "s_x",     "a": "i", "ko": "여섯"},
+    {"q": "l_gs",    "a": "e", "ko": "다리"},
+    {"q": "p_nds",   "a": "o", "ko": "연못"},
+    {"q": "str_w",   "a": "a", "ko": "빨대"},
+    {"q": "w_ngs",   "a": "i", "ko": "날개"}
+  ],
+
+  "scan": [
+    {"q": "모기는 주로 어디 가까이에서 볼 수 있나요?",   "a": "lakes and ponds",       "sent": "4"},
+    {"q": "모기는 다리와 날개가 각각 몇 개인가요?",      "a": "six legs / two wings",  "sent": "9"},
+    {"q": "모기의 입은 무엇처럼 생겼나요?",              "a": "a straw",               "sent": "12"},
+    {"q": "모기는 무엇의 먹이가 되나요?",                "a": "many animals and other insects", "sent": "17"}
+  ],
+
+  "tf": [
+    {"en": "Mosquitoes are insects.", "answer": "O",
+     "why": "모기는 곤충이에요.", "sent": "1"},
+    {"en": "All mosquitoes eat nectar and plant juices.", "answer": "O",
+     "why": "모든 모기가 꽃의 꿀과 식물의 즙을 먹어요.", "sent": "13"},
+    {"en": "Only male mosquitoes bite and drink blood.", "gloss": "male 수컷의", "answer": "X",
+     "why": "암컷(female) 모기만 물어요.", "sent": "14"},
+    {"en": "Mosquitoes live only near the sea.", "gloss": "only 오직 / sea 바다", "answer": "X",
+     "why": "지구 거의 모든 곳에 살아요.", "sent": "3"}
+  ],
+
+  "fill_bank": ["body", "antennae", "animals", "straw"],
+  "fill": [
+    {"en": "Mosquitoes have three main ___ parts.",  "a": "body",     "ko": "모기의 몸은 크게 세 부분이에요."},
+    {"en": "They have two eyes and two ___.",        "a": "antennae", "ko": "눈은 두 개, 더듬이는 두 개예요."},
+    {"en": "They bite humans and ___.",              "a": "animals",  "ko": "사람과 동물을 물어요."}
+  ],
+
+  "trace": [
+    {"en": "Ants, bees, and beetles are insects too.", "ko": "개미와 벌, 딱정벌레도 곤충이에요."},
+    {"en": "Mosquitoes are important.", "ko": "모기도 중요해요."}
+  ],
+
+  "notes": {
+    "phonics": "이 지문에는 짧은 u 소리 단어가 없어서 <b>a와 i를 두 번씩</b> 냈습니다. <b>h_s는 has·his</b>가 둘 다 단어라 가장 헷갈리니 옆의 한글 뜻을 보게 하세요.",
+    "scan": "2번은 <b>벌(Unit 44)과 비교하기 좋은 문항</b>입니다 — 벌은 날개 네 개, 모기는 두 개예요. 다리는 둘 다 여섯 개고요. 두 문제지를 나란히 놓아 주세요.",
+    "tf": "3번이 이 유닛의 핵심입니다 — 무는 건 <b>암컷 모기뿐</b>이에요. 'female'을 'male'로 바꿔 놓았으니 그 낱말 하나를 짚어 주세요. 4번은 지문과 반대입니다.",
+    "trace": "두 번째 문장이 <b>이 유닛에서 가장 뜻밖의 대목</b>입니다 — 물어서 싫은 모기도 다른 동물의 먹이가 되어 중요하다는 것. 쓰고 나서 한 번 얘기해 주세요."
+  }
+}

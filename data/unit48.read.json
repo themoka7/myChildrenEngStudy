@@ -1,0 +1,75 @@
+{
+  "title": "Baseball",
+  "eyebrow": "Unit 48 · Nonfiction · Sports",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "rules":      {"ipa": "ruːlz",         "pos": "명사",   "ko": "규칙"},
+    "written":    {"ipa": "ˈrɪtən",        "pos": "동사",   "ko": "쓰였다 (write)"},
+    "oldest":     {"ipa": "ˈoʊldɪst",      "pos": "형용사", "ko": "가장 오래된"},
+    "stadium":    {"ipa": "ˈsteɪdiəm",     "pos": "명사",   "ko": "경기장"},
+    "opened":     {"ipa": "ˈoʊpənd",       "pos": "동사",   "ko": "문을 열었다"},
+    "fastball":   {"ipa": "ˈfæstbɔːl",     "pos": "명사",   "ko": "빠른 공, 직구"},
+    "record":     {"ipa": "ˈrekərd",       "pos": "명사",   "ko": "기록"},
+    "strikeouts": {"ipa": "ˈstraɪkaʊts",   "pos": "명사",   "ko": "삼진"},
+    "row":        {"ipa": "roʊ",           "pos": "명사",   "ko": "(in a row) 연속으로"},
+    "missing":    {"ipa": "ˈmɪsɪŋ",        "pos": "동사",   "ko": "빠지다, 놓치다"},
+    "earned":     {"ipa": "ɜːrnd",         "pos": "동사",   "ko": "얻었다"},
+    "winning":    {"ipa": "ˈwɪnɪŋ",        "pos": "형용사", "ko": "이기는"},
+    "season":     {"ipa": "ˈsiːzən",       "pos": "명사",   "ko": "시즌, 한 해 경기"},
+    "surprised":  {"ipa": "sərˈpraɪzd",    "pos": "동사",   "ko": "놀라게 했다"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Baseball began in the United States.", "ko": "야구는 미국에서 시작했어요."},
+      {"en": "The rules were written in 1845.", "ko": "규칙은 1845년에 쓰였어요."},
+      {"en": "Most of the rules are the same today.", "ko": "규칙 대부분은 오늘날과 같아요."}
+    ]},
+    {"sents": [
+      {"en": "Fenway Park is in Boston.", "ko": "펜웨이 파크는 보스턴에 있어요."},
+      {"en": "It is the oldest baseball stadium in the United States.", "ko": "미국에서 가장 오래된 야구장이에요."},
+      {"en": "It opened in 1912.", "ko": "1912년에 문을 열었어요."}
+    ]},
+    {"sents": [
+      {"en": "Nolan Ryan had a 100-mile-per-hour (161 km/h) fastball.", "ko": "놀란 라이언은 시속 161km의 빠른 공을 던졌어요."},
+      {"en": "He has the record for most strikeouts.", "ko": "삼진을 가장 많이 잡은 기록을 가지고 있어요."},
+      {"en": "He has seven games where no one got a hit.", "ko": "아무도 안타를 못 친 경기가 일곱 번 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Joe DiMaggio got a hit in 56 games in a row.", "ko": "조 디마지오는 56경기 연속으로 안타를 쳤어요."},
+      {"en": "He got a hit every game for two months.", "ko": "두 달 동안 매 경기 안타를 쳤어요."}
+    ]},
+    {"sents": [
+      {"en": "Cal Ripken Jr. played in the most games without missing one.", "ko": "칼 립켄 주니어는 한 경기도 빠지지 않고 가장 많이 뛰었어요."},
+      {"en": "He played in 2,632 games in a row.", "ko": "2,632경기를 연속으로 뛰었어요."},
+      {"en": "He played every game for more than 16 years.", "ko": "16년 넘게 매 경기를 뛰었어요."}
+    ]},
+    {"sents": [
+      {"en": "The New York Mets earned the name 'Miracle Mets' in 1969.", "ko": "뉴욕 메츠는 1969년에 '기적의 메츠'라는 이름을 얻었어요."},
+      {"en": "They had never had a winning season.", "ko": "그전까지 한 번도 이기는 시즌이 없었어요."},
+      {"en": "This season started the same.", "ko": "그 시즌도 똑같이 시작했어요."},
+      {"en": "The Mets had 18 wins after 41 games.", "ko": "41경기를 치르고 18승이었어요."},
+      {"en": "Then they surprised everybody.", "ko": "그런데 모두를 놀라게 했어요."},
+      {"en": "They went on to win the World Series!", "ko": "월드시리즈에서 우승했어요!"}
+    ]},
+    {"sents": [
+      {"en": "1990 was a bad year for Atlanta and Minnesota.", "ko": "1990년은 애틀랜타와 미네소타에게 나쁜 해였어요."},
+      {"en": "They ended their seasons in last place.", "ko": "두 팀 다 꼴찌로 시즌을 마쳤어요."},
+      {"en": "Things changed the next year.", "ko": "다음 해에 사정이 달라졌어요."},
+      {"en": "Both teams played in the 1991 World Series.", "ko": "두 팀이 1991년 월드시리즈에서 만났어요."},
+      {"en": "They went from bad to best in one year.", "ko": "1년 만에 최악에서 최고가 되었어요."},
+      {"en": "Minnesota won.", "ko": "미네소타가 이겼어요."},
+      {"en": "It took 7 games.", "ko": "7경기까지 갔어요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Ah! Baseball is a really old sport.", "ko": "아! 야구는 정말 오래된 운동이네요."},
+      {"en": "It's interesting that baseball players can use a small bat or a long bat to hit the ball.", "ko": "야구 선수가 짧은 배트나 긴 배트로 공을 친다는 게 흥미로워요."},
+      {"en": "Shall we practise?", "ko": "우리도 연습해 볼까요?"},
+      {"en": "Ready!", "ko": "준비!"}
+    ]}
+  ]
+}
