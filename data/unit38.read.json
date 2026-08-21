@@ -1,0 +1,69 @@
+{
+  "title": "Barack Obama",
+  "eyebrow": "Unit 38 · Nonfiction · People",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "born":         {"ipa": "bɔːrn",           "pos": "동사",   "ko": "태어났다 (be born)"},
+    "divorced":     {"ipa": "dɪˈvɔːrst",       "pos": "동사",   "ko": "이혼했다 (divorce)"},
+    "grandparents": {"ipa": "ˈɡrænperənts",    "pos": "명사",   "ko": "조부모 (할아버지·할머니)"},
+    "raise":        {"ipa": "reɪz",            "pos": "동사",   "ko": "(아이를) 키우다"},
+    "student":      {"ipa": "ˈstuːdənt",       "pos": "명사",   "ko": "학생"},
+    "college":      {"ipa": "ˈkɑːlɪdʒ",       "pos": "명사",   "ko": "대학"},
+    "community":    {"ipa": "kəˈmjuːnəti",     "pos": "명사",   "ko": "지역 사회"},
+    "unite":        {"ipa": "juːˈnaɪt",        "pos": "동사",   "ko": "뭉치다, 하나가 되다"},
+    "difference":   {"ipa": "ˈdɪfərəns",       "pos": "명사",   "ko": "변화, 차이"},
+    "senator":      {"ipa": "ˈsenətər",        "pos": "명사",   "ko": "상원의원"},
+    "elected":      {"ipa": "ɪˈlektɪd",        "pos": "동사",   "ko": "선출되었다 (elect)"},
+    "president":    {"ipa": "ˈprezɪdənt",      "pos": "명사",   "ko": "대통령"},
+    "history":      {"ipa": "ˈhɪstəri",        "pos": "명사",   "ko": "역사"},
+    "believe":      {"ipa": "bɪˈliːv",         "pos": "동사",   "ko": "믿다"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Barack Obama was born on August 4, 1961.", "ko": "버락 오바마는 1961년 8월 4일에 태어났어요."},
+      {"en": "He was born in Hawaii.", "ko": "하와이에서 태어났어요."}
+    ]},
+    {"sents": [
+      {"en": "Obama's parents divorced when he was a child.", "ko": "오바마의 부모님은 그가 어릴 때 이혼했어요."},
+      {"en": "His grandparents helped raise him.", "ko": "조부모가 그를 키우는 걸 도와주었어요."}
+    ]},
+    {"sents": [
+      {"en": "Obama was a good student.", "ko": "오바마는 훌륭한 학생이었어요."},
+      {"en": "He went to college and law school.", "ko": "대학과 법학 대학원에 다녔어요."}
+    ]},
+    {"sents": [
+      {"en": "Obama spent time with the Chicago, Illinois community.", "ko": "오바마는 일리노이주 시카고의 지역 사회에서 일했어요."},
+      {"en": "He helped people unite to make a difference.", "ko": "사람들이 뭉쳐서 변화를 만들도록 도왔어요."}
+    ]},
+    {"sents": [
+      {"en": "Obama has a wife named Michelle.", "ko": "오바마의 아내 이름은 미셸이에요."},
+      {"en": "They have two daughters.", "ko": "딸이 둘 있어요."},
+      {"en": "Their names are Sasha and Malia.", "ko": "이름은 사샤와 말리아예요."}
+    ]},
+    {"sents": [
+      {"en": "Obama became a state senator.", "ko": "오바마는 주 상원의원이 되었어요."},
+      {"en": "He later became a US senator.", "ko": "나중에는 연방 상원의원이 되었어요."},
+      {"en": "In 2008, Obama was elected the 44th US president.", "ko": "2008년, 오바마는 미국의 44대 대통령으로 선출되었어요."}
+    ]},
+    {"sents": [
+      {"en": "Obama is the first African American president in US history.", "ko": "오바마는 미국 역사상 첫 아프리카계 미국인 대통령이에요."},
+      {"en": "He was elected president two times.", "ko": "두 번 대통령으로 선출되었어요."}
+    ]},
+    {"sents": [
+      {"en": "Many people believe in Obama.", "ko": "많은 사람이 오바마를 믿어요."},
+      {"en": "He works hard to help people in need.", "ko": "어려운 사람들을 돕기 위해 열심히 일해요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Okay. Barack Obama was the 44th president of America.", "ko": "좋아요. 버락 오바마는 미국의 44대 대통령이었어요."},
+      {"en": "He has a gentle smile and seems nice.", "ko": "부드러운 미소를 가졌고 좋은 사람처럼 보여요."},
+      {"en": "He works hard for his people.", "ko": "국민을 위해 열심히 일해요."},
+      {"en": "I hope you learned a lot about Barack Obama.", "ko": "버락 오바마에 대해 많이 배웠으면 좋겠어요."},
+      {"en": "See you with the next book.", "ko": "다음 책에서 만나요."}
+    ]}
+  ]
+}

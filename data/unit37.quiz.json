@@ -1,0 +1,69 @@
+{
+  "title": "Abraham Lincoln",
+  "title_ko": "에이브러햄 링컨",
+
+  "paras": [
+    ["Abraham Lincoln was born February 12, 1809.", "He was born in Hardin County, Kentucky."],
+    ["Lincoln had to work to support his family.", "He did not have much time for school."],
+    ["Lincoln was smart.", "He taught himself many things.", "He worked in government.", "He was also a lawyer."],
+    ["Lincoln married Mary Todd.", "They had four boys."],
+    ["Lincoln ran for Senate and lost.", "But his debates made him well known."],
+    ["In 1861, Lincoln became the 16th US president.", "Soon after, the Civil War began.", "The war lasted for four years.", "The North defeated the South."],
+    ["In his second term, Lincoln planned to reunite the nation.", "But he would not be able to."],
+    ["On April 14, 1865, Lincoln went to Ford's Theatre.", "He was shot and killed while watching a play."]
+  ],
+
+  "match": [
+    {"en": "support", "ko": "먹여 살리다"},
+    {"en": "lawyer",  "ko": "변호사"},
+    {"en": "debates", "ko": "토론"},
+    {"en": "term",    "ko": "임기"}
+  ],
+  "match_ko_order": ["토론", "임기", "먹여 살리다", "변호사"],
+
+  "phonics": [
+    {"q": "h_d",   "a": "a", "ko": "~해야 했다"},
+    {"q": "w_nt",  "a": "e", "ko": "갔다"},
+    {"q": "d_d",   "a": "i", "ko": "~했다"},
+    {"q": "l_st",  "a": "o", "ko": "졌다, 잃었다"},
+    {"q": "m_ch",  "a": "u", "ko": "많이"},
+    {"q": "b_t",   "a": "u", "ko": "하지만"}
+  ],
+
+  "scan": [
+    {"q": "링컨은 몇 년에 태어났나요?",              "a": "1809",        "sent": "1"},
+    {"q": "링컨은 어느 주에서 태어났나요?",           "a": "Kentucky",    "sent": "2"},
+    {"q": "링컨은 몇 대 미국 대통령이 되었나요?",     "a": "the 16th",    "sent": "13"},
+    {"q": "남북 전쟁은 몇 년 동안 이어졌나요?",       "a": "four years",  "sent": "15"}
+  ],
+
+  "tf": [
+    {"en": "Lincoln did not have much time for school.", "answer": "O",
+     "why": "일을 해야 해서 학교에 다닐 시간이 많지 않았어요.", "sent": "4"},
+    {"en": "Lincoln was also a lawyer.", "answer": "O",
+     "why": "변호사이기도 했어요.", "sent": "8"},
+    {"en": "Lincoln won the Senate election.", "gloss": "won 이겼다 / election 선거", "answer": "X",
+     "why": "출마했지만 졌어요(lost). 대신 토론으로 유명해졌지요.", "sent": "11"},
+    {"en": "Lincoln had four daughters.", "gloss": "daughters 딸", "answer": "X",
+     "why": "아들(boys) 넷이었어요.", "sent": "10"}
+  ],
+
+  "fill_bank": ["Todd", "himself", "defeated", "president"],
+  "fill": [
+    {"en": "Lincoln married Mary ___.",      "a": "Todd",     "ko": "링컨은 메리 토드와 결혼했어요."},
+    {"en": "He taught ___ many things.",     "a": "himself",  "ko": "스스로 많은 것을 배웠어요."},
+    {"en": "The North ___ the South.",       "a": "defeated", "ko": "북부가 남부를 물리쳤어요."}
+  ],
+
+  "trace": [
+    {"en": "Lincoln had to work to support his family.", "ko": "링컨은 가족을 먹여 살리려고 일해야 했어요."},
+    {"en": "Lincoln was smart.", "ko": "링컨은 똑똑했어요."}
+  ],
+
+  "notes": {
+    "phonics": "<b>l_st는 lost·list·last</b>, <b>h_d는 had·hid·hod</b>이 다 단어라 헷갈립니다 — 옆의 한글 뜻을 꼭 보게 하세요. b_t과 m_ch가 둘 다 u입니다.",
+    "scan": "네 문항 모두 <b>답이 숫자나 지명</b>이라, 영어를 다 읽지 못해도 찾을 수 있습니다. 3번의 <b>16th</b>는 '열여섯 번째'라는 뜻이에요 — 다음 유닛(오바마)의 44th와 비교해 주면 좋습니다.",
+    "tf": "3번은 <b>lost(졌다)를 won(이겼다)으로</b> 바꿔 놓았습니다. 링컨이 선거에서 <b>지고도</b> 유명해졌다는 게 이 대목의 핵심이니, 맞히면 \"졌는데 왜 유명해졌지?\" 하고 한 번 물어봐 주세요. 4번은 boys를 daughters로 바꾼 함정이에요.",
+    "trace": "<b>지문 마지막 문장은 링컨이 총에 맞아 세상을 떠난 이야기</b>입니다. 아이가 물어볼 수 있으니 미리 알아 두세요 — 문항으로는 내지 않았습니다. \"아주 훌륭한 대통령이었는데 안타깝게 그렇게 되었다\" 정도로 답해 주시면 충분합니다."
+  }
+}

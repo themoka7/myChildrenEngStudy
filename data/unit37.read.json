@@ -1,0 +1,70 @@
+{
+  "title": "Abraham Lincoln",
+  "eyebrow": "Unit 37 · Nonfiction · People",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "born":       {"ipa": "bɔːrn",         "pos": "동사",   "ko": "태어났다 (be born)"},
+    "support":    {"ipa": "səˈpɔːrt",      "pos": "동사",   "ko": "먹여 살리다, 부양하다"},
+    "smart":      {"ipa": "smɑːrt",        "pos": "형용사", "ko": "똑똑한"},
+    "taught":     {"ipa": "tɔːt",          "pos": "동사",   "ko": "가르쳤다 (teach)"},
+    "government": {"ipa": "ˈɡʌvərnmənt",   "pos": "명사",   "ko": "정부"},
+    "lawyer":     {"ipa": "ˈlɔːjər",       "pos": "명사",   "ko": "변호사"},
+    "married":    {"ipa": "ˈmerid",        "pos": "동사",   "ko": "결혼했다 (marry)"},
+    "Senate":     {"ipa": "ˈsenɪt",        "pos": "명사",   "ko": "상원 (미국 의회)"},
+    "debates":    {"ipa": "dɪˈbeɪts",      "pos": "명사",   "ko": "토론"},
+    "president":  {"ipa": "ˈprezɪdənt",    "pos": "명사",   "ko": "대통령"},
+    "defeated":   {"ipa": "dɪˈfiːtɪd",     "pos": "동사",   "ko": "물리쳤다 (defeat)"},
+    "term":       {"ipa": "tɜːrm",         "pos": "명사",   "ko": "임기"},
+    "reunite":    {"ipa": "ˌriːjuːˈnaɪt",  "pos": "동사",   "ko": "다시 하나로 만들다"},
+    "nation":     {"ipa": "ˈneɪʃən",       "pos": "명사",   "ko": "나라, 국가"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Abraham Lincoln was born February 12, 1809.", "ko": "에이브러햄 링컨은 1809년 2월 12일에 태어났어요."},
+      {"en": "He was born in Hardin County, Kentucky.", "ko": "켄터키주 하딘 카운티에서 태어났어요."}
+    ]},
+    {"sents": [
+      {"en": "Lincoln had to work to support his family.", "ko": "링컨은 가족을 먹여 살리려고 일해야 했어요."},
+      {"en": "He did not have much time for school.", "ko": "학교에 다닐 시간이 많지 않았어요."}
+    ]},
+    {"sents": [
+      {"en": "Lincoln was smart.", "ko": "링컨은 똑똑했어요."},
+      {"en": "He taught himself many things.", "ko": "스스로 많은 것을 배웠어요."},
+      {"en": "He worked in government.", "ko": "정부에서 일했어요."},
+      {"en": "He was also a lawyer.", "ko": "변호사이기도 했어요."}
+    ]},
+    {"sents": [
+      {"en": "Lincoln married Mary Todd.", "ko": "링컨은 메리 토드와 결혼했어요."},
+      {"en": "They had four boys.", "ko": "아들 넷을 두었어요."}
+    ]},
+    {"sents": [
+      {"en": "Lincoln ran for Senate and lost.", "ko": "링컨은 상원의원에 출마했지만 졌어요."},
+      {"en": "But his debates made him well known.", "ko": "하지만 토론으로 널리 알려졌어요."}
+    ]},
+    {"sents": [
+      {"en": "In 1861, Lincoln became the 16th US president.", "ko": "1861년, 링컨은 미국의 16대 대통령이 되었어요."},
+      {"en": "Soon after, the Civil War began.", "ko": "곧 남북 전쟁이 시작되었어요."},
+      {"en": "The war lasted for four years.", "ko": "전쟁은 4년 동안 이어졌어요."},
+      {"en": "The North defeated the South.", "ko": "북부가 남부를 물리쳤어요."}
+    ]},
+    {"sents": [
+      {"en": "In his second term, Lincoln planned to reunite the nation.", "ko": "두 번째 임기에 링컨은 나라를 다시 하나로 만들려고 했어요."},
+      {"en": "But he would not be able to.", "ko": "하지만 그럴 수 없었어요."}
+    ]},
+    {"sents": [
+      {"en": "On April 14, 1865, Lincoln went to Ford's Theatre.", "ko": "1865년 4월 14일, 링컨은 포드 극장에 갔어요."},
+      {"en": "He was shot and killed while watching a play.", "ko": "연극을 보던 중 총에 맞아 세상을 떠났어요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "I see. Abraham Lincoln was the 16th president of the US.", "ko": "그렇군요. 에이브러햄 링컨은 미국의 16대 대통령이었어요."},
+      {"en": "He was a really great and respectful man.", "ko": "정말 훌륭하고 존경받는 사람이었어요."},
+      {"en": "Let's learn more about him when we can.", "ko": "기회가 되면 그에 대해 더 알아봐요."},
+      {"en": "Okay. See you next time.", "ko": "좋아요. 다음에 또 만나요."}
+    ]}
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "title": "Jupiter",
+  "title_ko": "목성",
+
+  "paras": [
+    ["Jupiter is a planet.", "Planets orbit stars.", "Planets in our solar system orbit the sun."],
+    ["Jupiter is the fifth closest planet to the sun.", "It is about 484 million miles (779 million km) away from the sun."],
+    ["Jupiter orbits the sun very slowly.", "One year on Jupiter is about 12 years on Earth."],
+    ["Jupiter spins while it orbits the sun.", "The spin makes day and night.", "Jupiter spins very fast.", "One day on Jupiter is about 10 hours on Earth."],
+    ["Jupiter is the largest planet in our solar system.", "It is 2.5 times bigger than all of the planets combined!"],
+    ["Jupiter is a giant ball of gas.", "You cannot stand on Jupiter."],
+    ["Jupiter has many storms.", "There is lightning on Jupiter.", "There are very fast winds too."],
+    ["There is a red spot on Jupiter.", "This spot is one giant storm.", "It has lasted for hundreds of years!"],
+    ["You can see Jupiter in the night sky."]
+  ],
+
+  "match": [
+    {"en": "combined",  "ko": "다 합친"},
+    {"en": "giant",     "ko": "거대한"},
+    {"en": "lightning", "ko": "번개"},
+    {"en": "spot",      "ko": "점, 반점"}
+  ],
+  "match_ko_order": ["번개", "점, 반점", "다 합친", "거대한"],
+
+  "phonics": [
+    {"q": "s_n",     "a": "u", "ko": "태양"},
+    {"q": "r_d",     "a": "e", "ko": "붉은"},
+    {"q": "sp_n",    "a": "i", "ko": "회전하다"},
+    {"q": "g_s",     "a": "a", "ko": "기체"},
+    {"q": "sp_t",    "a": "o", "ko": "점, 반점"},
+    {"q": "w_nds",   "a": "i", "ko": "바람"}
+  ],
+
+  "scan": [
+    {"q": "목성은 태양에서 몇 번째로 가까운 행성인가요?", "a": "the fifth",       "sent": "4"},
+    {"q": "목성의 1년은 지구의 몇 년인가요?",             "a": "about 12 years",  "sent": "7"},
+    {"q": "목성의 하루는 지구의 몇 시간인가요?",          "a": "about 10 hours",  "sent": "11"},
+    {"q": "목성의 붉은 점은 무엇인가요?",                 "a": "one giant storm", "sent": "20"}
+  ],
+
+  "tf": [
+    {"en": "Jupiter is the largest planet in our solar system.", "answer": "O",
+     "why": "태양계에서 가장 큰 행성이에요.", "sent": "12"},
+    {"en": "You cannot stand on Jupiter.", "answer": "O",
+     "why": "거대한 기체 덩어리라서 설 수 없어요.", "sent": "15"},
+    {"en": "Jupiter spins very slowly.", "answer": "X",
+     "why": "태양을 도는 건 천천히지만, 스스로 회전하는 건 아주 빨라요.", "sent": "6·10"},
+    {"en": "Jupiter is a giant ball of ice.", "gloss": "ice 얼음", "answer": "X",
+     "why": "얼음이 아니라 기체(gas) 덩어리예요.", "sent": "14"}
+  ],
+
+  "fill_bank": ["storms", "lightning", "night", "winds"],
+  "fill": [
+    {"en": "Jupiter has many ___.",                 "a": "storms",    "ko": "목성에는 폭풍이 많아요."},
+    {"en": "There is ___ on Jupiter.",              "a": "lightning", "ko": "목성에는 번개도 있어요."},
+    {"en": "You can see Jupiter in the ___ sky.",   "a": "night",     "ko": "밤하늘에서 목성을 볼 수 있어요."}
+  ],
+
+  "trace": [
+    {"en": "Jupiter is a planet.", "ko": "목성은 행성이에요."},
+    {"en": "It has lasted for hundreds of years!", "ko": "수백 년 동안 이어져 왔어요!"}
+  ],
+
+  "notes": {
+    "phonics": "여섯 문항이 <b>a·e·i·o·u 다섯 소리를 모두</b> 담고 있습니다. <b>sp_n과 sp_t이 나란히</b> 나오니 첫소리를 고정해 두고 가운데 소리만 듣게 해 주세요 — 회전(spin)과 점(spot).",
+    "scan": "2번과 3번이 <b>이 유닛에서 가장 놀라운 대비</b>입니다 — 1년은 지구의 12년인데 하루는 10시간뿐이에요. 목성은 <b>아주 크면서 아주 빨리 도는</b> 행성이라 그렇습니다.",
+    "tf": "3번이 <b>이 지문에서 제일 어려운 문항</b>입니다. 지문에 'slowly'와 'very fast'가 둘 다 나오는데, <b>천천히인 것은 태양을 도는 것이고 빠른 것은 스스로 도는 것</b>이에요. 아이가 틀렸다면 두 문장을 나란히 짚어 주세요 — 틀리는 게 당연한 문항입니다.",
+    "trace": "느낌표를 빠뜨리지 않았는지 봐 주세요."
+  }
+}

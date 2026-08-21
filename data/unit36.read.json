@@ -1,0 +1,79 @@
+{
+  "title": "Saturn",
+  "eyebrow": "Unit 36 · Nonfiction · Space",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "planet":     {"ipa": "ˈplænɪt",       "pos": "명사",   "ko": "행성"},
+    "orbit":      {"ipa": "ˈɔːrbɪt",       "pos": "동사",   "ko": "~의 주위를 돌다; 궤도"},
+    "solar":      {"ipa": "ˈsoʊlər",       "pos": "형용사", "ko": "태양의 (solar system 태양계)"},
+    "closest":    {"ipa": "ˈkloʊsɪst",     "pos": "형용사", "ko": "가장 가까운"},
+    "billion":    {"ipa": "ˈbɪljən",       "pos": "명사",   "ko": "10억"},
+    "spins":      {"ipa": "spɪnz",         "pos": "동사",   "ko": "스스로 회전하다 (spin)"},
+    "giant":      {"ipa": "ˈdʒaɪənt",      "pos": "형용사", "ko": "거대한"},
+    "surround":   {"ipa": "səˈraʊnd",      "pos": "동사",   "ko": "둘러싸다"},
+    "rings":      {"ipa": "rɪŋz",          "pos": "명사",   "ko": "고리"},
+    "rocks":      {"ipa": "rɑːks",         "pos": "명사",   "ko": "돌, 암석"},
+    "pieces":     {"ipa": "ˈpiːsɪz",       "pos": "명사",   "ko": "조각"},
+    "dust":       {"ipa": "dʌst",          "pos": "명사",   "ko": "먼지"},
+    "reflect":    {"ipa": "rɪˈflekt",      "pos": "동사",   "ko": "반사하다"},
+    "colorful":   {"ipa": "ˈkʌlərfəl",     "pos": "형용사", "ko": "알록달록한"},
+    "scientists": {"ipa": "ˈsaɪəntɪsts",   "pos": "명사",   "ko": "과학자"},
+    "telescope":  {"ipa": "ˈteləskoʊp",    "pos": "명사",   "ko": "망원경"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Saturn is a planet.", "ko": "토성은 행성이에요."},
+      {"en": "Planets orbit stars.", "ko": "행성은 별 주위를 돌아요."},
+      {"en": "Planets in our solar system orbit the sun.", "ko": "우리 태양계의 행성들은 태양 주위를 돌아요."}
+    ]},
+    {"sents": [
+      {"en": "Saturn is the sixth closest planet to the sun.", "ko": "토성은 태양에서 여섯 번째로 가까운 행성이에요."},
+      {"en": "Saturn is 887 million miles (1.2 billion km) from the sun.", "ko": "태양에서 8억 8,700만 마일(12억 km) 떨어져 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Saturn fully orbits the sun every 29 years.", "ko": "토성은 29년마다 태양을 완전히 한 바퀴 돌아요."},
+      {"en": "One year on Saturn is 29 years on Earth.", "ko": "토성의 1년은 지구의 29년이에요."}
+    ]},
+    {"sents": [
+      {"en": "Saturn spins while in orbit.", "ko": "토성은 궤도를 도는 동안 스스로 회전해요."},
+      {"en": "One full spin takes about 11 hours.", "ko": "한 바퀴 회전하는 데 약 11시간이 걸려요."},
+      {"en": "One day on Saturn is 11 hours on Earth.", "ko": "토성의 하루는 지구의 11시간이에요."}
+    ]},
+    {"sents": [
+      {"en": "Saturn is a giant ball of gas.", "ko": "토성은 거대한 기체 덩어리예요."},
+      {"en": "You cannot stand on Saturn.", "ko": "토성 위에는 설 수 없어요."},
+      {"en": "Jupiter, Uranus, and Neptune are also made of gases.", "ko": "목성, 천왕성, 해왕성도 기체로 되어 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Rings surround Saturn.", "ko": "고리가 토성을 둘러싸고 있어요."},
+      {"en": "The rings are made of rocks and ice.", "ko": "고리는 돌과 얼음으로 되어 있어요."},
+      {"en": "Some pieces are the size of dust.", "ko": "어떤 조각은 먼지만큼 작아요."},
+      {"en": "Others are as big as cars.", "ko": "어떤 것은 자동차만큼 커요."}
+    ]},
+    {"sents": [
+      {"en": "The rings reflect the sun's light.", "ko": "고리는 태양 빛을 반사해요."},
+      {"en": "This makes Saturn very colorful.", "ko": "그래서 토성이 아주 알록달록해 보여요."}
+    ]},
+    {"sents": [
+      {"en": "Saturn has many moons.", "ko": "토성에는 달이 많아요."},
+      {"en": "Scientists have counted over 60.", "ko": "과학자들은 60개가 넘는 것을 세었어요."},
+      {"en": "Saturn's largest moon is Titan.", "ko": "토성의 가장 큰 달은 타이탄이에요."}
+    ]},
+    {"sents": [
+      {"en": "You can see Saturn from Earth on a clear night.", "ko": "맑은 밤에 지구에서 토성을 볼 수 있어요."},
+      {"en": "You will not need a telescope!", "ko": "망원경도 필요 없어요!"}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Wow, Saturn is so beautiful.", "ko": "와, 토성은 정말 아름다워요."},
+      {"en": "I would love to go there.", "ko": "저는 거기에 가 보고 싶어요."},
+      {"en": "But it's so far away from Earth.", "ko": "그런데 지구에서 너무 멀어요."},
+      {"en": "Will you help me find my way there?", "ko": "거기 가는 길을 찾는 걸 도와줄래요?"},
+      {"en": "Really? Good! Let's go!", "ko": "정말요? 좋아요! 가요!"}
+    ]}
+  ]
+}

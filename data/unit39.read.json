@@ -1,0 +1,72 @@
+{
+  "title": "Cars",
+  "eyebrow": "Unit 39 · Nonfiction · Vehicles",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "another":     {"ipa": "əˈnʌðər",       "pos": "형용사", "ko": "다른"},
+    "body":        {"ipa": "ˈbɑːdi",        "pos": "명사",   "ko": "차체, 몸통"},
+    "steering":    {"ipa": "ˈstɪrɪŋ",       "pos": "형용사", "ko": "(steering wheel) 핸들"},
+    "engine":      {"ipa": "ˈendʒɪn",       "pos": "명사",   "ko": "엔진"},
+    "powers":      {"ipa": "ˈpaʊərz",       "pos": "동사",   "ko": "움직이게 하다"},
+    "controls":    {"ipa": "kənˈtroʊlz",    "pos": "명사",   "ko": "조작 장치"},
+    "belts":       {"ipa": "belts",         "pos": "명사",   "ko": "벨트 (seat belt 안전벨트)"},
+    "headlights":  {"ipa": "ˈhedlaɪts",     "pos": "명사",   "ko": "전조등"},
+    "driver":      {"ipa": "ˈdraɪvər",      "pos": "명사",   "ko": "운전자"},
+    "fuel":        {"ipa": "ˈfjuːəl",       "pos": "명사",   "ko": "연료"},
+    "diesel":      {"ipa": "ˈdiːzəl",       "pos": "명사",   "ko": "경유, 디젤"},
+    "electric":    {"ipa": "ɪˈlektrɪk",     "pos": "형용사", "ko": "전기로 움직이는"},
+    "battery":     {"ipa": "ˈbætəri",       "pos": "명사",   "ko": "배터리"},
+    "charged":     {"ipa": "tʃɑːrdʒd",      "pos": "동사",   "ko": "충전된 (charge)"},
+    "hybrids":     {"ipa": "ˈhaɪbrɪdz",     "pos": "명사",   "ko": "하이브리드차 (두 가지를 함께 쓰는 차)"},
+    "sirens":      {"ipa": "ˈsaɪrənz",      "pos": "명사",   "ko": "사이렌"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Many people ride in cars every day.", "ko": "많은 사람이 매일 자동차를 타요."},
+      {"en": "Cars get people from one place to another.", "ko": "자동차는 사람을 한 곳에서 다른 곳으로 데려다줘요."}
+    ]},
+    {"sents": [
+      {"en": "Cars have a body and four wheels.", "ko": "자동차에는 차체와 바퀴 네 개가 있어요."},
+      {"en": "The steering wheel turns the wheels.", "ko": "핸들이 바퀴를 돌려요."},
+      {"en": "The engine powers the car.", "ko": "엔진이 자동차를 움직여요."}
+    ]},
+    {"sents": [
+      {"en": "The seats and controls are inside the car.", "ko": "좌석과 조작 장치는 차 안에 있어요."},
+      {"en": "The seat belts and air bags keep you safe.", "ko": "안전벨트와 에어백이 우리를 안전하게 지켜 줘요."},
+      {"en": "The headlights help the driver see at night.", "ko": "전조등은 운전자가 밤에 볼 수 있게 도와줘요."}
+    ]},
+    {"sents": [
+      {"en": "Most cars need fuel to run.", "ko": "대부분의 자동차는 달리려면 연료가 필요해요."},
+      {"en": "They run on gas or diesel.", "ko": "휘발유나 경유로 달려요."}
+    ]},
+    {"sents": [
+      {"en": "Some cars are electric.", "ko": "어떤 자동차는 전기차예요."},
+      {"en": "They run on a battery that is charged by electricity.", "ko": "전기로 충전한 배터리로 달려요."}
+    ]},
+    {"sents": [
+      {"en": "Some cars are called hybrids.", "ko": "어떤 자동차는 하이브리드라고 불러요."},
+      {"en": "They often run on gas or diesel and a battery.", "ko": "휘발유나 경유와 배터리를 함께 써요."}
+    ]},
+    {"sents": [
+      {"en": "Smart cars are often used in the city.", "ko": "스마트카는 도시에서 많이 써요."},
+      {"en": "They are small and easy to park.", "ko": "작아서 주차하기 쉬워요."}
+    ]},
+    {"sents": [
+      {"en": "Police cars have special lights and sirens.", "ko": "경찰차에는 특별한 등과 사이렌이 있어요."},
+      {"en": "These help others know the police car is coming.", "ko": "그래서 다른 사람들이 경찰차가 오는 걸 알 수 있어요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Oh, the story is over already.", "ko": "오, 이야기가 벌써 끝났네요."},
+      {"en": "Cars have many small parts.", "ko": "자동차에는 작은 부품이 많아요."},
+      {"en": "And there are many different kinds of cars.", "ko": "그리고 종류도 아주 다양해요."},
+      {"en": "What type of car would you like to drive?", "ko": "여러분은 어떤 자동차를 운전해 보고 싶나요?"},
+      {"en": "I'm curious to know. So, tell me later.", "ko": "궁금해요. 나중에 알려 주세요."},
+      {"en": "I'll see you next time. Good-bye!", "ko": "다음에 또 만나요. 안녕!"}
+    ]}
+  ]
+}

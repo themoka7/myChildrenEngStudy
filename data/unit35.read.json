@@ -1,0 +1,77 @@
+{
+  "title": "Jupiter",
+  "eyebrow": "Unit 35 · Nonfiction · Space",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "planet":    {"ipa": "ˈplænɪt",    "pos": "명사",   "ko": "행성"},
+    "orbit":     {"ipa": "ˈɔːrbɪt",    "pos": "동사",   "ko": "~의 주위를 돌다"},
+    "solar":     {"ipa": "ˈsoʊlər",    "pos": "형용사", "ko": "태양의 (solar system 태양계)"},
+    "closest":   {"ipa": "ˈkloʊsɪst",  "pos": "형용사", "ko": "가장 가까운"},
+    "slowly":    {"ipa": "ˈsloʊli",    "pos": "부사",   "ko": "천천히"},
+    "spins":     {"ipa": "spɪnz",      "pos": "동사",   "ko": "스스로 회전하다 (spin)"},
+    "largest":   {"ipa": "ˈlɑːrdʒɪst", "pos": "형용사", "ko": "가장 큰"},
+    "combined":  {"ipa": "kəmˈbaɪnd",  "pos": "형용사", "ko": "합친, 다 합한"},
+    "giant":     {"ipa": "ˈdʒaɪənt",   "pos": "형용사", "ko": "거대한"},
+    "stand":     {"ipa": "stænd",      "pos": "동사",   "ko": "서다"},
+    "storms":    {"ipa": "stɔːrmz",    "pos": "명사",   "ko": "폭풍"},
+    "lightning": {"ipa": "ˈlaɪtnɪŋ",   "pos": "명사",   "ko": "번개"},
+    "winds":     {"ipa": "wɪndz",      "pos": "명사",   "ko": "바람"},
+    "spot":      {"ipa": "spɑːt",      "pos": "명사",   "ko": "점, 반점"},
+    "lasted":    {"ipa": "ˈlæstɪd",    "pos": "동사",   "ko": "(시간이) 이어졌다 (last)"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Jupiter is a planet.", "ko": "목성은 행성이에요."},
+      {"en": "Planets orbit stars.", "ko": "행성은 별 주위를 돌아요."},
+      {"en": "Planets in our solar system orbit the sun.", "ko": "우리 태양계의 행성들은 태양 주위를 돌아요."}
+    ]},
+    {"sents": [
+      {"en": "Jupiter is the fifth closest planet to the sun.", "ko": "목성은 태양에서 다섯 번째로 가까운 행성이에요."},
+      {"en": "It is about 484 million miles (779 million km) away from the sun.", "ko": "태양에서 약 4억 8,400만 마일(7억 7,900만 km) 떨어져 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Jupiter orbits the sun very slowly.", "ko": "목성은 태양을 아주 천천히 돌아요."},
+      {"en": "One year on Jupiter is about 12 years on Earth.", "ko": "목성의 1년은 지구의 약 12년이에요."}
+    ]},
+    {"sents": [
+      {"en": "Jupiter spins while it orbits the sun.", "ko": "목성은 태양을 도는 동안 스스로 회전해요."},
+      {"en": "The spin makes day and night.", "ko": "그 회전이 낮과 밤을 만들어요."},
+      {"en": "Jupiter spins very fast.", "ko": "목성은 아주 빠르게 회전해요."},
+      {"en": "One day on Jupiter is about 10 hours on Earth.", "ko": "목성의 하루는 지구의 약 10시간이에요."}
+    ]},
+    {"sents": [
+      {"en": "Jupiter is the largest planet in our solar system.", "ko": "목성은 태양계에서 가장 큰 행성이에요."},
+      {"en": "It is 2.5 times bigger than all of the planets combined!", "ko": "다른 행성을 다 합친 것보다 2.5배나 커요!"}
+    ]},
+    {"sents": [
+      {"en": "Jupiter is a giant ball of gas.", "ko": "목성은 거대한 기체 덩어리예요."},
+      {"en": "You cannot stand on Jupiter.", "ko": "목성 위에는 설 수 없어요."}
+    ]},
+    {"sents": [
+      {"en": "Jupiter has many storms.", "ko": "목성에는 폭풍이 많아요."},
+      {"en": "There is lightning on Jupiter.", "ko": "목성에는 번개도 있어요."},
+      {"en": "There are very fast winds too.", "ko": "아주 빠른 바람도 불어요."}
+    ]},
+    {"sents": [
+      {"en": "There is a red spot on Jupiter.", "ko": "목성에는 붉은 점이 있어요."},
+      {"en": "This spot is one giant storm.", "ko": "이 점은 하나의 거대한 폭풍이에요."},
+      {"en": "It has lasted for hundreds of years!", "ko": "수백 년 동안 이어져 왔어요!"}
+    ]},
+    {"sents": [
+      {"en": "You can see Jupiter in the night sky.", "ko": "밤하늘에서 목성을 볼 수 있어요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Wow! This book taught us a lot about Jupiter.", "ko": "와! 이 책은 목성에 대해 많이 알려 줬어요."},
+      {"en": "Do you remember everything?", "ko": "다 기억나나요?"},
+      {"en": "Jupiter is the biggest planet.", "ko": "목성은 가장 큰 행성이에요."},
+      {"en": "What else?", "ko": "또 뭐가 있었죠?"},
+      {"en": "I think you remember a lot.", "ko": "많이 기억하고 있는 것 같아요."},
+      {"en": "Okay. I'll see you next time! Good-bye!", "ko": "좋아요. 다음에 또 만나요! 안녕!"}
+    ]}
+  ]
+}

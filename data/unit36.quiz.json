@@ -1,0 +1,70 @@
+{
+  "title": "Saturn",
+  "title_ko": "토성",
+
+  "paras": [
+    ["Saturn is a planet.", "Planets orbit stars.", "Planets in our solar system orbit the sun."],
+    ["Saturn is the sixth closest planet to the sun.", "Saturn is 887 million miles (1.2 billion km) from the sun."],
+    ["Saturn fully orbits the sun every 29 years.", "One year on Saturn is 29 years on Earth."],
+    ["Saturn spins while in orbit.", "One full spin takes about 11 hours.", "One day on Saturn is 11 hours on Earth."],
+    ["Saturn is a giant ball of gas.", "You cannot stand on Saturn.", "Jupiter, Uranus, and Neptune are also made of gases."],
+    ["Rings surround Saturn.", "The rings are made of rocks and ice.", "Some pieces are the size of dust.", "Others are as big as cars."],
+    ["The rings reflect the sun's light.", "This makes Saturn very colorful."],
+    ["Saturn has many moons.", "Scientists have counted over 60.", "Saturn's largest moon is Titan."],
+    ["You can see Saturn from Earth on a clear night.", "You will not need a telescope!"]
+  ],
+
+  "match": [
+    {"en": "surround",   "ko": "둘러싸다"},
+    {"en": "pieces",     "ko": "조각"},
+    {"en": "reflect",    "ko": "반사하다"},
+    {"en": "scientists", "ko": "과학자"}
+  ],
+  "match_ko_order": ["조각", "과학자", "둘러싸다", "반사하다"],
+
+  "phonics": [
+    {"q": "s_n",      "a": "u", "ko": "태양"},
+    {"q": "sp_n",     "a": "i", "ko": "회전하다"},
+    {"q": "pl_net",   "a": "a", "ko": "행성"},
+    {"q": "r_cks",    "a": "o", "ko": "돌, 암석"},
+    {"q": "r_flect",  "a": "e", "ko": "반사하다"},
+    {"q": "d_st",     "a": "u", "ko": "먼지"}
+  ],
+
+  "scan": [
+    {"q": "토성은 태양에서 몇 번째로 가까운 행성인가요?", "a": "the sixth",      "sent": "4"},
+    {"q": "토성의 1년은 지구의 몇 년인가요?",             "a": "29 years",       "sent": "7"},
+    {"q": "토성의 고리는 무엇으로 되어 있나요? (두 가지)", "a": "rocks / ice",    "sent": "15"},
+    {"q": "토성의 가장 큰 달의 이름은 무엇인가요?",        "a": "Titan",          "sent": "22"}
+  ],
+
+  "tf": [
+    {"en": "Rings surround Saturn.", "answer": "O",
+     "why": "고리가 토성을 둘러싸고 있어요.", "sent": "14"},
+    {"en": "You cannot stand on Saturn.", "answer": "O",
+     "why": "거대한 기체 덩어리라서 설 수 없어요.", "sent": "12"},
+    {"en": "Saturn has only one moon.", "gloss": "only 오직", "answer": "X",
+     "why": "달이 많아요. 과학자들이 60개가 넘게 세었어요.", "sent": "20·21"},
+    {"en": "You will need a telescope to see Saturn.", "gloss": "need 필요하다", "answer": "X",
+     "why": "맑은 밤이면 망원경 없이도 볼 수 있어요.", "sent": "24"}
+  ],
+
+  "fill_bank": ["dust", "cars", "colorful", "ice"],
+  "fill": [
+    {"en": "Some pieces are the size of ___.", "a": "dust",     "ko": "어떤 조각은 먼지만큼 작아요."},
+    {"en": "Others are as big as ___.",        "a": "cars",     "ko": "어떤 것은 자동차만큼 커요."},
+    {"en": "This makes Saturn very ___.",      "a": "colorful", "ko": "그래서 토성이 아주 알록달록해 보여요."}
+  ],
+
+  "trace": [
+    {"en": "Saturn is a planet.", "ko": "토성은 행성이에요."},
+    {"en": "You can see Saturn from Earth on a clear night.", "ko": "맑은 밤에 지구에서 토성을 볼 수 있어요."}
+  ],
+
+  "notes": {
+    "phonics": "여섯 문항이 <b>a·e·i·o·u 다섯 소리를 모두</b> 담고 있습니다. <b>r_cks와 r_flect가 나란히</b> 나오니 첫소리를 고정해 두고 가운데 소리만 듣게 해 주세요.",
+    "scan": "3번은 답이 <b>두 개</b>(돌·얼음)입니다. 하나만 찾아도 잘한 거예요. 4번의 Titan은 <b>이름이라 대문자</b>로 시작하니 그대로 옮겨 적게 해 주세요.",
+    "tf": "3번과 4번은 둘 다 지문을 <b>뒤집은</b> 문장입니다. 특히 4번의 <b>will not need</b>는 '필요 없다'는 뜻이에요 — not을 놓치면 반대로 읽게 되니 그 낱말을 손가락으로 짚어 주세요.",
+    "trace": "대문자와 마침표만 봐 주세요. 다 쓰고 나면 ⑤번에 나온 <b>고리 조각 크기 비교</b>(먼지만큼 작은 것부터 자동차만큼 큰 것까지)를 한 번 얘기해 주세요 — 아이가 좋아할 대목입니다."
+  }
+}

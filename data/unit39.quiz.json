@@ -1,0 +1,69 @@
+{
+  "title": "Cars",
+  "title_ko": "자동차",
+
+  "paras": [
+    ["Many people ride in cars every day.", "Cars get people from one place to another."],
+    ["Cars have a body and four wheels.", "The steering wheel turns the wheels.", "The engine powers the car."],
+    ["The seats and controls are inside the car.", "The seat belts and air bags keep you safe.", "The headlights help the driver see at night."],
+    ["Most cars need fuel to run.", "They run on gas or diesel."],
+    ["Some cars are electric.", "They run on a battery that is charged by electricity."],
+    ["Some cars are called hybrids.", "They often run on gas or diesel and a battery."],
+    ["Smart cars are often used in the city.", "They are small and easy to park."],
+    ["Police cars have special lights and sirens.", "These help others know the police car is coming."]
+  ],
+
+  "match": [
+    {"en": "engine",     "ko": "엔진"},
+    {"en": "controls",   "ko": "조작 장치"},
+    {"en": "fuel",       "ko": "연료"},
+    {"en": "headlights", "ko": "전조등"}
+  ],
+  "match_ko_order": ["연료", "전조등", "엔진", "조작 장치"],
+
+  "phonics": [
+    {"q": "g_s",    "a": "a", "ko": "휘발유, 기체"},
+    {"q": "b_lts",  "a": "e", "ko": "벨트"},
+    {"q": "c_ty",   "a": "i", "ko": "도시"},
+    {"q": "b_dy",   "a": "o", "ko": "차체, 몸통"},
+    {"q": "r_n",    "a": "u", "ko": "달리다"},
+    {"q": "g_t",    "a": "e", "ko": "데려다주다"}
+  ],
+
+  "scan": [
+    {"q": "자동차에는 바퀴가 몇 개 있나요?",           "a": "four",                "sent": "3"},
+    {"q": "무엇이 바퀴를 돌리나요?",                   "a": "the steering wheel",  "sent": "4"},
+    {"q": "전조등은 운전자가 무엇을 하도록 돕나요?",    "a": "see at night",        "sent": "8"},
+    {"q": "전기차는 무엇으로 달리나요?",               "a": "a battery",           "sent": "12"}
+  ],
+
+  "tf": [
+    {"en": "The engine powers the car.", "answer": "O",
+     "why": "엔진이 자동차를 움직여요.", "sent": "5"},
+    {"en": "Seat belts and air bags keep you safe.", "answer": "O",
+     "why": "안전벨트와 에어백이 우리를 안전하게 지켜 줘요.", "sent": "7"},
+    {"en": "All cars run on gas.", "gloss": "all 모든", "answer": "X",
+     "why": "전기로 달리는 자동차도 있어요.", "sent": "11"},
+    {"en": "Smart cars are big and hard to park.", "gloss": "hard 어려운", "answer": "X",
+     "why": "반대예요. 작아서 주차하기 쉬워요.", "sent": "16"}
+  ],
+
+  "fill_bank": ["diesel", "hybrids", "sirens", "battery"],
+  "fill": [
+    {"en": "They run on gas or ___.",                       "a": "diesel",  "ko": "휘발유나 경유로 달려요."},
+    {"en": "Some cars are called ___.",                     "a": "hybrids", "ko": "어떤 자동차는 하이브리드라고 불러요."},
+    {"en": "Police cars have special lights and ___.",       "a": "sirens",  "ko": "경찰차에는 특별한 등과 사이렌이 있어요."}
+  ],
+
+  "trace": [
+    {"en": "Many people ride in cars every day.", "ko": "많은 사람이 매일 자동차를 타요."},
+    {"en": "Some cars are electric.", "ko": "어떤 자동차는 전기차예요."}
+  ],
+
+  "notes": {
+    "phonics": "여섯 문항이 <b>a·e·i·o·u 다섯 소리를 모두</b> 담고 있습니다. <b>g_s와 g_t이 나란히</b> 나오니 첫소리를 고정해 두고 가운데 소리만 듣게 해 주세요.",
+    "scan": "이 유닛은 <b>Unit 24(Automobile)와 짝</b>입니다. 24번은 자동차의 <b>역사</b>(모델 T·크랭크·안전벨트), 이번 39번은 자동차의 <b>부품과 종류</b>예요. 두 문제지를 나란히 놓고 풀리면 서로 보완됩니다.",
+    "tf": "3번은 <b>some(어떤)을 all(모든)로 바꿔 놓은 함정</b>입니다 — 전기차 문장을 읽었는지 확인하는 문항이에요. 4번은 지문과 반대입니다.",
+    "trace": "짧은 두 문장을 골랐습니다. 대문자와 마침표만 봐 주세요."
+  }
+}
