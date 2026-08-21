@@ -1,0 +1,69 @@
+{
+  "title": "Telephone",
+  "eyebrow": "Unit 23 · Nonfiction · Inventions",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "invented":    {"ipa": "ɪnˈventɪd",     "pos": "동사",   "ko": "발명했다 (invent)"},
+    "numbers":     {"ipa": "ˈnʌmbərz",      "pos": "명사",   "ko": "숫자 (number의 복수)"},
+    "operator":    {"ipa": "ˈɑːpəreɪtər",   "pos": "명사",   "ko": "(전화) 교환원"},
+    "whom":        {"ipa": "huːm",          "pos": "대명사", "ko": "누구에게 (who의 목적격)"},
+    "dial":        {"ipa": "ˈdaɪəl",        "pos": "명사",   "ko": "다이얼, 회전판; 번호를 누르다"},
+    "buttons":     {"ipa": "ˈbʌtənz",       "pos": "명사",   "ko": "버튼 (button의 복수)"},
+    "sounds":      {"ipa": "saʊndz",        "pos": "명사",   "ko": "소리 (sound의 복수)"},
+    "wires":       {"ipa": "ˈwaɪərz",       "pos": "명사",   "ko": "전선 (wire의 복수)"},
+    "landline":    {"ipa": "ˈlændlaɪn",     "pos": "명사",   "ko": "유선 전화"},
+    "mobile":      {"ipa": "ˈmoʊbəl",       "pos": "형용사", "ko": "이동하는 (mobile phone 휴대 전화)"},
+    "through":     {"ipa": "θruː",          "pos": "전치사", "ko": "~을 통해"},
+    "smartphones": {"ipa": "ˈsmɑːrtfoʊnz",  "pos": "명사",   "ko": "스마트폰"},
+    "cameras":     {"ipa": "ˈkæmərəz",      "pos": "명사",   "ko": "카메라"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "The telephone was invented in 1876.", "ko": "전화기는 1876년에 발명되었어요."},
+      {"en": "The first ones didn't have numbers.", "ko": "처음 전화기에는 숫자가 없었어요."}
+    ]},
+    {"sents": [
+      {"en": "You had to talk to an operator.", "ko": "교환원과 이야기해야 했어요."},
+      {"en": "You told the operator whom to call.", "ko": "누구에게 전화할지 교환원에게 말했어요."}
+    ]},
+    {"sents": [
+      {"en": "Dial phones came out in the 1890s.", "ko": "다이얼 전화기는 1890년대에 나왔어요."},
+      {"en": "People didn't need operators.", "ko": "사람들은 더 이상 교환원이 필요하지 않았어요."},
+      {"en": "AT&T invented phones with buttons in 1963.", "ko": "AT&T가 1963년에 버튼 전화기를 발명했어요."}
+    ]},
+    {"sents": [
+      {"en": "Many phones send sounds over wires.", "ko": "많은 전화기는 전선으로 소리를 보내요."},
+      {"en": "They are landline phones.", "ko": "그것을 유선 전화라고 해요."}
+    ]},
+    {"sents": [
+      {"en": "Mobile phones don't use wires.", "ko": "휴대 전화는 전선을 쓰지 않아요."},
+      {"en": "They send sounds through the air.", "ko": "공기를 통해 소리를 보내요."}
+    ]},
+    {"sents": [
+      {"en": "Telephones let people talk to each other.", "ko": "전화기는 사람들이 서로 이야기하게 해 줘요."},
+      {"en": "Carrie calls her grandma.", "ko": "캐리가 할머니에게 전화해요."}
+    ]},
+    {"sents": [
+      {"en": "Telephones let people call for help.", "ko": "전화기로 도움을 부를 수도 있어요."},
+      {"en": "Max dials 9-1-1.", "ko": "맥스가 9-1-1을 눌러요."}
+    ]},
+    {"sents": [
+      {"en": "Smartphones are small computers.", "ko": "스마트폰은 작은 컴퓨터예요."},
+      {"en": "They have cameras, games, and more!", "ko": "카메라와 게임, 그 밖에도 많은 게 들어 있어요!"}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Oh, how interesting!", "ko": "오, 정말 흥미롭네요!"},
+      {"en": "Phones, they used to be so big.", "ko": "전화기는 예전엔 정말 컸어요."},
+      {"en": "But now they're so small, they can fit in your hand.", "ko": "그런데 지금은 아주 작아서 손에 들어와요."},
+      {"en": "What do you think? What will happen to phones in the future?", "ko": "어떻게 생각하나요? 전화기는 앞으로 어떻게 될까요?"},
+      {"en": "Will it be smaller? Or bigger?", "ko": "더 작아질까요, 아니면 더 커질까요?"},
+      {"en": "Think about it for today.", "ko": "오늘 한번 생각해 보세요."},
+      {"en": "Don't forget to use a phone. Good-bye.", "ko": "전화기 쓰는 걸 잊지 마세요. 안녕!"}
+    ]}
+  ]
+}

@@ -48,14 +48,14 @@
         {"n": 19, "en": "Ears", "ko": "귀", "status": "todo", "min": 14, "ready": true},
         {"n": 20, "en": "Mouth", "ko": "입", "status": "todo", "min": 14, "ready": true},
         {"n": 21, "en": "Arms & Hands", "ko": "팔과 손", "status": "todo", "min": 14, "ready": true},
-        {"n": 22, "en": "Legs & Feet", "ko": "다리와 발", "status": "todo", "min": 14}
+        {"n": 22, "en": "Legs & Feet", "ko": "다리와 발", "status": "todo", "min": 14, "ready": true}
       ]
     },
     {
       "theme": "발명품",
       "units": [
-        {"n": 23, "en": "Telephone", "ko": "전화기", "status": "todo", "min": 13},
-        {"n": 24, "en": "Automobile", "ko": "자동차", "status": "todo", "min": 14}
+        {"n": 23, "en": "Telephone", "ko": "전화기", "status": "todo", "min": 13, "ready": true},
+        {"n": 24, "en": "Automobile", "ko": "자동차", "status": "todo", "min": 14, "ready": true}
       ]
     },
     {

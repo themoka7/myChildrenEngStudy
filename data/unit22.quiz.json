@@ -1,0 +1,73 @@
+{
+  "title": "Legs & Feet",
+  "title_ko": "다리와 발",
+
+  "paras": [
+    ["Legs are part of your body.", "You have two legs."],
+    ["You use your legs to walk and run.", "Ana can run fast!"],
+    ["You jump with your legs.", "Sara jumps high!"],
+    ["Legs bend at the knees.", "Owen bends his knee."],
+    ["Feet are part of your body.", "You have two feet."],
+    ["Your feet help you balance.", "Sam stands on one foot!"],
+    ["Each foot has five toes.", "You have ten toes!"],
+    ["Ankles connect your feet to your legs.", "Your legs and feet work together."],
+    ["Some animals have legs and feet.", "A giraffe has long legs!", "A kangaroo has big feet!"]
+  ],
+
+  "match": [
+    {"en": "knees",    "ko": "무릎"},
+    {"en": "balance",  "ko": "균형을 잡다"},
+    {"en": "toes",     "ko": "발가락"},
+    {"en": "ankles",   "ko": "발목"},
+    {"en": "kangaroo", "ko": "캥거루"}
+  ],
+  "match_ko_order": ["발목", "캥거루", "무릎", "발가락", "균형을 잡다"],
+
+  "phonics": [
+    {"q": "r_n",    "a": "u", "ko": "달리다"},
+    {"q": "f_st",   "a": "a", "ko": "빨리"},
+    {"q": "b_nd",   "a": "e", "ko": "구부러지다"},
+    {"q": "b_g",    "a": "i", "ko": "큰"},
+    {"q": "b_dy",   "a": "o", "ko": "몸"},
+    {"q": "j_mp",   "a": "u", "ko": "점프하다"}
+  ],
+
+  "scan": [
+    {"q": "애나는 무엇을 잘하나요?",              "a": "run fast",      "sent": "4"},
+    {"q": "사라는 어떻게 점프하나요?",             "a": "high",          "sent": "6"},
+    {"q": "샘은 어떻게 서 있나요?",                "a": "on one foot",   "sent": "12"},
+    {"q": "발목은 무엇과 무엇을 이어 주나요?",      "a": "feet and legs", "sent": "15"}
+  ],
+
+  "tf": [
+    {"en": "You have two legs.", "answer": "O",
+     "why": "다리는 두 개예요.", "sent": "2"},
+    {"en": "Legs bend at the knees.", "answer": "O",
+     "why": "다리는 무릎에서 구부러져요.", "sent": "7"},
+    {"en": "Each foot has five toes.", "answer": "O",
+     "why": "한 발에 발가락이 다섯 개예요.", "sent": "13"},
+    {"en": "You balance with your hands.", "gloss": "hands 손", "answer": "X",
+     "why": "균형은 발이 잡도록 도와줘요. 손이 아니에요.", "sent": "11"},
+    {"en": "A giraffe has short legs.", "gloss": "short 짧은", "answer": "X",
+     "why": "기린은 다리가 길어요.", "sent": "18"}
+  ],
+
+  "fill_bank": ["run", "knee", "feet", "toes"],
+  "fill": [
+    {"en": "You use your legs to walk and ___.", "a": "run",  "ko": "다리로 걷고 달려요."},
+    {"en": "Owen bends his ___.",                "a": "knee", "ko": "오웬이 무릎을 구부려요."},
+    {"en": "A kangaroo has big ___.",            "a": "feet", "ko": "캥거루는 발이 커요."}
+  ],
+
+  "trace": [
+    {"en": "Your legs and feet work together.", "ko": "다리와 발은 함께 일해요."},
+    {"en": "You have two feet.", "ko": "발은 두 개예요."}
+  ],
+
+  "notes": {
+    "phonics": "여섯 문항이 <b>a·e·i·o·u 다섯 소리를 모두</b> 담고 있습니다. <b>r_n은 ran·run</b>, <b>b_g는 big·bag·bug</b>이 다 단어라 헷갈립니다 — 옆의 한글 뜻을 꼭 보게 하세요.",
+    "scan": "이 지문은 <b>아이 이름마다 하는 동작이 다릅니다</b> — 애나(빨리 달리기)·사라(높이 점프)·오웬(무릎 구부리기)·샘(한 발로 서기). 이름을 먼저 찾으면 답이 바로 옆에 있어요.",
+    "tf": "4번은 <b>발이 하는 일을 손으로 바꿔</b> 놓았습니다 — 앞 유닛(팔과 손)과 헷갈리기 쉬운 문항이라 일부러 넣었어요. 5번은 long을 short으로 뒤집었습니다.",
+    "trace": "대문자로 시작했는지, 마침표를 찍었는지만 봐 주세요."
+  }
+}

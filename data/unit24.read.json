@@ -1,0 +1,78 @@
+{
+  "title": "Automobile",
+  "eyebrow": "Unit 24 · Nonfiction · Inventions",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "automobiles":  {"ipa": "ˈɔːtəmoʊbiːlz", "pos": "명사",   "ko": "자동차 (automobile의 복수)"},
+    "kinds":        {"ipa": "kaɪndz",         "pos": "명사",   "ko": "종류 (kind의 복수)"},
+    "replaced":     {"ipa": "rɪˈpleɪst",      "pos": "동사",   "ko": "대신했다 (replace)"},
+    "buggy":        {"ipa": "ˈbʌɡi",          "pos": "명사",   "ko": "(말이 끄는) 작은 마차"},
+    "horseless":    {"ipa": "ˈhɔːrsləs",      "pos": "형용사", "ko": "말이 없는"},
+    "carriages":    {"ipa": "ˈkærɪdʒɪz",      "pos": "명사",   "ko": "마차 (carriage의 복수)"},
+    "popular":      {"ipa": "ˈpɑːpjələr",     "pos": "형용사", "ko": "인기 있는"},
+    "afford":       {"ipa": "əˈfɔːrd",        "pos": "동사",   "ko": "살 여유가 있다"},
+    "cranks":       {"ipa": "kræŋks",         "pos": "명사",   "ko": "크랭크 (돌리는 손잡이)"},
+    "fuel":         {"ipa": "ˈfjuːəl",        "pos": "명사",   "ko": "연료"},
+    "burned":       {"ipa": "bɜːrnd",         "pos": "동사",   "ko": "태워지다 (burn)"},
+    "engine":       {"ipa": "ˈendʒɪn",        "pos": "명사",   "ko": "엔진"},
+    "electricity":  {"ipa": "ɪˌlekˈtrɪsəti",  "pos": "명사",   "ko": "전기"},
+    "recharge":     {"ipa": "ˌriːˈtʃɑːrdʒ",   "pos": "동사",   "ko": "다시 충전하다"},
+    "factories":    {"ipa": "ˈfæktəriz",      "pos": "명사",   "ko": "공장 (factory의 복수)"},
+    "assembly":     {"ipa": "əˈsembli",       "pos": "명사",   "ko": "조립 (assembly line 조립 라인)"},
+    "standard":     {"ipa": "ˈstændərd",      "pos": "명사",   "ko": "표준, 기본"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "There are many kinds of automobiles.", "ko": "자동차에는 여러 종류가 있어요."},
+      {"en": "An automobile is a car.", "ko": "automobile은 자동차를 뜻해요."}
+    ]},
+    {"sents": [
+      {"en": "Cars replaced the horse and buggy.", "ko": "자동차가 말과 마차를 대신했어요."},
+      {"en": "People called early cars horseless carriages.", "ko": "사람들은 초기 자동차를 '말 없는 마차'라고 불렀어요."}
+    ]},
+    {"sents": [
+      {"en": "The Model T was built in 1908.", "ko": "모델 T는 1908년에 만들어졌어요."},
+      {"en": "It was the first popular car.", "ko": "처음으로 인기를 얻은 자동차였어요."},
+      {"en": "Most people could afford to buy it.", "ko": "대부분의 사람이 살 수 있는 값이었어요."}
+    ]},
+    {"sents": [
+      {"en": "The first cars had cranks.", "ko": "초기 자동차에는 크랭크가 있었어요."},
+      {"en": "Turning the crank started the car.", "ko": "크랭크를 돌리면 자동차에 시동이 걸렸어요."},
+      {"en": "Now people turn a key.", "ko": "지금은 열쇠를 돌려요."}
+    ]},
+    {"sents": [
+      {"en": "Gas is the most common fuel for cars.", "ko": "기름은 자동차에 가장 많이 쓰는 연료예요."},
+      {"en": "Gas is burned in the car's engine.", "ko": "기름은 자동차 엔진에서 태워져요."}
+    ]},
+    {"sents": [
+      {"en": "Some cars run on electricity.", "ko": "어떤 자동차는 전기로 달려요."},
+      {"en": "They get plugged in to recharge.", "ko": "플러그를 꽂아 충전해요."}
+    ]},
+    {"sents": [
+      {"en": "Cars are made in factories.", "ko": "자동차는 공장에서 만들어져요."},
+      {"en": "The factories have assembly lines.", "ko": "공장에는 조립 라인이 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Cars didn't always have seat belts.", "ko": "자동차에 처음부터 안전벨트가 있던 건 아니에요."},
+      {"en": "They became standard in the 1960s.", "ko": "1960년대에 기본으로 자리 잡았어요."},
+      {"en": "Jenny always uses her seat belt.", "ko": "제니는 항상 안전벨트를 매요."}
+    ]},
+    {"sents": [
+      {"en": "A car might stop working.", "ko": "자동차가 고장 날 수도 있어요."},
+      {"en": "Jose helps his dad fix their car.", "ko": "호세는 아빠가 차를 고치는 걸 도와요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Wow! Vroom, vroom.", "ko": "와! 부릉, 부릉."},
+      {"en": "If I had a car, I would drive to the beach or the mountain.", "ko": "저에게 자동차가 있다면 바다나 산으로 갈 거예요."},
+      {"en": "If you had a car, where would you want to go?", "ko": "여러분에게 자동차가 있다면 어디에 가고 싶나요?"},
+      {"en": "I'd like to know.", "ko": "알고 싶어요."},
+      {"en": "We should go on a trip together.", "ko": "함께 여행 가면 좋겠어요."},
+      {"en": "See you next time.", "ko": "다음에 또 만나요."}
+    ]}
+  ]
+}

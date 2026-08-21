@@ -1,0 +1,72 @@
+{
+  "title": "Telephone",
+  "title_ko": "전화기",
+
+  "paras": [
+    ["The telephone was invented in 1876.", "The first ones didn't have numbers."],
+    ["You had to talk to an operator.", "You told the operator whom to call."],
+    ["Dial phones came out in the 1890s.", "People didn't need operators.", "AT&T invented phones with buttons in 1963."],
+    ["Many phones send sounds over wires.", "They are landline phones."],
+    ["Mobile phones don't use wires.", "They send sounds through the air."],
+    ["Telephones let people talk to each other.", "Carrie calls her grandma."],
+    ["Telephones let people call for help.", "Max dials 9-1-1."],
+    ["Smartphones are small computers.", "They have cameras, games, and more!"]
+  ],
+
+  "match": [
+    {"en": "invented",    "ko": "발명했다"},
+    {"en": "operator",    "ko": "전화 교환원"},
+    {"en": "wires",       "ko": "전선"},
+    {"en": "landline",    "ko": "유선 전화"},
+    {"en": "smartphones", "ko": "스마트폰"}
+  ],
+  "match_ko_order": ["전선", "스마트폰", "발명했다", "유선 전화", "전화 교환원"],
+
+  "phonics": [
+    {"q": "s_nd",      "a": "e", "ko": "보내다"},
+    {"q": "b_ttons",   "a": "u", "ko": "버튼"},
+    {"q": "M_x",       "a": "a", "ko": "맥스 (사람 이름)"},
+    {"q": "h_lp",      "a": "e", "ko": "도움"},
+    {"q": "w_th",      "a": "i", "ko": "~와 함께"},
+    {"q": "l_ndline",  "a": "a", "ko": "유선 전화"}
+  ],
+
+  "scan": [
+    {"q": "전화기는 몇 년에 발명되었나요?",          "a": "1876",        "sent": "1"},
+    {"q": "처음에는 누구와 이야기해야 했나요?",       "a": "an operator", "sent": "3"},
+    {"q": "버튼이 있는 전화기는 몇 년에 나왔나요?",   "a": "1963",        "sent": "7"},
+    {"q": "맥스는 몇 번을 누르나요?",                "a": "9-1-1",       "sent": "15"}
+  ],
+
+  "tf": [
+    {"en": "The first phones didn't have numbers.", "answer": "O",
+     "why": "처음 전화기에는 숫자가 없었어요.", "sent": "2"},
+    {"en": "Mobile phones don't use wires.", "answer": "O",
+     "why": "휴대 전화는 전선을 쓰지 않아요.", "sent": "10"},
+    {"en": "Carrie calls her grandma.", "answer": "O",
+     "why": "캐리가 할머니에게 전화해요.", "sent": "13"},
+    {"en": "Landline phones send sounds through the air.", "answer": "X",
+     "why": "유선 전화는 전선으로 보내요. 공기로 보내는 건 휴대 전화예요.", "sent": "8·9"},
+    {"en": "Smartphones are big computers.", "gloss": "big 큰", "answer": "X",
+     "why": "스마트폰은 작은 컴퓨터라고 했어요.", "sent": "16"}
+  ],
+
+  "fill_bank": ["1890s", "air", "call", "wires"],
+  "fill": [
+    {"en": "Dial phones came out in the ___.",       "a": "1890s", "ko": "다이얼 전화기는 1890년대에 나왔어요."},
+    {"en": "You told the operator whom to ___.",     "a": "call",  "ko": "누구에게 전화할지 교환원에게 말했어요."},
+    {"en": "They send sounds through the ___.",      "a": "air",   "ko": "공기를 통해 소리를 보내요."}
+  ],
+
+  "trace": [
+    {"en": "Telephones let people talk to each other.", "ko": "전화기는 사람들이 서로 이야기하게 해 줘요."},
+    {"en": "People didn't need operators.", "ko": "사람들은 더 이상 교환원이 필요하지 않았어요."}
+  ],
+
+  "notes": {
+    "phonics": "이 지문에는 짧은 o 소리 단어가 없어서 <b>e와 a를 두 번씩</b> 냈습니다. <b>s_nd는 send·sand·sound</b>가 다 떠오를 수 있으니 옆의 한글 뜻(보내다)을 보게 하세요.",
+    "scan": "이 유닛은 <b>답이 대부분 연도(숫자)</b>입니다. 영어를 몰라도 숫자는 눈에 띄니, <b>영어가 어려운 지문에서도 찾아 쓰기는 할 수 있다</b>는 경험을 주는 문항이에요. 1876·1890s·1963이 다 나오니 어느 문장에 있는지만 잘 짚게 해 주세요.",
+    "tf": "4번이 이 유닛의 핵심입니다 — <b>유선 전화(전선)와 휴대 전화(공기)를 서로 바꿔</b> 놓았어요. 아이가 헷갈리면 두 문장을 나란히 읽게 해 주세요. 이 지문은 <b>과거형과 수동태가 많지만 문법은 묻지 않았습니다</b> — 지금은 낱말과 찾기만 하면 충분합니다.",
+    "trace": "대문자로 시작했는지, 마침표를 찍었는지만 봐 주세요. <b>didn't</b> 의 작은 부호(')도 빠뜨리지 않게 봐 주세요."
+  }
+}

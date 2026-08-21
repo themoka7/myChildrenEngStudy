@@ -1,0 +1,64 @@
+{
+  "title": "Legs & Feet",
+  "eyebrow": "Unit 22 · Nonfiction · Our Body",
+
+  "dict": {
+    "part":      {"ipa": "pɑːrt",       "pos": "명사",   "ko": "부분"},
+    "body":      {"ipa": "ˈbɑːdi",      "pos": "명사",   "ko": "몸"},
+    "walk":      {"ipa": "wɔːk",        "pos": "동사",   "ko": "걷다"},
+    "fast":      {"ipa": "fæst",        "pos": "부사",   "ko": "빨리"},
+    "jump":      {"ipa": "dʒʌmp",       "pos": "동사",   "ko": "점프하다, 뛰어오르다"},
+    "high":      {"ipa": "haɪ",         "pos": "부사",   "ko": "높이"},
+    "bend":      {"ipa": "bend",        "pos": "동사",   "ko": "구부러지다"},
+    "knees":     {"ipa": "niːz",        "pos": "명사",   "ko": "무릎 (knee의 복수)"},
+    "balance":   {"ipa": "ˈbæləns",     "pos": "동사",   "ko": "균형을 잡다"},
+    "toes":      {"ipa": "toʊz",        "pos": "명사",   "ko": "발가락 (toe의 복수)"},
+    "ankles":    {"ipa": "ˈæŋkəlz",     "pos": "명사",   "ko": "발목 (ankle의 복수)"},
+    "connect":   {"ipa": "kəˈnekt",     "pos": "동사",   "ko": "이어 주다, 연결하다"},
+    "together":  {"ipa": "təˈɡeðər",    "pos": "부사",   "ko": "함께"},
+    "giraffe":   {"ipa": "dʒəˈræf",     "pos": "명사",   "ko": "기린"},
+    "kangaroo":  {"ipa": "ˌkæŋɡəˈruː",  "pos": "명사",   "ko": "캥거루"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Legs are part of your body.", "ko": "다리는 우리 몸의 한 부분이에요."},
+      {"en": "You have two legs.", "ko": "다리는 두 개예요."}
+    ]},
+    {"sents": [
+      {"en": "You use your legs to walk and run.", "ko": "다리로 걷고 달려요."},
+      {"en": "Ana can run fast!", "ko": "애나는 빨리 달릴 수 있어요!"}
+    ]},
+    {"sents": [
+      {"en": "You jump with your legs.", "ko": "다리로 점프해요."},
+      {"en": "Sara jumps high!", "ko": "사라는 높이 점프해요!"}
+    ]},
+    {"sents": [
+      {"en": "Legs bend at the knees.", "ko": "다리는 무릎에서 구부러져요."},
+      {"en": "Owen bends his knee.", "ko": "오웬이 무릎을 구부려요."}
+    ]},
+    {"sents": [
+      {"en": "Feet are part of your body.", "ko": "발도 우리 몸의 한 부분이에요."},
+      {"en": "You have two feet.", "ko": "발은 두 개예요."}
+    ]},
+    {"sents": [
+      {"en": "Your feet help you balance.", "ko": "발은 균형을 잡도록 도와줘요."},
+      {"en": "Sam stands on one foot!", "ko": "샘이 한 발로 서 있어요!"}
+    ]},
+    {"sents": [
+      {"en": "Each foot has five toes.", "ko": "한 발에는 발가락이 다섯 개 있어요."},
+      {"en": "You have ten toes!", "ko": "발가락은 모두 열 개예요!"}
+    ]},
+    {"sents": [
+      {"en": "Ankles connect your feet to your legs.", "ko": "발목은 발과 다리를 이어 줘요."},
+      {"en": "Your legs and feet work together.", "ko": "다리와 발은 함께 일해요."}
+    ]},
+    {"sents": [
+      {"en": "Some animals have legs and feet.", "ko": "어떤 동물도 다리와 발이 있어요."},
+      {"en": "A giraffe has long legs!", "ko": "기린은 다리가 길어요!"},
+      {"en": "A kangaroo has big feet!", "ko": "캥거루는 발이 커요!"}
+    ]}
+  ],
+
+  "closing": []
+}
