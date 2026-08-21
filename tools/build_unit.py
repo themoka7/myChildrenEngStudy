@@ -56,6 +56,59 @@ def inject(path, head_css, after_marker, nav_html):
     open(path, "w", encoding="utf-8").write(html)
 
 
+# 읽기 페이지를 메인 지도와 같은 팔레트로 맞춘다. 스킬 템플릿은 그대로 두고
+# :root 변수만 덮어쓴다 — 이 <style> 이 템플릿 스타일 뒤에 들어가서 이긴다.
+# 지문 글꼴(세리프)은 건드리지 않는다. 읽기가 이 페이지의 목적이고, 제목과
+# 버튼만 지도와 같은 글꼴로 맞춰도 같은 자료로 보인다.
+READ_CSS = """
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+:root{
+  --paper:#E8F0F7; --ink:#2A3F55; --muted:#6B8299; --line:#B9CDDD;
+  --carrot:#E0384F; --carrot-soft:#FDE8EC;
+  --leaf:#2F8F6B;   --leaf-soft:#DEF0E8;
+  --sky:#3F7FA8;    --card:#FFFFFF;
+  --grid:#D8E5F0;
+  --f-round:'Jua','Malgun Gothic','Apple SD Gothic Neo',sans-serif;
+}
+body{
+  background:
+    linear-gradient(var(--grid) 1px,transparent 1px) 0 0/26px 26px,
+    linear-gradient(90deg,var(--grid) 1px,transparent 1px) 0 0/26px 26px,
+    var(--paper);
+}
+/* 격자 위에 지문을 그냥 얹으면 읽기 힘들다 — 지도의 칸처럼 흰 카드에 올린다 */
+main,.closing{
+  background:var(--card);border:2.5px solid var(--line);border-radius:18px;
+  padding:22px 24px;box-shadow:0 3px 0 rgba(42,63,85,.10);
+}
+main{margin-top:14px}
+.closing{margin-top:16px;background:var(--leaf-soft);border-color:#BFDFD1}
+header{border-bottom:3px dashed var(--line)}
+h1{font-family:var(--f-round);letter-spacing:-.5px}
+.eyebrow{color:var(--carrot)}
+/* 툴바는 스크롤에 붙어 따라오므로 종이색을 깔아 지문이 비쳐 보이지 않게 한다 */
+.toolbar{background:rgba(232,240,247,.92);border-bottom:1px solid var(--line)}
+/* 툴바 버튼도 지도와 같은 모양 — 두꺼운 테두리 + 아래로 떨어지는 그림자 */
+.toolbar .btn{
+  font-family:var(--f-round);border:2.5px solid var(--ink);
+  box-shadow:0 3px 0 rgba(42,63,85,.16);
+}
+.toolbar .btn:hover{transform:translateY(-2px)}
+.toolbar .btn.on{background:var(--carrot);border-color:var(--carrot)}
+a.sitenav{text-decoration:none;display:inline-flex;align-items:center;gap:4px}
+/* 듣기·해석 버튼: 템플릿은 opacity:.35 로 두고 줄에 마우스를 올릴 때만
+   살려 놓는데, 휴대폰에는 hover 가 없어서 계속 흐린 채로 남는다. */
+.say,.stog{opacity:.8}
+@media (hover:none){ .say,.stog{opacity:1} }
+.say{border-color:var(--line)}
+.fab{font-family:var(--f-round);box-shadow:0 4px 0 rgba(42,63,85,.22)}
+.tip .ipa{color:#A9C3D8}
+.q-opt.wrong{background:var(--carrot-soft)}
+/* 휴대폰에서는 카드 여백을 줄인다 — 양쪽 24px 을 그대로 두면 문장이 일찍 접힌다 */
+@media (max-width:520px){ main,.closing{padding:16px 14px;border-radius:14px} }
+"""
+
+
 def build_read(n, skills):
     src = os.path.join(ROOT, "data", f"unit{n:02d}.read.json")
     out = os.path.join(ROOT, "read", f"unit{n:02d}.html")
@@ -67,7 +120,7 @@ def build_read(n, skills):
     # 읽기 페이지는 밝은 툴바 — 스킬의 .btn 스타일을 그대로 재사용한다.
     inject(
         out,
-        "a.sitenav{text-decoration:none;display:inline-flex;align-items:center;gap:4px}",
+        READ_CSS,
         '<div class="toolbar">',
         f'<a class="btn sitenav" data-nav="index" href="../index.html">← 목차</a>'
         f'<a class="btn sitenav" data-nav="print" href="../print/unit{n:02d}.html">🖨 A4 출력</a>',
