@@ -185,7 +185,43 @@ body{
 .foot .warn{color:var(--stamp)}
 .foot .warn[hidden]{display:none}
 
+/* ---------- 안내 패널 ---------- */
+.guide-open{
+  position:fixed;top:14px;right:14px;z-index:40;font-family:inherit;font-size:15px;
+  cursor:pointer;color:var(--ink);background:var(--card);
+  border:2.5px solid var(--ink);border-radius:14px;padding:8px 14px;
+  box-shadow:0 3px 0 rgba(42,63,85,.18);
+}
+.guide-open:hover{transform:translateY(-2px)}
+.guide-open:active{transform:translateY(1px);box-shadow:0 1px 0 rgba(42,63,85,.18)}
+.guide-open:focus-visible{outline:4px solid var(--stamp);outline-offset:3px}
+.guide-back{
+  position:fixed;inset:0;background:rgba(42,63,85,.45);z-index:70;
+  opacity:0;pointer-events:none;transition:opacity .25s;
+}
+.guide-back.on{opacity:1;pointer-events:auto}
+.guide{
+  position:fixed;top:0;right:0;bottom:0;width:min(560px,100%);z-index:80;
+  background:#eef2f7;overflow-y:auto;overscroll-behavior:contain;
+  border-left:3px solid var(--ink);box-shadow:-6px 0 0 rgba(42,63,85,.10);
+  transform:translateX(101%);transition:transform .3s cubic-bezier(.3,.9,.3,1);
+}
+.guide.on{transform:none}
+.guide-close{
+  position:sticky;top:0;z-index:5;width:100%;font-family:inherit;font-size:15px;
+  cursor:pointer;color:var(--ink);background:rgba(238,242,247,.94);
+  backdrop-filter:blur(8px);border:0;border-bottom:2px solid #d7e0ea;
+  padding:12px;text-align:right;
+}
+.guide-close:focus-visible{outline:4px solid var(--stamp);outline-offset:-4px}
+
+/* 좁은 화면에서는 가운데 정렬한 제목이 오른쪽 위 버튼과 겹친다 —
+   제목을 버튼 아래로 내린다 */
+@media (max-width:600px){
+  .top{padding-top:58px}
+}
 @media (max-width:660px){
+  .guide-open{top:10px;right:10px;font-size:14px;padding:7px 11px}
   .trail::before{left:26px;transform:none}
   .zone,.zone:nth-child(even){flex-direction:column;align-items:stretch;padding-left:52px}
   .sign{flex:none;display:flex;align-items:center;gap:9px;text-align:left;padding:8px 12px}
@@ -197,9 +233,149 @@ body{
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}
 }
+
+
+#intro{
+  --paper:#fff; --ink:#12243a; --sub:#5b7288; --line:#d7e0ea;
+  --hl:#ffe24a; --stamp:#e0384f;
+  --f-dis:'Black Han Sans','Malgun Gothic',sans-serif;
+  --f-body:'IBM Plex Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif;
+  --f-hand:'Gaegu','Malgun Gothic',cursive;
+  font-family:var(--f-body);font-size:15.5px;line-height:1.7;color:var(--ink);
+  text-align:left;
+}
+#intro .wrap{padding:0 22px}
+#intro section{padding:38px 0}
+#intro h2{font-family:var(--f-dis);font-size:25px;margin:0 0 8px;
+  letter-spacing:-.5px;font-weight:400;line-height:1.3}
+#intro .lead{color:var(--sub);margin:0 0 22px;font-size:15.5px}
+#intro .eyebrow{font-family:var(--f-hand);font-size:17px;color:var(--stamp);
+  margin:0 0 2px;letter-spacing:.5px}
+
+/* 형광펜 — 이 안내의 시그니처. isolation 으로 mark 자체를 쌓임 문맥으로
+   만들어 두면, 패널에 배경이 깔려도 밑줄이 뒤로 숨지 않는다. */
+#intro mark{background:none;color:inherit;position:relative;isolation:isolate;
+  padding:0 .12em;white-space:nowrap}
+#intro mark::before{
+  content:"";position:absolute;left:0;right:0;bottom:.06em;height:.55em;
+  background:var(--hl);z-index:-1;border-radius:2px 6px 3px 5px;
+  transform:scaleX(0);transform-origin:left center;
+  transition:transform .5s cubic-bezier(.4,.1,.2,1);
+}
+#intro .lit mark::before{transform:scaleX(1)}
+#intro .lit mark:nth-of-type(2)::before{transition-delay:.16s}
+#intro .lit mark:nth-of-type(3)::before{transition-delay:.32s}
+
+#intro .hero{background:var(--paper);border-bottom:1px solid var(--line);
+  padding:26px 0 34px;position:relative;overflow:hidden}
+#intro .hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:repeating-linear-gradient(180deg,rgba(18,36,58,.022) 0 1px,transparent 1px 27px)}
+#intro .hero .wrap{position:relative;z-index:1}
+#intro .tag{display:inline-block;font-family:var(--f-hand);font-size:16px;
+  color:var(--stamp);border:2px solid var(--stamp);border-radius:99px;
+  padding:1px 13px;transform:rotate(-1.5deg)}
+#intro .hero h1{font-family:var(--f-dis);font-weight:400;letter-spacing:-1px;
+  font-size:clamp(30px,7vw,42px);line-height:1.24;margin:14px 0 0}
+#intro .hero .sub{margin:16px 0 0;font-size:16px;color:var(--sub)}
+#intro .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+#intro .btn{font-family:inherit;font-size:15px;font-weight:600;text-decoration:none;
+  padding:11px 20px;border-radius:11px;border:2px solid var(--ink);cursor:pointer;
+  color:var(--ink);background:var(--paper);display:inline-block;
+  transition:transform .14s,box-shadow .14s;box-shadow:0 3px 0 var(--ink)}
+#intro .btn:hover{transform:translateY(-2px);box-shadow:0 5px 0 var(--ink)}
+#intro .btn:active{transform:translateY(2px);box-shadow:0 1px 0 var(--ink)}
+#intro .btn:focus-visible{outline:3px solid var(--stamp);outline-offset:3px}
+#intro .btn.solid{background:var(--hl)}
+
+#intro .stats{display:flex;flex-wrap:wrap;margin-top:28px;border-top:1px solid var(--line)}
+#intro .stat{flex:1 1 120px;padding:14px 4px 0;border-right:1px solid var(--line)}
+#intro .stat:last-child{border-right:0}
+#intro .stat b{display:block;font-family:var(--f-dis);font-weight:400;font-size:25px;line-height:1.1}
+#intro .stat span{font-size:12.5px;color:var(--sub)}
+
+#intro .routine{background:#eef2f7}
+#intro .tl{position:relative}
+#intro .tl::before{content:"";position:absolute;left:8px;top:14px;bottom:14px;
+  width:2px;background:var(--line)}
+#intro .step{display:flex;flex-direction:column;gap:2px;padding:8px 0 8px 30px;position:relative}
+#intro .step .clock{font-family:var(--f-hand);font-size:18px;color:var(--stamp)}
+#intro .step .dot{position:absolute;left:2px;top:14px;width:13px;height:13px;
+  background:var(--paper);border:3px solid var(--ink);border-radius:50%}
+#intro .step .body{background:var(--paper);border:1px solid var(--line);
+  border-radius:12px;padding:11px 15px}
+#intro .step .body b{display:block;font-size:15.5px}
+#intro .step .body span{font-size:14px;color:var(--sub)}
+
+#intro .two{display:grid;gap:16px}
+#intro .card{background:var(--paper);border:1px solid var(--line);
+  border-radius:16px;padding:22px}
+#intro .card .ic{font-size:30px;line-height:1}
+#intro .card h3{font-family:var(--f-dis);font-weight:400;font-size:20px;margin:8px 0 4px}
+#intro .card p{margin:0 0 12px;color:var(--sub);font-size:14.5px}
+#intro .card ul{margin:0;padding-left:18px;font-size:14.5px}
+#intro .card li{margin-bottom:6px}
+#intro .card li::marker{color:var(--stamp)}
+#intro .card .go{display:inline-block;margin-top:12px;font-weight:600;font-size:14.5px;
+  color:var(--ink);text-decoration:none;border-bottom:2.5px solid var(--hl)}
+#intro .card .go:hover{border-bottom-color:var(--stamp)}
+
+#intro .q6{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#intro .q{background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:14px 15px}
+#intro .q b{display:inline-flex;align-items:center;justify-content:center;
+  width:25px;height:25px;border-radius:7px;background:var(--ink);color:#fff;
+  font-size:13.5px;margin-bottom:8px}
+#intro .q .t{display:block;font-weight:600;font-size:14.5px}
+#intro .q .d{display:block;font-size:13.5px;color:var(--sub);margin-top:2px}
+
+#intro .answer{background:var(--paper);border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line)}
+#intro .memo{background:#fffdf3;border:1px solid #eadfae;border-radius:14px;
+  padding:20px 22px;font-family:var(--f-hand);font-size:18px;line-height:1.75;
+  transform:rotate(-.6deg);box-shadow:0 2px 0 #eadfae;margin-top:22px}
+#intro .memo .h{font-family:var(--f-body);font-weight:700;font-size:12.5px;
+  color:var(--stamp);letter-spacing:1px;margin-bottom:9px}
+#intro .memo p{margin:0 0 12px}
+#intro .memo p:last-child{margin:0}
+#intro .memo q{color:var(--ink);font-weight:700}
+
+#intro .chips{display:flex;flex-wrap:wrap;gap:8px}
+#intro .chip{background:var(--paper);border:1px solid var(--line);border-radius:99px;
+  padding:6px 14px;font-size:14.5px}
+#intro .chip i{font-style:normal;margin-right:5px}
+#intro .chip u{text-decoration:none;color:var(--sub);font-size:12.5px;margin-left:5px}
+
+#intro .map{background:var(--ink);color:#fff}
+#intro .map h2{color:#fff}
+#intro .map .lead{color:#a9bed2}
+/* 어두운 칸에서는 제목이 흰 글씨인데, 형광펜이 노랑이라 흰 글씨가
+   노랑 위에 얹혀 안 읽힌다. 그 부분만 글씨를 진하게 되돌린다. */
+#intro .map h2 mark{color:var(--ink)}
+#intro .map .box{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);
+  border-radius:18px;padding:22px}
+#intro .map .stamps{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+#intro .map .s{width:34px;height:34px;border-radius:10px;
+  border:2px solid rgba(255,255,255,.3);display:flex;align-items:center;
+  justify-content:center;font-size:15px}
+#intro .map .s.on{border-color:var(--stamp);background:rgba(224,56,79,.22)}
+#intro .map .txt p{margin:0 0 16px;color:#c6d6e4;font-size:15px}
+#intro .map .btn{background:var(--hl);border-color:var(--hl);
+  box-shadow:0 3px 0 #c9ae2f;color:var(--ink)}
+#intro .map .btn:hover{box-shadow:0 5px 0 #c9ae2f}
+
+#intro footer{padding:30px 0 46px;text-align:center;color:var(--sub);font-size:14px}
+#intro footer .made{font-family:var(--f-hand);font-size:17px;color:var(--ink);margin-bottom:6px}
+
+@media (min-width:520px){
+  #intro .two{grid-template-columns:1fr 1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  #intro mark::before{transform:scaleX(1)!important}
+}
 </style>
 </head>
 <body>
+
+<button class="guide-open" id="guideOpen">📋 안내 보기</button>
 
 <div class="top">
   <h1>영어 모험 <span class="em">지도</span></h1>
@@ -223,6 +399,167 @@ body{
   <a href="list.html">부모용 목록 (날짜 · 소요시간)</a>
   <div id="progress" hidden></div>
 </div>
+
+<div class="guide-back" id="guideBack"></div>
+<aside class="guide" id="guide" role="dialog" aria-modal="true" aria-label="안내" aria-hidden="true">
+  <button class="guide-close" id="guideClose">✕ 닫기</button>
+  
+<div id="intro">
+
+<header class="hero">
+  <div class="wrap">
+    <span class="tag">EBS 초등 영어 읽기 · 집에서</span>
+    <h1 class="reveal">하루 <mark>20분</mark>,<br>영어책 <mark>52권</mark></h1>
+    <p class="sub">
+      화면으로 읽고, 종이로 풉니다.
+      단어에 손을 대면 뜻이 뜨고, 다 읽으면 A4로 뽑아 연필로 풀어요.
+      부모가 영어를 못해도 옆에서 봐줄 수 있게 <b>정답지에 할 말까지</b> 적어 뒀습니다.
+    </p>
+    <div class="cta">
+      <button class="btn solid" data-close>🗺 지도로 돌아가기</button>
+      <a class="btn" href="list.html">📚 52권 목록 보기</a>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>52권</b><span>EBS 펀리딩 전편</span></div>
+      <div class="stat"><b>13개</b><span>주제 · 동물부터 우주까지</span></div>
+      <div class="stat"><b>20분</b><span>하루 한 권 분량</span></div>
+      <div class="stat"><b>A4 3장</b><span>문제 2 + 정답 1</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="routine">
+  <div class="wrap">
+    <p class="eyebrow">하루 한 권</p>
+    <h2 class="reveal">20분이 <mark>이렇게</mark> 흘러갑니다</h2>
+    <p class="lead">순서를 정해 두면 매일 뭘 할지 고민하지 않아도 됩니다. 정답지 맨 아래에 이 표가 그대로 들어 있어요.</p>
+
+    <div class="tl">
+      <div class="step"><div class="clock">0~3분</div><div class="dot"></div>
+        <div class="body"><b>소리 먼저</b><span>그날 나올 단어를 소리로 풀어 봅니다 — /k/-/l/-/o/-/ck/-/s/ → clocks</span></div></div>
+      <div class="step"><div class="clock">3~8분</div><div class="dot"></div>
+        <div class="body"><b>소리 내어 두 번 읽기</b><span>아이가 읽고 부모는 듣기만 하면 됩니다. 부모가 못 읽어도 괜찮아요</span></div></div>
+      <div class="step"><div class="clock">8~17분</div><div class="dot"></div>
+        <div class="body"><b>연필로 풀기</b><span>문제지 2장. 막히면 지문을 다시 봐도 됩니다 — 찾아내는 것도 실력이니까요</span></div></div>
+      <div class="step"><div class="clock">17~19분</div><div class="dot"></div>
+        <div class="body"><b>안 보고 말해 보기</b><span>오늘 따라 쓴 문장 두 개를 지문 없이 입으로</span></div></div>
+      <div class="step"><div class="clock">19~20분</div><div class="dot"></div>
+        <div class="body"><b>별점 색칠</b><span>“오늘 새로 안 단어 하나만 말해줘” — 이 한마디로 마무리</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">쓰는 법</p>
+    <h2 class="reveal">화면으로 읽고, <mark>종이로 풉니다</mark></h2>
+    <p class="lead">두 가지를 같은 지문으로 만들어 뒀습니다. 읽기는 화면이 편하고, 푸는 건 종이가 낫더라고요.</p>
+
+    <div class="two">
+      <div class="card">
+        <div class="ic">📖</div>
+        <h3>읽기 페이지</h3>
+        <p>혼자서도 읽어 나갈 수 있게</p>
+        <ul>
+          <li>점선 단어에 손을 대면 <b>품사·발음·뜻</b>이 뜹니다</li>
+          <li>문장마다 <b>해석 버튼</b> — 먼저 짐작해 보고 눌러요</li>
+          <li>🔊 <b>듣기</b>로 발음 확인</li>
+          <li>끝나면 <b>단어 퀴즈</b> 4지선다</li>
+        </ul>
+        <a class="go" href="read/unit01.html">1권 Rabbits 열어 보기 →</a>
+      </div>
+
+      <div class="card">
+        <div class="ic">🖨</div>
+        <h3>A4 문제지</h3>
+        <p>연필을 쥐어야 남는 것이 있어서</p>
+        <ul>
+          <li>지문 + <b>문제 2장</b>, 문장마다 번호가 붙어 있어요</li>
+          <li><b>부모용 정답 1장</b>이 따로 나옵니다</li>
+          <li>정답지를 빼고 인쇄하는 버튼도 있어요</li>
+          <li>배율 100%, 배경 그래픽 켜고 인쇄하면 끝</li>
+        </ul>
+        <a class="go" href="print/unit01.html">문제지 미리 보기 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="routine">
+  <div class="wrap">
+    <p class="eyebrow">문제지 속</p>
+    <h2 class="reveal">여섯 문항이 <mark>매번 같은 순서</mark>로</h2>
+    <p class="lead">형식이 고정돼 있으면 아이가 “뭘 하라는 거지”에 힘을 안 씁니다. 그 힘을 내용에 쓰게 하려고요.</p>
+
+    <div class="q6">
+      <div class="q"><b>1</b><span class="t">단어와 뜻 잇기</span><span class="d">지문 앞뒤에서 고루 뽑은 단어</span></div>
+      <div class="q"><b>2</b><span class="t">빠진 모음 쓰기</span><span class="d">h_p · cl_cks — 소리 내어 읽으며</span></div>
+      <div class="q"><b>3</b><span class="t">지문에서 찾아 쓰기</span><span class="d">몇 번 문장에서 찾았는지도 적어요</span></div>
+      <div class="q"><b>4</b><span class="t">맞으면 O, 틀리면 X</span><span class="d">지문에 없는 내용이 꼭 하나 섞여 있어요</span></div>
+      <div class="q"><b>5</b><span class="t">보기에서 골라 빈칸</span><span class="d">쓰지 않는 보기가 하나 들어 있습니다</span></div>
+      <div class="q"><b>6</b><span class="t">따라 쓰고 한 번 더</span><span class="d">회색 글씨 위에 덧쓰고, 아래 줄에 혼자</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="answer">
+  <div class="wrap">
+    <p class="eyebrow">이게 핵심입니다</p>
+    <h2 class="reveal">정답지에 <mark>할 말</mark>이 적혀 있어요</h2>
+    <p class="lead" style="margin-bottom:14px">
+      정답만 있으면 반쪽입니다. 아이가 틀렸을 때 뭐라고 해야 할지 모르면
+      그 자리에서 공부가 멈추더라고요. 그래서 <b>그대로 읽으면 되는 문장</b>으로 적었습니다.
+    </p>
+    <p class="lead" style="margin:0">
+      조동사·과거형·복수형 규칙은 일부러 넣지 않았습니다.
+      지금은 <b>소리 · 낱말 · 찾기</b> 세 가지면 충분하니까요.
+    </p>
+    <aside class="memo">
+      <div class="h">부모용 지도 노트</div>
+      <p>dig을 dog으로 쓰는 건 아주 흔한 실수입니다. 틀렸다고 하지 말고 <q>그건 무슨 뜻이지?</q> 하고 옆의 한글 뜻을 다시 보게 하세요.</p>
+      <p>4번은 지문에 <b>없는</b> 내용입니다. <q>지문에 그런 말 있었어?</q> 하고 되물어 주세요.</p>
+      <p>답을 못 찾아도 문장 번호만 찾아내면 절반은 성공이에요.</p>
+    </aside>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">52권</p>
+    <h2 class="reveal">토끼로 시작해서 <mark>원기둥</mark>까지</h2>
+    <p class="lead">쉬운 순서로 놓여 있습니다. 뒤로 갈수록 문장이 길어지고, 25권부터는 이야기가 나와요.</p>
+    <div class="chips"><span class="chip"><i>🐾</i>동물<u>1–4</u></span><span class="chip"><i>🎨</i>색깔<u>5–8</u></span><span class="chip"><i>🚒</i>직업<u>9–12</u></span><span class="chip"><i>🔷</i>평면도형<u>13–16</u></span><span class="chip"><i>🙋</i>우리 몸<u>17–22</u></span><span class="chip"><i>💡</i>발명품<u>23–24</u></span><span class="chip"><i>📖</i>이야기<u>25–30</u></span><span class="chip"><i>🚀</i>우주<u>31–36</u></span><span class="chip"><i>🎩</i>인물<u>37–38</u></span><span class="chip"><i>✈️</i>교통수단<u>39–42</u></span><span class="chip"><i>🐝</i>곤충<u>43–46</u></span><span class="chip"><i>⚾</i>운동<u>47–48</u></span><span class="chip"><i>🧊</i>입체도형<u>49–52</u></span></div>
+  </div>
+</section>
+
+<section class="map">
+  <div class="wrap">
+    <p class="eyebrow">아이용</p>
+    <h2 class="reveal">다 읽으면 <mark>도장을 쾅</mark></h2>
+    <p class="lead">진도표는 어른 물건입니다. 아이한테는 도장 모으는 지도를 줬어요.</p>
+    <div class="box">
+      <div class="stamps" id="guideStamps" aria-hidden="true"></div>
+      <div class="txt">
+        <p>정거장 하나를 다 지나면 색종이가 쏟아지고, 토끼가 다음 칸으로 옮겨 갑니다.
+           지금 어디쯤 왔는지 한눈에 보여요.</p>
+        <button class="btn" data-close>🗺 지도로 돌아가기</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="made">집에서 만든 아빠표 영어 자료</div>
+    본문 출처 · EBS 초등 「Touch! 초등 영어 — 펀리딩」<br>
+    인쇄는 A4 세로, 배율 100%, 배경 그래픽 켜기
+  </div>
+</footer>
+
+</div>
+
+</aside>
 
 <div class="back" id="back">
   <div class="pop" role="dialog" aria-modal="true" aria-labelledby="popEn">
@@ -404,12 +741,75 @@ function copyProgress(){
   try{ navigator.clipboard.writeText(txt); }catch(e){}
 }
 
+/* ---------- 안내 패널 ---------- */
+const guide = document.getElementById('guide');
+const guideBack = document.getElementById('guideBack');
+const guideOpen = document.getElementById('guideOpen');
+let guideFonts = false;
+
+function showGuide(){
+  /* 안내 전용 글꼴은 처음 열 때만 받아 온다 — 닫혀 있는 동안 세 벌을
+     미리 받을 이유가 없다. Gaegu 는 지도에서 이미 쓰고 있다. */
+  if(!guideFonts){
+    const l = document.createElement('link');
+    l.rel = 'stylesheet';
+    l.href = 'https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@400;600;700&display=swap';
+    document.head.appendChild(l);
+    guideFonts = true;
+    litGuide();
+  }
+  paintGuideStamps();
+  guide.classList.add('on');
+  guideBack.classList.add('on');
+  guide.setAttribute('aria-hidden','false');
+  document.body.style.overflow = 'hidden';
+  document.getElementById('guideClose').focus();
+}
+function hideGuide(){
+  guide.classList.remove('on');
+  guideBack.classList.remove('on');
+  guide.setAttribute('aria-hidden','true');
+  document.body.style.overflow = '';
+  guideOpen.focus();
+}
+
+/* 형광펜 밑줄. 원본은 화면 전체를 기준으로 보는데, 안내는 패널 안에서
+   따로 스크롤되므로 그 패널을 기준(root)으로 줘야 제때 그어진다. */
+function litGuide(){
+  const t = guide.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){
+    t.forEach(e=>e.classList.add('lit')); return;
+  }
+  const io = new IntersectionObserver(es=>{
+    es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('lit'); io.unobserve(e.target); } });
+  }, {root: guide, threshold:.5});
+  t.forEach(e=>io.observe(e));
+}
+
+/* 안내 속 도장 그림은 지금 진도를 그대로 보여 준다 — 가짜 상태를 보여
+   주면 바로 아래 지도와 어긋난다. */
+function paintGuideStamps(){
+  const box = document.getElementById('guideStamps');
+  box.innerHTML = all.slice(0,16).map(u=>
+    '<span class="s' + (done.has(u.n) ? ' on' : '') + '">' + u.ico + '</span>').join('');
+}
+
+guideOpen.addEventListener('click', showGuide);
+document.getElementById('guideClose').addEventListener('click', hideGuide);
+guideBack.addEventListener('click', hideGuide);
+guide.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click', hideGuide));
+
 document.getElementById('popStamp').addEventListener('click', toggle);
 document.getElementById('popClose').addEventListener('click', close);
 document.getElementById('back').addEventListener('click', e=>{
   if(e.target.id === 'back') close();
 });
-document.addEventListener('keydown', e=>{ if(e.key === 'Escape') close(); });
+document.addEventListener('keydown', e=>{
+  if(e.key !== 'Escape') return;
+  /* 카드가 열려 있으면 카드부터, 아니면 안내를 닫는다 */
+  if(cur != null) close();
+  else if(guide.classList.contains('on')) hideGuide();
+});
 document.getElementById('copy').addEventListener('click', copyProgress);
 document.getElementById('reset').addEventListener('click', ()=>{
   if(!confirm('도장을 전부 지울까요?')) return;
