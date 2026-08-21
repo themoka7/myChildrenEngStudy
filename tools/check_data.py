@@ -97,12 +97,30 @@ def main():
         if ko == d['match_ko_order']:
             errors.append(f"{tag} match_ko_order 가 섞이지 않음")
 
-    # 링크: 목차 → 각 페이지, 읽기 페이지 → A4 문제지
+    # 링크: 지도·목록 → 각 페이지, 읽기 페이지 → A4 문제지
+    # 지도(index.html)는 링크를 자바스크립트가 만들기 때문에 href 를 훑어도
+    # 하나도 안 나온다. 심어 둔 ZONES 데이터를 꺼내서 확인한다.
     if os.path.exists('index.html'):
         h = open('index.html', encoding='utf-8').read()
-        for u in re.findall(r'href="((?:read|print)/[^"]+)"', h):
-            if not os.path.exists(u):
-                errors.append(f"목차 링크 깨짐: {u}")
+        m = re.search(r'const ZONES=(\[.*?\]);\n', h, re.S)
+        if not m:
+            errors.append("지도(index.html)에서 ZONES 데이터를 못 찾음")
+        else:
+            zoned = [u for z in json.loads(m.group(1)) for u in z['u']]
+            if len(zoned) != len(units):
+                errors.append(f"지도 칸 {len(zoned)}개 ≠ 유닛 {len(units)}개")
+            for u in zoned:
+                if not u['ready']:
+                    continue
+                for p in (f"read/unit{u['n']:02d}.html", f"print/unit{u['n']:02d}.html"):
+                    if not os.path.exists(p):
+                        errors.append(f"지도 링크 깨짐: {p}")
+    for page in ('index.html', 'list.html'):
+        if os.path.exists(page):
+            h = open(page, encoding='utf-8').read()
+            for u in re.findall(r'href="((?:read|print|list)[^"]*)"', h):
+                if not os.path.exists(u):
+                    errors.append(f"{page} 링크 깨짐: {u}")
     for n in units:
         p = f'read/unit{n:02d}.html'
         if not os.path.exists(p):

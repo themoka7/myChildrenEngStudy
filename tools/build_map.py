@@ -1,13 +1,26 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>영어 모험 지도 — 도장 52개 모으기</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jua&family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
-<style>
+#!/usr/bin/env python3
+"""units.json 을 읽어 메인 페이지(index.html) — 「영어 모험 지도」를 만든다.
+
+아이가 보는 화면이다. 52권이 테마별 구역으로 길에 늘어서 있고, 한 권을
+끝내면 그 칸에 도장을 찍는다. 칸을 누르면 읽기 페이지·A4 문제지로 갈 수
+있고, 부모용 표(날짜·소요시간·필터)는 list.html 쪽에 있다.
+
+도장은 두 군데에서 온다.
+  units.json 의 status:"done"  → 지도에 심어 두는 씨앗(SEED). 저장소의 기록.
+  브라우저 localStorage         → 아이가 직접 찍은 도장. 그 기기에만 남는다.
+씨앗이 늘어나면(내가 units.json 을 고치면) 새로 늘어난 것만 더한다 —
+아이가 일부러 빼 놓은 도장을 되살리지 않기 위해서다.
+
+사용법:
+    python3 tools/build_map.py
+"""
+import html
+import json
+import os
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+CSS = """
 :root{
   --paper:#e8f0f7; --grid:#d3e2ef; --ink:#2a3f55; --sub:#6b8299;
   --stamp:#e0384f; --gold:#f2b632; --card:#ffffff; --line:#b9cddd;
@@ -197,52 +210,9 @@ body{
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}
 }
-</style>
-</head>
-<body>
+"""
 
-<div class="top">
-  <h1>영어 모험 <span class="em">지도</span></h1>
-  <p>한 권 다 읽으면 도장을 쾅! 52개를 모아 보자</p>
-
-  <div class="gauge">
-    <div class="nums"><span class="big" id="cnt">0</span><span class="of">/ 52 도장</span></div>
-    <div class="bar"><i id="bar"></i></div>
-    <p class="note" id="note"></p>
-  </div>
-</div>
-
-<div class="trail" id="trail"></div>
-
-<div class="foot">
-  도장은 이 기기에 저장돼요.
-  <span class="warn" id="memwarn" hidden>— 이 브라우저에서는 저장이 안 돼서 새로 고치면 사라져요.</span>
-  <br>
-  <button id="copy">진도 복사하기</button> ·
-  <button id="reset">전부 지우고 처음부터</button> ·
-  <a href="list.html">부모용 목록 (날짜 · 소요시간)</a>
-  <div id="progress" hidden></div>
-</div>
-
-<div class="back" id="back">
-  <div class="pop" role="dialog" aria-modal="true" aria-labelledby="popEn">
-    <div class="ico" id="popIco"></div>
-    <div class="no" id="popNo"></div>
-    <div class="en" id="popEn"></div>
-    <div class="ko" id="popKo"></div>
-    <div class="btns">
-      <a class="btn" id="popRead" href="#">📖 읽으러 가기</a>
-      <a class="btn" id="popPrint" href="#">🖨 문제지 뽑기</a>
-      <button class="btn go" id="popStamp">도장 쾅! 찍기</button>
-    </div>
-    <button class="close" id="popClose">닫기</button>
-  </div>
-</div>
-
-<script>
-const ZONES=[{"nm": "동물", "ico": "🐾", "u": [{"n": 1, "en": "Rabbits", "ko": "토끼", "ico": "🐰", "ready": true}, {"n": 2, "en": "Dogs", "ko": "개", "ico": "🐶", "ready": true}, {"n": 3, "en": "Cats", "ko": "고양이", "ico": "🐱", "ready": true}, {"n": 4, "en": "Hamsters", "ko": "햄스터", "ico": "🐹", "ready": true}]}, {"nm": "색깔", "ico": "🎨", "u": [{"n": 5, "en": "Brown", "ko": "갈색", "ico": "🟤", "ready": true}, {"n": 6, "en": "Orange", "ko": "주황색", "ico": "🟠", "ready": true}, {"n": 7, "en": "Purple", "ko": "보라색", "ico": "🟣", "ready": true}, {"n": 8, "en": "Gray", "ko": "회색", "ico": "⚪", "ready": true}]}, {"nm": "직업", "ico": "🚒", "u": [{"n": 9, "en": "Teachers", "ko": "선생님", "ico": "👩‍🏫", "ready": true}, {"n": 10, "en": "Doctors", "ko": "의사", "ico": "👩‍⚕️", "ready": true}, {"n": 11, "en": "Firefighters", "ko": "소방관", "ico": "🧑‍🚒", "ready": true}, {"n": 12, "en": "Police Officers", "ko": "경찰관", "ico": "👮", "ready": true}]}, {"nm": "평면도형", "ico": "🔷", "u": [{"n": 13, "en": "Circles", "ko": "원", "ico": "⭕", "ready": true}, {"n": 14, "en": "Squares", "ko": "정사각형", "ico": "🟦", "ready": true}, {"n": 15, "en": "Triangles", "ko": "삼각형", "ico": "🔺", "ready": true}, {"n": 16, "en": "Hexagons", "ko": "육각형", "ico": "🛑", "ready": true}]}, {"nm": "우리 몸", "ico": "🙋", "u": [{"n": 17, "en": "Eyes", "ko": "눈", "ico": "👁️", "ready": true}, {"n": 18, "en": "Nose", "ko": "코", "ico": "👃", "ready": true}, {"n": 19, "en": "Ears", "ko": "귀", "ico": "👂", "ready": true}, {"n": 20, "en": "Mouth", "ko": "입", "ico": "👄", "ready": true}, {"n": 21, "en": "Arms & Hands", "ko": "팔과 손", "ico": "✋", "ready": true}, {"n": 22, "en": "Legs & Feet", "ko": "다리와 발", "ico": "🦶", "ready": true}]}, {"nm": "발명품", "ico": "💡", "u": [{"n": 23, "en": "Telephone", "ko": "전화기", "ico": "☎️", "ready": true}, {"n": 24, "en": "Automobile", "ko": "자동차", "ico": "🚗", "ready": true}]}, {"nm": "이야기", "ico": "📖", "u": [{"n": 25, "en": "A Monster on the Bus (1)", "ko": "버스에 탄 괴물 (1)", "ico": "👹", "ready": true}, {"n": 26, "en": "A Monster on the Bus (2)", "ko": "버스에 탄 괴물 (2)", "ico": "👹", "ready": true}, {"n": 27, "en": "A Monster in the Park (1)", "ko": "공원의 괴물 (1)", "ico": "👾", "ready": true}, {"n": 28, "en": "A Monster in the Park (2)", "ko": "공원의 괴물 (2)", "ico": "👾", "ready": true}, {"n": 29, "en": "The Town Mouse and the Country Mouse", "ko": "도시 쥐와 시골 쥐", "ico": "🐭", "ready": true}, {"n": 30, "en": "The Lion and the Mouse", "ko": "사자와 쥐", "ico": "🦁", "ready": true}]}, {"nm": "우주", "ico": "🚀", "u": [{"n": 31, "en": "Earth", "ko": "지구", "ico": "🌍", "ready": true}, {"n": 32, "en": "Mercury", "ko": "수성", "ico": "🌑", "ready": true}, {"n": 33, "en": "Venus", "ko": "금성", "ico": "🌕", "ready": true}, {"n": 34, "en": "Mars", "ko": "화성", "ico": "🔴", "ready": true}, {"n": 35, "en": "Jupiter", "ko": "목성", "ico": "🟠", "ready": true}, {"n": 36, "en": "Saturn", "ko": "토성", "ico": "🪐", "ready": true}]}, {"nm": "인물", "ico": "🎩", "u": [{"n": 37, "en": "Abraham Lincoln", "ko": "에이브러햄 링컨", "ico": "🎩", "ready": true}, {"n": 38, "en": "Barack Obama", "ko": "버락 오바마", "ico": "🎤", "ready": true}]}, {"nm": "교통수단", "ico": "✈️", "u": [{"n": 39, "en": "Cars", "ko": "자동차", "ico": "🚙", "ready": true}, {"n": 40, "en": "Spaceships", "ko": "우주선", "ico": "🚀", "ready": true}, {"n": 41, "en": "Boats", "ko": "배", "ico": "⛵", "ready": true}, {"n": 42, "en": "Planes", "ko": "비행기", "ico": "✈️", "ready": true}]}, {"nm": "곤충", "ico": "🐝", "u": [{"n": 43, "en": "Ants", "ko": "개미", "ico": "🐜", "ready": true}, {"n": 44, "en": "Bees", "ko": "벌", "ico": "🐝", "ready": true}, {"n": 45, "en": "Butterflies", "ko": "나비", "ico": "🦋", "ready": true}, {"n": 46, "en": "Mosquitoes", "ko": "모기", "ico": "🦟", "ready": true}]}, {"nm": "운동", "ico": "⚾", "u": [{"n": 47, "en": "Gymnastics", "ko": "체조", "ico": "🤸", "ready": true}, {"n": 48, "en": "Baseball", "ko": "야구", "ico": "⚾", "ready": true}]}, {"nm": "입체도형", "ico": "🧊", "u": [{"n": 49, "en": "Cubes", "ko": "정육면체", "ico": "🧊", "ready": true}, {"n": 50, "en": "Pyramids", "ko": "각뿔", "ico": "⛰️", "ready": true}, {"n": 51, "en": "Cones", "ko": "원뿔", "ico": "🍦", "ready": true}, {"n": 52, "en": "Cylinders", "ko": "원기둥", "ico": "🥫", "ready": true}]}];
-const SEED=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-
+JS = r"""
 const TOTAL = ZONES.reduce((n,z)=>n+z.u.length, 0);
 const KEY = 'engmap.done.v2';
 let done = new Set(SEED), memOnly = false;
@@ -417,7 +387,85 @@ document.getElementById('reset').addEventListener('click', ()=>{
 });
 
 load(); build(); paint();
+"""
 
+
+def main():
+    data = json.load(open(os.path.join(ROOT, "units.json"), encoding="utf-8"))
+    units = [u for g in data["groups"] for u in g["units"]]
+    seed = [u["n"] for u in units if u.get("status") == "done"]
+
+    def unit(u):
+        return {"n": u["n"], "en": u["en"], "ko": u["ko"],
+                "ico": u.get("ico", "📘"), "ready": bool(u.get("ready"))}
+
+    zones = [{"nm": g["theme"], "ico": g.get("ico", "📍"),
+              "u": [unit(u) for u in g["units"]]} for g in data["groups"]]
+
+    data_js = (f"const ZONES={json.dumps(zones, ensure_ascii=False)};\n"
+               f"const SEED={json.dumps(seed)};")
+
+    out = f"""<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>영어 모험 지도 — 도장 {len(units)}개 모으기</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+<style>{CSS}</style>
+</head>
+<body>
+
+<div class="top">
+  <h1>영어 모험 <span class="em">지도</span></h1>
+  <p>한 권 다 읽으면 도장을 쾅! {len(units)}개를 모아 보자</p>
+
+  <div class="gauge">
+    <div class="nums"><span class="big" id="cnt">0</span><span class="of">/ {len(units)} 도장</span></div>
+    <div class="bar"><i id="bar"></i></div>
+    <p class="note" id="note"></p>
+  </div>
+</div>
+
+<div class="trail" id="trail"></div>
+
+<div class="foot">
+  도장은 이 기기에 저장돼요.
+  <span class="warn" id="memwarn" hidden>— 이 브라우저에서는 저장이 안 돼서 새로 고치면 사라져요.</span>
+  <br>
+  <button id="copy">진도 복사하기</button> ·
+  <button id="reset">전부 지우고 처음부터</button> ·
+  <a href="list.html">부모용 목록 (날짜 · 소요시간)</a>
+  <div id="progress" hidden></div>
+</div>
+
+<div class="back" id="back">
+  <div class="pop" role="dialog" aria-modal="true" aria-labelledby="popEn">
+    <div class="ico" id="popIco"></div>
+    <div class="no" id="popNo"></div>
+    <div class="en" id="popEn"></div>
+    <div class="ko" id="popKo"></div>
+    <div class="btns">
+      <a class="btn" id="popRead" href="#">📖 읽으러 가기</a>
+      <a class="btn" id="popPrint" href="#">🖨 문제지 뽑기</a>
+      <button class="btn go" id="popStamp">도장 쾅! 찍기</button>
+    </div>
+    <button class="close" id="popClose">닫기</button>
+  </div>
+</div>
+
+<script>
+{data_js}
+{JS}
 </script>
 </body>
 </html>
+"""
+    open(os.path.join(ROOT, "index.html"), "w", encoding="utf-8").write(out)
+    print(f"생성: index.html  (지도 — 칸 {len(units)}개, 미리 찍힌 도장 {len(seed)}개)")
+
+
+if __name__ == "__main__":
+    main()

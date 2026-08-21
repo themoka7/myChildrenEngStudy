@@ -2,123 +2,124 @@
   "course": "EBS 초등 영어 읽기",
   "subtitle": "아빠표 영어 공부",
   "_status": "done = 학습완료, doing = 학습중, todo = 아직",
+  "_ico": "아이가 누를 칸에 찍히는 그림. 지도(index.html)에 쓴다",
   "_ready": "true 면 읽기 페이지 + A4 문제지가 만들어져 있다는 뜻",
   "groups": [
     {
-      "theme": "동물",
+      "theme": "동물", "ico": "🐾",
       "units": [
-        {"n": 1, "en": "Rabbits", "ko": "토끼", "status": "done", "date": "26.08.19", "min": 14, "ready": true},
-        {"n": 2, "en": "Dogs", "ko": "개", "status": "done", "date": "26.06.30", "min": 13, "ready": true},
-        {"n": 3, "en": "Cats", "ko": "고양이", "status": "done", "date": "26.07.01", "min": 15, "ready": true},
-        {"n": 4, "en": "Hamsters", "ko": "햄스터", "status": "done", "date": "26.07.02", "min": 15, "ready": true}
+        {"n": 1, "en": "Rabbits", "ko": "토끼", "ico": "🐰", "status": "done", "date": "26.08.19", "min": 14, "ready": true},
+        {"n": 2, "en": "Dogs", "ko": "개", "ico": "🐶", "status": "done", "date": "26.06.30", "min": 13, "ready": true},
+        {"n": 3, "en": "Cats", "ko": "고양이", "ico": "🐱", "status": "done", "date": "26.07.01", "min": 15, "ready": true},
+        {"n": 4, "en": "Hamsters", "ko": "햄스터", "ico": "🐹", "status": "done", "date": "26.07.02", "min": 15, "ready": true}
       ]
     },
     {
-      "theme": "색깔",
+      "theme": "색깔", "ico": "🎨",
       "units": [
-        {"n": 5, "en": "Brown", "ko": "갈색", "status": "done", "date": "26.08.21", "min": 14, "ready": true},
-        {"n": 6, "en": "Orange", "ko": "주황색", "status": "done", "date": "26.07.07", "min": 15, "ready": true},
-        {"n": 7, "en": "Purple", "ko": "보라색", "status": "done", "date": "26.07.08", "min": 14, "ready": true},
-        {"n": 8, "en": "Gray", "ko": "회색", "status": "done", "date": "26.07.09", "min": 13, "ready": true}
+        {"n": 5, "en": "Brown", "ko": "갈색", "ico": "🟤", "status": "done", "date": "26.08.21", "min": 14, "ready": true},
+        {"n": 6, "en": "Orange", "ko": "주황색", "ico": "🟠", "status": "done", "date": "26.07.07", "min": 15, "ready": true},
+        {"n": 7, "en": "Purple", "ko": "보라색", "ico": "🟣", "status": "done", "date": "26.07.08", "min": 14, "ready": true},
+        {"n": 8, "en": "Gray", "ko": "회색", "ico": "⚪", "status": "done", "date": "26.07.09", "min": 13, "ready": true}
       ]
     },
     {
-      "theme": "직업",
+      "theme": "직업", "ico": "🚒",
       "units": [
-        {"n": 9, "en": "Teachers", "ko": "선생님", "status": "done", "date": "26.07.14", "min": 13, "ready": true},
-        {"n": 10, "en": "Doctors", "ko": "의사", "status": "done", "date": "26.07.14", "min": 13, "ready": true},
-        {"n": 11, "en": "Firefighters", "ko": "소방관", "status": "done", "date": "26.07.15", "min": 13, "ready": true},
-        {"n": 12, "en": "Police Officers", "ko": "경찰관", "status": "done", "date": "26.08.18", "min": 13, "ready": true}
+        {"n": 9, "en": "Teachers", "ko": "선생님", "ico": "👩‍🏫", "status": "done", "date": "26.07.14", "min": 13, "ready": true},
+        {"n": 10, "en": "Doctors", "ko": "의사", "ico": "👩‍⚕️", "status": "done", "date": "26.07.14", "min": 13, "ready": true},
+        {"n": 11, "en": "Firefighters", "ko": "소방관", "ico": "🧑‍🚒", "status": "done", "date": "26.07.15", "min": 13, "ready": true},
+        {"n": 12, "en": "Police Officers", "ko": "경찰관", "ico": "👮", "status": "done", "date": "26.08.18", "min": 13, "ready": true}
       ]
     },
     {
-      "theme": "평면도형",
+      "theme": "평면도형", "ico": "🔷",
       "units": [
-        {"n": 13, "en": "Circles", "ko": "원", "status": "doing", "date": "26.07.13", "min": 13, "ready": true},
-        {"n": 14, "en": "Squares", "ko": "정사각형", "status": "doing", "date": "26.07.13", "min": 13, "ready": true},
-        {"n": 15, "en": "Triangles", "ko": "삼각형", "status": "doing", "date": "26.07.14", "min": 14, "ready": true},
-        {"n": 16, "en": "Hexagons", "ko": "육각형", "status": "todo", "min": 14, "ready": true}
+        {"n": 13, "en": "Circles", "ko": "원", "ico": "⭕", "status": "doing", "date": "26.07.13", "min": 13, "ready": true},
+        {"n": 14, "en": "Squares", "ko": "정사각형", "ico": "🟦", "status": "doing", "date": "26.07.13", "min": 13, "ready": true},
+        {"n": 15, "en": "Triangles", "ko": "삼각형", "ico": "🔺", "status": "doing", "date": "26.07.14", "min": 14, "ready": true},
+        {"n": 16, "en": "Hexagons", "ko": "육각형", "ico": "🛑", "status": "todo", "min": 14, "ready": true}
       ]
     },
     {
-      "theme": "우리 몸",
+      "theme": "우리 몸", "ico": "🙋",
       "units": [
-        {"n": 17, "en": "Eyes", "ko": "눈", "status": "todo", "min": 14, "ready": true},
-        {"n": 18, "en": "Nose", "ko": "코", "status": "todo", "min": 14, "ready": true},
-        {"n": 19, "en": "Ears", "ko": "귀", "status": "todo", "min": 14, "ready": true},
-        {"n": 20, "en": "Mouth", "ko": "입", "status": "todo", "min": 14, "ready": true},
-        {"n": 21, "en": "Arms & Hands", "ko": "팔과 손", "status": "todo", "min": 14, "ready": true},
-        {"n": 22, "en": "Legs & Feet", "ko": "다리와 발", "status": "todo", "min": 14, "ready": true}
+        {"n": 17, "en": "Eyes", "ko": "눈", "ico": "👁️", "status": "todo", "min": 14, "ready": true},
+        {"n": 18, "en": "Nose", "ko": "코", "ico": "👃", "status": "todo", "min": 14, "ready": true},
+        {"n": 19, "en": "Ears", "ko": "귀", "ico": "👂", "status": "todo", "min": 14, "ready": true},
+        {"n": 20, "en": "Mouth", "ko": "입", "ico": "👄", "status": "todo", "min": 14, "ready": true},
+        {"n": 21, "en": "Arms & Hands", "ko": "팔과 손", "ico": "✋", "status": "todo", "min": 14, "ready": true},
+        {"n": 22, "en": "Legs & Feet", "ko": "다리와 발", "ico": "🦶", "status": "todo", "min": 14, "ready": true}
       ]
     },
     {
-      "theme": "발명품",
+      "theme": "발명품", "ico": "💡",
       "units": [
-        {"n": 23, "en": "Telephone", "ko": "전화기", "status": "todo", "min": 13, "ready": true},
-        {"n": 24, "en": "Automobile", "ko": "자동차", "status": "todo", "min": 14, "ready": true}
+        {"n": 23, "en": "Telephone", "ko": "전화기", "ico": "☎️", "status": "todo", "min": 13, "ready": true},
+        {"n": 24, "en": "Automobile", "ko": "자동차", "ico": "🚗", "status": "todo", "min": 14, "ready": true}
       ]
     },
     {
-      "theme": "이야기",
+      "theme": "이야기", "ico": "📖",
       "units": [
-        {"n": 25, "en": "A Monster on the Bus (1)", "ko": "버스에 탄 괴물 (1)", "status": "todo", "min": 14, "ready": true},
-        {"n": 26, "en": "A Monster on the Bus (2)", "ko": "버스에 탄 괴물 (2)", "status": "todo", "min": 15, "ready": true},
-        {"n": 27, "en": "A Monster in the Park (1)", "ko": "공원의 괴물 (1)", "status": "todo", "min": 15, "ready": true},
-        {"n": 28, "en": "A Monster in the Park (2)", "ko": "공원의 괴물 (2)", "status": "todo", "min": 14, "ready": true},
-        {"n": 29, "en": "The Town Mouse and the Country Mouse", "ko": "도시 쥐와 시골 쥐", "status": "todo", "min": 14, "ready": true},
-        {"n": 30, "en": "The Lion and the Mouse", "ko": "사자와 쥐", "status": "todo", "min": 15, "ready": true}
+        {"n": 25, "en": "A Monster on the Bus (1)", "ko": "버스에 탄 괴물 (1)", "ico": "👹", "status": "todo", "min": 14, "ready": true},
+        {"n": 26, "en": "A Monster on the Bus (2)", "ko": "버스에 탄 괴물 (2)", "ico": "👹", "status": "todo", "min": 15, "ready": true},
+        {"n": 27, "en": "A Monster in the Park (1)", "ko": "공원의 괴물 (1)", "ico": "👾", "status": "todo", "min": 15, "ready": true},
+        {"n": 28, "en": "A Monster in the Park (2)", "ko": "공원의 괴물 (2)", "ico": "👾", "status": "todo", "min": 14, "ready": true},
+        {"n": 29, "en": "The Town Mouse and the Country Mouse", "ko": "도시 쥐와 시골 쥐", "ico": "🐭", "status": "todo", "min": 14, "ready": true},
+        {"n": 30, "en": "The Lion and the Mouse", "ko": "사자와 쥐", "ico": "🦁", "status": "todo", "min": 15, "ready": true}
       ]
     },
     {
-      "theme": "우주",
+      "theme": "우주", "ico": "🚀",
       "units": [
-        {"n": 31, "en": "Earth", "ko": "지구", "status": "todo", "min": 14, "ready": true},
-        {"n": 32, "en": "Mercury", "ko": "수성", "status": "todo", "min": 13, "ready": true},
-        {"n": 33, "en": "Venus", "ko": "금성", "status": "todo", "min": 15, "ready": true},
-        {"n": 34, "en": "Mars", "ko": "화성", "status": "todo", "min": 14, "ready": true},
-        {"n": 35, "en": "Jupiter", "ko": "목성", "status": "todo", "min": 13, "ready": true},
-        {"n": 36, "en": "Saturn", "ko": "토성", "status": "todo", "min": 14, "ready": true}
+        {"n": 31, "en": "Earth", "ko": "지구", "ico": "🌍", "status": "todo", "min": 14, "ready": true},
+        {"n": 32, "en": "Mercury", "ko": "수성", "ico": "🌑", "status": "todo", "min": 13, "ready": true},
+        {"n": 33, "en": "Venus", "ko": "금성", "ico": "🌕", "status": "todo", "min": 15, "ready": true},
+        {"n": 34, "en": "Mars", "ko": "화성", "ico": "🔴", "status": "todo", "min": 14, "ready": true},
+        {"n": 35, "en": "Jupiter", "ko": "목성", "ico": "🟠", "status": "todo", "min": 13, "ready": true},
+        {"n": 36, "en": "Saturn", "ko": "토성", "ico": "🪐", "status": "todo", "min": 14, "ready": true}
       ]
     },
     {
-      "theme": "인물",
+      "theme": "인물", "ico": "🎩",
       "units": [
-        {"n": 37, "en": "Abraham Lincoln", "ko": "에이브러햄 링컨", "status": "todo", "min": 15, "ready": true},
-        {"n": 38, "en": "Barack Obama", "ko": "버락 오바마", "status": "todo", "min": 15, "ready": true}
+        {"n": 37, "en": "Abraham Lincoln", "ko": "에이브러햄 링컨", "ico": "🎩", "status": "todo", "min": 15, "ready": true},
+        {"n": 38, "en": "Barack Obama", "ko": "버락 오바마", "ico": "🎤", "status": "todo", "min": 15, "ready": true}
       ]
     },
     {
-      "theme": "교통수단",
+      "theme": "교통수단", "ico": "✈️",
       "units": [
-        {"n": 39, "en": "Cars", "ko": "자동차", "status": "todo", "min": 14, "ready": true},
-        {"n": 40, "en": "Spaceships", "ko": "우주선", "status": "todo", "min": 14, "ready": true},
-        {"n": 41, "en": "Boats", "ko": "배", "status": "todo", "min": 15, "ready": true},
-        {"n": 42, "en": "Planes", "ko": "비행기", "status": "todo", "min": 15, "ready": true}
+        {"n": 39, "en": "Cars", "ko": "자동차", "ico": "🚙", "status": "todo", "min": 14, "ready": true},
+        {"n": 40, "en": "Spaceships", "ko": "우주선", "ico": "🚀", "status": "todo", "min": 14, "ready": true},
+        {"n": 41, "en": "Boats", "ko": "배", "ico": "⛵", "status": "todo", "min": 15, "ready": true},
+        {"n": 42, "en": "Planes", "ko": "비행기", "ico": "✈️", "status": "todo", "min": 15, "ready": true}
       ]
     },
     {
-      "theme": "곤충",
+      "theme": "곤충", "ico": "🐝",
       "units": [
-        {"n": 43, "en": "Ants", "ko": "개미", "status": "todo", "min": 14, "ready": true},
-        {"n": 44, "en": "Bees", "ko": "벌", "status": "todo", "min": 14, "ready": true},
-        {"n": 45, "en": "Butterflies", "ko": "나비", "status": "todo", "min": 14, "ready": true},
-        {"n": 46, "en": "Mosquitoes", "ko": "모기", "status": "todo", "min": 14, "ready": true}
+        {"n": 43, "en": "Ants", "ko": "개미", "ico": "🐜", "status": "todo", "min": 14, "ready": true},
+        {"n": 44, "en": "Bees", "ko": "벌", "ico": "🐝", "status": "todo", "min": 14, "ready": true},
+        {"n": 45, "en": "Butterflies", "ko": "나비", "ico": "🦋", "status": "todo", "min": 14, "ready": true},
+        {"n": 46, "en": "Mosquitoes", "ko": "모기", "ico": "🦟", "status": "todo", "min": 14, "ready": true}
       ]
     },
     {
-      "theme": "운동",
+      "theme": "운동", "ico": "⚾",
       "units": [
-        {"n": 47, "en": "Gymnastics", "ko": "체조", "status": "todo", "min": 15, "ready": true},
-        {"n": 48, "en": "Baseball", "ko": "야구", "status": "todo", "min": 14, "ready": true}
+        {"n": 47, "en": "Gymnastics", "ko": "체조", "ico": "🤸", "status": "todo", "min": 15, "ready": true},
+        {"n": 48, "en": "Baseball", "ko": "야구", "ico": "⚾", "status": "todo", "min": 14, "ready": true}
       ]
     },
     {
-      "theme": "입체도형",
+      "theme": "입체도형", "ico": "🧊",
       "units": [
-        {"n": 49, "en": "Cubes", "ko": "정육면체", "status": "todo", "min": 15, "ready": true},
-        {"n": 50, "en": "Pyramids", "ko": "각뿔", "status": "todo", "min": 15, "ready": true},
-        {"n": 51, "en": "Cones", "ko": "원뿔", "status": "todo", "min": 14, "ready": true},
-        {"n": 52, "en": "Cylinders", "ko": "원기둥", "status": "todo", "min": 15, "ready": true}
+        {"n": 49, "en": "Cubes", "ko": "정육면체", "ico": "🧊", "status": "todo", "min": 15, "ready": true},
+        {"n": 50, "en": "Pyramids", "ko": "각뿔", "ico": "⛰️", "status": "todo", "min": 15, "ready": true},
+        {"n": 51, "en": "Cones", "ko": "원뿔", "ico": "🍦", "status": "todo", "min": 14, "ready": true},
+        {"n": 52, "en": "Cylinders", "ko": "원기둥", "ico": "🥫", "status": "todo", "min": 15, "ready": true}
       ]
     }
   ]

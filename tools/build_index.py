@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-"""units.json 을 읽어 메인 목차(index.html)를 만든다.
+"""units.json 을 읽어 부모용 목록(list.html)을 만든다.
 
-유닛을 추가할 때는 units.json 만 고치고 이걸 다시 돌린다.
+메인 페이지는 아이가 보는 지도(index.html, tools/build_map.py)다. 이쪽은
+날짜·소요시간·상태 필터가 필요한 부모용 표라서 따로 둔다 — 지도에 이걸
+다 넣으면 아이 화면이 관리 화면이 되어 버린다.
+
 색은 읽기 페이지(english-reading-html 템플릿)의 팔레트를 그대로 가져와
-목차 → 읽기 → 문제지가 한 덩어리로 보이게 맞췄다.
+목록 → 읽기 → 문제지가 한 덩어리로 보이게 맞췄다.
 
 사용법:
     python3 tools/build_index.py
@@ -128,6 +131,7 @@ footer{
   font-size:13px;color:var(--muted);
 }
 footer b{color:var(--ink)}
+footer a,.tagline a{color:var(--carrot);font-weight:600}
 
 @media (max-width:520px){
   h1{font-size:34px}
@@ -224,7 +228,7 @@ def main():
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{html.escape(data["subtitle"])} — {html.escape(data["course"])}</title>
+<title>부모용 목록 — {html.escape(data["subtitle"])}</title>
 <style>{CSS}</style>
 </head>
 <body>
@@ -233,9 +237,8 @@ def main():
   <header>
     <p class="eyebrow">{html.escape(data["course"])}</p>
     <h1>{html.escape(data["subtitle"])}</h1>
-    <p class="tagline">유닛을 고르면 <b>읽기 페이지</b>로 들어갑니다.
-      단어에 손을 대면 뜻이 뜨고, 문장마다 해석·듣기 버튼이 있어요.
-      종이에 뽑아 풀려면 <b>A4 출력</b>을 누르세요.</p>
+    <p class="tagline">부모용 목록입니다 — 학습 날짜와 걸린 시간, 상태별 필터.
+      아이 화면은 <a href="index.html">영어 모험 지도</a> 쪽입니다.</p>
     <div class="summary">
       <div class="stat done"><b>{counts['done']}</b><span>학습완료</span></div>
       <div class="stat doing"><b>{counts['doing']}</b><span>학습중</span></div>
@@ -251,6 +254,7 @@ def main():
   <p class="empty" id="empty" hidden>해당하는 유닛이 없어요.</p>
 
   <footer>
+    <p style="margin:0 0 10px"><a href="index.html">← 영어 모험 지도</a></p>
     <b>인쇄</b> — A4 출력 페이지에서 <b>Ctrl+P</b>(맥은 ⌘+P), 배율 100%,
     「배경 그래픽」을 켜고 인쇄하세요. 문제 2장 + 부모용 정답·지도 노트 1장이 나옵니다.
     정답지를 빼고 뽑으려면 위쪽의 <b>「정답지 빼고 인쇄」</b>를 체크하세요.
@@ -261,9 +265,9 @@ def main():
 </body>
 </html>
 """
-    path = os.path.join(ROOT, "index.html")
+    path = os.path.join(ROOT, "list.html")
     open(path, "w", encoding="utf-8").write(out)
-    print(f"생성: index.html  (유닛 {len(units)}개, 자료 준비됨 {ready}개)")
+    print(f"생성: list.html  (유닛 {len(units)}개, 자료 준비됨 {ready}개)")
 
 
 if __name__ == "__main__":
