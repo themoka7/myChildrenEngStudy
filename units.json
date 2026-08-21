@@ -1,0 +1,125 @@
+{
+  "course": "EBS 초등 영어 읽기",
+  "subtitle": "아빠표 영어 공부",
+  "_status": "done = 학습완료, doing = 학습중, todo = 아직",
+  "_ready": "true 면 읽기 페이지 + A4 문제지가 만들어져 있다는 뜻",
+  "groups": [
+    {
+      "theme": "동물",
+      "units": [
+        {"n": 1, "en": "Rabbits", "ko": "토끼", "status": "done", "date": "26.08.19", "min": 14, "ready": true},
+        {"n": 2, "en": "Dogs", "ko": "개", "status": "done", "date": "26.06.30", "min": 13},
+        {"n": 3, "en": "Cats", "ko": "고양이", "status": "done", "date": "26.07.01", "min": 15},
+        {"n": 4, "en": "Hamsters", "ko": "햄스터", "status": "done", "date": "26.07.02", "min": 15}
+      ]
+    },
+    {
+      "theme": "색깔",
+      "units": [
+        {"n": 5, "en": "Brown", "ko": "갈색", "status": "done", "date": "26.08.21", "min": 14},
+        {"n": 6, "en": "Orange", "ko": "주황색", "status": "done", "date": "26.07.07", "min": 15},
+        {"n": 7, "en": "Purple", "ko": "보라색", "status": "done", "date": "26.07.08", "min": 14},
+        {"n": 8, "en": "Gray", "ko": "회색", "status": "done", "date": "26.07.09", "min": 13}
+      ]
+    },
+    {
+      "theme": "직업",
+      "units": [
+        {"n": 9, "en": "Teachers", "ko": "선생님", "status": "done", "date": "26.07.14", "min": 13},
+        {"n": 10, "en": "Doctors", "ko": "의사", "status": "done", "date": "26.07.14", "min": 13},
+        {"n": 11, "en": "Firefighters", "ko": "소방관", "status": "done", "date": "26.07.15", "min": 13},
+        {"n": 12, "en": "Police Officers", "ko": "경찰관", "status": "done", "date": "26.08.18", "min": 13}
+      ]
+    },
+    {
+      "theme": "평면도형",
+      "units": [
+        {"n": 13, "en": "Circles", "ko": "원", "status": "doing", "date": "26.07.13", "min": 13},
+        {"n": 14, "en": "Squares", "ko": "정사각형", "status": "doing", "date": "26.07.13", "min": 13},
+        {"n": 15, "en": "Triangles", "ko": "삼각형", "status": "doing", "date": "26.07.14", "min": 14},
+        {"n": 16, "en": "Hexagons", "ko": "육각형", "status": "todo", "min": 14}
+      ]
+    },
+    {
+      "theme": "우리 몸",
+      "units": [
+        {"n": 17, "en": "Eyes", "ko": "눈", "status": "todo", "min": 14},
+        {"n": 18, "en": "Nose", "ko": "코", "status": "todo", "min": 14},
+        {"n": 19, "en": "Ears", "ko": "귀", "status": "todo", "min": 14},
+        {"n": 20, "en": "Mouth", "ko": "입", "status": "todo", "min": 14},
+        {"n": 21, "en": "Arms & Hands", "ko": "팔과 손", "status": "todo", "min": 14},
+        {"n": 22, "en": "Legs & Feet", "ko": "다리와 발", "status": "todo", "min": 14}
+      ]
+    },
+    {
+      "theme": "발명품",
+      "units": [
+        {"n": 23, "en": "Telephone", "ko": "전화기", "status": "todo", "min": 13},
+        {"n": 24, "en": "Automobile", "ko": "자동차", "status": "todo", "min": 14}
+      ]
+    },
+    {
+      "theme": "이야기",
+      "units": [
+        {"n": 25, "en": "A Monster on the Bus (1)", "ko": "버스에 탄 괴물 (1)", "status": "todo", "min": 14},
+        {"n": 26, "en": "A Monster on the Bus (2)", "ko": "버스에 탄 괴물 (2)", "status": "todo", "min": 15},
+        {"n": 27, "en": "A Monster in the Park (1)", "ko": "공원의 괴물 (1)", "status": "todo", "min": 15},
+        {"n": 28, "en": "A Monster in the Park (2)", "ko": "공원의 괴물 (2)", "status": "todo", "min": 14},
+        {"n": 29, "en": "The Town Mouse and the Country Mouse", "ko": "도시 쥐와 시골 쥐", "status": "todo", "min": 14},
+        {"n": 30, "en": "The Lion and the Mouse", "ko": "사자와 쥐", "status": "todo", "min": 15}
+      ]
+    },
+    {
+      "theme": "우주",
+      "units": [
+        {"n": 31, "en": "Earth", "ko": "지구", "status": "todo", "min": 14},
+        {"n": 32, "en": "Mercury", "ko": "수성", "status": "todo", "min": 13},
+        {"n": 33, "en": "Venus", "ko": "금성", "status": "todo", "min": 15},
+        {"n": 34, "en": "Mars", "ko": "화성", "status": "todo", "min": 14},
+        {"n": 35, "en": "Jupiter", "ko": "목성", "status": "todo", "min": 13},
+        {"n": 36, "en": "Saturn", "ko": "토성", "status": "todo", "min": 14}
+      ]
+    },
+    {
+      "theme": "인물",
+      "units": [
+        {"n": 37, "en": "Abraham Lincoln", "ko": "에이브러햄 링컨", "status": "todo", "min": 15},
+        {"n": 38, "en": "Barack Obama", "ko": "버락 오바마", "status": "todo", "min": 15}
+      ]
+    },
+    {
+      "theme": "교통수단",
+      "units": [
+        {"n": 39, "en": "Cars", "ko": "자동차", "status": "todo", "min": 14},
+        {"n": 40, "en": "Spaceships", "ko": "우주선", "status": "todo", "min": 14},
+        {"n": 41, "en": "Boats", "ko": "배", "status": "todo", "min": 15},
+        {"n": 42, "en": "Planes", "ko": "비행기", "status": "todo", "min": 15}
+      ]
+    },
+    {
+      "theme": "곤충",
+      "units": [
+        {"n": 43, "en": "Ants", "ko": "개미", "status": "todo", "min": 14},
+        {"n": 44, "en": "Bees", "ko": "벌", "status": "todo", "min": 14},
+        {"n": 45, "en": "Butterflies", "ko": "나비", "status": "todo", "min": 14},
+        {"n": 46, "en": "Mosquitoes", "ko": "모기", "status": "todo", "min": 14}
+      ]
+    },
+    {
+      "theme": "운동",
+      "units": [
+        {"n": 47, "en": "Gymnastics", "ko": "체조", "status": "todo", "min": 15},
+        {"n": 48, "en": "Baseball", "ko": "야구", "status": "todo", "min": 14}
+      ]
+    },
+    {
+      "theme": "입체도형",
+      "units": [
+        {"n": 49, "en": "Cubes", "ko": "정육면체", "status": "todo", "min": 15},
+        {"n": 50, "en": "Pyramids", "ko": "각뿔", "status": "todo", "min": 15},
+        {"n": 51, "en": "Cones", "ko": "원뿔", "status": "todo", "min": 14},
+        {"n": 52, "en": "Cylinders", "ko": "원기둥", "status": "todo", "min": 15}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "title": "Rabbits",
+  "eyebrow": "Unit 1 · Nonfiction · Animals",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "fur":      {"ipa": "fɜːr",        "pos": "명사",   "ko": "털, 모피"},
+    "ears":     {"ipa": "ɪərz",        "pos": "명사",   "ko": "귀 (ear의 복수)"},
+    "fluffy":   {"ipa": "ˈflʌfi",      "pos": "형용사", "ko": "푹신한, 솜털 같은"},
+    "tails":    {"ipa": "teɪlz",       "pos": "명사",   "ko": "꼬리 (tail의 복수)"},
+    "hop":      {"ipa": "hɑːp",        "pos": "동사",   "ko": "폴짝 뛰다"},
+    "fields":   {"ipa": "fiːldz",      "pos": "명사",   "ko": "들판 (field의 복수)"},
+    "forests":  {"ipa": "ˈfɔːrɪsts",   "pos": "명사",   "ko": "숲 (forest의 복수)"},
+    "deserts":  {"ipa": "ˈdezərts",    "pos": "명사",   "ko": "사막 (desert의 복수)"},
+    "dig":      {"ipa": "dɪɡ",         "pos": "동사",   "ko": "파다"},
+    "tunnels":  {"ipa": "ˈtʌnəlz",     "pos": "명사",   "ko": "굴, 터널"},
+    "nests":    {"ipa": "nests",       "pos": "명사",   "ko": "둥지 (nest의 복수)"},
+    "grassy":   {"ipa": "ˈɡræsi",      "pos": "형용사", "ko": "풀이 많은"},
+    "grass":    {"ipa": "ɡræs",        "pos": "명사",   "ko": "풀"},
+    "clovers":  {"ipa": "ˈkloʊvərz",   "pos": "명사",   "ko": "클로버"},
+    "berries":  {"ipa": "ˈberiz",      "pos": "명사",   "ko": "산딸기류 열매"},
+    "bark":     {"ipa": "bɑːrk",       "pos": "명사",   "ko": "나무껍질"},
+    "fast":     {"ipa": "fæst",        "pos": "형용사", "ko": "빠른"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Rabbits have soft fur.", "ko": "토끼는 부드러운 털을 가지고 있어요."},
+      {"en": "They can be brown or gray.", "ko": "갈색이거나 회색일 수 있어요."},
+      {"en": "Some are white or black.", "ko": "어떤 토끼는 흰색이거나 검은색이에요."}
+    ]},
+    {"sents": [
+      {"en": "Rabbits have big ears.", "ko": "토끼는 큰 귀를 가지고 있어요."},
+      {"en": "They have fluffy tails.", "ko": "푹신한 꼬리도 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Rabbits do not walk.", "ko": "토끼는 걷지 않아요."},
+      {"en": "They hop!", "ko": "폴짝폴짝 뛰어요!"}
+    ]},
+    {"sents": [
+      {"en": "Rabbits have long back legs.", "ko": "토끼는 뒷다리가 길어요."},
+      {"en": "They use them to hop.", "ko": "그 다리를 써서 폴짝 뛰어요."}
+    ]},
+    {"sents": [
+      {"en": "Rabbits live in fields and forests.", "ko": "토끼는 들판과 숲에 살아요."},
+      {"en": "They live in deserts and cities, too.", "ko": "사막과 도시에도 살아요."}
+    ]},
+    {"sents": [
+      {"en": "Most rabbits dig tunnels.", "ko": "대부분의 토끼는 굴을 파요."},
+      {"en": "Some build nests in grassy areas.", "ko": "어떤 토끼는 풀이 많은 곳에 둥지를 지어요."}
+    ]},
+    {"sents": [
+      {"en": "Rabbits eat grass and clovers.", "ko": "토끼는 풀과 클로버를 먹어요."},
+      {"en": "They also like berries and tree bark.", "ko": "산딸기와 나무껍질도 좋아해요."}
+    ]},
+    {"sents": [
+      {"en": "Rabbits are fast.", "ko": "토끼는 빨라요."},
+      {"en": "Some can run up to 20mph (32km/h)!", "ko": "어떤 토끼는 시속 32km까지 달릴 수 있어요!"}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Have you seen a rabbit?", "ko": "토끼를 본 적 있나요?"}
+    ]}
+  ]
+}
