@@ -1,0 +1,70 @@
+{
+  "title": "Rabbits",
+  "title_ko": "토끼",
+
+  "paras": [
+    ["Rabbits have soft fur.", "They can be brown or gray.", "Some are white or black."],
+    ["Rabbits have big ears.", "They have fluffy tails."],
+    ["Rabbits do not walk.", "They hop!"],
+    ["Rabbits have long back legs.", "They use them to hop."],
+    ["Rabbits live in fields and forests.", "They live in deserts and cities, too."],
+    ["Most rabbits dig tunnels.", "Some build nests in grassy areas."],
+    ["Rabbits eat grass and clovers.", "They also like berries and tree bark."],
+    ["Rabbits are fast.", "Some can run up to 20mph (32km/h)!"],
+    ["Have you seen a rabbit?"]
+  ],
+
+  "match": [
+    {"en": "fur",     "ko": "털"},
+    {"en": "ears",    "ko": "귀"},
+    {"en": "hop",     "ko": "폴짝 뛰다"},
+    {"en": "tunnels", "ko": "굴"},
+    {"en": "berries", "ko": "산딸기"}
+  ],
+  "match_ko_order": ["굴", "털", "산딸기", "귀", "폴짝 뛰다"],
+
+  "phonics": [
+    {"q": "h_p",  "a": "o", "ko": "폴짝 뛰다"},
+    {"q": "d_g",  "a": "i", "ko": "파다"},
+    {"q": "b_g",  "a": "i", "ko": "큰"},
+    {"q": "n_st", "a": "e", "ko": "둥지"},
+    {"q": "f_st", "a": "a", "ko": "빠른"},
+    {"q": "gr_ss","a": "a", "ko": "풀"}
+  ],
+
+  "scan": [
+    {"q": "토끼의 귀는 어떤가요?",          "a": "big",     "sent": "4"},
+    {"q": "토끼는 걷는 대신 무엇을 하나요?", "a": "hop",     "sent": "7"},
+    {"q": "대부분의 토끼는 무엇을 파나요?",  "a": "tunnels", "sent": "12"},
+    {"q": "토끼는 얼마나 빠른가요?",        "a": "fast / 20mph (32km/h)", "sent": "16·17"}
+  ],
+
+  "tf": [
+    {"en": "Rabbits have soft fur.", "answer": "O", "why": "부드러운 털이 있어요.", "sent": "1"},
+    {"en": "Some rabbits are white.", "answer": "O", "why": "흰 토끼도 있어요.", "sent": "3"},
+    {"en": "Rabbits walk.", "answer": "X", "why": "걷지 않고 폴짝 뛰어요.", "sent": "6·7"},
+    {"en": "Rabbits eat meat.", "gloss": "meat 고기", "answer": "X",
+     "why": "풀·클로버·산딸기·나무껍질을 먹어요. 고기는 안 먹어요.", "sent": "14·15"},
+    {"en": "Rabbits are slow.", "gloss": "slow 느린", "answer": "X",
+     "why": "토끼는 빨라요.", "sent": "16"}
+  ],
+
+  "fill_bank": ["ears", "hop", "tunnels", "fast"],
+  "fill": [
+    {"en": "Rabbits have big ___.",              "a": "ears",    "ko": "토끼는 큰 귀가 있어요."},
+    {"en": "Rabbits do not walk. They ___.",     "a": "hop",     "ko": "토끼는 걷지 않고 폴짝 뛰어요."},
+    {"en": "Most rabbits dig ___.",              "a": "tunnels", "ko": "대부분의 토끼는 굴을 파요."}
+  ],
+
+  "trace": [
+    {"en": "Rabbits live in fields and forests.", "ko": "토끼는 들판과 숲에 살아요."},
+    {"en": "Rabbits eat grass and clovers.", "ko": "토끼는 풀과 클로버를 먹어요."}
+  ],
+
+  "notes": {
+    "phonics": "막히면 소리를 하나씩 이어 붙여 주세요 — /h/ · /o/ · /p/ → hop. <b>dig을 dog, big을 bug으로 쓰는 건 흔한 실수</b>입니다. 틀렸다고 하지 말고 \"그건 무슨 뜻이지?\" 하고 옆의 한글 뜻을 다시 보게 하세요.",
+    "scan": "답을 못 찾아도 <b>문장 번호만 찾으면 절반은 성공</b>입니다. 훑어 찾기 연습이 목적이에요.",
+    "tf": "4번은 지문에 <b>없는</b> 내용입니다. \"지문에 그런 말 있었어?\"라고 되물어 주세요.",
+    "trace": "대문자로 시작했는지, 마침표를 찍었는지만 봐 주세요."
+  }
+}
