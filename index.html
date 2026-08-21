@@ -347,9 +347,12 @@ body{
 #intro .map{background:var(--ink);color:#fff}
 #intro .map h2{color:#fff}
 #intro .map .lead{color:#a9bed2}
-/* 어두운 칸에서는 제목이 흰 글씨인데, 형광펜이 노랑이라 흰 글씨가
-   노랑 위에 얹혀 안 읽힌다. 그 부분만 글씨를 진하게 되돌린다. */
+/* 어두운 칸의 형광펜. 흰 글씨를 그대로 두면 노랑 위 흰 글씨가 되어 안
+   읽히고, 글씨만 진하게 바꾸면 띠가 글자 아래쪽 55% 만 덮기 때문에 위쪽
+   절반이 남색 배경에 묻혀 글자가 반만 보인다. 어두운 데서는 띠를 글자
+   높이만큼 채워 도장처럼 만든다. */
 #intro .map h2 mark{color:var(--ink)}
+#intro .map h2 mark::before{height:1.12em;bottom:-.07em;border-radius:4px 8px 5px 7px}
 #intro .map .box{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);
   border-radius:18px;padding:22px}
 #intro .map .stamps{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
