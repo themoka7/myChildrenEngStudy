@@ -1,0 +1,72 @@
+{
+  "title": "Triangles",
+  "title_ko": "삼각형",
+
+  "paras": [
+    ["A triangle has 3 sides.", "It has 3 angles.", "This shape is found all over!"],
+    ["They are in windows.", "They are on roofs."],
+    ["They are cut in pie.", "It is easier to share!"],
+    ["They are on boats.", "They are the sails.", "They help move the boat."],
+    ["They are on bridges.", "They make them stronger."],
+    ["They are in music.", "Kate plays the triangle."],
+    ["Cut a rectangle in half.", "It makes 2 triangles!"],
+    ["Look around you!", "You will find a triangle."]
+  ],
+
+  "match": [
+    {"en": "angles",    "ko": "각"},
+    {"en": "roofs",     "ko": "지붕"},
+    {"en": "sails",     "ko": "돛"},
+    {"en": "bridges",   "ko": "다리"},
+    {"en": "rectangle", "ko": "직사각형"}
+  ],
+  "match_ko_order": ["돛", "직사각형", "각", "다리", "지붕"],
+
+  "phonics": [
+    {"q": "c_t",        "a": "u", "ko": "자르다"},
+    {"q": "h_lf",       "a": "a", "ko": "반, 절반"},
+    {"q": "th_m",       "a": "e", "ko": "그들을"},
+    {"q": "str_nger",   "a": "o", "ko": "더 튼튼한"},
+    {"q": "br_dges",    "a": "i", "ko": "다리"},
+    {"q": "h_lp",       "a": "e", "ko": "돕다"}
+  ],
+
+  "scan": [
+    {"q": "삼각형은 변이 몇 개인가요?",                 "a": "3",             "sent": "1"},
+    {"q": "배에 있는 삼각형은 무엇인가요?",             "a": "the sails",     "sent": "9"},
+    {"q": "케이트는 무엇을 연주하나요?",                "a": "the triangle",  "sent": "14"},
+    {"q": "직사각형을 반으로 자르면 무엇이 생기나요?",  "a": "2 triangles",   "sent": "16"}
+  ],
+
+  "tf": [
+    {"en": "A triangle has 3 angles.", "answer": "O",
+     "why": "삼각형은 각이 3개예요.", "sent": "2"},
+    {"en": "Triangles are in windows.", "answer": "O",
+     "why": "창문에 삼각형이 있어요.", "sent": "4"},
+    {"en": "Triangles are on roofs.", "answer": "O",
+     "why": "지붕에도 있어요.", "sent": "5"},
+    {"en": "They are cut in cake.", "gloss": "cake 케이크", "answer": "X",
+     "why": "지문에 나온 건 파이(pie)예요. 케이크가 아니에요.", "sent": "6"},
+    {"en": "Triangles make bridges weaker.", "gloss": "weaker 더 약한", "answer": "X",
+     "why": "반대예요. 삼각형은 다리를 더 튼튼하게 해 줘요.", "sent": "11·12"}
+  ],
+
+  "fill_bank": ["share", "boat", "triangle", "sails"],
+  "fill": [
+    {"en": "It is easier to ___.",       "a": "share",    "ko": "그러면 나눠 먹기 쉬워요."},
+    {"en": "They help move the ___.",    "a": "boat",     "ko": "돛은 배를 나아가게 도와줘요."},
+    {"en": "You will find a ___.",       "a": "triangle", "ko": "삼각형을 찾을 수 있을 거예요."}
+  ],
+
+  "trace": [
+    {"en": "Cut a rectangle in half.", "ko": "직사각형을 반으로 자르세요."},
+    {"en": "They are in music.", "ko": "음악에도 있어요."}
+  ],
+
+  "notes": {
+    "phonics": "여섯 문항이 <b>a·e·i·o·u 다섯 소리를 모두</b> 담고 있습니다. <b>c_t은 cut·cat·cot이 다 단어</b>라 가장 헷갈립니다 — 뜻(자르다)을 꼭 보게 하세요.",
+    "scan": "3번은 함정처럼 보이지만 함정이 아닙니다. <b>triangle 이 '도형'이 아니라 '악기 트라이앵글'</b>로 쓰인 문장이에요. 아이가 헷갈리면 \"케이트가 도형을 연주할 수 있을까?\" 하고 물어봐 주세요.",
+    "tf": "4번은 <b>파이(pie)를 케이크로 바꿔 놓은 함정</b>입니다. 5번은 지문과 반대예요.",
+    "trace": "대문자로 시작했는지, 마침표를 찍었는지만 봐 주세요."
+  }
+}

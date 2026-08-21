@@ -1,0 +1,70 @@
+{
+  "title": "Hexagons",
+  "eyebrow": "Unit 16 · Nonfiction · Shapes",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "sides":     {"ipa": "saɪdz",      "pos": "명사",   "ko": "변 (side의 복수)"},
+    "angles":    {"ipa": "ˈæŋɡəlz",    "pos": "명사",   "ko": "각 (angle의 복수)"},
+    "shape":     {"ipa": "ʃeɪp",       "pos": "명사",   "ko": "모양"},
+    "bees":      {"ipa": "biːz",       "pos": "명사",   "ko": "벌 (bee의 복수)"},
+    "honey":     {"ipa": "ˈhʌni",      "pos": "명사",   "ko": "벌꿀"},
+    "soccer":    {"ipa": "ˈsɑːkər",    "pos": "명사",   "ko": "축구"},
+    "counts":    {"ipa": "kaʊnts",     "pos": "동사",   "ko": "세다 (count)"},
+    "colorful":  {"ipa": "ˈkʌlərfəl",  "pos": "형용사", "ko": "알록달록한"},
+    "turtles":   {"ipa": "ˈtɜːrtəlz",  "pos": "명사",   "ko": "거북 (turtle의 복수)"},
+    "shell":     {"ipa": "ʃel",        "pos": "명사",   "ko": "껍데기, 등껍질"},
+    "strong":    {"ipa": "strɔːŋ",     "pos": "형용사", "ko": "튼튼한"},
+    "pencils":   {"ipa": "ˈpensəlz",   "pos": "명사",   "ko": "연필 (pencil의 복수)"},
+    "roll":      {"ipa": "roʊl",       "pos": "동사",   "ko": "구르다"},
+    "nuts":      {"ipa": "nʌts",       "pos": "명사",   "ko": "너트 (hex nut 육각 너트)"},
+    "tool":      {"ipa": "tuːl",       "pos": "명사",   "ko": "도구"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "A hexagon has 6 sides.", "ko": "육각형은 변이 6개예요."},
+      {"en": "It has 6 angles.", "ko": "각도 6개예요."},
+      {"en": "This shape is found all over!", "ko": "이 모양은 어디에서나 볼 수 있어요!"}
+    ]},
+    {"sents": [
+      {"en": "Bees use them.", "ko": "벌이 육각형을 써요."},
+      {"en": "Bees keep honey in them.", "ko": "벌은 그 안에 벌꿀을 넣어 둬요."}
+    ]},
+    {"sents": [
+      {"en": "They are on a soccer ball.", "ko": "축구공에도 있어요."},
+      {"en": "Todd counts all the white ones.", "ko": "토드가 흰 것을 모두 세요."}
+    ]},
+    {"sents": [
+      {"en": "They are on the floor.", "ko": "바닥에도 있어요."},
+      {"en": "They can be colorful.", "ko": "알록달록할 수도 있어요."}
+    ]},
+    {"sents": [
+      {"en": "They are on turtles.", "ko": "거북에도 있어요."},
+      {"en": "They help make the shell strong.", "ko": "육각형은 등껍질을 튼튼하게 해 줘요."}
+    ]},
+    {"sents": [
+      {"en": "They are the shape of pencils.", "ko": "연필 모양도 육각형이에요."},
+      {"en": "They will not roll away!", "ko": "그래서 굴러가지 않아요!"}
+    ]},
+    {"sents": [
+      {"en": "Hex nuts can be really big!", "ko": "육각 너트는 아주 클 수도 있어요!"},
+      {"en": "You turn them with the right tool.", "ko": "알맞은 도구로 돌려요."}
+    ]},
+    {"sents": [
+      {"en": "Look around you!", "ko": "주위를 둘러보세요!"},
+      {"en": "You will find a hexagon.", "ko": "육각형을 찾을 수 있을 거예요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Wow, I like this story.", "ko": "와, 이 이야기 마음에 들어요."},
+      {"en": "Hexagons are hard to find.", "ko": "육각형은 찾기 어려워요."},
+      {"en": "But I think it would be challenging and fun to find them.", "ko": "하지만 찾는 게 도전이 되고 재미있을 것 같아요."},
+      {"en": "Did you learn a lot about hexagons in this book?", "ko": "이 책에서 육각형에 대해 많이 배웠나요?"},
+      {"en": "Try to find some today. It might be hard.", "ko": "오늘 한번 찾아보세요. 어려울 수도 있어요."},
+      {"en": "See you next time.", "ko": "다음에 또 만나요."}
+    ]}
+  ]
+}

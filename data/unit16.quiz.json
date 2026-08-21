@@ -1,0 +1,72 @@
+{
+  "title": "Hexagons",
+  "title_ko": "육각형",
+
+  "paras": [
+    ["A hexagon has 6 sides.", "It has 6 angles.", "This shape is found all over!"],
+    ["Bees use them.", "Bees keep honey in them."],
+    ["They are on a soccer ball.", "Todd counts all the white ones."],
+    ["They are on the floor.", "They can be colorful."],
+    ["They are on turtles.", "They help make the shell strong."],
+    ["They are the shape of pencils.", "They will not roll away!"],
+    ["Hex nuts can be really big!", "You turn them with the right tool."],
+    ["Look around you!", "You will find a hexagon."]
+  ],
+
+  "match": [
+    {"en": "angles",  "ko": "각"},
+    {"en": "honey",   "ko": "벌꿀"},
+    {"en": "turtles", "ko": "거북"},
+    {"en": "shell",   "ko": "등껍질"},
+    {"en": "pencils", "ko": "연필"}
+  ],
+  "match_ko_order": ["등껍질", "연필", "각", "거북", "벌꿀"],
+
+  "phonics": [
+    {"q": "h_s",       "a": "a", "ko": "가지고 있다"},
+    {"q": "h_x",       "a": "e", "ko": "육각 (hex nut)"},
+    {"q": "b_g",       "a": "i", "ko": "큰"},
+    {"q": "str_ng",    "a": "o", "ko": "튼튼한"},
+    {"q": "n_ts",      "a": "u", "ko": "너트"},
+    {"q": "sh_ll",     "a": "e", "ko": "등껍질"}
+  ],
+
+  "scan": [
+    {"q": "육각형은 각이 몇 개인가요?",              "a": "6",                   "sent": "2"},
+    {"q": "벌은 육각형 안에 무엇을 넣어 두나요?",    "a": "honey",               "sent": "5"},
+    {"q": "토드는 무엇을 세고 있나요?",              "a": "all the white ones",  "sent": "7"},
+    {"q": "연필이 육각형이면 무엇이 좋은가요?",      "a": "not roll away",       "sent": "12·13"}
+  ],
+
+  "tf": [
+    {"en": "A hexagon has 6 sides.", "answer": "O",
+     "why": "육각형은 변이 6개예요.", "sent": "1"},
+    {"en": "Hexagons are on a basketball.", "gloss": "basketball 농구공", "answer": "X",
+     "why": "지문에 나온 건 축구공(soccer ball)이에요.", "sent": "6"},
+    {"en": "Hexagons are on turtles.", "answer": "O",
+     "why": "거북에도 있어요.", "sent": "10"},
+    {"en": "Hexagons make the shell weak.", "gloss": "weak 약한", "answer": "X",
+     "why": "반대예요. 등껍질을 튼튼하게 해 줘요.", "sent": "11"},
+    {"en": "Hex nuts can be really big.", "answer": "O",
+     "why": "육각 너트는 아주 클 수도 있어요.", "sent": "14"}
+  ],
+
+  "fill_bank": ["floor", "tool", "hexagon", "honey"],
+  "fill": [
+    {"en": "They are on the ___.",                  "a": "floor",   "ko": "바닥에도 있어요."},
+    {"en": "You turn them with the right ___.",     "a": "tool",    "ko": "알맞은 도구로 돌려요."},
+    {"en": "You will find a ___.",                  "a": "hexagon", "ko": "육각형을 찾을 수 있을 거예요."}
+  ],
+
+  "trace": [
+    {"en": "This shape is found all over!", "ko": "이 모양은 어디에서나 볼 수 있어요!"},
+    {"en": "They can be colorful.", "ko": "알록달록할 수도 있어요."}
+  ],
+
+  "notes": {
+    "phonics": "여섯 문항이 <b>a·e·i·o·u 다섯 소리를 모두</b> 담고 있습니다. <b>h_s는 has·his</b>, <b>b_g는 big·bag·bug</b>이 다 단어라 헷갈립니다 — 옆의 한글 뜻을 꼭 보게 하세요.",
+    "scan": "1번과 2번은 <b>숫자와 한 단어</b>라 쉽게 찾습니다. 4번은 답이 문장 속에 있어서 조금 어려운데, <b>문장 번호만 찾아내도 충분</b>합니다.",
+    "tf": "2번은 <b>축구공을 농구공으로 바꿔 놓은 함정</b>입니다. 4번은 지문과 반대예요 — \"튼튼하게 한다고 했나, 약하게 한다고 했나?\" 하고 되물어 주세요.",
+    "trace": "대문자로 시작했는지, 느낌표를 찍었는지만 봐 주세요."
+  }
+}

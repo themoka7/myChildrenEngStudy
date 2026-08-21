@@ -1,0 +1,72 @@
+{
+  "title": "Circles",
+  "title_ko": "원",
+
+  "paras": [
+    ["A circle is round.", "The length from its edge to the center is always the same.", "This shape is found all over!"],
+    ["They are on wheels.", "Cars use wheels."],
+    ["Jugglers use them.", "They call them rings."],
+    ["They are on food.", "Max's family loves pizza!"],
+    ["Circles show time.", "They are found on clocks."],
+    ["Hula hoops are circles.", "Fran can keep it spinning for 5 minutes!"],
+    ["Circles are on money.", "Liz counts her coins."],
+    ["Look around you!", "You will find a circle."]
+  ],
+
+  "match": [
+    {"en": "round",    "ko": "둥근"},
+    {"en": "edge",     "ko": "가장자리"},
+    {"en": "center",   "ko": "중심"},
+    {"en": "jugglers", "ko": "저글링하는 사람"},
+    {"en": "coins",    "ko": "동전"}
+  ],
+  "match_ko_order": ["중심", "동전", "둥근", "저글링하는 사람", "가장자리"],
+
+  "phonics": [
+    {"q": "p_zza",     "a": "i", "ko": "피자"},
+    {"q": "cl_cks",    "a": "o", "ko": "시계"},
+    {"q": "th_m",      "a": "e", "ko": "그들을"},
+    {"q": "J_gglers",  "a": "u", "ko": "저글링하는 사람"},
+    {"q": "Fr_n",      "a": "a", "ko": "프랜 (사람 이름)"},
+    {"q": "l_ngth",    "a": "e", "ko": "길이"}
+  ],
+
+  "scan": [
+    {"q": "가장자리에서 중심까지의 길이는 어떤가요?",   "a": "always the same", "sent": "2"},
+    {"q": "저글링하는 사람들은 그것을 뭐라고 부르나요?", "a": "rings",          "sent": "7"},
+    {"q": "프랜은 몇 분 동안 돌릴 수 있나요?",          "a": "5 minutes",      "sent": "13"},
+    {"q": "리즈는 무엇을 세고 있나요?",                 "a": "her coins",      "sent": "15"}
+  ],
+
+  "tf": [
+    {"en": "A circle is round.", "answer": "O",
+     "why": "원은 둥글어요.", "sent": "1"},
+    {"en": "Cars use wheels.", "answer": "O",
+     "why": "자동차는 바퀴를 써요.", "sent": "5"},
+    {"en": "Circles are found on clocks.", "answer": "O",
+     "why": "시계에서 원을 볼 수 있어요.", "sent": "11"},
+    {"en": "Max's family hates pizza.", "gloss": "hates 싫어하다", "answer": "X",
+     "why": "반대예요. 맥스네 가족은 피자를 정말 좋아해요.", "sent": "9"},
+    {"en": "Circles are on waffles.", "gloss": "waffles 와플", "answer": "X",
+     "why": "지문에 나온 음식은 피자예요. 와플 이야기는 없어요.", "sent": "8"}
+  ],
+
+  "fill_bank": ["hoops", "time", "circle", "coins"],
+  "fill": [
+    {"en": "Hula ___ are circles.",   "a": "hoops",  "ko": "훌라후프는 원이에요."},
+    {"en": "Circles show ___.",       "a": "time",   "ko": "원은 시간을 알려 줘요."},
+    {"en": "You will find a ___.",    "a": "circle", "ko": "원을 찾을 수 있을 거예요."}
+  ],
+
+  "trace": [
+    {"en": "Circles are on money.", "ko": "원은 돈에도 있어요."},
+    {"en": "Look around you!", "ko": "주위를 둘러보세요!"}
+  ],
+
+  "notes": {
+    "phonics": "<b>Fr_n은 사람 이름</b>이라 대문자로 시작합니다. <b>J_gglers</b>도 길지만 첫 소리만 찾으면 돼요 — /dʒ/ /ʌ/. th_m·l_ngth 는 둘 다 e입니다.",
+    "scan": "이 지문은 <b>아이 이름마다 다른 원이 나옵니다</b> — 맥스(피자)·프랜(훌라후프)·리즈(동전). 이름을 먼저 찾으면 답이 바로 옆에 있어요.",
+    "tf": "4번은 지문을 <b>거꾸로</b> 뒤집었습니다(좋아해요 → 싫어해요). 5번은 지문에 없는 음식이에요 — \"지문에 나온 음식이 뭐였지?\"라고 되물어 주세요.",
+    "trace": "대문자로 시작했는지, 마침표(느낌표)를 찍었는지만 봐 주세요."
+  }
+}

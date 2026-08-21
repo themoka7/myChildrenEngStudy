@@ -1,0 +1,68 @@
+{
+  "title": "Police Officers",
+  "eyebrow": "Unit 12 · Nonfiction · Jobs",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "officers":  {"ipa": "ˈɔːfɪsərz",  "pos": "명사",   "ko": "경찰관, 관리 (officer의 복수)"},
+    "safe":      {"ipa": "seɪf",       "pos": "형용사", "ko": "안전한"},
+    "laws":      {"ipa": "lɔːz",       "pos": "명사",   "ko": "법 (law의 복수)"},
+    "followed":  {"ipa": "ˈfɑːloʊd",   "pos": "동사",   "ko": "지켜지는 (follow의 과거분사)"},
+    "cross":     {"ipa": "krɔːs",      "pos": "동사",   "ko": "건너다"},
+    "safely":    {"ipa": "ˈseɪfli",    "pos": "부사",   "ko": "안전하게"},
+    "drive":     {"ipa": "draɪv",      "pos": "동사",   "ko": "운전하다"},
+    "ticket":    {"ipa": "ˈtɪkɪt",     "pos": "명사",   "ko": "(위반) 딱지"},
+    "horses":    {"ipa": "ˈhɔːrsɪz",   "pos": "명사",   "ko": "말 (horse의 복수)"},
+    "siren":     {"ipa": "ˈsaɪrən",    "pos": "명사",   "ko": "사이렌"},
+    "loud":      {"ipa": "laʊd",       "pos": "형용사", "ko": "(소리가) 큰"},
+    "flash":     {"ipa": "flæʃ",       "pos": "동사",   "ko": "번쩍이다"},
+    "uniforms":  {"ipa": "ˈjuːnɪfɔːrmz","pos": "명사",  "ko": "제복 (uniform의 복수)"},
+    "belts":     {"ipa": "belts",      "pos": "명사",   "ko": "벨트 (belt의 복수)"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Police officers keep us safe.", "ko": "경찰관은 우리를 안전하게 지켜 줘요."},
+      {"en": "They make sure laws are followed.", "ko": "법이 잘 지켜지도록 살펴요."},
+      {"en": "They help people.", "ko": "사람들을 도와줘요."}
+    ]},
+    {"sents": [
+      {"en": "Sam must cross the street safely.", "ko": "샘은 길을 안전하게 건너야 해요."},
+      {"en": "They make sure people drive safely.", "ko": "사람들이 안전하게 운전하도록 살펴요."}
+    ]},
+    {"sents": [
+      {"en": "Jane was driving too fast.", "ko": "제인은 너무 빨리 운전했어요."},
+      {"en": "She got a ticket.", "ko": "제인은 딱지를 받았어요."}
+    ]},
+    {"sents": [
+      {"en": "Some police ride in cars.", "ko": "어떤 경찰은 차를 타요."},
+      {"en": "Others ride bikes or horses.", "ko": "다른 경찰은 자전거나 말을 타요."}
+    ]},
+    {"sents": [
+      {"en": "Here comes the police car!", "ko": "경찰차가 와요!"},
+      {"en": "The siren is loud.", "ko": "사이렌 소리가 커요."},
+      {"en": "The lights flash.", "ko": "불빛이 번쩍여요."}
+    ]},
+    {"sents": [
+      {"en": "Police wear uniforms.", "ko": "경찰은 제복을 입어요."},
+      {"en": "They have tool belts.", "ko": "도구 벨트를 차요."}
+    ]},
+    {"sents": [
+      {"en": "Some police work with dogs.", "ko": "어떤 경찰은 개와 함께 일해요."},
+      {"en": "The dogs help them!", "ko": "개들이 경찰을 도와줘요!"}
+    ]},
+    {"sents": [
+      {"en": "Do you know a police officer?", "ko": "여러분은 경찰관을 알고 있나요?"}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Police officers are great.", "ko": "경찰관은 훌륭해요."},
+      {"en": "And police cars are really cool.", "ko": "그리고 경찰차는 정말 멋져요."},
+      {"en": "Police officers help us all the time.", "ko": "경찰관은 항상 우리를 도와줘요."},
+      {"en": "We should be thankful to the police.", "ko": "우리는 경찰에게 고마워해야 해요."},
+      {"en": "Thank you police.", "ko": "경찰관님, 고맙습니다."}
+    ]}
+  ]
+}

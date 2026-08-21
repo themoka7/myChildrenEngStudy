@@ -1,0 +1,72 @@
+{
+  "title": "Police Officers",
+  "title_ko": "경찰관",
+
+  "paras": [
+    ["Police officers keep us safe.", "They make sure laws are followed.", "They help people."],
+    ["Sam must cross the street safely.", "They make sure people drive safely."],
+    ["Jane was driving too fast.", "She got a ticket."],
+    ["Some police ride in cars.", "Others ride bikes or horses."],
+    ["Here comes the police car!", "The siren is loud.", "The lights flash."],
+    ["Police wear uniforms.", "They have tool belts."],
+    ["Some police work with dogs.", "The dogs help them!"],
+    ["Do you know a police officer?"]
+  ],
+
+  "match": [
+    {"en": "laws",     "ko": "법"},
+    {"en": "ticket",   "ko": "위반 딱지"},
+    {"en": "siren",    "ko": "사이렌"},
+    {"en": "uniforms", "ko": "제복"},
+    {"en": "horses",   "ko": "말"}
+  ],
+  "match_ko_order": ["위반 딱지", "제복", "법", "말", "사이렌"],
+
+  "phonics": [
+    {"q": "cr_ss",   "a": "o", "ko": "건너다"},
+    {"q": "f_st",    "a": "a", "ko": "빠른"},
+    {"q": "m_st",    "a": "u", "ko": "~해야 한다"},
+    {"q": "b_lts",   "a": "e", "ko": "벨트"},
+    {"q": "t_cket",  "a": "i", "ko": "위반 딱지"},
+    {"q": "d_gs",    "a": "o", "ko": "개"}
+  ],
+
+  "scan": [
+    {"q": "샘은 길을 어떻게 건너야 하나요?",       "a": "safely",          "sent": "4"},
+    {"q": "제인은 무엇을 받았나요?",               "a": "a ticket",        "sent": "7"},
+    {"q": "차 말고 경찰은 무엇을 타나요? (두 가지)", "a": "bikes / horses",  "sent": "9"},
+    {"q": "어떤 경찰은 누구와 함께 일하나요?",     "a": "dogs",            "sent": "15"}
+  ],
+
+  "tf": [
+    {"en": "Police officers keep us safe.", "answer": "O",
+     "why": "경찰관은 우리를 안전하게 지켜 줘요.", "sent": "1"},
+    {"en": "The siren is loud.", "answer": "O",
+     "why": "사이렌 소리가 커요.", "sent": "11"},
+    {"en": "All police ride in cars.", "gloss": "all 모든", "answer": "X",
+     "why": "차를 타는 경찰도, 자전거나 말을 타는 경찰도 있어요.", "sent": "8·9"},
+    {"en": "Police officers fly airplanes.", "gloss": "fly 조종하다 / airplanes 비행기",
+     "answer": "X", "why": "지문에 비행기 이야기는 없어요.", "sent": "10"},
+    {"en": "Police wear uniforms.", "answer": "O",
+     "why": "경찰은 제복을 입어요.", "sent": "13"}
+  ],
+
+  "fill_bank": ["laws", "flash", "officer", "belts"],
+  "fill": [
+    {"en": "They make sure ___ are followed.", "a": "laws",    "ko": "법이 잘 지켜지도록 살펴요."},
+    {"en": "The lights ___.",                  "a": "flash",   "ko": "불빛이 번쩍여요."},
+    {"en": "Do you know a police ___?",        "a": "officer", "ko": "여러분은 경찰관을 알고 있나요?"}
+  ],
+
+  "trace": [
+    {"en": "Jane was driving too fast.", "ko": "제인은 너무 빨리 운전했어요."},
+    {"en": "They have tool belts.", "ko": "도구 벨트를 차요."}
+  ],
+
+  "notes": {
+    "phonics": "여섯 문항이 <b>a·e·i·o·u 다섯 소리를 모두</b> 담고 있습니다. <b>m_st는 must·mist·most가 다 단어</b>이고 cr_ss도 cross·cress가 됩니다. 틀렸다고 하지 말고 옆의 한글 뜻을 다시 보게 하세요.",
+    "scan": "3번은 답이 <b>두 개</b>입니다. 하나만 찾아도 칭찬해 주시고, 나머지 하나를 같은 문장에서 더 찾게 해 보세요.",
+    "tf": "3번은 <b>some(어떤)을 all(모든)로 바꿔 놓은 함정</b>입니다. 4번은 지문에 없는 내용이에요.",
+    "trace": "대문자로 시작했는지, 마침표를 찍었는지만 봐 주세요."
+  }
+}

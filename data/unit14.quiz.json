@@ -1,0 +1,72 @@
+{
+  "title": "Squares",
+  "title_ko": "정사각형",
+
+  "paras": [
+    ["A square has 4 sides.", "Each side is the same length.", "This shape is found all over!"],
+    ["They are on signs.", "They tell us what to do."],
+    ["They are on floors.", "The tiles fit together easily."],
+    ["They are on waffles.", "Hannah eats them!"],
+    ["They are on clothes.", "Joe wore a checkered shirt."],
+    ["They are on screens.", "They make a picture."],
+    ["They are on games.", "They show us where to move."],
+    ["Look around you!", "You will find a square."]
+  ],
+
+  "match": [
+    {"en": "sides",     "ko": "변"},
+    {"en": "tiles",     "ko": "타일"},
+    {"en": "waffles",   "ko": "와플"},
+    {"en": "checkered", "ko": "체크무늬의"},
+    {"en": "screens",   "ko": "화면"}
+  ],
+  "match_ko_order": ["와플", "화면", "변", "체크무늬의", "타일"],
+
+  "phonics": [
+    {"q": "h_s",         "a": "a", "ko": "가지고 있다"},
+    {"q": "f_t",         "a": "i", "ko": "딱 맞다"},
+    {"q": "t_ll",        "a": "e", "ko": "알려 주다"},
+    {"q": "th_m",        "a": "e", "ko": "그들을"},
+    {"q": "w_ffles",     "a": "a", "ko": "와플"},
+    {"q": "ch_ckered",   "a": "e", "ko": "체크무늬의"}
+  ],
+
+  "scan": [
+    {"q": "각 변의 길이는 어떤가요?",              "a": "the same",          "sent": "2"},
+    {"q": "한나는 무엇을 먹나요?",                 "a": "waffles",           "sent": "8·9"},
+    {"q": "조는 무엇을 입었나요?",                 "a": "a checkered shirt", "sent": "11"},
+    {"q": "게임판의 정사각형은 무엇을 알려 주나요?", "a": "where to move",     "sent": "15"}
+  ],
+
+  "tf": [
+    {"en": "A square has 4 sides.", "answer": "O",
+     "why": "정사각형은 변이 4개예요.", "sent": "1"},
+    {"en": "Signs tell us what to do.", "answer": "O",
+     "why": "표지판은 무엇을 해야 하는지 알려 줘요.", "sent": "5"},
+    {"en": "The tiles do not fit together.", "gloss": "do not ~하지 않다", "answer": "X",
+     "why": "반대예요. 타일은 쉽게 딱 맞춰져요.", "sent": "7"},
+    {"en": "Squares are on turtles.", "gloss": "turtles 거북", "answer": "X",
+     "why": "지문에 거북 이야기는 없어요. 옷·화면·게임판에 있다고 나와요.", "sent": "10"},
+    {"en": "Squares are on screens.", "answer": "O",
+     "why": "화면에도 있어요.", "sent": "12"}
+  ],
+
+  "fill_bank": ["floors", "picture", "square", "tiles"],
+  "fill": [
+    {"en": "They are on ___.",        "a": "floors",  "ko": "바닥에도 있어요."},
+    {"en": "They make a ___.",        "a": "picture", "ko": "그것들이 모여 그림을 만들어요."},
+    {"en": "You will find a ___.",    "a": "square",  "ko": "정사각형을 찾을 수 있을 거예요."}
+  ],
+
+  "trace": [
+    {"en": "Joe wore a checkered shirt.", "ko": "조는 체크무늬 셔츠를 입었어요."},
+    {"en": "Look around you!", "ko": "주위를 둘러보세요!"}
+  ],
+
+  "notes": {
+    "phonics": "이 지문에는 짧은 o·u 소리 단어가 없어서 <b>a와 e를 각각 두 번, i를 한 번</b> 냈습니다. 같은 소리가 겹쳐 나오면 오히려 구별 연습이 됩니다. <b>h_s는 has·his가 다 단어</b>이고 f_t도 fit·fat·fut이 헷갈리니 옆의 한글 뜻을 보게 하세요.",
+    "scan": "이 지문은 <b>\"They are on ~\" 이 계속 반복</b>됩니다. 그래서 '무엇 위에 있나'가 아니라 <b>사람 이름과 숫자</b>를 찾는 문제로 냈어요 — 한나·조.",
+    "tf": "3번은 지문과 <b>반대</b>입니다. 4번은 지문에 없는 내용이에요.",
+    "trace": "대문자로 시작했는지, 마침표(느낌표)를 찍었는지만 봐 주세요."
+  }
+}

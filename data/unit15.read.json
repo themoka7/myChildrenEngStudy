@@ -1,0 +1,67 @@
+{
+  "title": "Triangles",
+  "eyebrow": "Unit 15 · Nonfiction · Shapes",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "sides":     {"ipa": "saɪdz",       "pos": "명사",   "ko": "변 (side의 복수)"},
+    "angles":    {"ipa": "ˈæŋɡəlz",     "pos": "명사",   "ko": "각 (angle의 복수)"},
+    "shape":     {"ipa": "ʃeɪp",        "pos": "명사",   "ko": "모양"},
+    "roofs":     {"ipa": "ruːfs",       "pos": "명사",   "ko": "지붕 (roof의 복수)"},
+    "pie":       {"ipa": "paɪ",         "pos": "명사",   "ko": "파이"},
+    "easier":    {"ipa": "ˈiːziər",     "pos": "형용사", "ko": "더 쉬운"},
+    "share":     {"ipa": "ʃer",         "pos": "동사",   "ko": "나누다, 나눠 먹다"},
+    "sails":     {"ipa": "seɪlz",       "pos": "명사",   "ko": "돛 (sail의 복수)"},
+    "bridges":   {"ipa": "ˈbrɪdʒɪz",    "pos": "명사",   "ko": "다리 (bridge의 복수)"},
+    "stronger":  {"ipa": "ˈstrɔːŋɡər",  "pos": "형용사", "ko": "더 튼튼한"},
+    "rectangle": {"ipa": "ˈrektæŋɡəl",  "pos": "명사",   "ko": "직사각형"},
+    "half":      {"ipa": "hæf",         "pos": "명사",   "ko": "반, 절반"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "A triangle has 3 sides.", "ko": "삼각형은 변이 3개예요."},
+      {"en": "It has 3 angles.", "ko": "각도 3개예요."},
+      {"en": "This shape is found all over!", "ko": "이 모양은 어디에서나 볼 수 있어요!"}
+    ]},
+    {"sents": [
+      {"en": "They are in windows.", "ko": "삼각형은 창문에 있어요."},
+      {"en": "They are on roofs.", "ko": "지붕에도 있어요."}
+    ]},
+    {"sents": [
+      {"en": "They are cut in pie.", "ko": "파이를 자를 때도 생겨요."},
+      {"en": "It is easier to share!", "ko": "그러면 나눠 먹기 쉬워요!"}
+    ]},
+    {"sents": [
+      {"en": "They are on boats.", "ko": "배에도 있어요."},
+      {"en": "They are the sails.", "ko": "그건 돛이에요."},
+      {"en": "They help move the boat.", "ko": "돛은 배를 나아가게 도와줘요."}
+    ]},
+    {"sents": [
+      {"en": "They are on bridges.", "ko": "다리에도 있어요."},
+      {"en": "They make them stronger.", "ko": "삼각형은 다리를 더 튼튼하게 해 줘요."}
+    ]},
+    {"sents": [
+      {"en": "They are in music.", "ko": "음악에도 있어요."},
+      {"en": "Kate plays the triangle.", "ko": "케이트가 트라이앵글을 연주해요."}
+    ]},
+    {"sents": [
+      {"en": "Cut a rectangle in half.", "ko": "직사각형을 반으로 자르세요."},
+      {"en": "It makes 2 triangles!", "ko": "삼각형 2개가 생겨요!"}
+    ]},
+    {"sents": [
+      {"en": "Look around you!", "ko": "주위를 둘러보세요!"},
+      {"en": "You will find a triangle.", "ko": "삼각형을 찾을 수 있을 거예요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Wow! Again, triangles are everywhere.", "ko": "와! 삼각형도 어디에나 있네요."},
+      {"en": "This book taught us a lot about where triangles are.", "ko": "이 책은 삼각형이 어디 있는지 많이 알려 줬어요."},
+      {"en": "Can you remember?", "ko": "기억나나요?"},
+      {"en": "Ok. I will see you next time.", "ko": "좋아요. 다음에 또 만나요."},
+      {"en": "I'm going to look for more triangles. Good-bye.", "ko": "저는 삼각형을 더 찾아볼 거예요. 안녕!"}
+    ]}
+  ]
+}

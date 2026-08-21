@@ -1,0 +1,67 @@
+{
+  "title": "Circles",
+  "eyebrow": "Unit 13 · Nonfiction · Shapes",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "round":    {"ipa": "raʊnd",       "pos": "형용사", "ko": "둥근"},
+    "length":   {"ipa": "leŋθ",        "pos": "명사",   "ko": "길이"},
+    "edge":     {"ipa": "edʒ",         "pos": "명사",   "ko": "가장자리"},
+    "center":   {"ipa": "ˈsentər",     "pos": "명사",   "ko": "중심, 가운데"},
+    "shape":    {"ipa": "ʃeɪp",        "pos": "명사",   "ko": "모양"},
+    "wheels":   {"ipa": "wiːlz",       "pos": "명사",   "ko": "바퀴 (wheel의 복수)"},
+    "jugglers": {"ipa": "ˈdʒʌɡlərz",   "pos": "명사",   "ko": "저글링하는 사람"},
+    "rings":    {"ipa": "rɪŋz",        "pos": "명사",   "ko": "링, 고리"},
+    "clocks":   {"ipa": "klɑːks",      "pos": "명사",   "ko": "시계 (clock의 복수)"},
+    "hoops":    {"ipa": "huːps",       "pos": "명사",   "ko": "후프, 둥근 테"},
+    "spinning": {"ipa": "ˈspɪnɪŋ",     "pos": "동사",   "ko": "돌고 있는 (spin)"},
+    "counts":   {"ipa": "kaʊnts",      "pos": "동사",   "ko": "세다 (count)"},
+    "coins":    {"ipa": "kɔɪnz",       "pos": "명사",   "ko": "동전 (coin의 복수)"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "A circle is round.", "ko": "원은 둥글어요."},
+      {"en": "The length from its edge to the center is always the same.", "ko": "가장자리에서 중심까지의 길이는 항상 같아요."},
+      {"en": "This shape is found all over!", "ko": "이 모양은 어디에서나 볼 수 있어요!"}
+    ]},
+    {"sents": [
+      {"en": "They are on wheels.", "ko": "원은 바퀴에 있어요."},
+      {"en": "Cars use wheels.", "ko": "자동차는 바퀴를 써요."}
+    ]},
+    {"sents": [
+      {"en": "Jugglers use them.", "ko": "저글링하는 사람들도 원을 써요."},
+      {"en": "They call them rings.", "ko": "그것을 링이라고 불러요."}
+    ]},
+    {"sents": [
+      {"en": "They are on food.", "ko": "음식에도 있어요."},
+      {"en": "Max's family loves pizza!", "ko": "맥스네 가족은 피자를 정말 좋아해요!"}
+    ]},
+    {"sents": [
+      {"en": "Circles show time.", "ko": "원은 시간을 알려 줘요."},
+      {"en": "They are found on clocks.", "ko": "시계에서 볼 수 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Hula hoops are circles.", "ko": "훌라후프는 원이에요."},
+      {"en": "Fran can keep it spinning for 5 minutes!", "ko": "프랜은 5분 동안 돌릴 수 있어요!"}
+    ]},
+    {"sents": [
+      {"en": "Circles are on money.", "ko": "원은 돈에도 있어요."},
+      {"en": "Liz counts her coins.", "ko": "리즈가 자기 동전을 세요."}
+    ]},
+    {"sents": [
+      {"en": "Look around you!", "ko": "주위를 둘러보세요!"},
+      {"en": "You will find a circle.", "ko": "원을 찾을 수 있을 거예요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "There're circles everywhere.", "ko": "원은 어디에나 있어요."},
+      {"en": "My favorite item in the shape of a circle is pizza.", "ko": "제가 가장 좋아하는 원 모양은 피자예요."},
+      {"en": "Pizza is delicious.", "ko": "피자는 맛있어요."},
+      {"en": "Let's go find circles because they're everywhere.", "ko": "원은 어디에나 있으니 찾아보러 가요."},
+      {"en": "Oh? Circle.", "ko": "오? 원이네요."}
+    ]}
+  ]
+}

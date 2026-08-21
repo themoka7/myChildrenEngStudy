@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Triangles 워크시트 (A4 인쇄용)</title>
+<style>
+  @page { size: A4 portrait; margin: 12mm 11mm; }
+  :root{
+    --ink:#1f2937; --sub:#6b7280; --line:#b9c7d6; --base:#8ba0b6;
+    --blue:#2f6fb0; --bluebg:#e8f0f9; --purplebg:#efeaf7; --rule:#d6dee7;
+  }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    font-family:"Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+    color:var(--ink); background:#f3f4f6;
+    -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  .en{ font-family:"Trebuchet MS","Segoe UI",Verdana,sans-serif; }
+
+  .toolbar{
+    position:sticky; top:0; z-index:50; background:#111827; color:#fff;
+    padding:10px 16px; display:flex; gap:12px; align-items:center; font-size:14px;
+  }
+  .toolbar b{ font-size:15px; }
+  .toolbar .sp{ flex:1; }
+  .toolbar button{
+    font:inherit; font-weight:700; cursor:pointer; background:#fbbf24;
+    color:#111827; border:0; padding:8px 16px; border-radius:8px;
+  }
+  .toolbar label{ display:flex; gap:6px; align-items:center; cursor:pointer; }
+
+  .page{
+    width:210mm; height:297mm; padding:12mm 11mm; margin:16px auto;
+    background:#fff; box-shadow:0 2px 12px rgba(0,0,0,.15);
+    display:flex; flex-direction:column; overflow:hidden;
+  }
+  .body{ flex:1 1 auto; }
+
+  .head{
+    display:flex; align-items:flex-end; gap:8mm;
+    border-bottom:1mm solid var(--blue); padding-bottom:2.2mm; margin-bottom:4mm;
+  }
+  .head .tag{
+    background:var(--blue); color:#fff; font-weight:700; font-size:3.1mm;
+    padding:1mm 2.5mm; border-radius:1mm; letter-spacing:.3mm; white-space:nowrap;
+  }
+  .head h1{ margin:0; font-size:6.6mm; letter-spacing:-.2mm; }
+  .head h1 small{ font-size:3.4mm; color:var(--sub); font-weight:600; margin-left:2mm; }
+  .head .meta{ margin-left:auto; font-size:3.1mm; color:var(--sub); white-space:nowrap; }
+  .head .meta span{ display:inline-block; border-bottom:.3mm solid var(--rule); width:22mm; }
+
+  .passage{
+    border:.4mm solid #cfdcea; border-left:1.6mm solid var(--blue);
+    background:#fafcff; border-radius:1.5mm; padding:3.2mm 4mm 2.6mm; margin-bottom:5mm;
+  }
+  .passage .plabel{ font-size:3.1mm; font-weight:800; color:var(--blue); margin-bottom:2mm; }
+  .passage .cols{ columns:2; column-gap:7mm; }
+  .passage p{
+    margin:0 0 1.8mm; font-size:3.75mm; line-height:1.55;
+    break-inside:avoid; -webkit-column-break-inside:avoid;
+  }
+  .passage .n{ font-size:2.5mm; font-weight:800; color:var(--blue); vertical-align:super; margin-right:.7mm; }
+
+  .q{ margin-bottom:5mm; }
+  .q > h2{ display:flex; align-items:center; gap:2.5mm; margin:0 0 2.6mm; font-size:4.2mm; }
+  .q > h2 .no{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:6.2mm; height:6.2mm; flex:0 0 6.2mm; background:var(--blue); color:#fff;
+    border-radius:1.4mm; font-size:3.7mm; font-weight:800;
+  }
+  .q > h2 .ko{ font-weight:800; }
+  .q > h2 .hint{ font-weight:600; font-size:3.1mm; color:var(--sub); }
+
+  /* 선 잇기 : 행 높이를 고정해야 좌우 점이 수평으로 맞는다 */
+  .match{ display:flex; gap:10mm; padding:0 3mm; }
+  .match .col{ flex:1; display:flex; flex-direction:column; gap:2.8mm; }
+  .match .row{ display:flex; align-items:center; gap:2.5mm; height:8.6mm; }
+  .match .col.right .row{ flex-direction:row-reverse; }
+  .chip{
+    flex:1; text-align:center; padding:1.7mm 2mm; border-radius:4.3mm; height:100%;
+    display:flex; align-items:center; justify-content:center;
+    font-size:4.2mm; font-weight:700; line-height:1.15;
+  }
+  .chip.l{ background:var(--bluebg); border:.3mm solid #b9d0e8; }
+  .chip.r{ background:var(--purplebg); border:.3mm solid #cabfe3; }
+  .dot{ font-size:2.6mm; color:#94a3b8; flex:0 0 auto; }
+
+  .vowels{
+    text-align:center; font-size:4.6mm; font-weight:800; letter-spacing:3mm;
+    color:var(--blue); background:#eef6ff; border:.4mm solid #bcd7f0;
+    border-radius:1.5mm; padding:1.6mm; margin-bottom:3mm;
+  }
+  .phon{ display:grid; grid-template-columns:repeat(3,1fr); gap:3.5mm 5mm; padding:0 2mm; }
+  .phon .cell{ border:.4mm dashed #c7d2de; border-radius:2mm; padding:2.6mm 2mm 2.2mm; text-align:center; }
+  .phon .word{ font-size:7.4mm; font-weight:700; letter-spacing:1mm; line-height:1; }
+  .phon .word u{ text-decoration:none; display:inline-block; width:8mm; border-bottom:.6mm solid var(--blue); }
+  .phon .ko{ margin-top:1.8mm; font-size:3.2mm; color:var(--sub); font-weight:600; }
+
+  /* li 에 display:flex 를 주면 렌더러에 따라 번호가 사라진다 → 안쪽 래퍼로 */
+  .scan li{ margin-bottom:3.6mm; font-size:3.9mm; }
+  .scan .r{ display:flex; align-items:baseline; gap:2mm; }
+  .scan .ask{ font-weight:600; }
+  .scan .ans{ flex:1; border-bottom:.4mm solid var(--base); min-width:28mm; height:5.4mm; }
+  .scan .ref{ font-size:3mm; color:var(--sub); white-space:nowrap; }
+  .scan .ref i{ font-style:normal; display:inline-block; width:9mm; border-bottom:.3mm solid var(--rule); }
+  ol{ margin:0; padding-left:7mm; }
+  ol li::marker{ font-weight:700; color:var(--blue); }
+
+  .tf li{ margin-bottom:3mm; font-size:4.3mm; }
+  .tf .r{ display:flex; align-items:center; gap:3mm; }
+  .tf .gl{ font-size:3mm; color:var(--sub); font-weight:600; }
+  .tf .box{ margin-left:auto; display:flex; gap:2mm; }
+  .tf .box i{
+    font-style:normal; width:7.4mm; height:7.4mm; border:.4mm solid #9aa8b6;
+    border-radius:1.5mm; display:inline-flex; align-items:center; justify-content:center;
+    font-size:3.8mm; font-weight:800; color:#9aa8b6;
+  }
+
+  .bank{
+    display:flex; gap:3mm; justify-content:center; flex-wrap:wrap;
+    background:#fdf2f8; border:.4mm solid #f0c8dd; border-radius:2mm;
+    padding:2.4mm; margin-bottom:3.4mm;
+  }
+  .bank b{ font-size:4.2mm; letter-spacing:.3mm; padding:0 2mm; }
+  .bank .lbl{ font-size:3.1mm; color:var(--sub); font-weight:700; align-self:center; }
+  .fill li{ margin-bottom:3.4mm; font-size:4.2mm; }
+  .blank{ display:inline-block; width:26mm; border-bottom:.5mm solid var(--base); margin:0 1mm; }
+  .fill .ko{ font-size:3.1mm; color:var(--sub); font-weight:600; margin-left:2mm; }
+
+  .w4{ position:relative; height:11mm; margin:1mm 0 2mm; }
+  .w4 .ln{ position:absolute; left:0; right:0; }
+  .w4 .ln.top{ top:0.8mm; border-top:.3mm solid var(--line); }
+  .w4 .ln.mid{ top:5mm;   border-top:.25mm dashed #dbe3ec; }
+  .w4 .ln.bot{ top:9.2mm; border-top:.45mm solid var(--base); }
+  .w4 .trace{
+    position:absolute; left:2.5mm; bottom:0.5mm; font-size:6.2mm; line-height:1;
+    color:#d3d8de; letter-spacing:.4mm; white-space:nowrap;
+  }
+  .trace-ko{ font-size:3.1mm; color:var(--sub); font-weight:600; margin:0 0 .3mm 1mm; }
+
+  .foot{
+    flex:0 0 auto; display:flex; align-items:center; gap:3mm;
+    border-top:.3mm solid var(--rule); padding-top:2mm; font-size:3mm; color:var(--sub);
+  }
+  .foot .stars{ margin-left:auto; font-size:4.5mm; letter-spacing:1mm; color:#d1d5db; }
+
+  .answer{ background:#fffdf5; }
+  .answer .head{ border-bottom-color:#d97706; }
+  .answer .head .tag{ background:#d97706; }
+  .answer .q > h2 .no{ background:#d97706; }
+  .answer .q{ margin-bottom:3.8mm; }
+  .answer .q > h2{ margin-bottom:1.8mm; font-size:3.9mm; }
+  .akey{ font-size:3.4mm; line-height:1.6; }
+  .akey b{ color:#b45309; }
+  .akey .en{ font-weight:700; }
+  .akey .note{ color:#6b7280; }
+  .tips{ margin-top:3mm; background:#eef6ff; border:.4mm solid #bcd7f0; border-radius:2mm; padding:3.4mm; }
+  .tips h3{ margin:0 0 2.2mm; font-size:3.9mm; color:var(--blue); }
+  .tips ol{ padding-left:6mm; }
+  .tips li{ font-size:3.4mm; line-height:1.7; }
+  .tips .warn{ margin:2.5mm 0 0; font-size:3.2mm; color:#9a3412; line-height:1.6; }
+
+  @media print{
+    body{ background:#fff; }
+    .toolbar{ display:none !important; }
+    .page{ margin:0; box-shadow:none; width:auto; height:273mm; padding:0; }
+    .page + .page{ page-break-before:always; }
+    body.hideAnswer .answer{ display:none; }
+  }
+</style>
+<style>.toolbar a.sitenav{color:#fbbf24;font-weight:700;text-decoration:none;font-size:14px}</style>
+</head>
+<body>
+<div class="toolbar"><a class="sitenav" data-nav="index" href="../index.html">← 목차</a><a class="sitenav" data-nav="read" href="../read/unit15.html">📖 읽기</a><b>Triangles 워크시트</b><span style="color:#9ca3af">A4 · 문제 2장 + 정답 1장</span><span class="sp"></span><label><input type="checkbox" id="hideAns"> 정답지 빼고 인쇄</label><button onclick="window.print()">🖨 인쇄하기</button></div><section class="page"><div class="head"><span class="tag">Reading Worksheet 1</span><h1 class="en">Triangles <small>삼각형</small></h1><div class="meta">이름 <span></span> &nbsp; 날짜 <span></span></div></div><div class="body"><div class="passage"><div class="plabel">📖 소리 내어 두 번 읽어요</div><div class="cols en"><p><span class="n">1</span>A triangle has 3 sides. <span class="n">2</span>It has 3 angles. <span class="n">3</span>This shape is found all over!</p><p><span class="n">4</span>They are in windows. <span class="n">5</span>They are on roofs.</p><p><span class="n">6</span>They are cut in pie. <span class="n">7</span>It is easier to share!</p><p><span class="n">8</span>They are on boats. <span class="n">9</span>They are the sails. <span class="n">10</span>They help move the boat.</p><p><span class="n">11</span>They are on bridges. <span class="n">12</span>They make them stronger.</p><p><span class="n">13</span>They are in music. <span class="n">14</span>Kate plays the triangle.</p><p><span class="n">15</span>Cut a rectangle in half. <span class="n">16</span>It makes 2 triangles!</p><p><span class="n">17</span>Look around you! <span class="n">18</span>You will find a triangle.</p></div></div><div class="q"><h2><span class="no">1</span><span class="ko">단어와 뜻을 선으로 이으세요.</span></h2><div class="match"><div class="col left"><div class="row"><span class="chip l en">angles</span><span class="dot">●</span></div><div class="row"><span class="chip l en">roofs</span><span class="dot">●</span></div><div class="row"><span class="chip l en">sails</span><span class="dot">●</span></div><div class="row"><span class="chip l en">bridges</span><span class="dot">●</span></div><div class="row"><span class="chip l en">rectangle</span><span class="dot">●</span></div></div><div class="col right"><div class="row"><span class="chip r">돛</span><span class="dot">●</span></div><div class="row"><span class="chip r">직사각형</span><span class="dot">●</span></div><div class="row"><span class="chip r">각</span><span class="dot">●</span></div><div class="row"><span class="chip r">다리</span><span class="dot">●</span></div><div class="row"><span class="chip r">지붕</span><span class="dot">●</span></div></div></div></div><div class="q"><h2><span class="no">2</span><span class="ko">빠진 모음을 쓰세요.</span><span class="hint">소리 내어 읽으면서 골라요</span></h2><div class="vowels en">a e i o u</div><div class="phon"><div class="cell"><div class="word en">c<u></u>t</div><div class="ko">자르다</div></div><div class="cell"><div class="word en">h<u></u>lf</div><div class="ko">반, 절반</div></div><div class="cell"><div class="word en">th<u></u>m</div><div class="ko">그들을</div></div><div class="cell"><div class="word en">str<u></u>nger</div><div class="ko">더 튼튼한</div></div><div class="cell"><div class="word en">br<u></u>dges</div><div class="ko">다리</div></div><div class="cell"><div class="word en">h<u></u>lp</div><div class="ko">돕다</div></div></div></div></div><div class="foot"><span>Triangles · 1쪽</span><span class="stars">☆ ☆ ☆ ☆ ☆</span></div></section><section class="page"><div class="head"><span class="tag">Reading Worksheet 2</span><h1 class="en">Triangles <small>삼각형</small></h1><div class="meta">이름 <span></span> &nbsp; 날짜 <span></span></div></div><div class="body"><div class="q"><h2><span class="no">3</span><span class="ko">지문에서 찾아 영어로 쓰세요.</span><span class="hint">몇 번 문장에서 찾았는지도 적어요</span></h2><ol class="scan"><li><span class="r"><span class="ask">삼각형은 변이 몇 개인가요?</span><span class="ans"></span><span class="ref">문장 <i></i>번</span></span></li><li><span class="r"><span class="ask">배에 있는 삼각형은 무엇인가요?</span><span class="ans"></span><span class="ref">문장 <i></i>번</span></span></li><li><span class="r"><span class="ask">케이트는 무엇을 연주하나요?</span><span class="ans"></span><span class="ref">문장 <i></i>번</span></span></li><li><span class="r"><span class="ask">직사각형을 반으로 자르면 무엇이 생기나요?</span><span class="ans"></span><span class="ref">문장 <i></i>번</span></span></li></ol></div><div class="q"><h2><span class="no">4</span><span class="ko">맞으면 O, 틀리면 X 하세요.</span></h2><ol class="tf"><li><span class="r"><span class="en">A triangle has 3 angles.</span><span class="box"><i>O</i><i>X</i></span></span></li><li><span class="r"><span class="en">Triangles are in windows.</span><span class="box"><i>O</i><i>X</i></span></span></li><li><span class="r"><span class="en">Triangles are on roofs.</span><span class="box"><i>O</i><i>X</i></span></span></li><li><span class="r"><span class="en">They are cut in cake.</span><span class="gl">cake 케이크</span><span class="box"><i>O</i><i>X</i></span></span></li><li><span class="r"><span class="en">Triangles make bridges weaker.</span><span class="gl">weaker 더 약한</span><span class="box"><i>O</i><i>X</i></span></span></li></ol></div><div class="q"><h2><span class="no">5</span><span class="ko">보기에서 골라 빈칸에 쓰세요.</span></h2><div class="bank"><span class="lbl">보기</span><b class="en">share</b><b class="en">boat</b><b class="en">triangle</b><b class="en">sails</b></div><ol class="fill"><li><span class="en">It is easier to <span class="blank"></span>.</span><span class="ko">그러면 나눠 먹기 쉬워요.</span></li><li><span class="en">They help move the <span class="blank"></span>.</span><span class="ko">돛은 배를 나아가게 도와줘요.</span></li><li><span class="en">You will find a <span class="blank"></span>.</span><span class="ko">삼각형을 찾을 수 있을 거예요.</span></li></ol></div><div class="q"><h2><span class="no">6</span><span class="ko">따라 쓰고, 아래 줄에 한 번 더 쓰세요.</span></h2><p class="trace-ko">직사각형을 반으로 자르세요.</p><div class="w4"><span class="ln top"></span><span class="ln mid"></span><span class="ln bot"></span><span class="trace en">Cut a rectangle in half.</span></div><div class="w4"><span class="ln top"></span><span class="ln mid"></span><span class="ln bot"></span></div><p class="trace-ko">음악에도 있어요.</p><div class="w4"><span class="ln top"></span><span class="ln mid"></span><span class="ln bot"></span><span class="trace en">They are in music.</span></div><div class="w4"><span class="ln top"></span><span class="ln mid"></span><span class="ln bot"></span></div></div></div><div class="foot"><span>Triangles · 2쪽</span><span class="stars">☆ ☆ ☆ ☆ ☆</span></div></section><section class="page answer"><div class="head"><span class="tag">Answer Key · 부모용</span><h1 class="en">Triangles <small>정답 &amp; 지도 노트</small></h1></div><div class="body"><div class="q"><h2><span class="no">1</span><span class="ko">단어와 뜻 연결</span></h2><div class="akey"><span class="en">angles</span> 각 &nbsp;·&nbsp; <span class="en">roofs</span> 지붕 &nbsp;·&nbsp; <span class="en">sails</span> 돛 &nbsp;·&nbsp; <span class="en">bridges</span> 다리 &nbsp;·&nbsp; <span class="en">rectangle</span> 직사각형</div></div><div class="q"><h2><span class="no">2</span><span class="ko">빠진 모음</span></h2><div class="akey">c<b>u</b>t &nbsp;·&nbsp; h<b>a</b>lf &nbsp;·&nbsp; th<b>e</b>m &nbsp;·&nbsp; str<b>o</b>nger &nbsp;·&nbsp; br<b>i</b>dges &nbsp;·&nbsp; h<b>e</b>lp<br><span class="note">여섯 문항이 <b>a·e·i·o·u 다섯 소리를 모두</b> 담고 있습니다. <b>c_t은 cut·cat·cot이 다 단어</b>라 가장 헷갈립니다 — 뜻(자르다)을 꼭 보게 하세요.</span></div></div><div class="q"><h2><span class="no">3</span><span class="ko">지문에서 찾아 쓰기</span></h2><div class="akey">1. <b>3</b> (1번) &nbsp;&nbsp; 2. <b>the sails</b> (9번) &nbsp;&nbsp; 3. <b>the triangle</b> (14번) &nbsp;&nbsp; 4. <b>2 triangles</b> (16번)<br><span class="note">3번은 함정처럼 보이지만 함정이 아닙니다. <b>triangle 이 '도형'이 아니라 '악기 트라이앵글'</b>로 쓰인 문장이에요. 아이가 헷갈리면 "케이트가 도형을 연주할 수 있을까?" 하고 물어봐 주세요.</span></div></div><div class="q"><h2><span class="no">4</span><span class="ko">O / X</span></h2><div class="akey">1. <b>O</b> — 삼각형은 각이 3개예요. (2번)<br>2. <b>O</b> — 창문에 삼각형이 있어요. (4번)<br>3. <b>O</b> — 지붕에도 있어요. (5번)<br>4. <b>X</b> — 지문에 나온 건 파이(pie)예요. 케이크가 아니에요. (6번)<br>5. <b>X</b> — 반대예요. 삼각형은 다리를 더 튼튼하게 해 줘요. (11·12번)<br><span class="note">4번은 <b>파이(pie)를 케이크로 바꿔 놓은 함정</b>입니다. 5번은 지문과 반대예요.</span></div></div><div class="q"><h2><span class="no">5</span><span class="ko">빈칸 채우기</span></h2><div class="akey">1. <b>share</b> &nbsp;·&nbsp; 2. <b>boat</b> &nbsp;·&nbsp; 3. <b>triangle</b></div></div><div class="q"><h2><span class="no">6</span><span class="ko">따라 쓰기</span></h2><div class="akey"><span class="en">Cut a rectangle in half.</span> 직사각형을 반으로 자르세요.<br><span class="en">They are in music.</span> 음악에도 있어요.<br><span class="note">대문자로 시작했는지, 마침표를 찍었는지만 봐 주세요.</span></div></div><div class="tips"><h3>20분 진행 순서</h3><ol><li><b>0~3분</b> 파닉스 워밍업 — ②번 단어를 소리로 먼저 읽히기 (/h/-/o/-/p/ → hop)</li><li><b>3~8분</b> 1쪽 지문 소리 내어 읽기 2회. 부모가 못 읽어도 됩니다 — 아이가 읽고 부모가 듣기</li><li><b>8~17분</b> 1쪽 → 2쪽 순서로 손으로 풀기 (③번은 지문을 다시 봐도 됩니다)</li><li><b>17~19분</b> ⑥번 문장을 지문 안 보고 말해 보기</li><li><b>19~20분</b> 별점 색칠 + "오늘 새로 안 단어 하나만 말해줘"</li></ol><p class="warn">※ 이 워크시트에는 <b>조동사(can) · 동사 과거형 · 복수형 규칙</b>을 일부러 넣지 않았습니다. -s가 붙은 단어는 "그냥 그 단어"로 통째로 읽히시고, 규칙 설명은 하지 마세요. 지금은 <b>소리(파닉스) + 단어 + 지문에서 찾기</b> 세 가지면 충분합니다.</p></div></div><div class="foot"><span>Triangles · 정답 &amp; 지도 노트</span></div></section><script>var cb=document.getElementById('hideAns');if(cb){cb.addEventListener('change',function(e){document.body.classList.toggle('hideAnswer',e.target.checked);});}</script>
+</body>
+</html>

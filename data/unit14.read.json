@@ -1,0 +1,67 @@
+{
+  "title": "Squares",
+  "eyebrow": "Unit 14 · Nonfiction · Shapes",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "sides":     {"ipa": "saɪdz",      "pos": "명사",   "ko": "변, 면 (side의 복수)"},
+    "each":      {"ipa": "iːtʃ",       "pos": "형용사", "ko": "각각의"},
+    "length":    {"ipa": "leŋθ",       "pos": "명사",   "ko": "길이"},
+    "shape":     {"ipa": "ʃeɪp",       "pos": "명사",   "ko": "모양"},
+    "signs":     {"ipa": "saɪnz",      "pos": "명사",   "ko": "표지판 (sign의 복수)"},
+    "floors":    {"ipa": "flɔːrz",     "pos": "명사",   "ko": "바닥 (floor의 복수)"},
+    "tiles":     {"ipa": "taɪlz",      "pos": "명사",   "ko": "타일 (tile의 복수)"},
+    "easily":    {"ipa": "ˈiːzəli",    "pos": "부사",   "ko": "쉽게"},
+    "waffles":   {"ipa": "ˈwɑːfəlz",   "pos": "명사",   "ko": "와플"},
+    "clothes":   {"ipa": "kloʊðz",     "pos": "명사",   "ko": "옷"},
+    "checkered": {"ipa": "ˈtʃekərd",   "pos": "형용사", "ko": "체크무늬의"},
+    "screens":   {"ipa": "skriːnz",    "pos": "명사",   "ko": "화면 (screen의 복수)"},
+    "move":      {"ipa": "muːv",       "pos": "동사",   "ko": "움직이다"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "A square has 4 sides.", "ko": "정사각형은 변이 4개예요."},
+      {"en": "Each side is the same length.", "ko": "각 변의 길이는 모두 같아요."},
+      {"en": "This shape is found all over!", "ko": "이 모양은 어디에서나 볼 수 있어요!"}
+    ]},
+    {"sents": [
+      {"en": "They are on signs.", "ko": "정사각형은 표지판에 있어요."},
+      {"en": "They tell us what to do.", "ko": "표지판은 무엇을 해야 하는지 알려 줘요."}
+    ]},
+    {"sents": [
+      {"en": "They are on floors.", "ko": "바닥에도 있어요."},
+      {"en": "The tiles fit together easily.", "ko": "타일들이 쉽게 딱 맞춰져요."}
+    ]},
+    {"sents": [
+      {"en": "They are on waffles.", "ko": "와플에도 있어요."},
+      {"en": "Hannah eats them!", "ko": "한나가 그 와플을 먹어요!"}
+    ]},
+    {"sents": [
+      {"en": "They are on clothes.", "ko": "옷에도 있어요."},
+      {"en": "Joe wore a checkered shirt.", "ko": "조는 체크무늬 셔츠를 입었어요."}
+    ]},
+    {"sents": [
+      {"en": "They are on screens.", "ko": "화면에도 있어요."},
+      {"en": "They make a picture.", "ko": "그것들이 모여 그림을 만들어요."}
+    ]},
+    {"sents": [
+      {"en": "They are on games.", "ko": "게임판에도 있어요."},
+      {"en": "They show us where to move.", "ko": "어디로 움직여야 하는지 알려 줘요."}
+    ]},
+    {"sents": [
+      {"en": "Look around you!", "ko": "주위를 둘러보세요!"},
+      {"en": "You will find a square.", "ko": "정사각형을 찾을 수 있을 거예요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "That is so surprising.", "ko": "정말 놀랍네요."},
+      {"en": "Squares are everywhere. Did you know?", "ko": "정사각형은 어디에나 있어요. 알고 있었나요?"},
+      {"en": "Yes, screens and television are also square.", "ko": "맞아요, 화면과 텔레비전도 정사각형이에요."},
+      {"en": "Maybe we are living in a world of squares.", "ko": "어쩌면 우리는 정사각형 세상에 살고 있는지도 몰라요."},
+      {"en": "Let's go find some more.", "ko": "더 찾아보러 가요."}
+    ]}
+  ]
+}

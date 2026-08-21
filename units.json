@@ -28,16 +28,16 @@
         {"n": 9, "en": "Teachers", "ko": "선생님", "status": "done", "date": "26.07.14", "min": 13, "ready": true},
         {"n": 10, "en": "Doctors", "ko": "의사", "status": "done", "date": "26.07.14", "min": 13, "ready": true},
         {"n": 11, "en": "Firefighters", "ko": "소방관", "status": "done", "date": "26.07.15", "min": 13, "ready": true},
-        {"n": 12, "en": "Police Officers", "ko": "경찰관", "status": "done", "date": "26.08.18", "min": 13}
+        {"n": 12, "en": "Police Officers", "ko": "경찰관", "status": "done", "date": "26.08.18", "min": 13, "ready": true}
       ]
     },
     {
       "theme": "평면도형",
       "units": [
-        {"n": 13, "en": "Circles", "ko": "원", "status": "doing", "date": "26.07.13", "min": 13},
-        {"n": 14, "en": "Squares", "ko": "정사각형", "status": "doing", "date": "26.07.13", "min": 13},
-        {"n": 15, "en": "Triangles", "ko": "삼각형", "status": "doing", "date": "26.07.14", "min": 14},
-        {"n": 16, "en": "Hexagons", "ko": "육각형", "status": "todo", "min": 14}
+        {"n": 13, "en": "Circles", "ko": "원", "status": "doing", "date": "26.07.13", "min": 13, "ready": true},
+        {"n": 14, "en": "Squares", "ko": "정사각형", "status": "doing", "date": "26.07.13", "min": 13, "ready": true},
+        {"n": 15, "en": "Triangles", "ko": "삼각형", "status": "doing", "date": "26.07.14", "min": 14, "ready": true},
+        {"n": 16, "en": "Hexagons", "ko": "육각형", "status": "todo", "min": 14, "ready": true}
       ]
     },
     {
