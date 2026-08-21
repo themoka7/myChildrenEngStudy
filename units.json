@@ -8,16 +8,16 @@
       "theme": "동물",
       "units": [
         {"n": 1, "en": "Rabbits", "ko": "토끼", "status": "done", "date": "26.08.19", "min": 14, "ready": true},
-        {"n": 2, "en": "Dogs", "ko": "개", "status": "done", "date": "26.06.30", "min": 13},
-        {"n": 3, "en": "Cats", "ko": "고양이", "status": "done", "date": "26.07.01", "min": 15},
-        {"n": 4, "en": "Hamsters", "ko": "햄스터", "status": "done", "date": "26.07.02", "min": 15}
+        {"n": 2, "en": "Dogs", "ko": "개", "status": "done", "date": "26.06.30", "min": 13, "ready": true},
+        {"n": 3, "en": "Cats", "ko": "고양이", "status": "done", "date": "26.07.01", "min": 15, "ready": true},
+        {"n": 4, "en": "Hamsters", "ko": "햄스터", "status": "done", "date": "26.07.02", "min": 15, "ready": true}
       ]
     },
     {
       "theme": "색깔",
       "units": [
-        {"n": 5, "en": "Brown", "ko": "갈색", "status": "done", "date": "26.08.21", "min": 14},
-        {"n": 6, "en": "Orange", "ko": "주황색", "status": "done", "date": "26.07.07", "min": 15},
+        {"n": 5, "en": "Brown", "ko": "갈색", "status": "done", "date": "26.08.21", "min": 14, "ready": true},
+        {"n": 6, "en": "Orange", "ko": "주황색", "status": "done", "date": "26.07.07", "min": 15, "ready": true},
         {"n": 7, "en": "Purple", "ko": "보라색", "status": "done", "date": "26.07.08", "min": 14},
         {"n": 8, "en": "Gray", "ko": "회색", "status": "done", "date": "26.07.09", "min": 13}
       ]

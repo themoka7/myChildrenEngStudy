@@ -1,0 +1,71 @@
+{
+  "title": "Hamsters",
+  "eyebrow": "Unit 4 · Nonfiction · Pets",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "pets":     {"ipa": "pets",        "pos": "명사",   "ko": "반려동물 (pet의 복수)"},
+    "great":    {"ipa": "ɡreɪt",       "pos": "형용사", "ko": "훌륭한, 아주 좋은"},
+    "soft":     {"ipa": "sɔːft",       "pos": "형용사", "ko": "부드러운"},
+    "holds":    {"ipa": "hoʊldz",      "pos": "동사",   "ko": "손에 들다, 안다 (hold)"},
+    "alone":    {"ipa": "əˈloʊn",      "pos": "부사",   "ko": "혼자"},
+    "fight":    {"ipa": "faɪt",        "pos": "동사",   "ko": "싸우다"},
+    "cage":     {"ipa": "keɪdʒ",       "pos": "명사",   "ko": "우리, 장"},
+    "kept":     {"ipa": "kept",        "pos": "동사",   "ko": "유지된 (keep의 과거·과거분사)"},
+    "bedding":  {"ipa": "ˈbedɪŋ",      "pos": "명사",   "ko": "깔개, 잠자리 깔 것"},
+    "warm":     {"ipa": "wɔːrm",       "pos": "형용사", "ko": "따뜻한"},
+    "chew":     {"ipa": "tʃuː",        "pos": "동사",   "ko": "씹다"},
+    "sticks":   {"ipa": "stɪks",       "pos": "명사",   "ko": "막대 (stick의 복수)"},
+    "wheel":    {"ipa": "wiːl",        "pos": "명사",   "ko": "쳇바퀴, 바퀴"},
+    "hide":     {"ipa": "haɪd",        "pos": "동사",   "ko": "숨다"},
+    "right":    {"ipa": "raɪt",        "pos": "형용사", "ko": "알맞은, 딱 맞는"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Hamsters make great family pets.", "ko": "햄스터는 훌륭한 가족 반려동물이 돼요."}
+    ]},
+    {"sents": [
+      {"en": "They are small and soft.", "ko": "햄스터는 작고 부드러워요."},
+      {"en": "Kate holds her hamster.", "ko": "케이트가 자기 햄스터를 안고 있어요."}
+    ]},
+    {"sents": [
+      {"en": "They like to live alone.", "ko": "햄스터는 혼자 사는 걸 좋아해요."},
+      {"en": "They may fight with other hamsters.", "ko": "다른 햄스터와 싸울 수도 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Hamsters need a cage.", "ko": "햄스터는 우리가 필요해요."},
+      {"en": "It has to be kept clean.", "ko": "항상 깨끗하게 두어야 해요."}
+    ]},
+    {"sents": [
+      {"en": "They need soft bedding.", "ko": "부드러운 깔개가 필요해요."},
+      {"en": "It keeps them warm.", "ko": "그러면 따뜻하게 지낼 수 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Hamsters like to chew.", "ko": "햄스터는 씹는 걸 좋아해요."},
+      {"en": "Small sticks work well.", "ko": "작은 막대가 딱 좋아요."}
+    ]},
+    {"sents": [
+      {"en": "They need food.", "ko": "먹이가 필요해요."},
+      {"en": "They need water.", "ko": "물도 필요해요."}
+    ]},
+    {"sents": [
+      {"en": "They need a wheel to run on.", "ko": "달릴 쳇바퀴가 필요해요."},
+      {"en": "They need a place to hide.", "ko": "숨을 곳도 필요해요."}
+    ]},
+    {"sents": [
+      {"en": "Is a hamster the right pet for your family?", "ko": "햄스터가 우리 가족에게 알맞은 반려동물일까요?"}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Ah! This story was about soft and cute hamsters.", "ko": "아! 부드럽고 귀여운 햄스터에 대한 이야기였어요."},
+      {"en": "They're so small, right?", "ko": "정말 작죠?"},
+      {"en": "OK, I hope you learned a lot about hamsters today.", "ko": "오늘 햄스터에 대해 많이 배웠으면 좋겠어요."},
+      {"en": "I'm gonna keep looking for that little hamster.", "ko": "저는 그 작은 햄스터를 계속 찾아볼 거예요."},
+      {"en": "Hamster, where are you?", "ko": "햄스터야, 어디 있니?"},
+      {"en": "Where are you, little hamster?", "ko": "어디 있어, 작은 햄스터야?"}
+    ]}
+  ]
+}

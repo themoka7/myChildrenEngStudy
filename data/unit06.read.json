@@ -1,0 +1,77 @@
+{
+  "title": "Orange",
+  "eyebrow": "Unit 6 · Story · Colors",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "sweater":   {"ipa": "ˈswetər",      "pos": "명사",   "ko": "스웨터"},
+    "stepmom":   {"ipa": "ˈstepmɑːm",    "pos": "명사",   "ko": "새엄마"},
+    "helmet":    {"ipa": "ˈhelmɪt",      "pos": "명사",   "ko": "헬멧"},
+    "leaves":    {"ipa": "liːvz",        "pos": "명사",   "ko": "잎 (leaf의 복수)"},
+    "pumpkin":   {"ipa": "ˈpʌmpkɪn",     "pos": "명사",   "ko": "호박"},
+    "patch":     {"ipa": "pætʃ",         "pos": "명사",   "ko": "밭, 작은 땅"},
+    "striped":   {"ipa": "straɪpt",      "pos": "형용사", "ko": "줄무늬가 있는"},
+    "stripes":   {"ipa": "straɪps",      "pos": "명사",   "ko": "줄무늬 (stripe의 복수)"},
+    "wave":      {"ipa": "weɪv",         "pos": "동사",   "ko": "손을 흔들다"},
+    "scarecrow": {"ipa": "ˈskerkroʊ",    "pos": "명사",   "ko": "허수아비"},
+    "vest":      {"ipa": "vest",         "pos": "명사",   "ko": "조끼"},
+    "yard":      {"ipa": "jɑːrd",        "pos": "명사",   "ko": "마당"},
+    "snack":     {"ipa": "snæk",         "pos": "명사",   "ko": "간식"},
+    "slices":    {"ipa": "slaɪsɪz",      "pos": "명사",   "ko": "조각 (slice의 복수)"},
+    "belly":     {"ipa": "ˈbeli",        "pos": "명사",   "ko": "배"},
+    "sunset":    {"ipa": "ˈsʌnset",      "pos": "명사",   "ko": "노을, 해넘이"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "I put on my favorite sweater.", "ko": "저는 가장 좋아하는 스웨터를 입어요."},
+      {"en": "My sweater is orange.", "ko": "제 스웨터는 주황색이에요."}
+    ]},
+    {"sents": [
+      {"en": "My stepmom waits for me to get my bike and helmet.", "ko": "새엄마가 제가 자전거와 헬멧을 가져오길 기다려요."},
+      {"en": "My helmet is orange.", "ko": "제 헬멧은 주황색이에요."}
+    ]},
+    {"sents": [
+      {"en": "We ride under the fall leaves.", "ko": "우리는 가을 잎 아래로 자전거를 타요."},
+      {"en": "Many of the leaves are orange.", "ko": "잎 중 많은 것이 주황색이에요."}
+    ]},
+    {"sents": [
+      {"en": "At the pumpkin patch, I find the best pumpkin.", "ko": "호박밭에서 저는 가장 좋은 호박을 찾아요."},
+      {"en": "The pumpkin is orange.", "ko": "호박은 주황색이에요."}
+    ]},
+    {"sents": [
+      {"en": "My stepmom buys some flowers.", "ko": "새엄마가 꽃을 좀 사요."},
+      {"en": "The flowers are orange.", "ko": "꽃은 주황색이에요."}
+    ]},
+    {"sents": [
+      {"en": "We see a striped cat as we ride home.", "ko": "집으로 가는 길에 줄무늬 고양이를 봐요."},
+      {"en": "The cat's stripes are orange.", "ko": "고양이의 줄무늬는 주황색이에요."}
+    ]},
+    {"sents": [
+      {"en": "I wave to the scarecrow in our yard.", "ko": "저는 마당의 허수아비에게 손을 흔들어요."},
+      {"en": "The scarecrow's vest is orange.", "ko": "허수아비의 조끼는 주황색이에요."}
+    ]},
+    {"sents": [
+      {"en": "My stepmom and I have oranges for a snack.", "ko": "새엄마와 저는 간식으로 오렌지를 먹어요."},
+      {"en": "The slices are orange.", "ko": "조각들은 주황색이에요."}
+    ]},
+    {"sents": [
+      {"en": "A bird watches us from the tree.", "ko": "새 한 마리가 나무에서 우리를 봐요."},
+      {"en": "The bird's belly is orange.", "ko": "새의 배는 주황색이에요."}
+    ]},
+    {"sents": [
+      {"en": "We all watch the sunset.", "ko": "우리 모두 노을을 봐요."},
+      {"en": "The sunset is orange.", "ko": "노을은 주황색이에요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Wow! The color orange is so beautiful, especially orange flowers.", "ko": "와! 주황색은 정말 예뻐요. 특히 주황색 꽃이요."},
+      {"en": "What else can you think of that has the orange color?", "ko": "주황색인 것이 또 뭐가 떠오르나요?"},
+      {"en": "Orange trees, orange pumpkins…", "ko": "주황색 나무, 주황색 호박…"},
+      {"en": "Tell me more about it later.", "ko": "나중에 더 얘기해 주세요."},
+      {"en": "I'll see you next time. Good-bye for now.", "ko": "다음에 또 만나요. 이제 안녕!"}
+    ]}
+  ]
+}

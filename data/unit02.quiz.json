@@ -1,0 +1,73 @@
+{
+  "title": "Dogs",
+  "title_ko": "개",
+
+  "paras": [
+    ["Dogs make great family pets."],
+    ["Some dogs are big.", "Some are small."],
+    ["Some dogs have long hair.", "Others have short hair."],
+    ["Dogs need exercise.", "Owen walks his dog."],
+    ["Dogs like to run.", "They like to play."],
+    ["Dogs need food and water.", "Emma feeds her dog."],
+    ["Dogs need grooming.", "This keeps them clean."],
+    ["Dogs should see a veterinarian.", "This keeps them healthy."],
+    ["Is a dog the right pet for your family?"]
+  ],
+
+  "match": [
+    {"en": "exercise",     "ko": "운동"},
+    {"en": "hair",         "ko": "털"},
+    {"en": "grooming",     "ko": "털 손질"},
+    {"en": "veterinarian", "ko": "수의사"},
+    {"en": "healthy",      "ko": "건강한"}
+  ],
+  "match_ko_order": ["수의사", "털", "건강한", "운동", "털 손질"],
+
+  "phonics": [
+    {"q": "b_g",  "a": "i", "ko": "큰"},
+    {"q": "d_g",  "a": "o", "ko": "개"},
+    {"q": "p_t",  "a": "e", "ko": "반려동물"},
+    {"q": "r_n",  "a": "u", "ko": "달리다"},
+    {"q": "l_ng", "a": "o", "ko": "긴"},
+    {"q": "th_m", "a": "e", "ko": "그들을"}
+  ],
+
+  "scan": [
+    {"q": "오웬은 자기 개를 어떻게 해 주나요?",        "a": "walks",       "sent": "7"},
+    {"q": "개는 무엇을 하는 걸 좋아하나요? (두 가지)", "a": "run / play",  "sent": "8·9"},
+    {"q": "엠마는 자기 개에게 무엇을 하나요?",         "a": "feeds",       "sent": "11"},
+    {"q": "털이 짧은 개는 어떻게 표현했나요?",         "a": "short hair",  "sent": "5"}
+  ],
+
+  "tf": [
+    {"en": "Dogs need exercise.", "answer": "O",
+     "why": "개는 운동이 필요해요.", "sent": "6"},
+    {"en": "All dogs are big.", "gloss": "all 모든", "answer": "X",
+     "why": "큰 개도 있고 작은 개도 있어요. '모든' 개가 큰 건 아니에요.", "sent": "2·3"},
+    {"en": "Grooming keeps dogs clean.", "answer": "O",
+     "why": "털 손질을 하면 깨끗하게 지낼 수 있어요.", "sent": "12·13"},
+    {"en": "Dogs eat only fish.", "gloss": "only 오직 / fish 생선", "answer": "X",
+     "why": "지문에는 먹이와 물이 필요하다고만 나와요. 생선 이야기는 없어요.", "sent": "10"},
+    {"en": "Dogs should see a veterinarian.", "answer": "O",
+     "why": "개는 수의사에게 가야 해요.", "sent": "14"}
+  ],
+
+  "fill_bank": ["long", "healthy", "pet", "clean"],
+  "fill": [
+    {"en": "Some dogs have ___ hair.",                 "a": "long",    "ko": "어떤 개는 털이 길어요."},
+    {"en": "This keeps them ___.",                     "a": "healthy", "ko": "그러면 건강하게 지낼 수 있어요."},
+    {"en": "Is a dog the right ___ for your family?",   "a": "pet",     "ko": "개가 우리 가족에게 알맞은 반려동물일까요?"}
+  ],
+
+  "trace": [
+    {"en": "Dogs make great family pets.", "ko": "개는 훌륭한 가족 반려동물이 돼요."},
+    {"en": "Emma feeds her dog.", "ko": "엠마는 자기 개에게 먹이를 줘요."}
+  ],
+
+  "notes": {
+    "phonics": "<b>d_g는 dig·dog·dug이 다 단어이고, b_g는 big·bag·bug이 다 됩니다.</b> 틀렸다고 하지 말고 \"그건 무슨 뜻이지?\" 하며 옆의 한글 뜻을 다시 보게 하세요. p_t도 pet·pat·pit·pot이 다 있어요.",
+    "scan": "답을 못 찾아도 <b>문장 번호만 찾으면 절반은 성공</b>입니다. 훑어 찾기 연습이 목적이에요.",
+    "tf": "2번은 <b>some(어떤)을 all(모든)로 바꿔 놓은 함정</b>입니다. 4번은 지문에 <b>없는</b> 내용이에요 — \"지문에 그런 말 있었어?\"라고 되물어 주세요.",
+    "trace": "대문자로 시작했는지, 마침표를 찍었는지만 봐 주세요."
+  }
+}

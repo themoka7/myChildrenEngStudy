@@ -1,0 +1,73 @@
+{
+  "title": "Orange",
+  "title_ko": "주황색",
+
+  "paras": [
+    ["I put on my favorite sweater.", "My sweater is orange."],
+    ["My stepmom waits for me to get my bike and helmet.", "My helmet is orange."],
+    ["We ride under the fall leaves.", "Many of the leaves are orange."],
+    ["At the pumpkin patch, I find the best pumpkin.", "The pumpkin is orange."],
+    ["My stepmom buys some flowers.", "The flowers are orange."],
+    ["We see a striped cat as we ride home.", "The cat's stripes are orange."],
+    ["I wave to the scarecrow in our yard.", "The scarecrow's vest is orange."],
+    ["My stepmom and I have oranges for a snack.", "The slices are orange."],
+    ["A bird watches us from the tree.", "The bird's belly is orange."],
+    ["We all watch the sunset.", "The sunset is orange."]
+  ],
+
+  "match": [
+    {"en": "sweater",   "ko": "스웨터"},
+    {"en": "helmet",    "ko": "헬멧"},
+    {"en": "scarecrow", "ko": "허수아비"},
+    {"en": "sunset",    "ko": "노을"}
+  ],
+  "match_ko_order": ["허수아비", "노을", "스웨터", "헬멧"],
+
+  "phonics": [
+    {"q": "c_t",      "a": "a", "ko": "고양이"},
+    {"q": "g_t",      "a": "e", "ko": "가져오다"},
+    {"q": "v_st",     "a": "e", "ko": "조끼"},
+    {"q": "sn_ck",    "a": "a", "ko": "간식"},
+    {"q": "stepm_m",  "a": "o", "ko": "새엄마"},
+    {"q": "p_mpkin",  "a": "u", "ko": "호박"}
+  ],
+
+  "scan": [
+    {"q": "호박밭에서 무엇을 찾았나요?",             "a": "the best pumpkin", "sent": "7"},
+    {"q": "새엄마는 무엇을 샀나요?",                 "a": "flowers",          "sent": "9"},
+    {"q": "마당의 허수아비는 무엇을 입고 있나요?",   "a": "a vest",           "sent": "13·14"},
+    {"q": "마지막에 다 함께 무엇을 보았나요?",       "a": "the sunset",       "sent": "19"}
+  ],
+
+  "tf": [
+    {"en": "The pumpkin is orange.", "answer": "O",
+     "why": "호박은 주황색이에요.", "sent": "8"},
+    {"en": "The cat has stripes.", "answer": "O",
+     "why": "줄무늬 고양이를 봤어요.", "sent": "11·12"},
+    {"en": "The leaves are all green.", "gloss": "green 초록색의", "answer": "X",
+     "why": "잎 중 많은 것이 주황색이에요.", "sent": "5·6"},
+    {"en": "They ride a bus to the park.", "gloss": "bus 버스 / park 공원", "answer": "X",
+     "why": "자전거(bike)를 탔어요. 버스 이야기는 없어요.", "sent": "3"},
+    {"en": "A bird watches them from the tree.", "answer": "O",
+     "why": "새가 나무에서 우리를 봐요.", "sent": "17"}
+  ],
+
+  "fill_bank": ["sweater", "helmet", "belly", "vest"],
+  "fill": [
+    {"en": "I put on my favorite ___.",   "a": "sweater", "ko": "저는 가장 좋아하는 스웨터를 입어요."},
+    {"en": "My ___ is orange.",           "a": "helmet",  "ko": "제 헬멧은 주황색이에요."},
+    {"en": "The bird's ___ is orange.",   "a": "belly",   "ko": "새의 배는 주황색이에요."}
+  ],
+
+  "trace": [
+    {"en": "My stepmom and I have oranges for a snack.", "ko": "새엄마와 저는 간식으로 오렌지를 먹어요."},
+    {"en": "The sunset is orange.", "ko": "노을은 주황색이에요."}
+  ],
+
+  "notes": {
+    "phonics": "<b>stepm_m</b>은 앞의 e가 아니라 <b>뒤쪽 빈칸</b>을 채우는 문제입니다 — step-m_m. <b>g_t은 get·got이 다 단어</b>라 헷갈리니 옆의 한글 뜻(가져오다)을 보게 하세요. c_t도 cat·cut·cot이 다 됩니다.",
+    "scan": "이 지문은 <b>'무엇이 주황색인가'가 계속 반복</b>됩니다. 그래서 색이 아니라 '무엇을' 찾는 문제로 냈어요.",
+    "tf": "3번은 <b>all(모두)</b>을 넣어 놓은 함정입니다 — 지문은 '많은 것이(many)' 주황색이라고 했지요. 4번은 지문에 없는 내용이에요.",
+    "trace": "대문자로 시작했는지, 마침표를 찍었는지만 봐 주세요."
+  }
+}

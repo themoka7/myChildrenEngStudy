@@ -1,0 +1,71 @@
+{
+  "title": "Brown",
+  "title_ko": "갈색",
+
+  "paras": [
+    ["I pack my backpack for the zoo.", "My backpack is brown."],
+    ["My brother buys tickets at the gate.", "The tickets are brown."],
+    ["I gaze up at a big bear.", "The bear is brown."],
+    ["My brother points to a nest.", "The nest is brown."],
+    ["A pelican flies out of the nest!", "The pelican's belly is brown."],
+    ["A chimpanzee smiles at me.", "The chimp's face is brown."],
+    ["We stop to eat some raisins.", "The raisins are brown."],
+    ["My brother shows me some buffalo.", "The buffalo are brown."],
+    ["I show my brother the giraffes.", "The giraffes' spots are brown."],
+    ["My brother gives me his cap.", "The cap is brown."]
+  ],
+
+  "match": [
+    {"en": "gaze",    "ko": "바라보다"},
+    {"en": "belly",   "ko": "배"},
+    {"en": "raisins", "ko": "건포도"},
+    {"en": "spots",   "ko": "점, 무늬"}
+  ],
+  "match_ko_order": ["건포도", "점, 무늬", "바라보다", "배"],
+
+  "phonics": [
+    {"q": "p_ck",     "a": "a", "ko": "(짐을) 싸다"},
+    {"q": "n_st",     "a": "e", "ko": "둥지"},
+    {"q": "ch_mp",    "a": "i", "ko": "침팬지"},
+    {"q": "st_p",     "a": "o", "ko": "멈추다"},
+    {"q": "b_ffalo",  "a": "u", "ko": "물소"},
+    {"q": "b_lly",    "a": "e", "ko": "배"}
+  ],
+
+  "scan": [
+    {"q": "형이 무엇을 가리켰나요?",          "a": "a nest",    "sent": "7"},
+    {"q": "둥지에서 무엇이 날아 나왔나요?",   "a": "a pelican", "sent": "9"},
+    {"q": "멈춰서 무엇을 먹었나요?",          "a": "raisins",   "sent": "13"},
+    {"q": "형이 마지막에 무엇을 주었나요?",   "a": "his cap",   "sent": "19"}
+  ],
+
+  "tf": [
+    {"en": "The bear is white.", "gloss": "white 흰", "answer": "X",
+     "why": "곰은 갈색이에요.", "sent": "6"},
+    {"en": "The raisins are brown.", "answer": "O",
+     "why": "건포도는 갈색이에요.", "sent": "14"},
+    {"en": "They go to the beach.", "gloss": "beach 해변", "answer": "X",
+     "why": "동물원(zoo)에 갔어요. 해변 이야기는 없어요.", "sent": "1"},
+    {"en": "The giraffes' spots are brown.", "answer": "O",
+     "why": "기린의 점무늬는 갈색이에요.", "sent": "18"}
+  ],
+
+  "fill_bank": ["bear", "belly", "chimpanzee", "nest"],
+  "fill": [
+    {"en": "I gaze up at a big ___.",       "a": "bear",       "ko": "저는 큰 곰을 올려다봐요."},
+    {"en": "The pelican's ___ is brown.",   "a": "belly",      "ko": "펠리컨의 배는 갈색이에요."},
+    {"en": "A ___ smiles at me.",           "a": "chimpanzee", "ko": "침팬지가 저를 보고 웃어요."}
+  ],
+
+  "trace": [
+    {"en": "I show my brother the giraffes.", "ko": "저는 형에게 기린을 보여 줘요."},
+    {"en": "My backpack is brown.", "ko": "제 책가방은 갈색이에요."}
+  ],
+
+  "notes": {
+    "phonics": "<b>b_ffalo</b>는 길지만 첫 소리만 찾으면 됩니다 — /b/ /ʌ/. <b>st_p은 stop·step·stip 중 헷갈리기 쉽고, p_ck도 pack·pick·puck이 다 됩니다.</b> 틀렸다고 하지 말고 옆의 한글 뜻을 다시 보게 하세요.",
+    "scan": "이 지문은 <b>'무엇이 갈색인가'가 계속 반복</b>됩니다. 그래서 색이 아니라 '무엇을' 찾는 문제로 냈어요. 문장 번호만 찾아도 절반은 성공입니다.",
+    "tf": "4번은 지문에 <b>없는</b> 내용입니다 — 동물원에 갔지요. \"어디에 갔었어?\"라고 되물어 주세요.",
+    "trace": "대문자로 시작했는지, 마침표를 찍었는지만 봐 주세요."
+  }
+}

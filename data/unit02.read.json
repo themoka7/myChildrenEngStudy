@@ -1,0 +1,69 @@
+{
+  "title": "Dogs",
+  "eyebrow": "Unit 2 · Nonfiction · Pets",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "pets":         {"ipa": "pets",            "pos": "명사",   "ko": "반려동물 (pet의 복수)"},
+    "great":        {"ipa": "ɡreɪt",           "pos": "형용사", "ko": "훌륭한, 아주 좋은"},
+    "hair":         {"ipa": "her",             "pos": "명사",   "ko": "털, 머리카락"},
+    "others":       {"ipa": "ˈʌðərz",          "pos": "대명사", "ko": "다른 것들"},
+    "exercise":     {"ipa": "ˈeksərsaɪz",      "pos": "명사",   "ko": "운동"},
+    "walks":        {"ipa": "wɔːks",           "pos": "동사",   "ko": "산책시키다 (walk)"},
+    "feeds":        {"ipa": "fiːdz",           "pos": "동사",   "ko": "먹이를 주다 (feed)"},
+    "grooming":     {"ipa": "ˈɡruːmɪŋ",        "pos": "명사",   "ko": "털 손질"},
+    "keeps":        {"ipa": "kiːps",           "pos": "동사",   "ko": "(계속) 유지하다 (keep)"},
+    "clean":        {"ipa": "kliːn",           "pos": "형용사", "ko": "깨끗한"},
+    "veterinarian": {"ipa": "ˌvetərɪˈneriən",  "pos": "명사",   "ko": "수의사"},
+    "healthy":      {"ipa": "ˈhelθi",          "pos": "형용사", "ko": "건강한"},
+    "right":        {"ipa": "raɪt",            "pos": "형용사", "ko": "알맞은, 딱 맞는"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Dogs make great family pets.", "ko": "개는 훌륭한 가족 반려동물이 돼요."}
+    ]},
+    {"sents": [
+      {"en": "Some dogs are big.", "ko": "어떤 개는 커요."},
+      {"en": "Some are small.", "ko": "어떤 개는 작아요."}
+    ]},
+    {"sents": [
+      {"en": "Some dogs have long hair.", "ko": "어떤 개는 털이 길어요."},
+      {"en": "Others have short hair.", "ko": "다른 개는 털이 짧아요."}
+    ]},
+    {"sents": [
+      {"en": "Dogs need exercise.", "ko": "개는 운동이 필요해요."},
+      {"en": "Owen walks his dog.", "ko": "오웬은 자기 개를 산책시켜요."}
+    ]},
+    {"sents": [
+      {"en": "Dogs like to run.", "ko": "개는 달리는 것을 좋아해요."},
+      {"en": "They like to play.", "ko": "노는 것도 좋아해요."}
+    ]},
+    {"sents": [
+      {"en": "Dogs need food and water.", "ko": "개는 먹이와 물이 필요해요."},
+      {"en": "Emma feeds her dog.", "ko": "엠마는 자기 개에게 먹이를 줘요."}
+    ]},
+    {"sents": [
+      {"en": "Dogs need grooming.", "ko": "개는 털 손질이 필요해요."},
+      {"en": "This keeps them clean.", "ko": "그러면 깨끗하게 지낼 수 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Dogs should see a veterinarian.", "ko": "개는 수의사에게 가야 해요."},
+      {"en": "This keeps them healthy.", "ko": "그러면 건강하게 지낼 수 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Is a dog the right pet for your family?", "ko": "개가 우리 가족에게 알맞은 반려동물일까요?"}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "The story is done already.", "ko": "이야기가 벌써 끝났네요."},
+      {"en": "Do you like dogs?", "ko": "개를 좋아하나요?"},
+      {"en": "I like big dogs and small dogs.", "ko": "저는 큰 개도 작은 개도 좋아요."},
+      {"en": "I love all dogs.", "ko": "모든 개를 사랑해요."},
+      {"en": "Woof! Woof!", "ko": "멍멍! 멍멍!"},
+      {"en": "Let's meet again for another story next time.", "ko": "다음에 또 다른 이야기로 만나요."}
+    ]}
+  ]
+}

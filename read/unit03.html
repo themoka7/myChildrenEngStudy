@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rabbits — 읽기 학습지</title>
+<style>
+  :root{
+    --paper:#FBF7EE;
+    --ink:#2A2520;
+    --muted:#8A8073;
+    --line:#E5DCC8;
+    --carrot:#E0712F;
+    --carrot-soft:#FBE6D7;
+    --leaf:#5C7A4A;
+    --leaf-soft:#E7EEDF;
+    --sky:#3E6B8F;
+    --card:#FFFFFF;
+    --shadow:0 1px 2px rgba(42,37,32,.06),0 8px 24px rgba(42,37,32,.06);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    line-height:1.7;
+    padding:0 0 120px;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px}
+
+  /* ── header ─────────────────────────────── */
+  header{padding:48px 0 26px;border-bottom:2px solid var(--ink);margin-bottom:8px;position:relative}
+  .eyebrow{
+    font-family:ui-sans-serif,system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--carrot);
+    font-weight:700;margin:0 0 10px;
+  }
+  h1{font-size:54px;line-height:1;margin:0;letter-spacing:-.01em;font-weight:700}
+  h1 .ear{color:var(--carrot)}
+  .meta{
+    font-family:ui-sans-serif,system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    font-size:13px;color:var(--muted);margin-top:14px;display:flex;gap:16px;flex-wrap:wrap;
+  }
+  .meta b{color:var(--ink);font-weight:600}
+
+  /* ── toolbar ────────────────────────────── */
+  .toolbar{
+    position:sticky;top:0;z-index:30;background:rgba(251,247,238,.9);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+    margin:0 -22px 26px;padding:10px 22px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;
+  }
+  .toolbar .hint{
+    font-family:ui-sans-serif,system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    font-size:12px;color:var(--muted);margin-left:auto;
+  }
+  .btn{
+    font-family:ui-sans-serif,system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    font-size:13px;font-weight:600;cursor:pointer;
+    border:1px solid var(--line);background:var(--card);color:var(--ink);
+    padding:7px 13px;border-radius:999px;transition:.15s;
+  }
+  .btn:hover{border-color:var(--carrot);color:var(--carrot)}
+  .btn.on{background:var(--carrot);border-color:var(--carrot);color:#fff}
+
+  /* ── story ──────────────────────────────── */
+  .para{position:relative;margin:0 0 8px;padding:14px 16px;border-radius:12px;transition:background .15s}
+  .para:hover{background:rgba(255,255,255,.5)}
+  .para p{margin:0;font-size:21px}
+  .sent{display:block;margin:0 0 6px}
+  .line{display:flex;align-items:baseline;gap:8px}
+  .sent .en{flex:1}
+  .say{
+    flex-shrink:0;opacity:.35;transition:.15s;
+    font-size:13px;cursor:pointer;line-height:1;
+    border:1px solid var(--line);background:var(--card);
+    padding:3px 7px;border-radius:999px;
+  }
+  .line:hover .say{opacity:1}
+  .say:hover{border-color:var(--sky)}
+  .say.playing{opacity:1;border-color:var(--sky);background:#E4EEF5}
+  .stog{
+    flex-shrink:0;opacity:.35;transition:.15s;
+    font-family:ui-sans-serif,system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    font-size:11px;font-weight:700;color:var(--leaf);cursor:pointer;
+    border:1px solid var(--leaf-soft);background:var(--leaf-soft);
+    padding:2px 8px;border-radius:999px;line-height:1.4;
+  }
+  .line:hover .stog{opacity:1}
+  .sent.show .stog{opacity:1;background:var(--leaf);color:#fff;border-color:var(--leaf)}
+  .sent .ko{
+    display:none;
+    font-family:ui-sans-serif,system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    font-size:14px;color:var(--leaf);line-height:1.5;
+  }
+  .sent.show .ko{display:block;margin:4px 0 0 2px;padding:2px 0 2px 10px;border-left:2px solid var(--leaf-soft)}
+
+  /* ── glossable words ────────────────────── */
+  .w{
+    cursor:pointer;border-bottom:2px dotted var(--carrot);
+    color:inherit;transition:background .12s;border-radius:3px;
+    position:relative;
+  }
+  .w:hover{background:var(--carrot-soft)}
+  /* desktop tooltip */
+  .tip{
+    position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%) translateY(4px);
+    background:var(--ink);color:#fff;border-radius:10px;padding:9px 12px;
+    width:max-content;max-width:240px;opacity:0;pointer-events:none;transition:.15s;z-index:50;
+    font-family:ui-sans-serif,system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    box-shadow:var(--shadow);text-align:left;
+  }
+  .tip::after{content:"";position:absolute;left:50%;top:100%;transform:translateX(-50%);
+    border:6px solid transparent;border-top-color:var(--ink)}
+  .tip .ipa{font-size:12px;color:#C9BFB0;font-style:normal;display:block;margin-bottom:2px}
+  .tip .mean{font-size:15px;font-weight:600;line-height:1.4}
+  .tip .pos{font-size:11px;color:var(--carrot);font-weight:700;margin-bottom:3px}
+  .w:hover .tip{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  /* ── closing block ──────────────────────── */
+  .closing{margin-top:18px;padding:20px;background:var(--leaf-soft);border-radius:14px}
+  .closing .para:hover{background:rgba(255,255,255,.45)}
+
+  /* ── quiz drawer ────────────────────────── */
+  .fab{
+    position:fixed;right:20px;bottom:20px;z-index:40;
+    font-family:ui-sans-serif,system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    font-weight:700;font-size:14px;cursor:pointer;
+    background:var(--carrot);color:#fff;border:none;border-radius:999px;
+    padding:13px 18px;box-shadow:var(--shadow);display:flex;gap:8px;align-items:center;
+  }
+  .drawer{
+    position:fixed;inset:0;z-index:60;background:rgba(42,37,32,.45);
+    opacity:0;pointer-events:none;transition:.2s;
+    display:flex;align-items:center;justify-content:center;padding:20px;
+  }
+  .drawer.open{opacity:1;pointer-events:auto}
+  .panel.quiz{
+    position:relative;width:min(440px,100%);max-height:90vh;overflow-y:auto;
+    background:var(--paper);border-radius:20px;padding:28px 24px 24px;
+    transform:scale(.94);transition:.2s;box-shadow:0 24px 60px rgba(42,37,32,.3);
+  }
+  .drawer.open .panel.quiz{transform:none}
+  .close-x{position:absolute;top:14px;right:16px;border:none;background:none;font-size:26px;
+    cursor:pointer;color:var(--muted);line-height:1;z-index:2}
+
+  .q-top{display:flex;justify-content:space-between;align-items:center;
+    font-family:ui-sans-serif,system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    font-size:13px;color:var(--muted);margin-bottom:16px}
+  .q-top b{color:var(--carrot);font-size:16px}
+  .q-card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:24px 18px;text-align:center;box-shadow:var(--shadow)}
+  .q-word{font-size:38px;font-weight:700;letter-spacing:-.01em}
+  .q-ipa{font-family:ui-sans-serif,sans-serif;font-size:15px;color:var(--muted);margin-top:4px}
+  .q-say{margin-top:14px;cursor:pointer;
+    font-family:ui-sans-serif,system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    font-size:13px;font-weight:600;color:var(--sky);
+    border:1px solid var(--line);background:var(--paper);padding:6px 14px;border-radius:999px}
+  .q-say:hover{border-color:var(--sky)}
+  .q-ask{font-family:ui-sans-serif,system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    font-size:14px;color:var(--muted);text-align:center;margin:18px 0 12px}
+  .q-opts{display:flex;flex-direction:column;gap:9px}
+  .q-opt{display:flex;align-items:center;gap:10px;cursor:pointer;text-align:left;width:100%;
+    font-family:ui-sans-serif,system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    font-size:16px;color:var(--ink);
+    border:1.5px solid var(--line);background:var(--card);padding:13px 15px;border-radius:12px;
+    transition:.12s}
+  .q-opt:hover:not(:disabled){border-color:var(--carrot);background:var(--carrot-soft)}
+  .q-opt .num{flex-shrink:0;width:24px;height:24px;border-radius:50%;
+    background:var(--leaf-soft);color:var(--leaf);font-weight:700;font-size:13px;
+    display:inline-flex;align-items:center;justify-content:center}
+  .q-opt:disabled{cursor:default}
+  .q-opt.correct{border-color:var(--leaf);background:var(--leaf-soft)}
+  .q-opt.correct .num{background:var(--leaf);color:#fff}
+  .q-opt.wrong{border-color:var(--carrot);background:#FBE0DA}
+  .q-opt.wrong .num{background:var(--carrot);color:#fff}
+  .q-feed{text-align:center;font-weight:700;min-height:26px;margin-top:14px;
+    font-family:ui-sans-serif,system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+  .q-feed.ok{color:var(--leaf)}
+  .q-feed.no{color:var(--carrot)}
+  .q-next,.q-retry{display:block;width:100%;margin-top:14px;text-align:center;
+    background:var(--carrot);color:#fff;border-color:var(--carrot)}
+  .q-next:hover,.q-retry:hover{filter:brightness(1.05);color:#fff}
+
+  .q-result-emoji{font-size:54px;text-align:center}
+  .q-result-title{text-align:center;font-size:26px;margin:6px 0 2px}
+  .q-result-score{text-align:center;color:var(--muted);margin:0 0 18px;
+    font-family:ui-sans-serif,system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+  .q-result-score b{color:var(--carrot);font-size:20px}
+  .q-rv{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);
+    font-family:ui-sans-serif,system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;font-size:14px}
+  .q-rv .rv-en{font-weight:600}
+  .q-rv .rv-ko{color:var(--leaf)}
+  .q-rv .rv-mark{flex-shrink:0}
+
+  @media (max-width:520px){
+    h1{font-size:40px}
+    .para p{font-size:19px}
+    .toolbar .hint{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<style>a.sitenav{text-decoration:none;display:inline-flex;align-items:center;gap:4px}</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">Unit 3 · Nonfiction · Pets</p>
+    <h1>Cats</h1>
+    <div class="meta">
+      <span><b id="scount">·</b> 문장</span>
+      <span>핵심 단어 <b id="wcount">·</b>개</span>
+      <span>점선 단어에 마우스를 올리거나 탭하세요</span>
+    </div>
+  </header>
+
+  <div class="toolbar"><a class="btn sitenav" data-nav="index" href="../index.html">← 목차</a><a class="btn sitenav" data-nav="print" href="../print/unit03.html">🖨 A4 출력</a>
+    <button class="btn" id="allKo">해석 전체 보기</button>
+    <button class="btn" id="startQuiz">📝 단어 퀴즈</button>
+    <span class="hint">점선 단어에 마우스를 올리면 뜻이 나와요</span>
+  </div>
+
+  <main id="story"></main>
+
+  <div class="closing" id="closing"></div>
+
+</div>
+
+<button class="fab" id="fab">📝 단어 퀴즈</button>
+
+<div class="drawer" id="drawer">
+  <div class="panel quiz">
+    <button class="close-x" id="closeX">×</button>
+
+    <!-- 진행 화면 -->
+    <div id="quizPlay">
+      <div class="q-top">
+        <span class="q-prog"><b id="qNow">1</b> / <span id="qTotal">5</span></span>
+        <span class="q-score">점수 <b id="qScore">0</b></span>
+      </div>
+      <div class="q-card">
+        <div class="q-word" id="qWord">word</div>
+        <div class="q-ipa" id="qIpa">/.../</div>
+        <button class="q-say" id="qSay" type="button" aria-label="단어 듣기">🔊 듣기</button>
+      </div>
+      <p class="q-ask">알맞은 뜻을 골라 보세요</p>
+      <div class="q-opts" id="qOpts"></div>
+      <div class="q-feed" id="qFeed"></div>
+      <button class="btn q-next" id="qNext" style="display:none">다음 →</button>
+    </div>
+
+    <!-- 결과 화면 -->
+    <div id="quizDone" style="display:none">
+      <div class="q-result-emoji" id="qEmoji">🎉</div>
+      <h2 class="q-result-title" id="qTitle">잘했어요!</h2>
+      <p class="q-result-score"><b id="qFinal">0</b> / <span id="qFinalTotal">5</span> 맞았어요</p>
+      <div id="qReview"></div>
+      <button class="btn q-retry" id="qRetry">다시 풀기</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ─────────────────────────────────────────────
+   데이터: 본문 + 문단 해석 + 핵심 단어 사전
+   (정적 생성 방식 — Claude가 본문 분석해 채움)
+   ───────────────────────────────────────────── */
+const DICT = {"pets": {"ipa": "pets", "pos": "명사", "ko": "반려동물 (pet의 복수)"}, "great": {"ipa": "ɡreɪt", "pos": "형용사", "ko": "훌륭한, 아주 좋은"}, "soft": {"ipa": "sɔːft", "pos": "형용사", "ko": "부드러운"}, "fur": {"ipa": "fɜːr", "pos": "명사", "ko": "털, 모피"}, "whiskers": {"ipa": "ˈwɪskərz", "pos": "명사", "ko": "(고양이) 수염"}, "feel": {"ipa": "fiːl", "pos": "동사", "ko": "느끼다"}, "claws": {"ipa": "klɔːz", "pos": "명사", "ko": "발톱 (claw의 복수)"}, "scratch": {"ipa": "skrætʃ", "pos": "동사", "ko": "긁다"}, "litter": {"ipa": "ˈlɪtər", "pos": "명사", "ko": "(litter box) 배변 상자"}, "kept": {"ipa": "kept", "pos": "동사", "ko": "유지된 (keep의 과거·과거분사)"}, "clean": {"ipa": "kliːn", "pos": "형용사", "ko": "깨끗한"}, "brushing": {"ipa": "ˈbrʌʃɪŋ", "pos": "명사", "ko": "빗질"}, "veterinarian": {"ipa": "ˌvetərɪˈneriən", "pos": "명사", "ko": "수의사"}, "healthy": {"ipa": "ˈhelθi", "pos": "형용사", "ko": "건강한"}, "right": {"ipa": "raɪt", "pos": "형용사", "ko": "알맞은, 딱 맞는"}};
+
+const PARAS = [{"sents": [{"en": "Cats make great family pets.", "ko": "고양이는 훌륭한 가족 반려동물이 돼요."}]}, {"sents": [{"en": "Cats have soft fur.", "ko": "고양이는 부드러운 털이 있어요."}, {"en": "They like to be pet.", "ko": "쓰다듬어 주는 걸 좋아해요."}]}, {"sents": [{"en": "Cats have whiskers.", "ko": "고양이는 수염이 있어요."}, {"en": "These help them feel.", "ko": "수염은 느끼는 걸 도와줘요."}]}, {"sents": [{"en": "Cats have claws.", "ko": "고양이는 발톱이 있어요."}, {"en": "They like to scratch things.", "ko": "물건을 긁는 걸 좋아해요."}]}, {"sents": [{"en": "Cats need food and water.", "ko": "고양이는 먹이와 물이 필요해요."}, {"en": "Noah feeds his cat.", "ko": "노아는 자기 고양이에게 먹이를 줘요."}]}, {"sents": [{"en": "Cats need a litter box.", "ko": "고양이는 배변 상자가 필요해요."}, {"en": "It has to be kept clean.", "ko": "항상 깨끗하게 두어야 해요."}]}, {"sents": [{"en": "Cats need brushing.", "ko": "고양이는 빗질이 필요해요."}, {"en": "Lila brushes her cat.", "ko": "라일라는 자기 고양이를 빗겨 줘요."}]}, {"sents": [{"en": "Cats should see a veterinarian.", "ko": "고양이는 수의사에게 가야 해요."}, {"en": "This keeps them healthy.", "ko": "그러면 건강하게 지낼 수 있어요."}]}, {"sents": [{"en": "Is a cat the right pet for your family?", "ko": "고양이가 우리 가족에게 알맞은 반려동물일까요?"}]}];
+
+const CLOSING = [{"sents": [{"en": "Oh! What a fun story about cats!", "ko": "오! 고양이에 대한 정말 재미있는 이야기네요!"}, {"en": "This cat has blue eyes.", "ko": "이 고양이는 파란 눈을 가졌어요."}, {"en": "Have you ever seen a cat with blue eyes?", "ko": "파란 눈 고양이를 본 적 있나요?"}, {"en": "I haven't.", "ko": "저는 못 봤어요."}, {"en": "Wish I could see some cats right now.", "ko": "지금 당장 고양이를 보고 싶어요."}, {"en": "Let's go find some.", "ko": "찾아보러 가요."}, {"en": "Meow! Meow!", "ko": "야옹! 야옹!"}]}];
+
+/* ── 렌더링 ───────────────────────────────── */
+const usedWords = new Set();
+
+function wordToken(raw){
+  // 구두점 분리해서 사전 매칭
+  const m = raw.match(/^([A-Za-z']+)(.*)$/);
+  if(!m) return escape(raw);
+  const core = m[1], tail = m[2];
+  const key = core.toLowerCase();
+  const d = DICT[key];
+  if(!d) return escape(core)+escape(tail);
+  usedWords.add(key);
+  const tip = `<span class="tip"><span class="pos">${d.pos}</span><span class="ipa">/${d.ipa}/</span><span class="mean">${d.ko}</span></span>`;
+  return `<span class="w" data-k="${key}">${core}${tip}</span>${escape(tail)}`;
+}
+function escape(s){return s.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]))}
+
+function renderSent(s){
+  const en = s.en.split(" ").map(wordToken).join(" ");
+  return `<span class="sent">
+            <span class="line">
+              <span class="en">${en}</span>
+              <button class="say" type="button" aria-label="문장 듣기" data-en="${escape(s.en)}">🔊</button>
+              <button class="stog" type="button" aria-label="해석 보기">해석</button>
+            </span>
+            <span class="ko">${escape(s.ko)}</span>
+          </span>`;
+}
+function renderPara(p){
+  const body = p.sents.map(renderSent).join("");
+  return `<div class="para"><p>${body}</p></div>`;
+}
+
+document.getElementById("story").innerHTML = PARAS.map(renderPara).join("");
+// 본문(PARAS)에 실제 등장하며 사전에 있는 단어만 퀴즈 대상 — closing 단어는 제외
+const quizPool = [...usedWords];
+if (CLOSING && CLOSING.length){
+  document.getElementById("closing").innerHTML =
+    `<p class="eyebrow" style="margin-bottom:12px">읽고 나서</p>` + CLOSING.map(renderPara).join("");
+} else {
+  document.getElementById("closing").style.display = "none";
+}
+document.getElementById("wcount").textContent = usedWords.size;
+document.getElementById("scount").textContent =
+  document.querySelectorAll(".sent").length;
+
+/* ── 문장 듣기 (TTS, 브라우저 내장 음성) ───── */
+let enVoice = null;
+function pickVoice(){
+  const vs = speechSynthesis.getVoices();
+  // 영어 음성 우선 선택 (en-US > en-GB > 기타 en)
+  enVoice = vs.find(v=>v.lang==="en-US")
+         || vs.find(v=>v.lang==="en-GB")
+         || vs.find(v=>v.lang && v.lang.startsWith("en"))
+         || null;
+}
+pickVoice();
+if (typeof speechSynthesis!=="undefined") speechSynthesis.onvoiceschanged = pickVoice;
+
+document.body.addEventListener("click", e=>{
+  const btn = e.target.closest(".say");
+  if(!btn) return;
+  const text = btn.dataset.en;
+  if(!text || typeof speechSynthesis==="undefined") return;
+  speechSynthesis.cancel();                 // 이전 재생 중단
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = "en-US";
+  u.rate = 0.9;                             // 어린 학습자용으로 약간 천천히
+  if(enVoice) u.voice = enVoice;
+  btn.classList.add("playing");
+  u.onend = u.onerror = ()=>btn.classList.remove("playing");
+  speechSynthesis.speak(u);
+});
+
+/* ── 해석 토글 (문장별 + 전체) ─────────────── */
+document.body.addEventListener("click", e=>{
+  const tog = e.target.closest(".stog");
+  if(tog){ tog.closest(".sent").classList.toggle("show"); }
+});
+let allOn=false;
+document.getElementById("allKo").addEventListener("click", e=>{
+  allOn=!allOn;
+  document.querySelectorAll(".sent").forEach(s=>s.classList.toggle("show",allOn));
+  e.target.classList.toggle("on",allOn);
+  e.target.textContent = allOn?"해석 전체 숨기기":"해석 전체 보기";
+});
+
+/* ── 단어 퀴즈 ────────────────────────────── */
+const drawer=document.getElementById("drawer");
+const QUIZ_MAX=10;          // 최대 문제 수
+let quiz=[], qIdx=0, qScore=0, qAnswered=false;
+
+// 효과음 (Web Audio API — 외부 파일 없이 합성)
+let actx=null;
+function ac(){ if(!actx) actx=new (window.AudioContext||window.webkitAudioContext)(); return actx; }
+function playCorrect(){
+  // 밝은 상승음 "굿~"
+  const c=ac(),t=c.currentTime;
+  [[523,0],[784,.12]].forEach(([f,d])=>{
+    const o=c.createOscillator(),g=c.createGain();
+    o.type="sine";o.frequency.value=f;
+    o.connect(g);g.connect(c.destination);
+    g.gain.setValueAtTime(0,t+d);
+    g.gain.linearRampToValueAtTime(.25,t+d+.02);
+    g.gain.exponentialRampToValueAtTime(.001,t+d+.22);
+    o.start(t+d);o.stop(t+d+.24);
+  });
+}
+function playWrong(){
+  // 낮은 비프음
+  const c=ac(),t=c.currentTime;
+  const o=c.createOscillator(),g=c.createGain();
+  o.type="square";o.frequency.value=160;
+  o.connect(g);g.connect(c.destination);
+  g.gain.setValueAtTime(.0001,t);
+  g.gain.linearRampToValueAtTime(.18,t+.02);
+  g.gain.exponentialRampToValueAtTime(.001,t+.32);
+  o.start(t);o.stop(t+.34);
+}
+function shuffle(a){ for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]];} return a; }
+
+function buildQuiz(){
+  // 출제 대상: 본문 단어만 (closing 제외). 비어 있으면 DICT 전체로 폴백.
+  const pool = quizPool.length ? quizPool : Object.keys(DICT);
+  // 오답 보기 후보: 본문 풀이 4개 미만이면 DICT 전체에서 보충
+  const distractorKeys = pool.length>=4 ? pool : Object.keys(DICT);
+  const picked=shuffle([...pool]).slice(0, Math.min(QUIZ_MAX, pool.length));
+  quiz=picked.map(k=>{
+    const distractors=shuffle(distractorKeys.filter(x=>x!==k)).slice(0,3).map(x=>DICT[x].ko);
+    const opts=shuffle([DICT[k].ko, ...distractors]);
+    return {key:k, ...DICT[k], opts, answer:DICT[k].ko, chosen:null};
+  });
+  qIdx=0; qScore=0;
+}
+
+function renderQ(){
+  qAnswered=false;
+  const q=quiz[qIdx];
+  document.getElementById("quizPlay").style.display="";
+  document.getElementById("quizDone").style.display="none";
+  document.getElementById("qNow").textContent=qIdx+1;
+  document.getElementById("qTotal").textContent=quiz.length;
+  document.getElementById("qScore").textContent=qScore;
+  document.getElementById("qWord").textContent=q.key;
+  document.getElementById("qIpa").textContent=q.ipa?`/${q.ipa}/`:"";
+  document.getElementById("qFeed").textContent="";
+  document.getElementById("qFeed").className="q-feed";
+  document.getElementById("qNext").style.display="none";
+  document.getElementById("qNext").textContent= (qIdx===quiz.length-1)?"결과 보기 →":"다음 →";
+  const box=document.getElementById("qOpts");
+  box.innerHTML=q.opts.map((o,i)=>
+    `<button class="q-opt" data-ko="${escape(o)}"><span class="num">${i+1}</span><span>${escape(o)}</span></button>`
+  ).join("");
+}
+
+document.getElementById("qOpts").addEventListener("click",e=>{
+  const btn=e.target.closest(".q-opt");
+  if(!btn||qAnswered) return;
+  qAnswered=true;
+  const q=quiz[qIdx];
+  const chosen=btn.dataset.ko;
+  q.chosen=chosen;
+  const correct = chosen===q.answer;
+  document.querySelectorAll(".q-opt").forEach(b=>{
+    b.disabled=true;
+    if(b.dataset.ko===q.answer) b.classList.add("correct");
+    else if(b===btn) b.classList.add("wrong");
+  });
+  const feed=document.getElementById("qFeed");
+  if(correct){ qScore++; feed.textContent="정답! 굿~ 👍"; feed.className="q-feed ok"; playCorrect(); }
+  else { feed.textContent=`틀렸어요. 정답은 "${q.answer}"`; feed.className="q-feed no"; playWrong(); }
+  document.getElementById("qScore").textContent=qScore;
+  document.getElementById("qNext").style.display="";
+});
+
+document.getElementById("qNext").addEventListener("click",()=>{
+  if(qIdx<quiz.length-1){ qIdx++; renderQ(); }
+  else renderResult();
+});
+
+function renderResult(){
+  document.getElementById("quizPlay").style.display="none";
+  document.getElementById("quizDone").style.display="";
+  const total=quiz.length, pct=qScore/total;
+  document.getElementById("qFinal").textContent=qScore;
+  document.getElementById("qFinalTotal").textContent=total;
+  document.getElementById("qEmoji").textContent= pct===1?"🏆":pct>=.6?"🎉":"💪";
+  document.getElementById("qTitle").textContent= pct===1?"만점이에요!":pct>=.6?"잘했어요!":"조금만 더!";
+  document.getElementById("qReview").innerHTML=quiz.map(q=>{
+    const ok=q.chosen===q.answer;
+    return `<div class="q-rv">
+      <span class="rv-en">${q.key}</span>
+      <span class="rv-ko">${escape(q.answer)}</span>
+      <span class="rv-mark">${ok?"⭕":"❌"}</span>
+    </div>`;
+  }).join("");
+}
+
+// 단어 듣기 (퀴즈 카드)
+document.getElementById("qSay").addEventListener("click",()=>{
+  const w=quiz[qIdx]?.key;
+  if(!w||typeof speechSynthesis==="undefined") return;
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(w);
+  u.lang="en-US";u.rate=.9; if(enVoice)u.voice=enVoice;
+  speechSynthesis.speak(u);
+});
+
+function openQuiz(){ buildQuiz(); renderQ(); drawer.classList.add("open"); }
+document.getElementById("fab").addEventListener("click",openQuiz);
+document.getElementById("startQuiz").addEventListener("click",openQuiz);
+document.getElementById("qRetry").addEventListener("click",()=>{ buildQuiz(); renderQ(); });
+document.getElementById("closeX").addEventListener("click",()=>{ drawer.classList.remove("open"); speechSynthesis&&speechSynthesis.cancel(); });
+drawer.addEventListener("click",e=>{ if(e.target===drawer) drawer.classList.remove("open"); });
+
+</script>
+</body>
+</html>

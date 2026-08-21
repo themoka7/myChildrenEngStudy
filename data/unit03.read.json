@@ -1,0 +1,72 @@
+{
+  "title": "Cats",
+  "eyebrow": "Unit 3 · Nonfiction · Pets",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "pets":         {"ipa": "pets",           "pos": "명사",   "ko": "반려동물 (pet의 복수)"},
+    "great":        {"ipa": "ɡreɪt",          "pos": "형용사", "ko": "훌륭한, 아주 좋은"},
+    "soft":         {"ipa": "sɔːft",          "pos": "형용사", "ko": "부드러운"},
+    "fur":          {"ipa": "fɜːr",           "pos": "명사",   "ko": "털, 모피"},
+    "whiskers":     {"ipa": "ˈwɪskərz",       "pos": "명사",   "ko": "(고양이) 수염"},
+    "feel":         {"ipa": "fiːl",           "pos": "동사",   "ko": "느끼다"},
+    "claws":        {"ipa": "klɔːz",          "pos": "명사",   "ko": "발톱 (claw의 복수)"},
+    "scratch":      {"ipa": "skrætʃ",         "pos": "동사",   "ko": "긁다"},
+    "litter":       {"ipa": "ˈlɪtər",         "pos": "명사",   "ko": "(litter box) 배변 상자"},
+    "kept":         {"ipa": "kept",           "pos": "동사",   "ko": "유지된 (keep의 과거·과거분사)"},
+    "clean":        {"ipa": "kliːn",          "pos": "형용사", "ko": "깨끗한"},
+    "brushing":     {"ipa": "ˈbrʌʃɪŋ",        "pos": "명사",   "ko": "빗질"},
+    "veterinarian": {"ipa": "ˌvetərɪˈneriən", "pos": "명사",   "ko": "수의사"},
+    "healthy":      {"ipa": "ˈhelθi",         "pos": "형용사", "ko": "건강한"},
+    "right":        {"ipa": "raɪt",           "pos": "형용사", "ko": "알맞은, 딱 맞는"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Cats make great family pets.", "ko": "고양이는 훌륭한 가족 반려동물이 돼요."}
+    ]},
+    {"sents": [
+      {"en": "Cats have soft fur.", "ko": "고양이는 부드러운 털이 있어요."},
+      {"en": "They like to be pet.", "ko": "쓰다듬어 주는 걸 좋아해요."}
+    ]},
+    {"sents": [
+      {"en": "Cats have whiskers.", "ko": "고양이는 수염이 있어요."},
+      {"en": "These help them feel.", "ko": "수염은 느끼는 걸 도와줘요."}
+    ]},
+    {"sents": [
+      {"en": "Cats have claws.", "ko": "고양이는 발톱이 있어요."},
+      {"en": "They like to scratch things.", "ko": "물건을 긁는 걸 좋아해요."}
+    ]},
+    {"sents": [
+      {"en": "Cats need food and water.", "ko": "고양이는 먹이와 물이 필요해요."},
+      {"en": "Noah feeds his cat.", "ko": "노아는 자기 고양이에게 먹이를 줘요."}
+    ]},
+    {"sents": [
+      {"en": "Cats need a litter box.", "ko": "고양이는 배변 상자가 필요해요."},
+      {"en": "It has to be kept clean.", "ko": "항상 깨끗하게 두어야 해요."}
+    ]},
+    {"sents": [
+      {"en": "Cats need brushing.", "ko": "고양이는 빗질이 필요해요."},
+      {"en": "Lila brushes her cat.", "ko": "라일라는 자기 고양이를 빗겨 줘요."}
+    ]},
+    {"sents": [
+      {"en": "Cats should see a veterinarian.", "ko": "고양이는 수의사에게 가야 해요."},
+      {"en": "This keeps them healthy.", "ko": "그러면 건강하게 지낼 수 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Is a cat the right pet for your family?", "ko": "고양이가 우리 가족에게 알맞은 반려동물일까요?"}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Oh! What a fun story about cats!", "ko": "오! 고양이에 대한 정말 재미있는 이야기네요!"},
+      {"en": "This cat has blue eyes.", "ko": "이 고양이는 파란 눈을 가졌어요."},
+      {"en": "Have you ever seen a cat with blue eyes?", "ko": "파란 눈 고양이를 본 적 있나요?"},
+      {"en": "I haven't.", "ko": "저는 못 봤어요."},
+      {"en": "Wish I could see some cats right now.", "ko": "지금 당장 고양이를 보고 싶어요."},
+      {"en": "Let's go find some.", "ko": "찾아보러 가요."},
+      {"en": "Meow! Meow!", "ko": "야옹! 야옹!"}
+    ]}
+  ]
+}

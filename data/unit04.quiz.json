@@ -1,0 +1,72 @@
+{
+  "title": "Hamsters",
+  "title_ko": "햄스터",
+
+  "paras": [
+    ["Hamsters make great family pets."],
+    ["They are small and soft.", "Kate holds her hamster."],
+    ["They like to live alone.", "They may fight with other hamsters."],
+    ["Hamsters need a cage.", "It has to be kept clean."],
+    ["They need soft bedding.", "It keeps them warm."],
+    ["Hamsters like to chew.", "Small sticks work well."],
+    ["They need food.", "They need water."],
+    ["They need a wheel to run on.", "They need a place to hide."],
+    ["Is a hamster the right pet for your family?"]
+  ],
+
+  "match": [
+    {"en": "cage",    "ko": "우리"},
+    {"en": "bedding", "ko": "깔개"},
+    {"en": "wheel",   "ko": "쳇바퀴"},
+    {"en": "alone",   "ko": "혼자"}
+  ],
+  "match_ko_order": ["쳇바퀴", "혼자", "깔개", "우리"],
+
+  "phonics": [
+    {"q": "h_mster", "a": "a", "ko": "햄스터"},
+    {"q": "s_ft",    "a": "o", "ko": "부드러운"},
+    {"q": "r_n",     "a": "u", "ko": "달리다"},
+    {"q": "w_ll",    "a": "e", "ko": "잘, 딱 좋게"},
+    {"q": "st_cks",  "a": "i", "ko": "막대들"},
+    {"q": "th_m",    "a": "e", "ko": "그들을"}
+  ],
+
+  "scan": [
+    {"q": "햄스터는 어떻게 사는 걸 좋아하나요?",        "a": "alone",   "sent": "4"},
+    {"q": "햄스터를 따뜻하게 해 주는 건 무엇인가요?",   "a": "bedding", "sent": "8·9"},
+    {"q": "햄스터는 무엇을 하는 걸 좋아하나요?",        "a": "chew",    "sent": "10"},
+    {"q": "햄스터가 달리려면 무엇이 필요한가요?",       "a": "a wheel", "sent": "14"}
+  ],
+
+  "tf": [
+    {"en": "Hamsters are small and soft.", "answer": "O",
+     "why": "햄스터는 작고 부드러워요.", "sent": "2"},
+    {"en": "Hamsters like to live with many friends.", "gloss": "many 많은 / friends 친구들",
+     "answer": "X", "why": "햄스터는 혼자 사는 걸 좋아해요. 다른 햄스터와 싸울 수도 있어요.", "sent": "4·5"},
+    {"en": "A hamster's cage has to be kept clean.", "answer": "O",
+     "why": "우리는 깨끗하게 두어야 해요.", "sent": "6·7"},
+    {"en": "Hamsters can swim in water.", "gloss": "swim 수영하다", "answer": "X",
+     "why": "지문에는 수영 이야기가 없어요. 물이 필요하다고만 나와요.", "sent": "13"},
+    {"en": "Hamsters need a place to hide.", "answer": "O",
+     "why": "숨을 곳이 필요해요.", "sent": "15"}
+  ],
+
+  "fill_bank": ["holds", "sticks", "pet", "cage"],
+  "fill": [
+    {"en": "Kate ___ her hamster.",                         "a": "holds",  "ko": "케이트가 자기 햄스터를 안고 있어요."},
+    {"en": "Small ___ work well.",                          "a": "sticks", "ko": "작은 막대가 딱 좋아요."},
+    {"en": "Is a hamster the right ___ for your family?",     "a": "pet",    "ko": "햄스터가 우리 가족에게 알맞은 반려동물일까요?"}
+  ],
+
+  "trace": [
+    {"en": "Hamsters make great family pets.", "ko": "햄스터는 훌륭한 가족 반려동물이 돼요."},
+    {"en": "They need a place to hide.", "ko": "숨을 곳도 필요해요."}
+  ],
+
+  "notes": {
+    "phonics": "<b>h_mster</b>는 이 지문의 주인공 단어입니다. 소리를 이어 붙여 읽게 해 주세요 — /h/ /æ/ /m/. <b>r_n은 ran·run이 다 단어</b>라 헷갈립니다. 틀렸다고 하지 말고 옆의 한글 뜻(달리다)을 다시 보게 하세요.",
+    "scan": "답을 못 찾아도 <b>문장 번호만 찾으면 절반은 성공</b>입니다.",
+    "tf": "2번은 지문과 <b>반대로</b> 말한 문장이에요 — 햄스터는 혼자 지내는 걸 좋아합니다. 4번은 지문에 <b>없는</b> 내용입니다.",
+    "trace": "대문자로 시작했는지, 마침표를 찍었는지만 봐 주세요."
+  }
+}

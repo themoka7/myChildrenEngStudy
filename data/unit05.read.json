@@ -1,0 +1,76 @@
+{
+  "title": "Brown",
+  "eyebrow": "Unit 5 · Story · Colors",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "pack":        {"ipa": "pæk",           "pos": "동사",   "ko": "(짐을) 싸다"},
+    "backpack":    {"ipa": "ˈbækpæk",       "pos": "명사",   "ko": "책가방, 배낭"},
+    "tickets":     {"ipa": "ˈtɪkɪts",       "pos": "명사",   "ko": "표 (ticket의 복수)"},
+    "gate":        {"ipa": "ɡeɪt",          "pos": "명사",   "ko": "문, 출입구"},
+    "gaze":        {"ipa": "ɡeɪz",          "pos": "동사",   "ko": "가만히 바라보다"},
+    "nest":        {"ipa": "nest",          "pos": "명사",   "ko": "둥지"},
+    "pelican":     {"ipa": "ˈpelɪkən",      "pos": "명사",   "ko": "펠리컨"},
+    "belly":       {"ipa": "ˈbeli",         "pos": "명사",   "ko": "배"},
+    "chimpanzee":  {"ipa": "ˌtʃɪmpænˈziː",  "pos": "명사",   "ko": "침팬지"},
+    "chimp":       {"ipa": "tʃɪmp",         "pos": "명사",   "ko": "침팬지 (chimpanzee의 줄임말)"},
+    "raisins":     {"ipa": "ˈreɪzənz",      "pos": "명사",   "ko": "건포도"},
+    "buffalo":     {"ipa": "ˈbʌfəloʊ",      "pos": "명사",   "ko": "물소, 버팔로"},
+    "giraffes":    {"ipa": "dʒəˈræfs",      "pos": "명사",   "ko": "기린 (giraffe의 복수)"},
+    "spots":       {"ipa": "spɑːts",        "pos": "명사",   "ko": "점, 무늬 (spot의 복수)"},
+    "cap":         {"ipa": "kæp",           "pos": "명사",   "ko": "모자"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "I pack my backpack for the zoo.", "ko": "동물원에 가려고 책가방을 싸요."},
+      {"en": "My backpack is brown.", "ko": "제 책가방은 갈색이에요."}
+    ]},
+    {"sents": [
+      {"en": "My brother buys tickets at the gate.", "ko": "형이 입구에서 표를 사요."},
+      {"en": "The tickets are brown.", "ko": "표는 갈색이에요."}
+    ]},
+    {"sents": [
+      {"en": "I gaze up at a big bear.", "ko": "저는 큰 곰을 올려다봐요."},
+      {"en": "The bear is brown.", "ko": "곰은 갈색이에요."}
+    ]},
+    {"sents": [
+      {"en": "My brother points to a nest.", "ko": "형이 둥지를 가리켜요."},
+      {"en": "The nest is brown.", "ko": "둥지는 갈색이에요."}
+    ]},
+    {"sents": [
+      {"en": "A pelican flies out of the nest!", "ko": "펠리컨이 둥지에서 날아 나와요!"},
+      {"en": "The pelican's belly is brown.", "ko": "펠리컨의 배는 갈색이에요."}
+    ]},
+    {"sents": [
+      {"en": "A chimpanzee smiles at me.", "ko": "침팬지가 저를 보고 웃어요."},
+      {"en": "The chimp's face is brown.", "ko": "침팬지의 얼굴은 갈색이에요."}
+    ]},
+    {"sents": [
+      {"en": "We stop to eat some raisins.", "ko": "우리는 멈춰서 건포도를 좀 먹어요."},
+      {"en": "The raisins are brown.", "ko": "건포도는 갈색이에요."}
+    ]},
+    {"sents": [
+      {"en": "My brother shows me some buffalo.", "ko": "형이 저에게 물소를 보여 줘요."},
+      {"en": "The buffalo are brown.", "ko": "물소는 갈색이에요."}
+    ]},
+    {"sents": [
+      {"en": "I show my brother the giraffes.", "ko": "저는 형에게 기린을 보여 줘요."},
+      {"en": "The giraffes' spots are brown.", "ko": "기린의 점무늬는 갈색이에요."}
+    ]},
+    {"sents": [
+      {"en": "My brother gives me his cap.", "ko": "형이 저에게 자기 모자를 줘요."},
+      {"en": "The cap is brown.", "ko": "모자는 갈색이에요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Oh! What an interesting story!", "ko": "오! 정말 재미있는 이야기네요!"},
+      {"en": "There are so many brown items around us.", "ko": "우리 주변에는 갈색인 것이 정말 많아요."},
+      {"en": "Trees, animals, what else can you think of?", "ko": "나무, 동물… 또 뭐가 떠오르나요?"},
+      {"en": "Really? Tell me more about it later.", "ko": "정말요? 나중에 더 얘기해 주세요."},
+      {"en": "For now, let's go. I'll see you next time.", "ko": "지금은 가야 해요. 다음에 또 만나요."}
+    ]}
+  ]
+}

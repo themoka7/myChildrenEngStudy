@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Orange 워크시트 (A4 인쇄용)</title>
+<style>
+  @page { size: A4 portrait; margin: 12mm 11mm; }
+  :root{
+    --ink:#1f2937; --sub:#6b7280; --line:#b9c7d6; --base:#8ba0b6;
+    --blue:#2f6fb0; --bluebg:#e8f0f9; --purplebg:#efeaf7; --rule:#d6dee7;
+  }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    font-family:"Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+    color:var(--ink); background:#f3f4f6;
+    -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  .en{ font-family:"Trebuchet MS","Segoe UI",Verdana,sans-serif; }
+
+  .toolbar{
+    position:sticky; top:0; z-index:50; background:#111827; color:#fff;
+    padding:10px 16px; display:flex; gap:12px; align-items:center; font-size:14px;
+  }
+  .toolbar b{ font-size:15px; }
+  .toolbar .sp{ flex:1; }
+  .toolbar button{
+    font:inherit; font-weight:700; cursor:pointer; background:#fbbf24;
+    color:#111827; border:0; padding:8px 16px; border-radius:8px;
+  }
+  .toolbar label{ display:flex; gap:6px; align-items:center; cursor:pointer; }
+
+  .page{
+    width:210mm; height:297mm; padding:12mm 11mm; margin:16px auto;
+    background:#fff; box-shadow:0 2px 12px rgba(0,0,0,.15);
+    display:flex; flex-direction:column; overflow:hidden;
+  }
+  .body{ flex:1 1 auto; }
+
+  .head{
+    display:flex; align-items:flex-end; gap:8mm;
+    border-bottom:1mm solid var(--blue); padding-bottom:2.2mm; margin-bottom:4mm;
+  }
+  .head .tag{
+    background:var(--blue); color:#fff; font-weight:700; font-size:3.1mm;
+    padding:1mm 2.5mm; border-radius:1mm; letter-spacing:.3mm; white-space:nowrap;
+  }
+  .head h1{ margin:0; font-size:6.6mm; letter-spacing:-.2mm; }
+  .head h1 small{ font-size:3.4mm; color:var(--sub); font-weight:600; margin-left:2mm; }
+  .head .meta{ margin-left:auto; font-size:3.1mm; color:var(--sub); white-space:nowrap; }
+  .head .meta span{ display:inline-block; border-bottom:.3mm solid var(--rule); width:22mm; }
+
+  .passage{
+    border:.4mm solid #cfdcea; border-left:1.6mm solid var(--blue);
+    background:#fafcff; border-radius:1.5mm; padding:3.2mm 4mm 2.6mm; margin-bottom:5mm;
+  }
+  .passage .plabel{ font-size:3.1mm; font-weight:800; color:var(--blue); margin-bottom:2mm; }
+  .passage .cols{ columns:2; column-gap:7mm; }
+  .passage p{
+    margin:0 0 1.8mm; font-size:3.75mm; line-height:1.55;
+    break-inside:avoid; -webkit-column-break-inside:avoid;
+  }
+  .passage .n{ font-size:2.5mm; font-weight:800; color:var(--blue); vertical-align:super; margin-right:.7mm; }
+
+  .q{ margin-bottom:5mm; }
+  .q > h2{ display:flex; align-items:center; gap:2.5mm; margin:0 0 2.6mm; font-size:4.2mm; }
+  .q > h2 .no{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:6.2mm; height:6.2mm; flex:0 0 6.2mm; background:var(--blue); color:#fff;
+    border-radius:1.4mm; font-size:3.7mm; font-weight:800;
+  }
+  .q > h2 .ko{ font-weight:800; }
+  .q > h2 .hint{ font-weight:600; font-size:3.1mm; color:var(--sub); }
+
+  /* 선 잇기 : 행 높이를 고정해야 좌우 점이 수평으로 맞는다 */
+  .match{ display:flex; gap:10mm; padding:0 3mm; }
+  .match .col{ flex:1; display:flex; flex-direction:column; gap:2.8mm; }
+  .match .row{ display:flex; align-items:center; gap:2.5mm; height:8.6mm; }
+  .match .col.right .row{ flex-direction:row-reverse; }
+  .chip{
+    flex:1; text-align:center; padding:1.7mm 2mm; border-radius:4.3mm; height:100%;
+    display:flex; align-items:center; justify-content:center;
+    font-size:4.2mm; font-weight:700; line-height:1.15;
+  }
+  .chip.l{ background:var(--bluebg); border:.3mm solid #b9d0e8; }
+  .chip.r{ background:var(--purplebg); border:.3mm solid #cabfe3; }
+  .dot{ font-size:2.6mm; color:#94a3b8; flex:0 0 auto; }
+
+  .vowels{
+    text-align:center; font-size:4.6mm; font-weight:800; letter-spacing:3mm;
+    color:var(--blue); background:#eef6ff; border:.4mm solid #bcd7f0;
+    border-radius:1.5mm; padding:1.6mm; margin-bottom:3mm;
+  }
+  .phon{ display:grid; grid-template-columns:repeat(3,1fr); gap:3.5mm 5mm; padding:0 2mm; }
+  .phon .cell{ border:.4mm dashed #c7d2de; border-radius:2mm; padding:2.6mm 2mm 2.2mm; text-align:center; }
+  .phon .word{ font-size:7.4mm; font-weight:700; letter-spacing:1mm; line-height:1; }
+  .phon .word u{ text-decoration:none; display:inline-block; width:8mm; border-bottom:.6mm solid var(--blue); }
+  .phon .ko{ margin-top:1.8mm; font-size:3.2mm; color:var(--sub); font-weight:600; }
+
+  /* li 에 display:flex 를 주면 렌더러에 따라 번호가 사라진다 → 안쪽 래퍼로 */
+  .scan li{ margin-bottom:3.6mm; font-size:3.9mm; }
+  .scan .r{ display:flex; align-items:baseline; gap:2mm; }
+  .scan .ask{ font-weight:600; }
+  .scan .ans{ flex:1; border-bottom:.4mm solid var(--base); min-width:28mm; height:5.4mm; }
+  .scan .ref{ font-size:3mm; color:var(--sub); white-space:nowrap; }
+  .scan .ref i{ font-style:normal; display:inline-block; width:9mm; border-bottom:.3mm solid var(--rule); }
+  ol{ margin:0; padding-left:7mm; }
+  ol li::marker{ font-weight:700; color:var(--blue); }
+
+  .tf li{ margin-bottom:3mm; font-size:4.3mm; }
+  .tf .r{ display:flex; align-items:center; gap:3mm; }
+  .tf .gl{ font-size:3mm; color:var(--sub); font-weight:600; }
+  .tf .box{ margin-left:auto; display:flex; gap:2mm; }
+  .tf .box i{
+    font-style:normal; width:7.4mm; height:7.4mm; border:.4mm solid #9aa8b6;
+    border-radius:1.5mm; display:inline-flex; align-items:center; justify-content:center;
+    font-size:3.8mm; font-weight:800; color:#9aa8b6;
+  }
+
+  .bank{
+    display:flex; gap:3mm; justify-content:center; flex-wrap:wrap;
+    background:#fdf2f8; border:.4mm solid #f0c8dd; border-radius:2mm;
+    padding:2.4mm; margin-bottom:3.4mm;
+  }
+  .bank b{ font-size:4.2mm; letter-spacing:.3mm; padding:0 2mm; }
+  .bank .lbl{ font-size:3.1mm; color:var(--sub); font-weight:700; align-self:center; }
+  .fill li{ margin-bottom:3.4mm; font-size:4.2mm; }
+  .blank{ display:inline-block; width:26mm; border-bottom:.5mm solid var(--base); margin:0 1mm; }
+  .fill .ko{ font-size:3.1mm; color:var(--sub); font-weight:600; margin-left:2mm; }
+
+  .w4{ position:relative; height:11mm; margin:1mm 0 2mm; }
+  .w4 .ln{ position:absolute; left:0; right:0; }
+  .w4 .ln.top{ top:0.8mm; border-top:.3mm solid var(--line); }
+  .w4 .ln.mid{ top:5mm;   border-top:.25mm dashed #dbe3ec; }
+  .w4 .ln.bot{ top:9.2mm; border-top:.45mm solid var(--base); }
+  .w4 .trace{
+    position:absolute; left:2.5mm; bottom:0.5mm; font-size:6.2mm; line-height:1;
+    color:#d3d8de; letter-spacing:.4mm; white-space:nowrap;
+  }
+  .trace-ko{ font-size:3.1mm; color:var(--sub); font-weight:600; margin:0 0 .3mm 1mm; }
+
+  .foot{
+    flex:0 0 auto; display:flex; align-items:center; gap:3mm;
+    border-top:.3mm solid var(--rule); padding-top:2mm; font-size:3mm; color:var(--sub);
+  }
+  .foot .stars{ margin-left:auto; font-size:4.5mm; letter-spacing:1mm; color:#d1d5db; }
+
+  .answer{ background:#fffdf5; }
+  .answer .head{ border-bottom-color:#d97706; }
+  .answer .head .tag{ background:#d97706; }
+  .answer .q > h2 .no{ background:#d97706; }
+  .answer .q{ margin-bottom:3.8mm; }
+  .answer .q > h2{ margin-bottom:1.8mm; font-size:3.9mm; }
+  .akey{ font-size:3.4mm; line-height:1.6; }
+  .akey b{ color:#b45309; }
+  .akey .en{ font-weight:700; }
+  .akey .note{ color:#6b7280; }
+  .tips{ margin-top:3mm; background:#eef6ff; border:.4mm solid #bcd7f0; border-radius:2mm; padding:3.4mm; }
+  .tips h3{ margin:0 0 2.2mm; font-size:3.9mm; color:var(--blue); }
+  .tips ol{ padding-left:6mm; }
+  .tips li{ font-size:3.4mm; line-height:1.7; }
+  .tips .warn{ margin:2.5mm 0 0; font-size:3.2mm; color:#9a3412; line-height:1.6; }
+
+  @media print{
+    body{ background:#fff; }
+    .toolbar{ display:none !important; }
+    .page{ margin:0; box-shadow:none; width:auto; height:273mm; padding:0; }
+    .page + .page{ page-break-before:always; }
+    body.hideAnswer .answer{ display:none; }
+  }
+</style>
+<style>.toolbar a.sitenav{color:#fbbf24;font-weight:700;text-decoration:none;font-size:14px}</style>
+</head>
+<body>
+<div class="toolbar"><a class="sitenav" data-nav="index" href="../index.html">← 목차</a><a class="sitenav" data-nav="read" href="../read/unit06.html">📖 읽기</a><b>Orange 워크시트</b><span style="color:#9ca3af">A4 · 문제 2장 + 정답 1장</span><span class="sp"></span><label><input type="checkbox" id="hideAns"> 정답지 빼고 인쇄</label><button onclick="window.print()">🖨 인쇄하기</button></div><section class="page"><div class="head"><span class="tag">Reading Worksheet 1</span><h1 class="en">Orange <small>주황색</small></h1><div class="meta">이름 <span></span> &nbsp; 날짜 <span></span></div></div><div class="body"><div class="passage"><div class="plabel">📖 소리 내어 두 번 읽어요</div><div class="cols en"><p><span class="n">1</span>I put on my favorite sweater. <span class="n">2</span>My sweater is orange.</p><p><span class="n">3</span>My stepmom waits for me to get my bike and helmet. <span class="n">4</span>My helmet is orange.</p><p><span class="n">5</span>We ride under the fall leaves. <span class="n">6</span>Many of the leaves are orange.</p><p><span class="n">7</span>At the pumpkin patch, I find the best pumpkin. <span class="n">8</span>The pumpkin is orange.</p><p><span class="n">9</span>My stepmom buys some flowers. <span class="n">10</span>The flowers are orange.</p><p><span class="n">11</span>We see a striped cat as we ride home. <span class="n">12</span>The cat's stripes are orange.</p><p><span class="n">13</span>I wave to the scarecrow in our yard. <span class="n">14</span>The scarecrow's vest is orange.</p><p><span class="n">15</span>My stepmom and I have oranges for a snack. <span class="n">16</span>The slices are orange.</p><p><span class="n">17</span>A bird watches us from the tree. <span class="n">18</span>The bird's belly is orange.</p><p><span class="n">19</span>We all watch the sunset. <span class="n">20</span>The sunset is orange.</p></div></div><div class="q"><h2><span class="no">1</span><span class="ko">단어와 뜻을 선으로 이으세요.</span></h2><div class="match"><div class="col left"><div class="row"><span class="chip l en">sweater</span><span class="dot">●</span></div><div class="row"><span class="chip l en">helmet</span><span class="dot">●</span></div><div class="row"><span class="chip l en">scarecrow</span><span class="dot">●</span></div><div class="row"><span class="chip l en">sunset</span><span class="dot">●</span></div></div><div class="col right"><div class="row"><span class="chip r">허수아비</span><span class="dot">●</span></div><div class="row"><span class="chip r">노을</span><span class="dot">●</span></div><div class="row"><span class="chip r">스웨터</span><span class="dot">●</span></div><div class="row"><span class="chip r">헬멧</span><span class="dot">●</span></div></div></div></div><div class="q"><h2><span class="no">2</span><span class="ko">빠진 모음을 쓰세요.</span><span class="hint">소리 내어 읽으면서 골라요</span></h2><div class="vowels en">a e i o u</div><div class="phon"><div class="cell"><div class="word en">c<u></u>t</div><div class="ko">고양이</div></div><div class="cell"><div class="word en">g<u></u>t</div><div class="ko">가져오다</div></div><div class="cell"><div class="word en">v<u></u>st</div><div class="ko">조끼</div></div><div class="cell"><div class="word en">sn<u></u>ck</div><div class="ko">간식</div></div><div class="cell"><div class="word en">stepm<u></u>m</div><div class="ko">새엄마</div></div><div class="cell"><div class="word en">p<u></u>mpkin</div><div class="ko">호박</div></div></div></div></div><div class="foot"><span>Orange · 1쪽</span><span class="stars">☆ ☆ ☆ ☆ ☆</span></div></section><section class="page"><div class="head"><span class="tag">Reading Worksheet 2</span><h1 class="en">Orange <small>주황색</small></h1><div class="meta">이름 <span></span> &nbsp; 날짜 <span></span></div></div><div class="body"><div class="q"><h2><span class="no">3</span><span class="ko">지문에서 찾아 영어로 쓰세요.</span><span class="hint">몇 번 문장에서 찾았는지도 적어요</span></h2><ol class="scan"><li><span class="r"><span class="ask">호박밭에서 무엇을 찾았나요?</span><span class="ans"></span><span class="ref">문장 <i></i>번</span></span></li><li><span class="r"><span class="ask">새엄마는 무엇을 샀나요?</span><span class="ans"></span><span class="ref">문장 <i></i>번</span></span></li><li><span class="r"><span class="ask">마당의 허수아비는 무엇을 입고 있나요?</span><span class="ans"></span><span class="ref">문장 <i></i>번</span></span></li><li><span class="r"><span class="ask">마지막에 다 함께 무엇을 보았나요?</span><span class="ans"></span><span class="ref">문장 <i></i>번</span></span></li></ol></div><div class="q"><h2><span class="no">4</span><span class="ko">맞으면 O, 틀리면 X 하세요.</span></h2><ol class="tf"><li><span class="r"><span class="en">The pumpkin is orange.</span><span class="box"><i>O</i><i>X</i></span></span></li><li><span class="r"><span class="en">The cat has stripes.</span><span class="box"><i>O</i><i>X</i></span></span></li><li><span class="r"><span class="en">The leaves are all green.</span><span class="gl">green 초록색의</span><span class="box"><i>O</i><i>X</i></span></span></li><li><span class="r"><span class="en">They ride a bus to the park.</span><span class="gl">bus 버스 / park 공원</span><span class="box"><i>O</i><i>X</i></span></span></li><li><span class="r"><span class="en">A bird watches them from the tree.</span><span class="box"><i>O</i><i>X</i></span></span></li></ol></div><div class="q"><h2><span class="no">5</span><span class="ko">보기에서 골라 빈칸에 쓰세요.</span></h2><div class="bank"><span class="lbl">보기</span><b class="en">sweater</b><b class="en">helmet</b><b class="en">belly</b><b class="en">vest</b></div><ol class="fill"><li><span class="en">I put on my favorite <span class="blank"></span>.</span><span class="ko">저는 가장 좋아하는 스웨터를 입어요.</span></li><li><span class="en">My <span class="blank"></span> is orange.</span><span class="ko">제 헬멧은 주황색이에요.</span></li><li><span class="en">The bird's <span class="blank"></span> is orange.</span><span class="ko">새의 배는 주황색이에요.</span></li></ol></div><div class="q"><h2><span class="no">6</span><span class="ko">따라 쓰고, 아래 줄에 한 번 더 쓰세요.</span></h2><p class="trace-ko">새엄마와 저는 간식으로 오렌지를 먹어요.</p><div class="w4"><span class="ln top"></span><span class="ln mid"></span><span class="ln bot"></span><span class="trace en">My stepmom and I have oranges for a snack.</span></div><div class="w4"><span class="ln top"></span><span class="ln mid"></span><span class="ln bot"></span></div><p class="trace-ko">노을은 주황색이에요.</p><div class="w4"><span class="ln top"></span><span class="ln mid"></span><span class="ln bot"></span><span class="trace en">The sunset is orange.</span></div><div class="w4"><span class="ln top"></span><span class="ln mid"></span><span class="ln bot"></span></div></div></div><div class="foot"><span>Orange · 2쪽</span><span class="stars">☆ ☆ ☆ ☆ ☆</span></div></section><section class="page answer"><div class="head"><span class="tag">Answer Key · 부모용</span><h1 class="en">Orange <small>정답 &amp; 지도 노트</small></h1></div><div class="body"><div class="q"><h2><span class="no">1</span><span class="ko">단어와 뜻 연결</span></h2><div class="akey"><span class="en">sweater</span> 스웨터 &nbsp;·&nbsp; <span class="en">helmet</span> 헬멧 &nbsp;·&nbsp; <span class="en">scarecrow</span> 허수아비 &nbsp;·&nbsp; <span class="en">sunset</span> 노을</div></div><div class="q"><h2><span class="no">2</span><span class="ko">빠진 모음</span></h2><div class="akey">c<b>a</b>t &nbsp;·&nbsp; g<b>e</b>t &nbsp;·&nbsp; v<b>e</b>st &nbsp;·&nbsp; sn<b>a</b>ck &nbsp;·&nbsp; stepm<b>o</b>m &nbsp;·&nbsp; p<b>u</b>mpkin<br><span class="note"><b>stepm_m</b>은 앞의 e가 아니라 <b>뒤쪽 빈칸</b>을 채우는 문제입니다 — step-m_m. <b>g_t은 get·got이 다 단어</b>라 헷갈리니 옆의 한글 뜻(가져오다)을 보게 하세요. c_t도 cat·cut·cot이 다 됩니다.</span></div></div><div class="q"><h2><span class="no">3</span><span class="ko">지문에서 찾아 쓰기</span></h2><div class="akey">1. <b>the best pumpkin</b> (7번) &nbsp;&nbsp; 2. <b>flowers</b> (9번) &nbsp;&nbsp; 3. <b>a vest</b> (13·14번) &nbsp;&nbsp; 4. <b>the sunset</b> (19번)<br><span class="note">이 지문은 <b>'무엇이 주황색인가'가 계속 반복</b>됩니다. 그래서 색이 아니라 '무엇을' 찾는 문제로 냈어요.</span></div></div><div class="q"><h2><span class="no">4</span><span class="ko">O / X</span></h2><div class="akey">1. <b>O</b> — 호박은 주황색이에요. (8번)<br>2. <b>O</b> — 줄무늬 고양이를 봤어요. (11·12번)<br>3. <b>X</b> — 잎 중 많은 것이 주황색이에요. (5·6번)<br>4. <b>X</b> — 자전거(bike)를 탔어요. 버스 이야기는 없어요. (3번)<br>5. <b>O</b> — 새가 나무에서 우리를 봐요. (17번)<br><span class="note">3번은 <b>all(모두)</b>을 넣어 놓은 함정입니다 — 지문은 '많은 것이(many)' 주황색이라고 했지요. 4번은 지문에 없는 내용이에요.</span></div></div><div class="q"><h2><span class="no">5</span><span class="ko">빈칸 채우기</span></h2><div class="akey">1. <b>sweater</b> &nbsp;·&nbsp; 2. <b>helmet</b> &nbsp;·&nbsp; 3. <b>belly</b></div></div><div class="q"><h2><span class="no">6</span><span class="ko">따라 쓰기</span></h2><div class="akey"><span class="en">My stepmom and I have oranges for a snack.</span> 새엄마와 저는 간식으로 오렌지를 먹어요.<br><span class="en">The sunset is orange.</span> 노을은 주황색이에요.<br><span class="note">대문자로 시작했는지, 마침표를 찍었는지만 봐 주세요.</span></div></div><div class="tips"><h3>20분 진행 순서</h3><ol><li><b>0~3분</b> 파닉스 워밍업 — ②번 단어를 소리로 먼저 읽히기 (/h/-/o/-/p/ → hop)</li><li><b>3~8분</b> 1쪽 지문 소리 내어 읽기 2회. 부모가 못 읽어도 됩니다 — 아이가 읽고 부모가 듣기</li><li><b>8~17분</b> 1쪽 → 2쪽 순서로 손으로 풀기 (③번은 지문을 다시 봐도 됩니다)</li><li><b>17~19분</b> ⑥번 문장을 지문 안 보고 말해 보기</li><li><b>19~20분</b> 별점 색칠 + "오늘 새로 안 단어 하나만 말해줘"</li></ol><p class="warn">※ 이 워크시트에는 <b>조동사(can) · 동사 과거형 · 복수형 규칙</b>을 일부러 넣지 않았습니다. -s가 붙은 단어는 "그냥 그 단어"로 통째로 읽히시고, 규칙 설명은 하지 마세요. 지금은 <b>소리(파닉스) + 단어 + 지문에서 찾기</b> 세 가지면 충분합니다.</p></div></div><div class="foot"><span>Orange · 정답 &amp; 지도 노트</span></div></section><script>var cb=document.getElementById('hideAns');if(cb){cb.addEventListener('change',function(e){document.body.classList.toggle('hideAnswer',e.target.checked);});}</script>
+</body>
+</html>
