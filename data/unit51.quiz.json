@@ -1,0 +1,71 @@
+{
+  "title": "Cones",
+  "title_ko": "원뿔",
+
+  "paras": [
+    ["Tops are pointy and bottoms round.", "Where can cone shapes be found?", "Side views show the pointed top that spreads out to a wider stop."],
+    ["Look around for this shape's look.", "Search for cones inside this book."],
+    ["Orange cones keep cars away as workers fix the street today."],
+    ["Jill points out cones glowing bright.", "These cones fill the room with light."],
+    ["Party cones go on your head.", "Ben's hat is blue and Jill's is red."],
+    ["Cones hold ice cream, cold and sweet!", "Ice cream is Ben's favorite treat!"],
+    ["Jill gives flowers wrapped up tight!", "Ben holds them in a cone of white."],
+    ["Ben shares his crayons, sharp and new.", "A cone-shaped end in every hue."],
+    ["Tall cloth sides and floor that's sewn.", "Sticks hold up this tepee cone!"],
+    ["Cones aren't just inside this book.", "They're all around you.", "Take a look!"]
+  ],
+
+  "match": [
+    {"en": "spreads", "ko": "퍼지다"},
+    {"en": "glowing", "ko": "빛나는"},
+    {"en": "hue",     "ko": "색깔"},
+    {"en": "tepee",   "ko": "티피 (원뿔 천막)"}
+  ],
+  "match_ko_order": ["빛나는", "티피 (원뿔 천막)", "퍼지다", "색깔"],
+
+  "phonics": [
+    {"q": "h_t",     "a": "a", "ko": "모자"},
+    {"q": "r_d",     "a": "e", "ko": "빨간색"},
+    {"q": "f_x",     "a": "i", "ko": "고치다"},
+    {"q": "t_p",     "a": "o", "ko": "위, 맨 위"},
+    {"q": "j_st",    "a": "u", "ko": "단지, 그냥"},
+    {"q": "st_cks",  "a": "i", "ko": "막대"}
+  ],
+
+  "scan": [
+    {"q": "원뿔의 위쪽과 아래쪽은 각각 어떤가요?",       "a": "pointy / round",   "sent": "1"},
+    {"q": "주황색 고깔은 무엇을 하나요?",               "a": "keep cars away",   "sent": "6"},
+    {"q": "벤과 질의 파티 모자는 각각 무슨 색인가요?",   "a": "blue / red",       "sent": "10"},
+    {"q": "벤은 흰 원뿔에 무엇을 담아 들고 있나요?",     "a": "flowers",          "sent": "13·14"}
+  ],
+
+  "tf": [
+    {"en": "Cones hold ice cream.", "answer": "O",
+     "why": "원뿔은 아이스크림을 담아요.", "sent": "11"},
+    {"en": "Ice cream is Ben's favorite treat.", "answer": "O",
+     "why": "벤이 가장 좋아하는 간식이에요.", "sent": "12"},
+    {"en": "Party cones go on your feet.", "gloss": "feet 발", "answer": "X",
+     "why": "머리(head)에 써요. 발이 아니에요.", "sent": "9"},
+    {"en": "Cones are only inside this book.", "gloss": "only 오직", "answer": "X",
+     "why": "책 안에만 있는 게 아니라 우리 주위 어디에나 있어요.", "sent": "19"}
+  ],
+
+  "fill_bank": ["light", "sharp", "sewn", "bright"],
+  "fill": [
+    {"en": "These cones fill the room with ___.",       "a": "light", "ko": "이 원뿔들이 방을 빛으로 채워요."},
+    {"en": "Ben shares his crayons, ___ and new.",      "a": "sharp", "ko": "벤이 새로 깎은 크레용을 나눠 줘요."},
+    {"en": "Tall cloth sides and floor that's ___.",    "a": "sewn",  "ko": "높은 천 벽과 바닥이 꿰매져 있어요."}
+  ],
+
+  "trace": [
+    {"en": "Jill points out cones glowing bright.", "ko": "질이 환하게 빛나는 원뿔을 가리켜요."},
+    {"en": "They're all around you.", "ko": "우리 주위 어디에나 있어요."}
+  ],
+
+  "notes": {
+    "phonics": "여섯 문항이 <b>a·e·i·o·u 다섯 소리를 모두</b> 담고 있습니다. <b>h_t은 hat·hit·hot·hut이 다 단어</b>라 이 지문에서 가장 헷갈립니다 — 옆의 한글 뜻(모자)을 꼭 보게 하세요.",
+    "scan": "이 지문은 <b>운문(시)</b>이라 두 줄씩 끝소리가 맞습니다 — round/found, look/book, bright/light, head/red, sweet/treat. 답을 찾을 때 <b>소리 나게 읽어 주면</b> 훨씬 쉽습니다. 1번과 3번은 답이 두 개예요.",
+    "tf": "3번은 <b>머리를 발로 바꿔</b> 놓은 문항입니다. 4번은 마지막 세 문장을 읽어야 걸려요. 이 시리즈(49·50·51·52번)의 마지막 문항이 늘 같으니, 아이가 규칙을 알아채면 그것도 읽기 실력입니다.",
+    "trace": "이 유닛에는 <b>원뿔이 아홉 가지</b>나 나옵니다 — 공사장 고깔·전등·고깔모자·아이스크림·꽃다발 포장·크레용 끝·티피. 다 쓰고 나서 몇 개 기억하는지 물어봐 주세요."
+  }
+}

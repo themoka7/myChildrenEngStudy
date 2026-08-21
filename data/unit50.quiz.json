@@ -1,0 +1,72 @@
+{
+  "title": "Pyramids",
+  "title_ko": "각뿔 (피라미드)",
+
+  "paras": [
+    ["Pyramids have a point on top.", "A flat bottom is where they stop."],
+    ["Triangles make each leaning face.", "Faces stretch out wide at the base."],
+    ["Look around for this shape's look.", "Search for pyramids in this book."],
+    ["Ben sees bright stacks of fruit to eat.", "Built like pyramids, nice and neat."],
+    ["Pyramid roofs block rain and snow.", "They stay attached as strong winds blow."],
+    ["Jill peeks through this pyramid's door.", "She finds toys camping on its floor."],
+    ["Ben spots pyramids with burning tips.", "Each changes shape as it melts and drips."],
+    ["This glass pyramid weighs a lot.", "It helps keep papers in one spot."],
+    ["Jill climbs this pyramid in a crawl.", "The pyramid top gets very small."],
+    ["Ben's project is on stars and space.", "He wins the trophy for first place!"],
+    ["Pyramids aren't just in this book.", "They're all around you.", "Take a look!"]
+  ],
+
+  "match": [
+    {"en": "leaning",  "ko": "기울어진"},
+    {"en": "base",     "ko": "밑면"},
+    {"en": "attached", "ko": "붙어 있는"},
+    {"en": "trophy",   "ko": "트로피"}
+  ],
+  "match_ko_order": ["밑면", "트로피", "기울어진", "붙어 있는"],
+
+  "phonics": [
+    {"q": "fl_t",     "a": "a", "ko": "평평한"},
+    {"q": "m_lts",    "a": "e", "ko": "녹다"},
+    {"q": "t_ps",     "a": "i", "ko": "끝, 꼭대기"},
+    {"q": "t_p",      "a": "o", "ko": "위, 맨 위"},
+    {"q": "j_st",     "a": "u", "ko": "단지, 그냥"},
+    {"q": "st_cks",   "a": "a", "ko": "쌓아 놓은 것"}
+  ],
+
+  "scan": [
+    {"q": "각뿔의 기울어진 면은 무슨 모양인가요?",       "a": "triangles",              "sent": "3"},
+    {"q": "벤이 본 과일은 어떻게 쌓여 있었나요?",         "a": "like pyramids",          "sent": "7·8"},
+    {"q": "유리 각뿔은 무엇을 하는 데 도움이 되나요?",     "a": "keep papers in one spot","sent": "16"},
+    {"q": "벤은 무엇에 대한 과제로 1등을 했나요?",        "a": "stars and space",        "sent": "19·20"}
+  ],
+
+  "tf": [
+    {"en": "Pyramids have a point on top.", "answer": "O",
+     "why": "위에 뾰족한 점이 있어요.", "sent": "1"},
+    {"en": "Pyramid roofs block rain and snow.", "answer": "O",
+     "why": "비와 눈을 막아 줘요.", "sent": "9"},
+    {"en": "The pyramid top gets very big.", "gloss": "big 큰", "answer": "X",
+     "why": "반대예요. 위로 갈수록 아주 좁아져요.", "sent": "18"},
+    {"en": "Pyramids are only in this book.", "gloss": "only 오직", "answer": "X",
+     "why": "책 안에만 있는 게 아니라 우리 주위 어디에나 있어요.", "sent": "21"}
+  ],
+
+  "fill_bank": ["door", "floor", "lot", "spot"],
+  "fill": [
+    {"en": "Jill peeks through this pyramid's ___.",  "a": "door",  "ko": "질이 이 각뿔의 문으로 들여다봐요."},
+    {"en": "She finds toys camping on its ___.",      "a": "floor", "ko": "바닥에서 캠핑하는 장난감을 찾았어요."},
+    {"en": "This glass pyramid weighs a ___.",        "a": "lot",   "ko": "이 유리 각뿔은 아주 무거워요."}
+  ],
+
+  "trace": [
+    {"en": "Ben spots pyramids with burning tips.", "ko": "벤이 끝에 불이 붙은 각뿔을 발견해요."},
+    {"en": "They're all around you.", "ko": "우리 주위 어디에나 있어요."}
+  ],
+
+  "notes": {
+    "phonics": "여섯 문항이 <b>a·e·i·o·u 다섯 소리를 모두</b> 담고 있습니다. <b>t_p과 t_ps가 나란히</b> 나오는데 뜻이 달라요 — 맨 위(top)와 끝(tips). 옆의 한글 뜻을 꼭 보게 하세요.",
+    "scan": "이 지문은 <b>운문(시)</b>이라 두 줄씩 끝소리가 맞습니다 — top/stop, face/base, eat/neat, snow/blow, door/floor. 답을 찾을 때 <b>소리 나게 읽어 주면</b> 훨씬 쉽습니다.",
+    "tf": "1번과 3번을 같이 보면 각뿔의 모양이 잡힙니다 — <b>위는 뾰족하고 아래는 넓다</b>는 것. 4번은 마지막 세 문장을 읽어야 걸립니다.",
+    "trace": "첫 문장은 <b>양초</b> 이야기예요. 끝에 불이 붙어 녹아 떨어지는 각뿔 — 아이가 바로 알아채면 재미있어합니다. 쓰고 나서 \"이게 뭘까?\" 하고 물어봐 주세요."
+  }
+}

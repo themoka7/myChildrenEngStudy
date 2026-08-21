@@ -1,0 +1,76 @@
+{
+  "title": "Cones",
+  "eyebrow": "Unit 51 · Story · Solid Shapes",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "pointy":   {"ipa": "ˈpɔɪnti",    "pos": "형용사", "ko": "뾰족한"},
+    "views":    {"ipa": "vjuːz",      "pos": "명사",   "ko": "보이는 모습"},
+    "spreads":  {"ipa": "spredz",     "pos": "동사",   "ko": "퍼지다"},
+    "wider":    {"ipa": "ˈwaɪdər",    "pos": "형용사", "ko": "더 넓은"},
+    "workers":  {"ipa": "ˈwɜːrkərz",  "pos": "명사",   "ko": "일하는 사람들"},
+    "glowing":  {"ipa": "ˈɡloʊɪŋ",    "pos": "형용사", "ko": "빛나는"},
+    "favorite": {"ipa": "ˈfeɪvərɪt",  "pos": "형용사", "ko": "가장 좋아하는"},
+    "treat":    {"ipa": "triːt",      "pos": "명사",   "ko": "특별한 간식"},
+    "wrapped":  {"ipa": "ræpt",       "pos": "형용사", "ko": "감싼, 포장된"},
+    "crayons":  {"ipa": "ˈkreɪɑːnz",  "pos": "명사",   "ko": "크레용"},
+    "hue":      {"ipa": "hjuː",       "pos": "명사",   "ko": "색깔"},
+    "cloth":    {"ipa": "klɔːθ",      "pos": "명사",   "ko": "천"},
+    "sewn":     {"ipa": "soʊn",       "pos": "동사",   "ko": "꿰매진"},
+    "tepee":    {"ipa": "ˈtiːpiː",    "pos": "명사",   "ko": "티피 (원뿔 모양 천막)"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Tops are pointy and bottoms round.", "ko": "위는 뾰족하고 아래는 둥글어요."},
+      {"en": "Where can cone shapes be found?", "ko": "원뿔 모양은 어디에서 찾을 수 있을까요?"},
+      {"en": "Side views show the pointed top that spreads out to a wider stop.", "ko": "옆에서 보면 뾰족한 위쪽이 아래로 넓게 퍼져요."}
+    ]},
+    {"sents": [
+      {"en": "Look around for this shape's look.", "ko": "이 모양을 주위에서 찾아보세요."},
+      {"en": "Search for cones inside this book.", "ko": "이 책 안에서 원뿔을 찾아보세요."}
+    ]},
+    {"sents": [
+      {"en": "Orange cones keep cars away as workers fix the street today.", "ko": "주황색 고깔이 길을 고치는 동안 자동차를 막아 줘요."}
+    ]},
+    {"sents": [
+      {"en": "Jill points out cones glowing bright.", "ko": "질이 환하게 빛나는 원뿔을 가리켜요."},
+      {"en": "These cones fill the room with light.", "ko": "이 원뿔들이 방을 빛으로 채워요."}
+    ]},
+    {"sents": [
+      {"en": "Party cones go on your head.", "ko": "파티 고깔모자는 머리에 써요."},
+      {"en": "Ben's hat is blue and Jill's is red.", "ko": "벤의 모자는 파란색, 질의 모자는 빨간색이에요."}
+    ]},
+    {"sents": [
+      {"en": "Cones hold ice cream, cold and sweet!", "ko": "원뿔은 차갑고 달콤한 아이스크림을 담아요!"},
+      {"en": "Ice cream is Ben's favorite treat!", "ko": "아이스크림은 벤이 가장 좋아하는 간식이에요!"}
+    ]},
+    {"sents": [
+      {"en": "Jill gives flowers wrapped up tight!", "ko": "질이 꼭 감싼 꽃을 줘요!"},
+      {"en": "Ben holds them in a cone of white.", "ko": "벤이 흰 원뿔에 담아 들고 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Ben shares his crayons, sharp and new.", "ko": "벤이 새로 깎은 크레용을 나눠 줘요."},
+      {"en": "A cone-shaped end in every hue.", "ko": "색마다 끝이 원뿔 모양이에요."}
+    ]},
+    {"sents": [
+      {"en": "Tall cloth sides and floor that's sewn.", "ko": "높은 천 벽과 바닥이 꿰매져 있어요."},
+      {"en": "Sticks hold up this tepee cone!", "ko": "막대들이 이 원뿔 천막을 받쳐 줘요!"}
+    ]},
+    {"sents": [
+      {"en": "Cones aren't just inside this book.", "ko": "원뿔은 이 책 안에만 있는 게 아니에요."},
+      {"en": "They're all around you.", "ko": "우리 주위 어디에나 있어요."},
+      {"en": "Take a look!", "ko": "한번 둘러보세요!"}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Oh! This book taught us many things that have the shape of a cone.", "ko": "오! 이 책은 원뿔 모양인 것을 많이 알려 줬어요."},
+      {"en": "My favorite type of cone is an ice cream cone.", "ko": "제가 가장 좋아하는 원뿔은 아이스크림 콘이에요."},
+      {"en": "So yummy. What about you?", "ko": "정말 맛있어요. 여러분은요?"},
+      {"en": "Tell me about it later.", "ko": "나중에 알려 주세요."},
+      {"en": "I'll see you next time!", "ko": "다음에 또 만나요!"}
+    ]}
+  ]
+}

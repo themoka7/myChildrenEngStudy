@@ -116,9 +116,9 @@
       "theme": "입체도형",
       "units": [
         {"n": 49, "en": "Cubes", "ko": "정육면체", "status": "todo", "min": 15, "ready": true},
-        {"n": 50, "en": "Pyramids", "ko": "각뿔", "status": "todo", "min": 15},
-        {"n": 51, "en": "Cones", "ko": "원뿔", "status": "todo", "min": 14},
-        {"n": 52, "en": "Cylinders", "ko": "원기둥", "status": "todo", "min": 15}
+        {"n": 50, "en": "Pyramids", "ko": "각뿔", "status": "todo", "min": 15, "ready": true},
+        {"n": 51, "en": "Cones", "ko": "원뿔", "status": "todo", "min": 14, "ready": true},
+        {"n": 52, "en": "Cylinders", "ko": "원기둥", "status": "todo", "min": 15, "ready": true}
       ]
     }
   ]

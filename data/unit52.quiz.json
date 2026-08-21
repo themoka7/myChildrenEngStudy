@@ -1,0 +1,72 @@
+{
+  "title": "Cylinders",
+  "title_ko": "원기둥",
+
+  "paras": [
+    ["Tall or short, this shape curves round.", "Where can cylinders be found?"],
+    ["The same size round base is on each end.", "Cylinder sides are one curving bend."],
+    ["Look around for this shape's look.", "Search for cylinders in this book."],
+    ["Ben sees cylinders in the store.", "Tall stacks of cans are by the door."],
+    ["Jill finds rolls of towels and tape.", "Both things have a cylinder shape!"],
+    ["Cylinders of windows to the sky.", "Cylinder poles reach just as high!"],
+    ["Ben likes to go down the cylinder slide.", "In cylinder tunnels, Jill likes to hide."],
+    ["Cows eat grass on the farm all day.", "Sheep graze on cylinders of hay."],
+    ["Here are cylinders on top of brooms.", "Nice round handles for sweeping rooms."],
+    ["Time for a snack and a nice cool drink.", "White cylinder cheese and juice that's pink."],
+    ["Cylinders aren't just in this book.", "They're all around you.", "Take a look!"]
+  ],
+
+  "match": [
+    {"en": "base",   "ko": "밑면"},
+    {"en": "graze",  "ko": "풀을 뜯어 먹다"},
+    {"en": "poles",  "ko": "기둥, 장대"},
+    {"en": "brooms", "ko": "빗자루"}
+  ],
+  "match_ko_order": ["풀을 뜯어 먹다", "빗자루", "밑면", "기둥, 장대"],
+
+  "phonics": [
+    {"q": "c_ns",    "a": "a", "ko": "통조림, 캔"},
+    {"q": "b_nd",    "a": "e", "ko": "굽이, 휜 부분"},
+    {"q": "p_nk",    "a": "i", "ko": "분홍색"},
+    {"q": "t_p",     "a": "o", "ko": "위, 맨 위"},
+    {"q": "j_st",    "a": "u", "ko": "단지, 그냥"},
+    {"q": "sn_ck",   "a": "a", "ko": "간식"}
+  ],
+
+  "scan": [
+    {"q": "벤이 가게에서 본 원기둥은 무엇인가요?",        "a": "tall stacks of cans",       "sent": "7·8"},
+    {"q": "질이 찾은 원기둥 두 가지는 무엇인가요?",        "a": "rolls of towels and tape",  "sent": "9·10"},
+    {"q": "벤은 원기둥 미끄럼틀에서 무엇을 하나요?",       "a": "go down",                   "sent": "13"},
+    {"q": "빗자루 위에 있는 둥근 것은 무엇인가요?",        "a": "handles",                   "sent": "18"}
+  ],
+
+  "tf": [
+    {"en": "Cylinder sides are one curving bend.", "answer": "O",
+     "why": "옆면은 하나로 둥글게 휘어져 있어요.", "sent": "4"},
+    {"en": "Jill likes to hide in cylinder tunnels.", "answer": "O",
+     "why": "질은 원기둥 터널에 숨는 걸 좋아해요.", "sent": "14"},
+    {"en": "Cows eat hay and sheep eat grass.", "answer": "X",
+     "why": "반대예요. 소가 풀을 먹고, 양이 건초를 뜯어요.", "sent": "15·16"},
+    {"en": "Cylinders are only in this book.", "gloss": "only 오직", "answer": "X",
+     "why": "책 안에만 있는 게 아니라 우리 주위 어디에나 있어요.", "sent": "21"}
+  ],
+
+  "fill_bank": ["windows", "high", "drink", "hay"],
+  "fill": [
+    {"en": "Cylinders of ___ to the sky.",                 "a": "windows", "ko": "하늘로 뻗은 원기둥 창문이에요."},
+    {"en": "Cylinder poles reach just as ___!",            "a": "high",    "ko": "원기둥 기둥도 그만큼 높아요!"},
+    {"en": "Time for a snack and a nice cool ___.",        "a": "drink",   "ko": "간식과 시원한 음료를 먹을 시간이에요."}
+  ],
+
+  "trace": [
+    {"en": "Here are cylinders on top of brooms.", "ko": "빗자루 위에도 원기둥이 있어요."},
+    {"en": "They're all around you.", "ko": "우리 주위 어디에나 있어요."}
+  ],
+
+  "notes": {
+    "phonics": "여섯 문항이 <b>a·e·i·o·u 다섯 소리를 모두</b> 담고 있습니다. <b>c_ns와 sn_ck이 둘 다 a</b>예요. b_nd는 bend·band·bond가 다 단어이니 옆의 한글 뜻을 보게 하세요.",
+    "scan": "이 지문은 <b>운문(시)</b>이라 두 줄씩 끝소리가 맞습니다 — round/found, end/bend, store/door, tape/shape, sky/high, slide/hide, day/hay, brooms/rooms, drink/pink. 답을 찾을 때 <b>소리 나게 읽어 주면</b> 훨씬 쉽습니다.",
+    "tf": "3번이 이 유닛에서 가장 어렵습니다 — <b>소와 양을 서로 바꿔</b> 놓았어요. 두 문장이 나란히 있어서 하나만 읽으면 틀립니다. \"누가 건초를 먹었지?\" 하고 되물어 주세요.",
+    "trace": "<b>이 52개 유닛의 마지막 문제지입니다.</b> 마지막 문장이 이 시리즈 네 권(정육면체·각뿔·원뿔·원기둥)에 모두 똑같이 나오는 말이에요 — \"우리 주위 어디에나 있어요.\" 다 쓰고 나면 오늘 배운 네 가지 입체 모양을 집에서 하나씩 찾아보게 해 주세요."
+  }
+}

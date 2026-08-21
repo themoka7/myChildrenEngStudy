@@ -1,0 +1,81 @@
+{
+  "title": "Pyramids",
+  "eyebrow": "Unit 50 · Story · Solid Shapes",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "flat":     {"ipa": "flæt",       "pos": "형용사", "ko": "평평한"},
+    "leaning":  {"ipa": "ˈliːnɪŋ",    "pos": "형용사", "ko": "기울어진"},
+    "faces":    {"ipa": "ˈfeɪsɪz",    "pos": "명사",   "ko": "면"},
+    "stretch":  {"ipa": "stretʃ",     "pos": "동사",   "ko": "쭉 뻗다, 퍼지다"},
+    "base":     {"ipa": "beɪs",       "pos": "명사",   "ko": "밑면"},
+    "stacks":   {"ipa": "stæks",      "pos": "명사",   "ko": "쌓아 놓은 것"},
+    "neat":     {"ipa": "niːt",       "pos": "형용사", "ko": "가지런한"},
+    "roofs":    {"ipa": "ruːfs",      "pos": "명사",   "ko": "지붕"},
+    "attached": {"ipa": "əˈtætʃt",    "pos": "형용사", "ko": "붙어 있는"},
+    "peeks":    {"ipa": "piːks",      "pos": "동사",   "ko": "들여다보다"},
+    "burning":  {"ipa": "ˈbɜːrnɪŋ",   "pos": "형용사", "ko": "타고 있는"},
+    "melts":    {"ipa": "melts",      "pos": "동사",   "ko": "녹다"},
+    "weighs":   {"ipa": "weɪz",       "pos": "동사",   "ko": "무게가 ~이다"},
+    "crawl":    {"ipa": "krɔːl",      "pos": "명사",   "ko": "기어가기"},
+    "trophy":   {"ipa": "ˈtroʊfi",    "pos": "명사",   "ko": "트로피"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Pyramids have a point on top.", "ko": "피라미드는 위에 뾰족한 점이 있어요."},
+      {"en": "A flat bottom is where they stop.", "ko": "아래는 평평한 밑면으로 끝나요."}
+    ]},
+    {"sents": [
+      {"en": "Triangles make each leaning face.", "ko": "기울어진 면은 모두 삼각형이에요."},
+      {"en": "Faces stretch out wide at the base.", "ko": "면은 밑면에서 넓게 퍼져요."}
+    ]},
+    {"sents": [
+      {"en": "Look around for this shape's look.", "ko": "이 모양을 주위에서 찾아보세요."},
+      {"en": "Search for pyramids in this book.", "ko": "이 책에서 피라미드를 찾아보세요."}
+    ]},
+    {"sents": [
+      {"en": "Ben sees bright stacks of fruit to eat.", "ko": "벤이 먹음직한 과일이 환하게 쌓인 걸 봐요."},
+      {"en": "Built like pyramids, nice and neat.", "ko": "피라미드처럼 예쁘고 가지런히 쌓였어요."}
+    ]},
+    {"sents": [
+      {"en": "Pyramid roofs block rain and snow.", "ko": "피라미드 모양 지붕은 비와 눈을 막아 줘요."},
+      {"en": "They stay attached as strong winds blow.", "ko": "센 바람이 불어도 붙어 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Jill peeks through this pyramid's door.", "ko": "질이 이 피라미드의 문으로 들여다봐요."},
+      {"en": "She finds toys camping on its floor.", "ko": "바닥에서 캠핑하는 장난감을 찾았어요."}
+    ]},
+    {"sents": [
+      {"en": "Ben spots pyramids with burning tips.", "ko": "벤이 끝에 불이 붙은 피라미드를 발견해요."},
+      {"en": "Each changes shape as it melts and drips.", "ko": "녹아 떨어지면서 모양이 바뀌어요."}
+    ]},
+    {"sents": [
+      {"en": "This glass pyramid weighs a lot.", "ko": "이 유리 피라미드는 아주 무거워요."},
+      {"en": "It helps keep papers in one spot.", "ko": "종이를 한자리에 붙잡아 줘요."}
+    ]},
+    {"sents": [
+      {"en": "Jill climbs this pyramid in a crawl.", "ko": "질이 이 피라미드를 기어서 올라가요."},
+      {"en": "The pyramid top gets very small.", "ko": "피라미드 위쪽은 아주 좁아져요."}
+    ]},
+    {"sents": [
+      {"en": "Ben's project is on stars and space.", "ko": "벤의 과제는 별과 우주에 대한 거예요."},
+      {"en": "He wins the trophy for first place!", "ko": "1등 트로피를 받았어요!"}
+    ]},
+    {"sents": [
+      {"en": "Pyramids aren't just in this book.", "ko": "피라미드는 이 책 안에만 있는 게 아니에요."},
+      {"en": "They're all around you.", "ko": "우리 주위 어디에나 있어요."},
+      {"en": "Take a look!", "ko": "한번 둘러보세요!"}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Ah! Now we know what pyramids look like.", "ko": "아! 이제 피라미드가 어떻게 생겼는지 알겠어요."},
+      {"en": "They're very pointy and look like a triangle.", "ko": "아주 뾰족하고 삼각형처럼 생겼어요."},
+      {"en": "Can you find them?", "ko": "찾을 수 있나요?"},
+      {"en": "Try to find some pyramids today, if you can!", "ko": "오늘 피라미드를 찾아보세요!"},
+      {"en": "I'll see you next time!", "ko": "다음에 또 만나요!"}
+    ]}
+  ]
+}

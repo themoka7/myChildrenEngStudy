@@ -1,0 +1,81 @@
+{
+  "title": "Cylinders",
+  "eyebrow": "Unit 52 · Story · Solid Shapes",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "curves":   {"ipa": "kɜːrvz",     "pos": "동사",   "ko": "둥글게 휘다"},
+    "base":     {"ipa": "beɪs",       "pos": "명사",   "ko": "밑면"},
+    "bend":     {"ipa": "bend",       "pos": "명사",   "ko": "굽이, 휜 부분"},
+    "stacks":   {"ipa": "stæks",      "pos": "명사",   "ko": "쌓아 놓은 것"},
+    "cans":     {"ipa": "kænz",       "pos": "명사",   "ko": "통조림, 캔"},
+    "rolls":    {"ipa": "roʊlz",      "pos": "명사",   "ko": "둥글게 감은 것"},
+    "towels":   {"ipa": "ˈtaʊəlz",    "pos": "명사",   "ko": "수건, 화장지"},
+    "poles":    {"ipa": "poʊlz",      "pos": "명사",   "ko": "기둥, 장대"},
+    "tunnels":  {"ipa": "ˈtʌnəlz",    "pos": "명사",   "ko": "터널"},
+    "graze":    {"ipa": "ɡreɪz",      "pos": "동사",   "ko": "풀을 뜯어 먹다"},
+    "hay":      {"ipa": "heɪ",        "pos": "명사",   "ko": "건초 (마른 풀)"},
+    "brooms":   {"ipa": "bruːmz",     "pos": "명사",   "ko": "빗자루"},
+    "handles":  {"ipa": "ˈhændəlz",   "pos": "명사",   "ko": "손잡이"},
+    "sweeping": {"ipa": "ˈswiːpɪŋ",   "pos": "동사",   "ko": "쓸기, 청소하기"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Tall or short, this shape curves round.", "ko": "크든 작든 이 모양은 둥글게 휘어요."},
+      {"en": "Where can cylinders be found?", "ko": "원기둥은 어디에서 찾을 수 있을까요?"}
+    ]},
+    {"sents": [
+      {"en": "The same size round base is on each end.", "ko": "양쪽 끝에 같은 크기의 둥근 밑면이 있어요."},
+      {"en": "Cylinder sides are one curving bend.", "ko": "원기둥의 옆면은 하나로 둥글게 휘어져 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Look around for this shape's look.", "ko": "이 모양을 주위에서 찾아보세요."},
+      {"en": "Search for cylinders in this book.", "ko": "이 책에서 원기둥을 찾아보세요."}
+    ]},
+    {"sents": [
+      {"en": "Ben sees cylinders in the store.", "ko": "벤이 가게에서 원기둥을 봐요."},
+      {"en": "Tall stacks of cans are by the door.", "ko": "문 옆에 통조림이 높이 쌓여 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Jill finds rolls of towels and tape.", "ko": "질이 화장지 롤과 테이프를 찾아요."},
+      {"en": "Both things have a cylinder shape!", "ko": "둘 다 원기둥 모양이에요!"}
+    ]},
+    {"sents": [
+      {"en": "Cylinders of windows to the sky.", "ko": "하늘로 뻗은 원기둥 창문이에요."},
+      {"en": "Cylinder poles reach just as high!", "ko": "원기둥 기둥도 그만큼 높아요!"}
+    ]},
+    {"sents": [
+      {"en": "Ben likes to go down the cylinder slide.", "ko": "벤은 원기둥 미끄럼틀을 타고 내려가는 걸 좋아해요."},
+      {"en": "In cylinder tunnels, Jill likes to hide.", "ko": "질은 원기둥 터널에 숨는 걸 좋아해요."}
+    ]},
+    {"sents": [
+      {"en": "Cows eat grass on the farm all day.", "ko": "소들이 농장에서 하루 종일 풀을 먹어요."},
+      {"en": "Sheep graze on cylinders of hay.", "ko": "양들은 원기둥 모양 건초를 뜯어 먹어요."}
+    ]},
+    {"sents": [
+      {"en": "Here are cylinders on top of brooms.", "ko": "빗자루 위에도 원기둥이 있어요."},
+      {"en": "Nice round handles for sweeping rooms.", "ko": "방을 쓸기 좋은 둥근 손잡이예요."}
+    ]},
+    {"sents": [
+      {"en": "Time for a snack and a nice cool drink.", "ko": "간식과 시원한 음료를 먹을 시간이에요."},
+      {"en": "White cylinder cheese and juice that's pink.", "ko": "흰 원기둥 치즈와 분홍 주스예요."}
+    ]},
+    {"sents": [
+      {"en": "Cylinders aren't just in this book.", "ko": "원기둥은 이 책 안에만 있는 게 아니에요."},
+      {"en": "They're all around you.", "ko": "우리 주위 어디에나 있어요."},
+      {"en": "Take a look!", "ko": "한번 둘러보세요!"}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Hmm, many items have the cylinder shape, such as toilet paper, or telescope.", "ko": "음, 원기둥 모양인 게 많아요. 화장지나 망원경처럼요."},
+      {"en": "What else can you think of?", "ko": "또 무엇이 떠오르나요?"},
+      {"en": "Let's find some cylinders together.", "ko": "함께 원기둥을 찾아봐요."},
+      {"en": "Oh, I found one.", "ko": "오, 하나 찾았어요."},
+      {"en": "Where can you find one?", "ko": "여러분은 어디에서 찾을 수 있나요?"},
+      {"en": "I'll see you next time! Good-bye!", "ko": "다음에 또 만나요! 안녕!"}
+    ]}
+  ]
+}
