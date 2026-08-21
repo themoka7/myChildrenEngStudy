@@ -1,0 +1,73 @@
+{
+  "title": "Ears",
+  "title_ko": "귀",
+
+  "paras": [
+    ["Ears are a part of your body.", "Josh touches his ears."],
+    ["You have two ears.", "They are on each side of your head."],
+    ["You use your ears every day.", "Anna listens to music."],
+    ["Ears allow you to hear.", "Mark hears his mom talk."],
+    ["You can hear soft sounds.", "Grace whispers to her friend."],
+    ["You can hear loud sounds.", "The airplane takes off."],
+    ["Some people can't hear.", "They are deaf.", "They use sign language."],
+    ["Animals have ears too.", "Elephants have big ears!"],
+    ["What sounds do you hear?"]
+  ],
+
+  "match": [
+    {"en": "whispers",  "ko": "속삭이다"},
+    {"en": "sounds",    "ko": "소리"},
+    {"en": "deaf",      "ko": "귀가 들리지 않는"},
+    {"en": "elephants", "ko": "코끼리"},
+    {"en": "airplane",  "ko": "비행기"}
+  ],
+  "match_ko_order": ["코끼리", "소리", "속삭이다", "비행기", "귀가 들리지 않는"],
+
+  "phonics": [
+    {"q": "s_ft",        "a": "o", "ko": "(소리가) 작은"},
+    {"q": "b_g",         "a": "i", "ko": "큰"},
+    {"q": "m_m",         "a": "o", "ko": "엄마"},
+    {"q": "l_nguage",    "a": "a", "ko": "언어"},
+    {"q": "wh_spers",    "a": "i", "ko": "속삭이다"},
+    {"q": "_lephants",   "a": "e", "ko": "코끼리"}
+  ],
+
+  "scan": [
+    {"q": "귀는 머리의 어디에 있나요?",     "a": "on each side", "sent": "4"},
+    {"q": "애나는 무엇을 듣나요?",           "a": "music",        "sent": "6"},
+    {"q": "그레이스는 친구에게 무엇을 하나요?", "a": "whispers",     "sent": "10"},
+    {"q": "코끼리의 귀는 어떤가요?",         "a": "big",          "sent": "17"}
+  ],
+
+  "tf": [
+    {"en": "You have two ears.", "answer": "O",
+     "why": "귀는 두 개예요.", "sent": "3"},
+    {"en": "Mark hears his mom talk.", "answer": "O",
+     "why": "마크는 엄마가 말하는 소리를 들어요.", "sent": "8"},
+    {"en": "People who are deaf use sign language.", "answer": "O",
+     "why": "귀가 들리지 않는 사람들은 수어를 써요.", "sent": "14·15"},
+    {"en": "The airplane is quiet.", "gloss": "quiet 조용한", "answer": "X",
+     "why": "비행기는 큰 소리를 내요.", "sent": "11·12"},
+    {"en": "You hear with your nose.", "gloss": "nose 코", "answer": "X",
+     "why": "귀로 들어요. 코가 아니에요.", "sent": "7"}
+  ],
+
+  "fill_bank": ["touches", "soft", "day", "loud"],
+  "fill": [
+    {"en": "Josh ___ his ears.",            "a": "touches", "ko": "조시가 자기 귀를 만져요."},
+    {"en": "You use your ears every ___.",  "a": "day",     "ko": "우리는 매일 귀를 써요."},
+    {"en": "You can hear ___ sounds.",      "a": "soft",    "ko": "작은 소리도 들을 수 있어요."}
+  ],
+
+  "trace": [
+    {"en": "Ears are a part of your body.", "ko": "귀는 우리 몸의 한 부분이에요."},
+    {"en": "Animals have ears too.", "ko": "동물도 귀가 있어요."}
+  ],
+
+  "notes": {
+    "phonics": "<b>_lephants는 맨 앞 글자</b>를 채우는 문항입니다 — 앞이 비어 있으면 당황하기 쉬우니 \"코끼리를 영어로 어떻게 시작하지?\" 하고 힌트를 주세요. 이 지문에는 짧은 u 소리 단어가 없어 i와 o를 두 번씩 냈습니다.",
+    "scan": "이 지문은 <b>아이 이름마다 듣는 것이 다릅니다</b> — 애나(음악)·마크(엄마 목소리)·그레이스(속삭임). 이름을 먼저 찾으면 답이 바로 옆에 있어요.",
+    "tf": "5번은 <b>귀가 하는 일을 코로 바꿔</b> 놓았습니다 — 앞 유닛(코)과 헷갈리기 쉬운 문항이라 일부러 넣었어요. 4번은 지문과 반대예요.",
+    "trace": "대문자로 시작했는지, 마침표를 찍었는지만 봐 주세요."
+  }
+}

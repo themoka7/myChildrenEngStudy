@@ -1,0 +1,73 @@
+{
+  "title": "Ears",
+  "eyebrow": "Unit 19 · Nonfiction · Our Body",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "part":      {"ipa": "pɑːrt",       "pos": "명사",   "ko": "부분"},
+    "body":      {"ipa": "ˈbɑːdi",      "pos": "명사",   "ko": "몸"},
+    "side":      {"ipa": "saɪd",        "pos": "명사",   "ko": "쪽, 옆"},
+    "head":      {"ipa": "hed",         "pos": "명사",   "ko": "머리"},
+    "listens":   {"ipa": "ˈlɪsənz",     "pos": "동사",   "ko": "(귀 기울여) 듣다 (listen)"},
+    "allow":     {"ipa": "əˈlaʊ",       "pos": "동사",   "ko": "~할 수 있게 하다"},
+    "hear":      {"ipa": "hɪr",         "pos": "동사",   "ko": "(소리가) 들리다"},
+    "soft":      {"ipa": "sɔːft",       "pos": "형용사", "ko": "(소리가) 작은, 부드러운"},
+    "sounds":    {"ipa": "saʊndz",      "pos": "명사",   "ko": "소리 (sound의 복수)"},
+    "whispers":  {"ipa": "ˈwɪspərz",    "pos": "동사",   "ko": "속삭이다 (whisper)"},
+    "loud":      {"ipa": "laʊd",        "pos": "형용사", "ko": "(소리가) 큰"},
+    "airplane":  {"ipa": "ˈerpleɪn",    "pos": "명사",   "ko": "비행기"},
+    "deaf":      {"ipa": "def",         "pos": "형용사", "ko": "귀가 들리지 않는"},
+    "language":  {"ipa": "ˈlæŋɡwɪdʒ",   "pos": "명사",   "ko": "언어 (sign language 수어)"},
+    "elephants": {"ipa": "ˈelɪfənts",   "pos": "명사",   "ko": "코끼리 (elephant의 복수)"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Ears are a part of your body.", "ko": "귀는 우리 몸의 한 부분이에요."},
+      {"en": "Josh touches his ears.", "ko": "조시가 자기 귀를 만져요."}
+    ]},
+    {"sents": [
+      {"en": "You have two ears.", "ko": "귀는 두 개예요."},
+      {"en": "They are on each side of your head.", "ko": "귀는 머리 양쪽에 있어요."}
+    ]},
+    {"sents": [
+      {"en": "You use your ears every day.", "ko": "우리는 매일 귀를 써요."},
+      {"en": "Anna listens to music.", "ko": "애나는 음악을 들어요."}
+    ]},
+    {"sents": [
+      {"en": "Ears allow you to hear.", "ko": "귀는 소리를 들을 수 있게 해 줘요."},
+      {"en": "Mark hears his mom talk.", "ko": "마크는 엄마가 말하는 소리를 들어요."}
+    ]},
+    {"sents": [
+      {"en": "You can hear soft sounds.", "ko": "작은 소리도 들을 수 있어요."},
+      {"en": "Grace whispers to her friend.", "ko": "그레이스가 친구에게 속삭여요."}
+    ]},
+    {"sents": [
+      {"en": "You can hear loud sounds.", "ko": "큰 소리도 들을 수 있어요."},
+      {"en": "The airplane takes off.", "ko": "비행기가 떠올라요."}
+    ]},
+    {"sents": [
+      {"en": "Some people can't hear.", "ko": "어떤 사람은 소리를 듣지 못해요."},
+      {"en": "They are deaf.", "ko": "그들은 귀가 들리지 않아요."},
+      {"en": "They use sign language.", "ko": "그들은 수어를 써요."}
+    ]},
+    {"sents": [
+      {"en": "Animals have ears too.", "ko": "동물도 귀가 있어요."},
+      {"en": "Elephants have big ears!", "ko": "코끼리는 귀가 커요!"}
+    ]},
+    {"sents": [
+      {"en": "What sounds do you hear?", "ko": "여러분은 어떤 소리가 들리나요?"}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Wow, this book taught us a lot about ears.", "ko": "와, 이 책은 귀에 대해 많이 알려 줬어요."},
+      {"en": "With our ears, we listen to music and we can listen to what our mom says.", "ko": "귀로 음악을 듣고, 엄마가 하는 말도 들을 수 있어요."},
+      {"en": "We have ears, so we can listen to everything.", "ko": "귀가 있어서 모든 소리를 들을 수 있어요."},
+      {"en": "I wish I can listen to everyone's voice.", "ko": "모두의 목소리를 들을 수 있으면 좋겠어요."},
+      {"en": "That would be so fun.", "ko": "정말 재미있을 거예요."},
+      {"en": "I hope you learned a lot and I'll see you next time. Good-bye.", "ko": "많이 배웠으면 좋겠어요. 다음에 또 만나요. 안녕!"}
+    ]}
+  ]
+}

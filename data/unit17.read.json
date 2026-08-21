@@ -1,0 +1,67 @@
+{
+  "title": "Eyes",
+  "eyebrow": "Unit 17 · Nonfiction · Our Body",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "part":    {"ipa": "pɑːrt",     "pos": "명사",   "ko": "부분"},
+    "body":    {"ipa": "ˈbɑːdi",    "pos": "명사",   "ko": "몸"},
+    "allow":   {"ipa": "əˈlaʊ",     "pos": "동사",   "ko": "~할 수 있게 하다"},
+    "color":   {"ipa": "ˈkʌlər",    "pos": "명사",   "ko": "색, 색깔"},
+    "shapes":  {"ipa": "ʃeɪps",     "pos": "명사",   "ko": "모양 (shape의 복수)"},
+    "round":   {"ipa": "raʊnd",     "pos": "형용사", "ko": "둥근"},
+    "blink":   {"ipa": "blɪŋk",     "pos": "동사",   "ko": "눈을 깜빡이다"},
+    "close":   {"ipa": "kloʊz",     "pos": "동사",   "ko": "감다, 닫다"},
+    "sleep":   {"ipa": "sliːp",     "pos": "동사",   "ko": "잠자다"},
+    "well":    {"ipa": "wel",       "pos": "부사",   "ko": "잘"},
+    "glasses": {"ipa": "ˈɡlæsɪz",   "pos": "명사",   "ko": "안경"},
+    "owls":    {"ipa": "aʊlz",      "pos": "명사",   "ko": "올빼미 (owl의 복수)"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Eyes are a part of your body.", "ko": "눈은 우리 몸의 한 부분이에요."},
+      {"en": "You have two eyes.", "ko": "눈은 두 개예요."},
+      {"en": "Eyes allow you to see.", "ko": "눈은 볼 수 있게 해 줘요."}
+    ]},
+    {"sents": [
+      {"en": "Mary sees a boat.", "ko": "메리는 배를 봐요."},
+      {"en": "You can see color.", "ko": "색을 볼 수 있어요."},
+      {"en": "Amy sees a red bike.", "ko": "에이미는 빨간 자전거를 봐요."}
+    ]},
+    {"sents": [
+      {"en": "You can see shapes.", "ko": "모양도 볼 수 있어요."},
+      {"en": "Lily sees a round ball.", "ko": "릴리는 둥근 공을 봐요."}
+    ]},
+    {"sents": [
+      {"en": "Some eyes are brown.", "ko": "어떤 눈은 갈색이에요."},
+      {"en": "Some are blue or green.", "ko": "어떤 눈은 파란색이거나 초록색이에요."}
+    ]},
+    {"sents": [
+      {"en": "You can blink your eyes.", "ko": "눈을 깜빡일 수 있어요."},
+      {"en": "You close your eyes to sleep.", "ko": "잠을 자려면 눈을 감아요."}
+    ]},
+    {"sents": [
+      {"en": "Some people can't see well.", "ko": "어떤 사람은 잘 보지 못해요."},
+      {"en": "Jimmy wears glasses.", "ko": "지미는 안경을 써요."}
+    ]},
+    {"sents": [
+      {"en": "Animals have eyes too.", "ko": "동물도 눈이 있어요."},
+      {"en": "Owls have big eyes!", "ko": "올빼미는 눈이 커요!"}
+    ]},
+    {"sents": [
+      {"en": "What color are your eyes?", "ko": "여러분의 눈은 무슨 색인가요?"}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Wow, eyes are great.", "ko": "와, 눈은 정말 대단해요."},
+      {"en": "They make us see everything.", "ko": "눈은 우리가 모든 것을 볼 수 있게 해 줘요."},
+      {"en": "It's because of our eyes that we can see beautiful things all around us.", "ko": "눈이 있어서 우리 주변의 아름다운 것들을 볼 수 있어요."},
+      {"en": "We should be thankful that we have eyes.", "ko": "눈이 있다는 것에 감사해야 해요."},
+      {"en": "I hope you learned a lot about eyes today.", "ko": "오늘 눈에 대해 많이 배웠으면 좋겠어요."},
+      {"en": "I'll see you next time.", "ko": "다음에 또 만나요."}
+    ]}
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "title": "Arms & Hands",
+  "eyebrow": "Unit 21 · Nonfiction · Our Body",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "part":     {"ipa": "pɑːrt",      "pos": "명사",   "ko": "부분"},
+    "body":     {"ipa": "ˈbɑːdi",     "pos": "명사",   "ko": "몸"},
+    "lift":     {"ipa": "lɪft",       "pos": "동사",   "ko": "들어 올리다"},
+    "bend":     {"ipa": "bend",       "pos": "동사",   "ko": "구부러지다"},
+    "elbows":   {"ipa": "ˈelboʊz",    "pos": "명사",   "ko": "팔꿈치 (elbow의 복수)"},
+    "each":     {"ipa": "iːtʃ",       "pos": "형용사", "ko": "각각의"},
+    "fingers":  {"ipa": "ˈfɪŋɡərz",   "pos": "명사",   "ko": "손가락 (finger의 복수)"},
+    "touch":    {"ipa": "tʌtʃ",       "pos": "동사",   "ko": "만지다"},
+    "bunny":    {"ipa": "ˈbʌni",      "pos": "명사",   "ko": "토끼"},
+    "pick":     {"ipa": "pɪk",        "pos": "동사",   "ko": "집어 올리다"},
+    "together": {"ipa": "təˈɡeðər",   "pos": "부사",   "ko": "함께"},
+    "waves":    {"ipa": "weɪvz",      "pos": "동사",   "ko": "손을 흔들다 (wave)"},
+    "gorilla":  {"ipa": "ɡəˈrɪlə",    "pos": "명사",   "ko": "고릴라"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Arms are part of your body.", "ko": "팔은 우리 몸의 한 부분이에요."},
+      {"en": "You have two arms.", "ko": "팔은 두 개예요."}
+    ]},
+    {"sents": [
+      {"en": "You lift things with your arms.", "ko": "팔로 물건을 들어 올려요."},
+      {"en": "Will lifts the box.", "ko": "윌이 상자를 들어 올려요."},
+      {"en": "Arms bend at the elbows.", "ko": "팔은 팔꿈치에서 구부러져요."}
+    ]},
+    {"sents": [
+      {"en": "Hands are part of your body.", "ko": "손도 우리 몸의 한 부분이에요."},
+      {"en": "You have two hands.", "ko": "손은 두 개예요."}
+    ]},
+    {"sents": [
+      {"en": "Each hand has five fingers.", "ko": "한 손에는 손가락이 다섯 개 있어요."},
+      {"en": "You have ten fingers!", "ko": "손가락은 모두 열 개예요!"}
+    ]},
+    {"sents": [
+      {"en": "You touch with your hands.", "ko": "손으로 만져요."},
+      {"en": "Molly touches the bunny.", "ko": "몰리가 토끼를 만져요."}
+    ]},
+    {"sents": [
+      {"en": "You pick things up with your hands.", "ko": "손으로 물건을 집어 올려요."},
+      {"en": "Al picks up the ball.", "ko": "앨이 공을 집어 올려요."}
+    ]},
+    {"sents": [
+      {"en": "Arms and hands work together.", "ko": "팔과 손은 함께 일해요."},
+      {"en": "Joe waves to his friend.", "ko": "조가 친구에게 손을 흔들어요."}
+    ]},
+    {"sents": [
+      {"en": "Some animals have arms and hands.", "ko": "어떤 동물도 팔과 손이 있어요."},
+      {"en": "A gorilla has long arms.", "ko": "고릴라는 팔이 길어요."},
+      {"en": "It has big hands!", "ko": "손도 커요!"}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Wow, this book taught us a lot about arms and hands.", "ko": "와, 이 책은 팔과 손에 대해 많이 알려 줬어요."},
+      {"en": "We can grab things with our hands.", "ko": "손으로 물건을 잡을 수 있어요."},
+      {"en": "We can lift things with our arms.", "ko": "팔로 물건을 들어 올릴 수 있어요."},
+      {"en": "What else can we do?", "ko": "또 무엇을 할 수 있을까요?"},
+      {"en": "We can wave.", "ko": "손을 흔들 수 있어요."},
+      {"en": "Ok. I'll see you next time. Don't forget to wave. Good-bye.", "ko": "좋아요. 다음에 또 만나요. 손 흔드는 것 잊지 마세요. 안녕!"}
+    ]}
+  ]
+}

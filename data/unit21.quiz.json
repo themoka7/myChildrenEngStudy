@@ -1,0 +1,72 @@
+{
+  "title": "Arms & Hands",
+  "title_ko": "팔과 손",
+
+  "paras": [
+    ["Arms are part of your body.", "You have two arms."],
+    ["You lift things with your arms.", "Will lifts the box.", "Arms bend at the elbows."],
+    ["Hands are part of your body.", "You have two hands."],
+    ["Each hand has five fingers.", "You have ten fingers!"],
+    ["You touch with your hands.", "Molly touches the bunny."],
+    ["You pick things up with your hands.", "Al picks up the ball."],
+    ["Arms and hands work together.", "Joe waves to his friend."],
+    ["Some animals have arms and hands.", "A gorilla has long arms.", "It has big hands!"]
+  ],
+
+  "match": [
+    {"en": "lift",    "ko": "들어 올리다"},
+    {"en": "elbows",  "ko": "팔꿈치"},
+    {"en": "fingers", "ko": "손가락"},
+    {"en": "bunny",   "ko": "토끼"},
+    {"en": "waves",   "ko": "손을 흔들다"}
+  ],
+  "match_ko_order": ["손가락", "손을 흔들다", "들어 올리다", "토끼", "팔꿈치"],
+
+  "phonics": [
+    {"q": "l_ft",    "a": "i", "ko": "들어 올리다"},
+    {"q": "b_nd",    "a": "e", "ko": "구부러지다"},
+    {"q": "h_nds",   "a": "a", "ko": "손"},
+    {"q": "b_x",     "a": "o", "ko": "상자"},
+    {"q": "b_nny",   "a": "u", "ko": "토끼"},
+    {"q": "b_g",     "a": "i", "ko": "큰"}
+  ],
+
+  "scan": [
+    {"q": "윌은 무엇을 들어 올리나요?",        "a": "the box",       "sent": "4"},
+    {"q": "팔은 어디에서 구부러지나요?",        "a": "at the elbows", "sent": "5"},
+    {"q": "한 손에는 손가락이 몇 개 있나요?",   "a": "five",          "sent": "8"},
+    {"q": "몰리는 무엇을 만지나요?",            "a": "the bunny",     "sent": "11"}
+  ],
+
+  "tf": [
+    {"en": "You have two arms.", "answer": "O",
+     "why": "팔은 두 개예요.", "sent": "2"},
+    {"en": "You have ten fingers.", "answer": "O",
+     "why": "손가락은 모두 열 개예요.", "sent": "9"},
+    {"en": "Al picks up the ball.", "answer": "O",
+     "why": "앨이 공을 집어 올려요.", "sent": "13"},
+    {"en": "You have three hands.", "gloss": "three 세 개의", "answer": "X",
+     "why": "손은 두 개예요.", "sent": "7"},
+    {"en": "A gorilla has short arms.", "gloss": "short 짧은", "answer": "X",
+     "why": "고릴라는 팔이 길어요.", "sent": "17"}
+  ],
+
+  "fill_bank": ["arms", "hands", "waves", "fingers"],
+  "fill": [
+    {"en": "You lift things with your ___.", "a": "arms",  "ko": "팔로 물건을 들어 올려요."},
+    {"en": "You touch with your ___.",       "a": "hands", "ko": "손으로 만져요."},
+    {"en": "Joe ___ to his friend.",         "a": "waves", "ko": "조가 친구에게 손을 흔들어요."}
+  ],
+
+  "trace": [
+    {"en": "Arms and hands work together.", "ko": "팔과 손은 함께 일해요."},
+    {"en": "It has big hands!", "ko": "손도 커요!"}
+  ],
+
+  "notes": {
+    "phonics": "<b>네 문항이 모두 b로 시작합니다</b> — b_nd·b_x·b_nny·b_g. 첫소리가 같으니 <b>가운데 모음 소리에만 집중</b>하면 되는, 이 지문에서 가장 좋은 연습입니다. 여섯 문항이 a·e·i·o·u 다섯 소리를 모두 담고 있어요.",
+    "scan": "3번은 답이 <b>숫자</b>입니다. 'five'와 'ten'이 둘 다 나오니 <b>'한 손에'</b>를 놓치지 않게 짚어 주세요 — 문장을 끝까지 읽는 연습이에요.",
+    "tf": "4번은 숫자를 바꿔 놓은 함정이고, 5번은 <b>long을 short으로</b> 뒤집었습니다. 둘 다 지문에서 한 낱말만 확인하면 걸립니다.",
+    "trace": "대문자로 시작했는지, 마침표(느낌표)를 찍었는지만 봐 주세요."
+  }
+}

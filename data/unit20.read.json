@@ -1,0 +1,71 @@
+{
+  "title": "Mouth",
+  "eyebrow": "Unit 20 · Nonfiction · Our Body",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "part":    {"ipa": "pɑːrt",     "pos": "명사",   "ko": "부분"},
+    "body":    {"ipa": "ˈbɑːdi",    "pos": "명사",   "ko": "몸"},
+    "move":    {"ipa": "muːv",      "pos": "동사",   "ko": "움직이다"},
+    "smiles":  {"ipa": "smaɪlz",    "pos": "동사",   "ko": "웃다 (smile)"},
+    "frowns":  {"ipa": "fraʊnz",    "pos": "동사",   "ko": "인상을 찌푸리다 (frown)"},
+    "lips":    {"ipa": "lɪps",      "pos": "명사",   "ko": "입술 (lip의 복수)"},
+    "kiss":    {"ipa": "kɪs",       "pos": "동사",   "ko": "입맞춤하다"},
+    "teeth":   {"ipa": "tiːθ",      "pos": "명사",   "ko": "이, 치아 (tooth의 복수)"},
+    "inside":  {"ipa": "ɪnˈsaɪd",   "pos": "전치사", "ko": "~안에"},
+    "brushes": {"ipa": "ˈbrʌʃɪz",   "pos": "동사",   "ko": "닦다, 빗다 (brush)"},
+    "tongue":  {"ipa": "tʌŋ",       "pos": "명사",   "ko": "혀"},
+    "taste":   {"ipa": "teɪst",     "pos": "동사",   "ko": "맛을 느끼다"},
+    "sweet":   {"ipa": "swiːt",     "pos": "형용사", "ko": "달콤한"},
+    "hippo":   {"ipa": "ˈhɪpoʊ",    "pos": "명사",   "ko": "하마"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "The mouth is part of your body.", "ko": "입은 우리 몸의 한 부분이에요."},
+      {"en": "Tim and Todd touch their mouths.", "ko": "팀과 토드가 자기 입을 만져요."}
+    ]},
+    {"sents": [
+      {"en": "You can move your mouth.", "ko": "입을 움직일 수 있어요."},
+      {"en": "Jake smiles.", "ko": "제이크는 웃어요."},
+      {"en": "Karen frowns.", "ko": "카렌은 인상을 찌푸려요."}
+    ]},
+    {"sents": [
+      {"en": "Lips are part of your mouth.", "ko": "입술은 입의 한 부분이에요."},
+      {"en": "You kiss with your lips.", "ko": "입술로 입맞춤을 해요."}
+    ]},
+    {"sents": [
+      {"en": "Teeth are inside your mouth.", "ko": "이는 입 안에 있어요."},
+      {"en": "Jack brushes his teeth.", "ko": "잭은 이를 닦아요."}
+    ]},
+    {"sents": [
+      {"en": "The tongue is part of your mouth.", "ko": "혀도 입의 한 부분이에요."},
+      {"en": "You use it to taste.", "ko": "혀로 맛을 느껴요."}
+    ]},
+    {"sents": [
+      {"en": "Marco eats an apple.", "ko": "마르코가 사과를 먹어요."},
+      {"en": "It tastes sweet.", "ko": "사과는 달콤한 맛이에요."}
+    ]},
+    {"sents": [
+      {"en": "You use your mouth to talk.", "ko": "입으로 말을 해요."},
+      {"en": "Mike talks to his dad.", "ko": "마이크가 아빠에게 말해요."}
+    ]},
+    {"sents": [
+      {"en": "Animals have mouths.", "ko": "동물도 입이 있어요."},
+      {"en": "A hippo has a big mouth!", "ko": "하마는 입이 커요!"}
+    ]},
+    {"sents": [
+      {"en": "How wide can you open your mouth?", "ko": "여러분은 입을 얼마나 크게 벌릴 수 있나요?"}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Wow, our mouth does many things.", "ko": "와, 입은 정말 많은 일을 해요."},
+      {"en": "How can we speak? How can we eat?", "ko": "어떻게 말할까요? 어떻게 먹을까요?"},
+      {"en": "It's all with our mouth.", "ko": "모두 입으로 해요."},
+      {"en": "What else do you think it can do for our body?", "ko": "입이 우리 몸을 위해 또 무엇을 할 수 있을까요?"},
+      {"en": "Tell me later. I'll see you next time. Bye for now.", "ko": "나중에 알려 주세요. 다음에 또 만나요. 안녕!"}
+    ]}
+  ]
+}

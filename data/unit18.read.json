@@ -1,0 +1,70 @@
+{
+  "title": "Nose",
+  "eyebrow": "Unit 18 · Nonfiction · Our Body",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "part":     {"ipa": "pɑːrt",      "pos": "명사",   "ko": "부분"},
+    "body":     {"ipa": "ˈbɑːdi",     "pos": "명사",   "ko": "몸"},
+    "holes":    {"ipa": "hoʊlz",      "pos": "명사",   "ko": "구멍 (hole의 복수)"},
+    "nostrils": {"ipa": "ˈnɑːstrəlz", "pos": "명사",   "ko": "콧구멍"},
+    "smell":    {"ipa": "smel",       "pos": "동사",   "ko": "냄새를 맡다; 냄새"},
+    "cookies":  {"ipa": "ˈkʊkiz",     "pos": "명사",   "ko": "쿠키"},
+    "trash":    {"ipa": "træʃ",       "pos": "명사",   "ko": "쓰레기"},
+    "stuffy":   {"ipa": "ˈstʌfi",     "pos": "형용사", "ko": "(코가) 막힌"},
+    "cold":     {"ipa": "koʊld",      "pos": "명사",   "ko": "감기"},
+    "breathe":  {"ipa": "briːð",      "pos": "동사",   "ko": "숨을 쉬다"},
+    "breath":   {"ipa": "breθ",       "pos": "명사",   "ko": "숨"},
+    "noses":    {"ipa": "ˈnoʊzɪz",    "pos": "명사",   "ko": "코 (nose의 복수)"},
+    "sense":    {"ipa": "sens",       "pos": "명사",   "ko": "감각"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "The nose is a part of your body.", "ko": "코는 우리 몸의 한 부분이에요."},
+      {"en": "Sue touches her nose.", "ko": "수가 자기 코를 만져요."}
+    ]},
+    {"sents": [
+      {"en": "Your nose has two holes.", "ko": "코에는 구멍이 두 개 있어요."},
+      {"en": "These are called nostrils.", "ko": "이것을 콧구멍이라고 불러요."}
+    ]},
+    {"sents": [
+      {"en": "Your nose lets you smell.", "ko": "코는 냄새를 맡게 해 줘요."},
+      {"en": "Dan smells flowers.", "ko": "댄은 꽃 냄새를 맡아요."}
+    ]},
+    {"sents": [
+      {"en": "You can smell good smells.", "ko": "좋은 냄새를 맡을 수 있어요."},
+      {"en": "John smells cookies.", "ko": "존은 쿠키 냄새를 맡아요."}
+    ]},
+    {"sents": [
+      {"en": "You can smell bad smells.", "ko": "나쁜 냄새도 맡을 수 있어요."},
+      {"en": "Ryan smells trash.", "ko": "라이언은 쓰레기 냄새를 맡아요."}
+    ]},
+    {"sents": [
+      {"en": "Your nose can be stuffy.", "ko": "코가 막힐 수도 있어요."},
+      {"en": "Mary has a cold.", "ko": "메리는 감기에 걸렸어요."}
+    ]},
+    {"sents": [
+      {"en": "You breathe through your nose.", "ko": "코로 숨을 쉬어요."},
+      {"en": "Kate takes a breath.", "ko": "케이트가 숨을 들이쉬어요."}
+    ]},
+    {"sents": [
+      {"en": "Animals have noses too.", "ko": "동물도 코가 있어요."},
+      {"en": "Pigs have a good sense of smell!", "ko": "돼지는 냄새를 아주 잘 맡아요!"}
+    ]},
+    {"sents": [
+      {"en": "What do you like to smell?", "ko": "여러분은 어떤 냄새를 좋아하나요?"}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Hmm, there are many things that we can smell with our nose.", "ko": "음, 코로 맡을 수 있는 것이 정말 많아요."},
+      {"en": "I love to smell delicious food when I'm hungry.", "ko": "저는 배고플 때 맛있는 음식 냄새 맡는 걸 좋아해요."},
+      {"en": "We can also smell flowers with our nose.", "ko": "코로 꽃 냄새도 맡을 수 있어요."},
+      {"en": "What else can we smell with our nose?", "ko": "코로 또 무슨 냄새를 맡을 수 있을까요?"},
+      {"en": "Think about it for the rest of today.", "ko": "오늘 남은 시간에 생각해 보세요."},
+      {"en": "See you next time.", "ko": "다음에 또 만나요."}
+    ]}
+  ]
+}

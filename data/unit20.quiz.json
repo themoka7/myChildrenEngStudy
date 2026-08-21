@@ -1,0 +1,73 @@
+{
+  "title": "Mouth",
+  "title_ko": "입",
+
+  "paras": [
+    ["The mouth is part of your body.", "Tim and Todd touch their mouths."],
+    ["You can move your mouth.", "Jake smiles.", "Karen frowns."],
+    ["Lips are part of your mouth.", "You kiss with your lips."],
+    ["Teeth are inside your mouth.", "Jack brushes his teeth."],
+    ["The tongue is part of your mouth.", "You use it to taste."],
+    ["Marco eats an apple.", "It tastes sweet."],
+    ["You use your mouth to talk.", "Mike talks to his dad."],
+    ["Animals have mouths.", "A hippo has a big mouth!"],
+    ["How wide can you open your mouth?"]
+  ],
+
+  "match": [
+    {"en": "frowns", "ko": "인상을 찌푸리다"},
+    {"en": "lips",   "ko": "입술"},
+    {"en": "tongue", "ko": "혀"},
+    {"en": "sweet",  "ko": "달콤한"},
+    {"en": "hippo",  "ko": "하마"}
+  ],
+  "match_ko_order": ["혀", "하마", "인상을 찌푸리다", "달콤한", "입술"],
+
+  "phonics": [
+    {"q": "l_ps",      "a": "i", "ko": "입술"},
+    {"q": "k_ss",      "a": "i", "ko": "입맞춤하다"},
+    {"q": "J_ck",      "a": "a", "ko": "잭 (사람 이름)"},
+    {"q": "b_dy",      "a": "o", "ko": "몸"},
+    {"q": "br_shes",   "a": "u", "ko": "닦다"},
+    {"q": "d_d",       "a": "a", "ko": "아빠"}
+  ],
+
+  "scan": [
+    {"q": "제이크는 무엇을 하나요?",                "a": "smiles",     "sent": "4"},
+    {"q": "카렌은 무엇을 하나요?",                  "a": "frowns",     "sent": "5"},
+    {"q": "잭은 무엇을 닦나요?",                    "a": "his teeth",  "sent": "9"},
+    {"q": "마르코가 먹은 사과는 어떤 맛인가요?",     "a": "sweet",      "sent": "13"}
+  ],
+
+  "tf": [
+    {"en": "Lips are part of your mouth.", "answer": "O",
+     "why": "입술은 입의 한 부분이에요.", "sent": "6"},
+    {"en": "Teeth are inside your mouth.", "answer": "O",
+     "why": "이는 입 안에 있어요.", "sent": "8"},
+    {"en": "You use your tongue to taste.", "answer": "O",
+     "why": "혀로 맛을 느껴요.", "sent": "10·11"},
+    {"en": "You kiss with your teeth.", "answer": "X",
+     "why": "입술로 입맞춤을 해요. 이가 아니에요.", "sent": "7"},
+    {"en": "A hippo has a small mouth.", "gloss": "small 작은", "answer": "X",
+     "why": "하마는 입이 커요.", "sent": "17"}
+  ],
+
+  "fill_bank": ["touch", "talk", "dad", "taste"],
+  "fill": [
+    {"en": "Tim and Todd ___ their mouths.",  "a": "touch", "ko": "팀과 토드가 자기 입을 만져요."},
+    {"en": "You use your mouth to ___.",      "a": "talk",  "ko": "입으로 말을 해요."},
+    {"en": "Mike talks to his ___.",          "a": "dad",   "ko": "마이크가 아빠에게 말해요."}
+  ],
+
+  "trace": [
+    {"en": "The mouth is part of your body.", "ko": "입은 우리 몸의 한 부분이에요."},
+    {"en": "You can move your mouth.", "ko": "입을 움직일 수 있어요."}
+  ],
+
+  "notes": {
+    "phonics": "이 지문에는 짧은 e 소리 단어가 없어서 <b>i와 a를 두 번씩</b> 냈습니다. <b>l_ps와 k_ss는 둘 다 i</b>라 나란히 놓으면 오히려 쉽습니다. d_d는 dad·did·dud이 다 단어이니 뜻(아빠)을 보게 하세요.",
+    "scan": "1번과 2번은 <b>바로 붙어 있는 두 문장</b>입니다 — 제이크는 웃고, 카렌은 찌푸려요. 반대되는 두 낱말을 짝으로 익히는 문항이에요.",
+    "tf": "4번은 <b>입술과 이를 바꿔</b> 놓았습니다 — \"입맞춤은 어디로 하지?\" 하고 물어봐 주세요. 5번은 지문과 반대예요.",
+    "trace": "대문자로 시작했는지, 마침표를 찍었는지만 봐 주세요."
+  }
+}

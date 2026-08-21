@@ -1,0 +1,72 @@
+{
+  "title": "Eyes",
+  "title_ko": "눈",
+
+  "paras": [
+    ["Eyes are a part of your body.", "You have two eyes.", "Eyes allow you to see."],
+    ["Mary sees a boat.", "You can see color.", "Amy sees a red bike."],
+    ["You can see shapes.", "Lily sees a round ball."],
+    ["Some eyes are brown.", "Some are blue or green."],
+    ["You can blink your eyes.", "You close your eyes to sleep."],
+    ["Some people can't see well.", "Jimmy wears glasses."],
+    ["Animals have eyes too.", "Owls have big eyes!"],
+    ["What color are your eyes?"]
+  ],
+
+  "match": [
+    {"en": "allow",   "ko": "~할 수 있게 하다"},
+    {"en": "blink",   "ko": "눈을 깜빡이다"},
+    {"en": "glasses", "ko": "안경"},
+    {"en": "owls",    "ko": "올빼미"},
+    {"en": "shapes",  "ko": "모양"}
+  ],
+  "match_ko_order": ["안경", "모양", "~할 수 있게 하다", "올빼미", "눈을 깜빡이다"],
+
+  "phonics": [
+    {"q": "r_d",       "a": "e", "ko": "빨간"},
+    {"q": "b_g",       "a": "i", "ko": "큰"},
+    {"q": "gl_sses",   "a": "a", "ko": "안경"},
+    {"q": "b_dy",      "a": "o", "ko": "몸"},
+    {"q": "w_ll",      "a": "e", "ko": "잘"},
+    {"q": "bl_nk",     "a": "i", "ko": "눈을 깜빡이다"}
+  ],
+
+  "scan": [
+    {"q": "메리는 무엇을 보나요?",              "a": "a boat",     "sent": "4"},
+    {"q": "에이미는 무슨 색 자전거를 보나요?",   "a": "a red bike", "sent": "6"},
+    {"q": "지미는 무엇을 쓰나요?",               "a": "glasses",    "sent": "14"},
+    {"q": "올빼미의 눈은 어떤가요?",             "a": "big",        "sent": "16"}
+  ],
+
+  "tf": [
+    {"en": "You have two eyes.", "answer": "O",
+     "why": "눈은 두 개예요.", "sent": "2"},
+    {"en": "Lily sees a round ball.", "answer": "O",
+     "why": "릴리는 둥근 공을 봐요.", "sent": "8"},
+    {"en": "Animals have eyes too.", "answer": "O",
+     "why": "동물도 눈이 있어요.", "sent": "15"},
+    {"en": "All eyes are brown.", "gloss": "all 모든", "answer": "X",
+     "why": "갈색 눈도 있고 파란색·초록색 눈도 있어요.", "sent": "9·10"},
+    {"en": "Eyes can smell flowers.", "gloss": "smell 냄새를 맡다", "answer": "X",
+     "why": "눈은 보게 해 줘요. 냄새는 코로 맡지요.", "sent": "3"}
+  ],
+
+  "fill_bank": ["blink", "well", "color", "shapes"],
+  "fill": [
+    {"en": "You can ___ your eyes.",       "a": "blink", "ko": "눈을 깜빡일 수 있어요."},
+    {"en": "Some people can't see ___.",   "a": "well",  "ko": "어떤 사람은 잘 보지 못해요."},
+    {"en": "What ___ are your eyes?",      "a": "color", "ko": "여러분의 눈은 무슨 색인가요?"}
+  ],
+
+  "trace": [
+    {"en": "Eyes are a part of your body.", "ko": "눈은 우리 몸의 한 부분이에요."},
+    {"en": "You can see color.", "ko": "색을 볼 수 있어요."}
+  ],
+
+  "notes": {
+    "phonics": "이 지문에는 짧은 u 소리 단어가 없어서 <b>e와 i를 두 번씩</b> 냈습니다. <b>r_d는 red·rid·rod이 다 단어</b>이고 b_g도 big·bag·bug이 됩니다 — 옆의 한글 뜻을 꼭 보게 하세요.",
+    "scan": "이 지문은 <b>아이 이름마다 보는 것이 다릅니다</b> — 메리(배)·에이미(빨간 자전거)·릴리(둥근 공)·지미(안경). 이름을 먼저 찾으면 답이 바로 옆에 있어요.",
+    "tf": "4번은 <b>some(어떤)을 all(모든)로 바꿔 놓은 함정</b>입니다. 5번은 <b>눈이 하는 일과 코가 하는 일을 바꿔</b> 놓았어요 — \"냄새는 어디로 맡지?\" 하고 물어봐 주세요.",
+    "trace": "대문자로 시작했는지, 마침표를 찍었는지만 봐 주세요."
+  }
+}

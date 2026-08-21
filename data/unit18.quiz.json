@@ -1,0 +1,73 @@
+{
+  "title": "Nose",
+  "title_ko": "코",
+
+  "paras": [
+    ["The nose is a part of your body.", "Sue touches her nose."],
+    ["Your nose has two holes.", "These are called nostrils."],
+    ["Your nose lets you smell.", "Dan smells flowers."],
+    ["You can smell good smells.", "John smells cookies."],
+    ["You can smell bad smells.", "Ryan smells trash."],
+    ["Your nose can be stuffy.", "Mary has a cold."],
+    ["You breathe through your nose.", "Kate takes a breath."],
+    ["Animals have noses too.", "Pigs have a good sense of smell!"],
+    ["What do you like to smell?"]
+  ],
+
+  "match": [
+    {"en": "nostrils", "ko": "콧구멍"},
+    {"en": "stuffy",   "ko": "코가 막힌"},
+    {"en": "trash",    "ko": "쓰레기"},
+    {"en": "breathe",  "ko": "숨을 쉬다"},
+    {"en": "sense",    "ko": "감각"}
+  ],
+  "match_ko_order": ["쓰레기", "감각", "콧구멍", "코가 막힌", "숨을 쉬다"],
+
+  "phonics": [
+    {"q": "sm_ll",   "a": "e", "ko": "냄새를 맡다"},
+    {"q": "tr_sh",   "a": "a", "ko": "쓰레기"},
+    {"q": "st_ffy",  "a": "u", "ko": "코가 막힌"},
+    {"q": "p_gs",    "a": "i", "ko": "돼지"},
+    {"q": "b_dy",    "a": "o", "ko": "몸"},
+    {"q": "b_d",     "a": "a", "ko": "나쁜"}
+  ],
+
+  "scan": [
+    {"q": "코에 있는 두 구멍을 무엇이라고 부르나요?", "a": "nostrils",              "sent": "4"},
+    {"q": "존은 무슨 냄새를 맡나요?",                "a": "cookies",               "sent": "8"},
+    {"q": "라이언은 무슨 냄새를 맡나요?",            "a": "trash",                 "sent": "10"},
+    {"q": "돼지는 무엇이 뛰어난가요?",               "a": "a good sense of smell", "sent": "16"}
+  ],
+
+  "tf": [
+    {"en": "Your nose has two holes.", "answer": "O",
+     "why": "코에는 구멍이 두 개 있어요.", "sent": "3"},
+    {"en": "Dan smells flowers.", "answer": "O",
+     "why": "댄은 꽃 냄새를 맡아요.", "sent": "6"},
+    {"en": "Mary has a cold.", "answer": "O",
+     "why": "메리는 감기에 걸렸어요.", "sent": "12"},
+    {"en": "You breathe through your ears.", "gloss": "ears 귀", "answer": "X",
+     "why": "코로 숨을 쉬어요. 귀가 아니에요.", "sent": "13"},
+    {"en": "Cats have a good sense of smell.", "gloss": "cats 고양이", "answer": "X",
+     "why": "지문에 나온 건 돼지(pigs)예요.", "sent": "15"}
+  ],
+
+  "fill_bank": ["touches", "stuffy", "breath", "smell"],
+  "fill": [
+    {"en": "Sue ___ her nose.",        "a": "touches", "ko": "수가 자기 코를 만져요."},
+    {"en": "Your nose can be ___.",    "a": "stuffy",  "ko": "코가 막힐 수도 있어요."},
+    {"en": "Kate takes a ___.",        "a": "breath",  "ko": "케이트가 숨을 들이쉬어요."}
+  ],
+
+  "trace": [
+    {"en": "The nose is a part of your body.", "ko": "코는 우리 몸의 한 부분이에요."},
+    {"en": "You can smell bad smells.", "ko": "나쁜 냄새도 맡을 수 있어요."}
+  ],
+
+  "notes": {
+    "phonics": "여섯 문항이 <b>a·e·i·o·u 다섯 소리를 모두</b> 담고 있습니다. <b>b_d는 bad·bed·bud이 다 단어</b>이고 sm_ll도 smell·small이 됩니다 — 옆의 한글 뜻을 꼭 보게 하세요.",
+    "scan": "이 지문은 <b>아이 이름마다 맡는 냄새가 다릅니다</b> — 댄(꽃)·존(쿠키)·라이언(쓰레기). 이름을 먼저 찾으면 답이 바로 옆에 있어요.",
+    "tf": "4번은 <b>코가 하는 일을 귀로 바꿔</b> 놓았습니다 — \"숨은 어디로 쉬지?\" 하고 물어봐 주세요. 5번은 돼지를 고양이로 바꿔 놓은 함정이에요.",
+    "trace": "대문자로 시작했는지, 마침표를 찍었는지만 봐 주세요."
+  }
+}

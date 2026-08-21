@@ -43,11 +43,11 @@
     {
       "theme": "우리 몸",
       "units": [
-        {"n": 17, "en": "Eyes", "ko": "눈", "status": "todo", "min": 14},
-        {"n": 18, "en": "Nose", "ko": "코", "status": "todo", "min": 14},
-        {"n": 19, "en": "Ears", "ko": "귀", "status": "todo", "min": 14},
-        {"n": 20, "en": "Mouth", "ko": "입", "status": "todo", "min": 14},
-        {"n": 21, "en": "Arms & Hands", "ko": "팔과 손", "status": "todo", "min": 14},
+        {"n": 17, "en": "Eyes", "ko": "눈", "status": "todo", "min": 14, "ready": true},
+        {"n": 18, "en": "Nose", "ko": "코", "status": "todo", "min": 14, "ready": true},
+        {"n": 19, "en": "Ears", "ko": "귀", "status": "todo", "min": 14, "ready": true},
+        {"n": 20, "en": "Mouth", "ko": "입", "status": "todo", "min": 14, "ready": true},
+        {"n": 21, "en": "Arms & Hands", "ko": "팔과 손", "status": "todo", "min": 14, "ready": true},
         {"n": 22, "en": "Legs & Feet", "ko": "다리와 발", "status": "todo", "min": 14}
       ]
     },
