@@ -45,6 +45,18 @@ def main():
             if word not in flat:
                 errors.append(f"{tag} 파닉스 '{ph['q']}' → '{word}' 가 지문에 없음")
 
+        # 정답지 워밍업 줄이 이 유닛의 ②번 첫 단어를 가리키는가.
+        # 스킬 빌더의 기본값은 예시 지문의 hop 으로 고정돼 있어서, routine 을
+        # 채우지 않으면 52장 전부가 자기 지문에 없는 단어를 연습시키게 된다.
+        first = d['phonics'][0]['q'].replace('_', d['phonics'][0]['a'])
+        pp = f'print/{tag}.html'
+        if os.path.exists(pp):
+            m = re.search(r'파닉스 워밍업[^<]*', open(pp, encoding='utf-8').read())
+            if not m:
+                errors.append(f"{tag} 정답지에 파닉스 워밍업 줄이 없음")
+            elif first not in m.group(0):
+                errors.append(f"{tag} 워밍업 줄이 ②번 첫 단어('{first}')와 다름: {m.group(0)}")
+
         for f in d['fill']:
             if f['a'] not in d['fill_bank']:
                 errors.append(f"{tag} 빈칸 정답 '{f['a']}' 가 보기에 없음")
