@@ -1,0 +1,71 @@
+{
+  "title": "Gray",
+  "title_ko": "회색",
+
+  "paras": [
+    ["Grandma helps me with my buttons.", "My buttons are gray."],
+    ["We walk down the sidewalk.", "The sidewalk is gray."],
+    ["We go to the subway.", "The subway car is gray."],
+    ["We reach the art museum.", "The museum is gray."],
+    ["We see a sculpture.", "The sculpture is gray."],
+    ["Grandma shows me an elephant.", "The elephant is gray."],
+    ["We sit down to have a snack.", "The table is gray."],
+    ["It is raining outside.", "The rainy sky is gray."],
+    ["I buy a bead for Grandma.", "The swirls in the bead are gray."],
+    ["Grandma gives me a big hug.", "Her soft sweater is gray."]
+  ],
+
+  "match": [
+    {"en": "sidewalk",  "ko": "인도"},
+    {"en": "sculpture", "ko": "조각상"},
+    {"en": "bead",      "ko": "구슬"},
+    {"en": "swirls",    "ko": "소용돌이무늬"}
+  ],
+  "match_ko_order": ["소용돌이무늬", "인도", "구슬", "조각상"],
+
+  "phonics": [
+    {"q": "s_t",       "a": "i", "ko": "앉다"},
+    {"q": "sn_ck",     "a": "a", "ko": "간식"},
+    {"q": "h_g",       "a": "u", "ko": "껴안기"},
+    {"q": "h_lps",     "a": "e", "ko": "돕다"},
+    {"q": "s_ft",      "a": "o", "ko": "부드러운"},
+    {"q": "gr_ndma",   "a": "a", "ko": "할머니"}
+  ],
+
+  "scan": [
+    {"q": "할머니와 무엇을 타러 갔나요?",          "a": "the subway",   "sent": "5"},
+    {"q": "미술관에서 무엇을 보았나요?",           "a": "a sculpture",  "sent": "9"},
+    {"q": "할머니가 무엇을 보여 주었나요?",        "a": "an elephant",  "sent": "11"},
+    {"q": "할머니에게 주려고 무엇을 샀나요?",      "a": "a bead",       "sent": "17"}
+  ],
+
+  "tf": [
+    {"en": "Grandma helps me with my buttons.", "answer": "O",
+     "why": "할머니가 단추를 채워 주세요.", "sent": "1"},
+    {"en": "It is sunny outside.", "gloss": "sunny 맑은", "answer": "X",
+     "why": "밖에는 비가 와요.", "sent": "15·16"},
+    {"en": "Grandma gives me a big hug.", "answer": "O",
+     "why": "할머니가 꼭 안아 주세요.", "sent": "19"},
+    {"en": "They ride a bike to the museum.", "gloss": "bike 자전거", "answer": "X",
+     "why": "걷고 지하철을 탔어요. 자전거 이야기는 없어요.", "sent": "3·5"}
+  ],
+
+  "fill_bank": ["sidewalk", "museum", "soft", "table"],
+  "fill": [
+    {"en": "We walk down the ___.",    "a": "sidewalk", "ko": "우리는 인도를 따라 걸어요."},
+    {"en": "We reach the art ___.",    "a": "museum",   "ko": "우리는 미술관에 도착해요."},
+    {"en": "Her ___ sweater is gray.", "a": "soft",     "ko": "할머니의 부드러운 스웨터는 회색이에요."}
+  ],
+
+  "trace": [
+    {"en": "We sit down to have a snack.", "ko": "우리는 앉아서 간식을 먹어요."},
+    {"en": "The rainy sky is gray.", "ko": "비 오는 하늘은 회색이에요."}
+  ],
+
+  "notes": {
+    "phonics": "<b>gr_ndma</b>는 이 이야기의 주인공 단어입니다. <b>s_t은 sit·set·sat이 다 단어</b>라 헷갈리니 옆의 한글 뜻(앉다)을 다시 보게 하세요. h_g도 hug·hog이 다 됩니다.",
+    "scan": "이 지문은 <b>'무엇이 회색인가'가 계속 반복</b>됩니다. 그래서 색이 아니라 '무엇을' 찾는 문제로 냈어요.",
+    "tf": "2번은 지문과 <b>반대</b>입니다. 4번은 지문에 없는 내용이에요 — \"어떻게 갔었지?\"라고 되물어 주세요.",
+    "trace": "대문자로 시작했는지, 마침표를 찍었는지만 봐 주세요."
+  }
+}

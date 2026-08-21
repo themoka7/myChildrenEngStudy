@@ -1,0 +1,66 @@
+{
+  "title": "Doctors",
+  "eyebrow": "Unit 10 · Nonfiction · Jobs",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "offices":   {"ipa": "ˈɔːfɪsɪz",   "pos": "명사",   "ko": "진료실, 사무실 (office의 복수)"},
+    "hospitals": {"ipa": "ˈhɑːspɪtəlz","pos": "명사",   "ko": "병원 (hospital의 복수)"},
+    "sick":      {"ipa": "sɪk",        "pos": "형용사", "ko": "아픈"},
+    "listen":    {"ipa": "ˈlɪsən",     "pos": "동사",   "ko": "듣다"},
+    "hearts":    {"ipa": "hɑːrts",     "pos": "명사",   "ko": "심장 (heart의 복수)"},
+    "mouths":    {"ipa": "maʊðz",      "pos": "명사",   "ko": "입 (mouth의 복수)"},
+    "medicine":  {"ipa": "ˈmedɪsən",   "pos": "명사",   "ko": "약"},
+    "shots":     {"ipa": "ʃɑːts",      "pos": "명사",   "ko": "주사"},
+    "X-ray":     {"ipa": "ˈeks reɪ",   "pos": "명사",   "ko": "엑스레이"},
+    "fix":       {"ipa": "fɪks",       "pos": "동사",   "ko": "고치다"},
+    "broken":    {"ipa": "ˈbroʊkən",   "pos": "형용사", "ko": "부러진"},
+    "bones":     {"ipa": "boʊnz",      "pos": "명사",   "ko": "뼈 (bone의 복수)"},
+    "checkups":  {"ipa": "ˈtʃekʌps",   "pos": "명사",   "ko": "건강 검진"},
+    "healthy":   {"ipa": "ˈhelθi",     "pos": "형용사", "ko": "건강한"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Some doctors work in offices.", "ko": "어떤 의사는 진료실에서 일해요."},
+      {"en": "Others work in hospitals.", "ko": "다른 의사는 병원에서 일해요."}
+    ]},
+    {"sents": [
+      {"en": "Doctors help people who are sick.", "ko": "의사는 아픈 사람들을 도와줘요."}
+    ]},
+    {"sents": [
+      {"en": "Doctors look in our ears.", "ko": "의사는 우리 귀를 들여다봐요."},
+      {"en": "They listen to our hearts.", "ko": "우리 심장 소리를 들어요."}
+    ]},
+    {"sents": [
+      {"en": "They look in our mouths.", "ko": "우리 입안을 들여다봐요."},
+      {"en": "Jose says, 'Ahhhhh.'", "ko": "호세가 \"아~\" 해요."}
+    ]},
+    {"sents": [
+      {"en": "Sometimes they give us medicine.", "ko": "어떤 때는 약을 줘요."},
+      {"en": "Sometimes they give us shots.", "ko": "어떤 때는 주사를 놔요."}
+    ]},
+    {"sents": [
+      {"en": "Doctors also look at X-ray.", "ko": "의사는 엑스레이도 봐요."},
+      {"en": "They fix broken bones.", "ko": "부러진 뼈를 고쳐 줘요."}
+    ]},
+    {"sents": [
+      {"en": "We go to the doctor for checkups.", "ko": "우리는 건강 검진을 받으러 의사에게 가요."},
+      {"en": "This keeps us healthy.", "ko": "그러면 건강하게 지낼 수 있어요."}
+    ]},
+    {"sents": [
+      {"en": "What does your doctor do?", "ko": "여러분의 의사 선생님은 무엇을 하시나요?"}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "When I was young, I was scared of doctors because of shots.", "ko": "저는 어릴 때 주사 때문에 의사가 무서웠어요."},
+      {"en": "What about you?", "ko": "여러분은요?"},
+      {"en": "I hope you are not scared of doctors.", "ko": "여러분은 의사를 무서워하지 않길 바라요."},
+      {"en": "Because we have to see them when we're sick.", "ko": "아플 때는 의사를 만나야 하니까요."},
+      {"en": "The best thing to do is to keep your body healthy.", "ko": "가장 좋은 건 몸을 건강하게 지키는 거예요."},
+      {"en": "Stay healthy!", "ko": "건강하세요!"}
+    ]}
+  ]
+}

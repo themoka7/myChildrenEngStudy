@@ -1,0 +1,77 @@
+{
+  "title": "Purple",
+  "eyebrow": "Unit 7 · Story · Colors",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "uncle":    {"ipa": "ˈʌŋkəl",     "pos": "명사",   "ko": "삼촌, 외삼촌"},
+    "chef":     {"ipa": "ʃef",        "pos": "명사",   "ko": "요리사"},
+    "aprons":   {"ipa": "ˈeɪprənz",   "pos": "명사",   "ko": "앞치마 (apron의 복수)"},
+    "pot":      {"ipa": "pɑːt",       "pos": "명사",   "ko": "냄비"},
+    "grapes":   {"ipa": "ɡreɪps",     "pos": "명사",   "ko": "포도 (grape의 복수)"},
+    "ripe":     {"ipa": "raɪp",       "pos": "형용사", "ko": "잘 익은"},
+    "plums":    {"ipa": "plʌmz",      "pos": "명사",   "ko": "자두 (plum의 복수)"},
+    "pour":     {"ipa": "pɔːr",       "pos": "동사",   "ko": "붓다, 따르다"},
+    "juice":    {"ipa": "dʒuːs",      "pos": "명사",   "ko": "주스, 즙"},
+    "eggplant": {"ipa": "ˈeɡplænt",   "pos": "명사",   "ko": "가지"},
+    "fresh":    {"ipa": "freʃ",       "pos": "형용사", "ko": "싱싱한, 신선한"},
+    "plates":   {"ipa": "pleɪts",     "pos": "명사",   "ko": "접시 (plate의 복수)"},
+    "taste":    {"ipa": "teɪst",      "pos": "동사",   "ko": "맛보다"},
+    "sauce":    {"ipa": "sɔːs",       "pos": "명사",   "ko": "소스"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Our uncle puts on his chef's hat.", "ko": "삼촌이 요리사 모자를 써요."},
+      {"en": "The hat is purple.", "ko": "모자는 보라색이에요."}
+    ]},
+    {"sents": [
+      {"en": "My brother and I put on our aprons.", "ko": "형과 저는 앞치마를 둘러요."},
+      {"en": "The aprons are purple.", "ko": "앞치마는 보라색이에요."}
+    ]},
+    {"sents": [
+      {"en": "My brother gets a large pot.", "ko": "형이 큰 냄비를 가져와요."},
+      {"en": "The pot is purple.", "ko": "냄비는 보라색이에요."}
+    ]},
+    {"sents": [
+      {"en": "I get the sweet grapes.", "ko": "저는 달콤한 포도를 가져와요."},
+      {"en": "The grapes are purple.", "ko": "포도는 보라색이에요."}
+    ]},
+    {"sents": [
+      {"en": "Our uncle adds the ripe plums.", "ko": "삼촌이 잘 익은 자두를 넣어요."},
+      {"en": "The plums are purple.", "ko": "자두는 보라색이에요."}
+    ]},
+    {"sents": [
+      {"en": "My brother and I pour in a little juice.", "ko": "형과 저는 주스를 조금 부어요."},
+      {"en": "The juice is purple.", "ko": "주스는 보라색이에요."}
+    ]},
+    {"sents": [
+      {"en": "We tell our uncle not to add the eggplant!", "ko": "우리는 삼촌에게 가지는 넣지 말라고 해요!"},
+      {"en": "The eggplant is purple.", "ko": "가지는 보라색이에요."}
+    ]},
+    {"sents": [
+      {"en": "I set fresh flowers on the table.", "ko": "저는 식탁에 싱싱한 꽃을 놓아요."},
+      {"en": "The flowers are purple.", "ko": "꽃은 보라색이에요."}
+    ]},
+    {"sents": [
+      {"en": "Our uncle puts cake on our plates.", "ko": "삼촌이 우리 접시에 케이크를 놓아요."},
+      {"en": "The plates are purple.", "ko": "접시는 보라색이에요."}
+    ]},
+    {"sents": [
+      {"en": "We taste our warm sauce.", "ko": "우리는 따뜻한 소스를 맛봐요."},
+      {"en": "The sauce is purple.", "ko": "소스는 보라색이에요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Yeah! This book had grapes in it.", "ko": "좋아요! 이 책에는 포도가 나왔어요."},
+      {"en": "I love grapes. Do you?", "ko": "저는 포도를 정말 좋아해요. 여러분도요?"},
+      {"en": "Grapes are also the color of purple.", "ko": "포도도 보라색이에요."},
+      {"en": "I like the color of purple.", "ko": "저는 보라색을 좋아해요."},
+      {"en": "What else is purple?", "ko": "또 뭐가 보라색일까요?"},
+      {"en": "Think about it for the rest of today.", "ko": "오늘 남은 시간에 생각해 보세요."},
+      {"en": "I'll see you next time. Good-bye for now.", "ko": "다음에 또 만나요. 이제 안녕!"}
+    ]}
+  ]
+}

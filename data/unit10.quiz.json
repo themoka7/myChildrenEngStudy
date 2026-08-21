@@ -1,0 +1,72 @@
+{
+  "title": "Doctors",
+  "title_ko": "의사",
+
+  "paras": [
+    ["Some doctors work in offices.", "Others work in hospitals."],
+    ["Doctors help people who are sick."],
+    ["Doctors look in our ears.", "They listen to our hearts."],
+    ["They look in our mouths.", "Jose says, 'Ahhhhh.'"],
+    ["Sometimes they give us medicine.", "Sometimes they give us shots."],
+    ["Doctors also look at X-ray.", "They fix broken bones."],
+    ["We go to the doctor for checkups.", "This keeps us healthy."],
+    ["What does your doctor do?"]
+  ],
+
+  "match": [
+    {"en": "hospitals", "ko": "병원"},
+    {"en": "medicine",  "ko": "약"},
+    {"en": "shots",     "ko": "주사"},
+    {"en": "bones",     "ko": "뼈"},
+    {"en": "checkups",  "ko": "건강 검진"}
+  ],
+  "match_ko_order": ["주사", "뼈", "병원", "건강 검진", "약"],
+
+  "phonics": [
+    {"q": "s_ck",       "a": "i", "ko": "아픈"},
+    {"q": "f_x",        "a": "i", "ko": "고치다"},
+    {"q": "sh_ts",      "a": "o", "ko": "주사"},
+    {"q": "h_spitals",  "a": "o", "ko": "병원"},
+    {"q": "m_dicine",   "a": "e", "ko": "약"},
+    {"q": "ch_ckups",   "a": "e", "ko": "건강 검진"}
+  ],
+
+  "scan": [
+    {"q": "의사는 어디에서 일하나요? (두 곳)",   "a": "offices / hospitals", "sent": "1·2"},
+    {"q": "의사는 무엇의 소리를 들어 보나요?",   "a": "our hearts",          "sent": "5"},
+    {"q": "호세는 무엇이라고 말했나요?",         "a": "'Ahhhhh.'",           "sent": "7"},
+    {"q": "의사는 부러진 뼈를 어떻게 하나요?",   "a": "fix",                 "sent": "11"}
+  ],
+
+  "tf": [
+    {"en": "Doctors help people who are sick.", "answer": "O",
+     "why": "의사는 아픈 사람들을 도와줘요.", "sent": "3"},
+    {"en": "Doctors look in our ears.", "answer": "O",
+     "why": "의사는 우리 귀를 들여다봐요.", "sent": "4"},
+    {"en": "Doctors never give shots.", "gloss": "never 절대 ~하지 않다", "answer": "X",
+     "why": "어떤 때는 주사를 놔요.", "sent": "9"},
+    {"en": "Doctors cut our hair.", "gloss": "cut 자르다 / hair 머리카락", "answer": "X",
+     "why": "지문에 머리 자르는 이야기는 없어요.", "sent": "6"},
+    {"en": "Checkups keep us healthy.", "answer": "O",
+     "why": "건강 검진을 받으면 건강하게 지낼 수 있어요.", "sent": "12·13"}
+  ],
+
+  "fill_bank": ["mouths", "medicine", "doctor", "bones"],
+  "fill": [
+    {"en": "They look in our ___.",            "a": "mouths",   "ko": "우리 입안을 들여다봐요."},
+    {"en": "Sometimes they give us ___.",       "a": "medicine", "ko": "어떤 때는 약을 줘요."},
+    {"en": "What does your ___ do?",            "a": "doctor",   "ko": "여러분의 의사 선생님은 무엇을 하시나요?"}
+  ],
+
+  "trace": [
+    {"en": "Doctors also look at X-ray.", "ko": "의사는 엑스레이도 봐요."},
+    {"en": "This keeps us healthy.", "ko": "그러면 건강하게 지낼 수 있어요."}
+  ],
+
+  "notes": {
+    "phonics": "이 지문에는 짧은 a·u 소리 단어가 없어서 <b>i·o·e 세 소리를 두 번씩</b> 냈습니다. 같은 소리를 나란히 놓으면 오히려 구별이 쉬워집니다. <b>s_ck는 sick·sock·sack이 다 단어</b>이니 옆의 한글 뜻을 보게 하세요.",
+    "scan": "3번은 답이 <b>영어 단어가 아니라 소리</b>입니다. 지문에서 그대로 옮겨 적으면 돼요 — 이런 문항이 '찾아 쓰기' 연습에 딱 좋습니다.",
+    "tf": "3번은 <b>sometimes(어떤 때는)를 never(절대 아니다)로 바꿔 놓은 함정</b>입니다. 4번은 지문에 없는 내용이에요.",
+    "trace": "대문자로 시작했는지, 마침표를 찍었는지만 봐 주세요."
+  }
+}

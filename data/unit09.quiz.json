@@ -1,0 +1,72 @@
+{
+  "title": "Teachers",
+  "title_ko": "선생님",
+
+  "paras": [
+    ["Teachers work in schools.", "They teach in classrooms.", "They help people learn."],
+    ["Some teach kids.", "Others teach adults."],
+    ["Some teach reading.", "Sam learns to read."],
+    ["Some teach math.", "Emily learns to add."],
+    ["Some teach art.", "Kim likes to paint."],
+    ["Some teach music.", "Tom plays drums."],
+    ["Teachers work hard.", "Computers help."],
+    ["What does your teacher do?"]
+  ],
+
+  "match": [
+    {"en": "classrooms", "ko": "교실"},
+    {"en": "adults",     "ko": "어른"},
+    {"en": "math",       "ko": "수학"},
+    {"en": "paint",      "ko": "그림을 그리다"},
+    {"en": "drums",      "ko": "드럼"}
+  ],
+  "match_ko_order": ["수학", "드럼", "교실", "그림을 그리다", "어른"],
+
+  "phonics": [
+    {"q": "k_ds",         "a": "i", "ko": "아이들"},
+    {"q": "m_th",         "a": "a", "ko": "수학"},
+    {"q": "h_lp",         "a": "e", "ko": "돕다"},
+    {"q": "dr_ms",        "a": "u", "ko": "드럼"},
+    {"q": "T_m",          "a": "o", "ko": "톰 (사람 이름)"},
+    {"q": "cl_ssrooms",   "a": "a", "ko": "교실"}
+  ],
+
+  "scan": [
+    {"q": "선생님은 어디에서 일하나요?",        "a": "in schools", "sent": "1"},
+    {"q": "샘은 무엇을 배우나요?",              "a": "to read",    "sent": "7"},
+    {"q": "킴은 무엇을 하기를 좋아하나요?",     "a": "to paint",   "sent": "11"},
+    {"q": "톰은 무엇을 연주하나요?",            "a": "drums",      "sent": "13"}
+  ],
+
+  "tf": [
+    {"en": "Teachers teach in classrooms.", "answer": "O",
+     "why": "교실에서 가르쳐요.", "sent": "2"},
+    {"en": "Teachers teach only kids.", "gloss": "only 오직", "answer": "X",
+     "why": "아이들을 가르치는 선생님도, 어른을 가르치는 선생님도 있어요.", "sent": "4·5"},
+    {"en": "Emily learns to add.", "answer": "O",
+     "why": "에밀리는 더하기를 배워요.", "sent": "9"},
+    {"en": "Computers help teachers.", "answer": "O",
+     "why": "컴퓨터가 도와줘요.", "sent": "15"},
+    {"en": "Teachers drive buses.", "gloss": "drive 운전하다 / buses 버스", "answer": "X",
+     "why": "지문에 버스 이야기는 없어요.", "sent": "14"}
+  ],
+
+  "fill_bank": ["learn", "hard", "teacher", "adults"],
+  "fill": [
+    {"en": "They help people ___.",     "a": "learn",   "ko": "사람들이 배우도록 도와줘요."},
+    {"en": "Teachers work ___.",        "a": "hard",    "ko": "선생님은 열심히 일해요."},
+    {"en": "What does your ___ do?",    "a": "teacher", "ko": "여러분의 선생님은 무엇을 하시나요?"}
+  ],
+
+  "trace": [
+    {"en": "Teachers work in schools.", "ko": "선생님은 학교에서 일해요."},
+    {"en": "Some teach art.", "ko": "어떤 선생님은 미술을 가르쳐요."}
+  ],
+
+  "notes": {
+    "phonics": "<b>T_m은 사람 이름</b>이라 대문자로 시작합니다. <b>m_th는 math·moth 둘 다 단어</b>이고 k_ds도 kids·kads가 헷갈릴 수 있어요. 틀렸다고 하지 말고 옆의 한글 뜻을 다시 보게 하세요.",
+    "scan": "이 지문은 <b>아이 이름마다 배우는 것이 다릅니다</b> — 샘·에밀리·킴·톰. 이름을 먼저 찾으면 답이 바로 옆에 있어요.",
+    "tf": "2번은 <b>some(어떤)을 only(오직)로 바꿔 놓은 함정</b>입니다. 5번은 지문에 없는 내용이에요.",
+    "trace": "대문자로 시작했는지, 마침표를 찍었는지만 봐 주세요."
+  }
+}

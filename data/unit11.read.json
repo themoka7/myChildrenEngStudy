@@ -1,0 +1,67 @@
+{
+  "title": "Firefighters",
+  "eyebrow": "Unit 11 · Nonfiction · Jobs",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "firefighters": {"ipa": "ˈfaɪərfaɪtərz", "pos": "명사",   "ko": "소방관 (firefighter의 복수)"},
+    "save":         {"ipa": "seɪv",          "pos": "동사",   "ko": "구하다"},
+    "lives":        {"ipa": "laɪvz",         "pos": "명사",   "ko": "생명 (life의 복수)"},
+    "safety":       {"ipa": "ˈseɪfti",       "pos": "명사",   "ko": "안전"},
+    "hurt":         {"ipa": "hɜːrt",         "pos": "형용사", "ko": "다친"},
+    "accident":     {"ipa": "ˈæksɪdənt",     "pos": "명사",   "ko": "사고"},
+    "siren":        {"ipa": "ˈsaɪrən",       "pos": "명사",   "ko": "사이렌"},
+    "loud":         {"ipa": "laʊd",          "pos": "형용사", "ko": "(소리가) 큰"},
+    "hook":         {"ipa": "hʊk",           "pos": "동사",   "ko": "연결하다, 걸다"},
+    "hose":         {"ipa": "hoʊz",          "pos": "명사",   "ko": "호스"},
+    "sprays":       {"ipa": "spreɪz",        "pos": "동사",   "ko": "뿜어져 나오다"},
+    "special":      {"ipa": "ˈspeʃəl",       "pos": "형용사", "ko": "특별한"},
+    "clothes":      {"ipa": "kloʊðz",        "pos": "명사",   "ko": "옷"},
+    "tools":        {"ipa": "tuːlz",         "pos": "명사",   "ko": "도구 (tool의 복수)"},
+    "tank":         {"ipa": "tæŋk",          "pos": "명사",   "ko": "통 (air tank 공기통)"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Firefighters save lives.", "ko": "소방관은 생명을 구해요."},
+      {"en": "They put out fires.", "ko": "불을 꺼요."}
+    ]},
+    {"sents": [
+      {"en": "They get people to safety.", "ko": "사람들을 안전한 곳으로 데려가요."},
+      {"en": "They help people who are hurt.", "ko": "다친 사람들을 도와줘요."},
+      {"en": "Carol was in a car accident.", "ko": "캐롤은 자동차 사고를 당했어요."}
+    ]},
+    {"sents": [
+      {"en": "They ride in a fire truck.", "ko": "소방관은 소방차를 타고 가요."},
+      {"en": "The siren is loud!", "ko": "사이렌 소리가 커요!"}
+    ]},
+    {"sents": [
+      {"en": "They hook up a hose.", "ko": "호스를 연결해요."},
+      {"en": "Water sprays out.", "ko": "물이 뿜어져 나와요."}
+    ]},
+    {"sents": [
+      {"en": "They wear special clothes.", "ko": "특별한 옷을 입어요."},
+      {"en": "These keep them safe.", "ko": "그 옷이 소방관을 안전하게 지켜 줘요."}
+    ]},
+    {"sents": [
+      {"en": "They need lots of tools.", "ko": "도구가 많이 필요해요."},
+      {"en": "Jim puts on his air tank.", "ko": "짐이 공기통을 메요."}
+    ]},
+    {"sents": [
+      {"en": "They teach kids fire safety.", "ko": "아이들에게 불 안전을 가르쳐요."},
+      {"en": "Kate tries the hose.", "ko": "케이트가 호스를 잡아 봐요."}
+    ]},
+    {"sents": [
+      {"en": "Do you know a firefighter?", "ko": "여러분은 소방관을 알고 있나요?"}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Wow! Firefighters are such brave and amazing people.", "ko": "와! 소방관은 정말 용감하고 대단한 사람들이에요."},
+      {"en": "They fight with fire and they save people.", "ko": "불과 싸우고 사람들을 구하지요."},
+      {"en": "I hope you can be brave like a firefighter too.", "ko": "여러분도 소방관처럼 용감해지길 바라요."},
+      {"en": "I'll see you next time.", "ko": "다음에 또 만나요."}
+    ]}
+  ]
+}

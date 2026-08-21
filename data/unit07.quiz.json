@@ -1,0 +1,71 @@
+{
+  "title": "Purple",
+  "title_ko": "보라색",
+
+  "paras": [
+    ["Our uncle puts on his chef's hat.", "The hat is purple."],
+    ["My brother and I put on our aprons.", "The aprons are purple."],
+    ["My brother gets a large pot.", "The pot is purple."],
+    ["I get the sweet grapes.", "The grapes are purple."],
+    ["Our uncle adds the ripe plums.", "The plums are purple."],
+    ["My brother and I pour in a little juice.", "The juice is purple."],
+    ["We tell our uncle not to add the eggplant!", "The eggplant is purple."],
+    ["I set fresh flowers on the table.", "The flowers are purple."],
+    ["Our uncle puts cake on our plates.", "The plates are purple."],
+    ["We taste our warm sauce.", "The sauce is purple."]
+  ],
+
+  "match": [
+    {"en": "aprons",   "ko": "앞치마"},
+    {"en": "plums",    "ko": "자두"},
+    {"en": "eggplant", "ko": "가지"},
+    {"en": "sauce",    "ko": "소스"}
+  ],
+  "match_ko_order": ["가지", "소스", "앞치마", "자두"],
+
+  "phonics": [
+    {"q": "h_t",     "a": "a", "ko": "모자"},
+    {"q": "p_t",     "a": "o", "ko": "냄비"},
+    {"q": "pl_ms",   "a": "u", "ko": "자두"},
+    {"q": "g_t",     "a": "e", "ko": "가져오다"},
+    {"q": "l_ttle",  "a": "i", "ko": "조금"},
+    {"q": "fr_sh",   "a": "e", "ko": "싱싱한"}
+  ],
+
+  "scan": [
+    {"q": "삼촌은 머리에 무엇을 썼나요?",             "a": "his chef's hat", "sent": "1"},
+    {"q": "삼촌이 냄비에 무엇을 넣었나요?",            "a": "the ripe plums", "sent": "9"},
+    {"q": "삼촌에게 넣지 말라고 한 것은 무엇인가요?",   "a": "the eggplant",   "sent": "13"},
+    {"q": "마지막에 무엇을 맛보았나요?",               "a": "our warm sauce", "sent": "19"}
+  ],
+
+  "tf": [
+    {"en": "The grapes are sweet.", "answer": "O",
+     "why": "달콤한 포도를 가져왔어요.", "sent": "7"},
+    {"en": "Our uncle tells us to add the eggplant.", "answer": "X",
+     "why": "반대예요. 우리가 삼촌에게 가지는 넣지 말라고 했어요.", "sent": "13"},
+    {"en": "The plates are purple.", "answer": "O",
+     "why": "접시는 보라색이에요.", "sent": "18"},
+    {"en": "They cook fish for dinner.", "gloss": "fish 생선 / dinner 저녁", "answer": "X",
+     "why": "지문에 생선 이야기는 없어요. 포도·자두·주스·가지로 요리해요.", "sent": "19"}
+  ],
+
+  "fill_bank": ["aprons", "pot", "flowers", "juice"],
+  "fill": [
+    {"en": "My brother and I put on our ___.", "a": "aprons",  "ko": "형과 저는 앞치마를 둘러요."},
+    {"en": "My brother gets a large ___.",     "a": "pot",     "ko": "형이 큰 냄비를 가져와요."},
+    {"en": "I set fresh ___ on the table.",    "a": "flowers", "ko": "저는 식탁에 싱싱한 꽃을 놓아요."}
+  ],
+
+  "trace": [
+    {"en": "My brother and I pour in a little juice.", "ko": "형과 저는 주스를 조금 부어요."},
+    {"en": "The sauce is purple.", "ko": "소스는 보라색이에요."}
+  ],
+
+  "notes": {
+    "phonics": "<b>h_t · p_t · g_t</b>이 나란히 나옵니다. 모양이 비슷하니 <b>뜻을 먼저 읽고</b> 모음을 고르게 해 주세요 — 모자(hat)·냄비(pot)·가져오다(get). 헷갈리는 게 당연한 문항입니다.",
+    "scan": "이 지문은 <b>'무엇이 보라색인가'가 계속 반복</b>됩니다. 그래서 색이 아니라 '무엇을' 찾는 문제로 냈어요.",
+    "tf": "2번은 지문을 <b>거꾸로</b> 뒤집은 문장입니다 — 삼촌이 아니라 우리가 말했고, 넣으라가 아니라 넣지 말라였지요. 4번은 지문에 없는 내용이에요.",
+    "trace": "대문자로 시작했는지, 마침표를 찍었는지만 봐 주세요."
+  }
+}

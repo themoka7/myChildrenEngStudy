@@ -18,16 +18,16 @@
       "units": [
         {"n": 5, "en": "Brown", "ko": "갈색", "status": "done", "date": "26.08.21", "min": 14, "ready": true},
         {"n": 6, "en": "Orange", "ko": "주황색", "status": "done", "date": "26.07.07", "min": 15, "ready": true},
-        {"n": 7, "en": "Purple", "ko": "보라색", "status": "done", "date": "26.07.08", "min": 14},
-        {"n": 8, "en": "Gray", "ko": "회색", "status": "done", "date": "26.07.09", "min": 13}
+        {"n": 7, "en": "Purple", "ko": "보라색", "status": "done", "date": "26.07.08", "min": 14, "ready": true},
+        {"n": 8, "en": "Gray", "ko": "회색", "status": "done", "date": "26.07.09", "min": 13, "ready": true}
       ]
     },
     {
       "theme": "직업",
       "units": [
-        {"n": 9, "en": "Teachers", "ko": "선생님", "status": "done", "date": "26.07.14", "min": 13},
-        {"n": 10, "en": "Doctors", "ko": "의사", "status": "done", "date": "26.07.14", "min": 13},
-        {"n": 11, "en": "Firefighters", "ko": "소방관", "status": "done", "date": "26.07.15", "min": 13},
+        {"n": 9, "en": "Teachers", "ko": "선생님", "status": "done", "date": "26.07.14", "min": 13, "ready": true},
+        {"n": 10, "en": "Doctors", "ko": "의사", "status": "done", "date": "26.07.14", "min": 13, "ready": true},
+        {"n": 11, "en": "Firefighters", "ko": "소방관", "status": "done", "date": "26.07.15", "min": 13, "ready": true},
         {"n": 12, "en": "Police Officers", "ko": "경찰관", "status": "done", "date": "26.08.18", "min": 13}
       ]
     },

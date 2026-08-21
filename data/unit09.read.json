@@ -1,0 +1,67 @@
+{
+  "title": "Teachers",
+  "eyebrow": "Unit 9 · Nonfiction · Jobs",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "teachers":   {"ipa": "ˈtiːtʃərz",   "pos": "명사",   "ko": "선생님 (teacher의 복수)"},
+    "teach":      {"ipa": "tiːtʃ",       "pos": "동사",   "ko": "가르치다"},
+    "classrooms": {"ipa": "ˈklæsruːmz",  "pos": "명사",   "ko": "교실 (classroom의 복수)"},
+    "learn":      {"ipa": "lɜːrn",       "pos": "동사",   "ko": "배우다"},
+    "kids":       {"ipa": "kɪdz",        "pos": "명사",   "ko": "아이들"},
+    "adults":     {"ipa": "əˈdʌlts",     "pos": "명사",   "ko": "어른 (adult의 복수)"},
+    "math":       {"ipa": "mæθ",         "pos": "명사",   "ko": "수학"},
+    "add":        {"ipa": "æd",          "pos": "동사",   "ko": "더하다"},
+    "art":        {"ipa": "ɑːrt",        "pos": "명사",   "ko": "미술"},
+    "paint":      {"ipa": "peɪnt",       "pos": "동사",   "ko": "그림을 그리다"},
+    "drums":      {"ipa": "drʌmz",       "pos": "명사",   "ko": "드럼 (drum의 복수)"},
+    "computers":  {"ipa": "kəmˈpjuːtərz","pos": "명사",   "ko": "컴퓨터 (computer의 복수)"},
+    "hard":       {"ipa": "hɑːrd",       "pos": "부사",   "ko": "열심히"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Teachers work in schools.", "ko": "선생님은 학교에서 일해요."},
+      {"en": "They teach in classrooms.", "ko": "교실에서 가르쳐요."},
+      {"en": "They help people learn.", "ko": "사람들이 배우도록 도와줘요."}
+    ]},
+    {"sents": [
+      {"en": "Some teach kids.", "ko": "어떤 선생님은 아이들을 가르쳐요."},
+      {"en": "Others teach adults.", "ko": "다른 선생님은 어른을 가르쳐요."}
+    ]},
+    {"sents": [
+      {"en": "Some teach reading.", "ko": "어떤 선생님은 읽기를 가르쳐요."},
+      {"en": "Sam learns to read.", "ko": "샘은 읽는 법을 배워요."}
+    ]},
+    {"sents": [
+      {"en": "Some teach math.", "ko": "어떤 선생님은 수학을 가르쳐요."},
+      {"en": "Emily learns to add.", "ko": "에밀리는 더하기를 배워요."}
+    ]},
+    {"sents": [
+      {"en": "Some teach art.", "ko": "어떤 선생님은 미술을 가르쳐요."},
+      {"en": "Kim likes to paint.", "ko": "킴은 그림 그리기를 좋아해요."}
+    ]},
+    {"sents": [
+      {"en": "Some teach music.", "ko": "어떤 선생님은 음악을 가르쳐요."},
+      {"en": "Tom plays drums.", "ko": "톰은 드럼을 연주해요."}
+    ]},
+    {"sents": [
+      {"en": "Teachers work hard.", "ko": "선생님은 열심히 일해요."},
+      {"en": "Computers help.", "ko": "컴퓨터가 도와줘요."}
+    ]},
+    {"sents": [
+      {"en": "What does your teacher do?", "ko": "여러분의 선생님은 무엇을 하시나요?"}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Wow, teachers do many things.", "ko": "와, 선생님은 정말 많은 일을 하시네요."},
+      {"en": "And teachers are so amazing.", "ko": "그리고 선생님은 정말 대단해요."},
+      {"en": "Do any of you want to be a teacher?", "ko": "여러분 중에 선생님이 되고 싶은 사람 있나요?"},
+      {"en": "Oh! I think you would make a great teacher.", "ko": "오! 여러분은 훌륭한 선생님이 될 것 같아요."},
+      {"en": "I hope you learned a lot about what teachers do today.", "ko": "오늘 선생님이 하는 일에 대해 많이 배웠으면 좋겠어요."},
+      {"en": "I'll see you next time. Good-bye for now.", "ko": "다음에 또 만나요. 이제 안녕!"}
+    ]}
+  ]
+}
