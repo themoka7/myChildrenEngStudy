@@ -1,0 +1,67 @@
+{
+  "title": "A Monster in the Park (2)",
+  "title_ko": "공원의 괴물 (2)",
+
+  "paras": [
+    ["I look around the puddle.", "That's the site of the messiest, muddiest, muckiest muddle!"],
+    ["So great is the mess!", "So large are the marks!", "I fear there must be a monster in the park!"],
+    ["Yes, a monster! That's it!", "I must find where it hides."],
+    ["I follow the tracks through the puddle, up the ladder, and to the top of the tunnel slide."],
+    ["Inside waits a monster sure to give a fright.", "A monster that is furry, fanged, and covered in spikes!", "I peer in, climb on, slide down, and... YIKES!"],
+    ["He's monstrous mass from his hat to his boots, covered in mud and muck, his clothes soaked through.", "But, under the mess of dirt and grime, I uncover — not a monster — but that silly brother of mine."]
+  ],
+
+  "match": [
+    {"en": "puddle", "ko": "물웅덩이"},
+    {"en": "fright", "ko": "깜짝 놀람"},
+    {"en": "fanged", "ko": "송곳니가 난"},
+    {"en": "grime",  "ko": "때, 검은 먼지"}
+  ],
+  "match_ko_order": ["송곳니가 난", "때, 검은 먼지", "물웅덩이", "깜짝 놀람"],
+
+  "phonics": [
+    {"q": "h_t",     "a": "a", "ko": "모자"},
+    {"q": "m_ss",    "a": "e", "ko": "엉망"},
+    {"q": "s_lly",   "a": "i", "ko": "우스꽝스러운"},
+    {"q": "t_p",     "a": "o", "ko": "맨 위"},
+    {"q": "m_ck",    "a": "u", "ko": "오물"},
+    {"q": "n_t",     "a": "o", "ko": "~아니다"}
+  ],
+
+  "scan": [
+    {"q": "화자는 무엇 주변을 둘러봤나요?",            "a": "the puddle",                    "sent": "1"},
+    {"q": "발자국을 따라 어디까지 갔나요?",            "a": "the top of the tunnel slide",   "sent": "8"},
+    {"q": "괴물은 어떤 모습이라고 했나요? (세 가지)",   "a": "furry, fanged, covered in spikes", "sent": "10"},
+    {"q": "괴물은 결국 누구였나요?",                   "a": "his brother",                   "sent": "13"}
+  ],
+
+  "tf": [
+    {"en": "The mess is very big.", "answer": "O",
+     "why": "엉망이 정말 심하고 자국도 커요.", "sent": "3·4"},
+    {"en": "I must find where it hides.", "answer": "O",
+     "why": "어디에 숨어 있는지 찾아야 해요.", "sent": "7"},
+    {"en": "Inside the slide waits a friendly puppy.", "gloss": "friendly 친절한 / puppy 강아지",
+     "answer": "X", "why": "안에는 깜짝 놀랄 만한 괴물이 기다리고 있었어요.", "sent": "9"},
+    {"en": "His clothes are clean and dry.", "gloss": "clean 깨끗한 / dry 마른", "answer": "X",
+     "why": "진흙과 오물로 덮이고 옷은 흠뻑 젖었어요.", "sent": "12"}
+  ],
+
+  "fill_bank": ["monster", "YIKES", "muddle", "puddle"],
+  "fill": [
+    {"en": "That's the site of the messiest, muddiest, muckiest ___!", "a": "muddle",  "ko": "여기가 가장 엉망이고 진흙투성이인 난장판이에요!"},
+    {"en": "I fear there must be a ___ in the park!",                 "a": "monster", "ko": "공원에 괴물이 있는 게 틀림없어요!"},
+    {"en": "I peer in, climb on, slide down, and... ___!",            "a": "YIKES",   "ko": "들여다보고, 올라타고, 미끄러져 내려가고… 으악!"}
+  ],
+
+  "trace": [
+    {"en": "I look around the puddle.", "ko": "물웅덩이 주변을 둘러봐요."},
+    {"en": "Yes, a monster! That's it!", "ko": "맞아요, 괴물이에요! 바로 그거예요!"}
+  ],
+
+  "notes": {
+    "phonics": "<b>t_p과 n_t이 둘 다 o</b>입니다. m_ss·m_ck은 첫소리가 같으니 <b>가운데 모음에만 집중</b>하게 해 주세요. s_lly는 silly·sally가 다 되니 뜻(우스꽝스러운)을 보게 하세요.",
+    "scan": "이 유닛은 <b>이야기의 뒷부분</b>입니다 (앞부분은 Unit 27). 4번이 <b>이 이야기의 반전</b>이에요 — 괴물이 아니라 동생이었지요. Unit 26과 같은 반전이라, 맞히면 \"버스 이야기랑 똑같네?\" 하고 이어 주시면 좋습니다.",
+    "tf": "3번은 <b>무서운 괴물을 귀여운 강아지로</b> 바꿔 놓았고, 4번은 <b>진흙투성이를 깨끗하다고</b> 뒤집었습니다. 둘 다 한 낱말만 확인하면 걸립니다.",
+    "trace": "느낌표를 빠뜨리지 않았는지 봐 주세요."
+  }
+}

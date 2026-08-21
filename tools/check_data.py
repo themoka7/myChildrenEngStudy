@@ -64,6 +64,12 @@ def main():
         if not any('gloss' in t for t in d['tf']):
             warnings.append(f"{tag} O/X 에 지문 밖 단어 뜻풀이(gloss)가 하나도 없음")
 
+        # 지도 노트에는 <b> 를 쓸 수 있는데, 짝이 안 맞으면 정답지에 태그가
+        # 그대로 찍힌다. 실제로 한 번 그랬다.
+        for k, v in (d.get('notes') or {}).items():
+            if v.count('<b>') != v.count('</b>') or re.search(r'<[^>]*<|</b\s+>', v):
+                errors.append(f"{tag} notes.{k} 의 HTML 태그가 깨짐")
+
         ko = [m['ko'] for m in d['match']]
         if sorted(ko) != sorted(d['match_ko_order']):
             errors.append(f"{tag} match_ko_order 가 match 와 다름")

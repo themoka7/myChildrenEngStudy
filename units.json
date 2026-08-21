@@ -61,11 +61,11 @@
     {
       "theme": "이야기",
       "units": [
-        {"n": 25, "en": "A Monster on the Bus (1)", "ko": "버스에 탄 괴물 (1)", "status": "todo", "min": 14},
-        {"n": 26, "en": "A Monster on the Bus (2)", "ko": "버스에 탄 괴물 (2)", "status": "todo", "min": 15},
-        {"n": 27, "en": "A Monster in the Park (1)", "ko": "공원의 괴물 (1)", "status": "todo", "min": 15},
-        {"n": 28, "en": "A Monster in the Park (2)", "ko": "공원의 괴물 (2)", "status": "todo", "min": 14},
-        {"n": 29, "en": "The Town Mouse and the Country Mouse", "ko": "도시 쥐와 시골 쥐", "status": "todo", "min": 14},
+        {"n": 25, "en": "A Monster on the Bus (1)", "ko": "버스에 탄 괴물 (1)", "status": "todo", "min": 14, "ready": true},
+        {"n": 26, "en": "A Monster on the Bus (2)", "ko": "버스에 탄 괴물 (2)", "status": "todo", "min": 15, "ready": true},
+        {"n": 27, "en": "A Monster in the Park (1)", "ko": "공원의 괴물 (1)", "status": "todo", "min": 15, "ready": true},
+        {"n": 28, "en": "A Monster in the Park (2)", "ko": "공원의 괴물 (2)", "status": "todo", "min": 14, "ready": true},
+        {"n": 29, "en": "The Town Mouse and the Country Mouse", "ko": "도시 쥐와 시골 쥐", "status": "todo", "min": 14, "ready": true},
         {"n": 30, "en": "The Lion and the Mouse", "ko": "사자와 쥐", "status": "todo", "min": 15}
       ]
     },

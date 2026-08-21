@@ -1,0 +1,58 @@
+{
+  "title": "A Monster on the Bus (1)",
+  "eyebrow": "Unit 25 · Story · Amanda Huneke",
+
+  "dict": {
+    "zooming":  {"ipa": "ˈzuːmɪŋ",   "pos": "동사",   "ko": "쌩 하고 달리다"},
+    "whizzing": {"ipa": "ˈwɪzɪŋ",    "pos": "동사",   "ko": "휙 지나가다"},
+    "scurry":   {"ipa": "ˈskɜːri",   "pos": "동사",   "ko": "허둥지둥 달리다"},
+    "rush":     {"ipa": "rʌʃ",       "pos": "동사",   "ko": "서둘러 가다"},
+    "aisle":    {"ipa": "aɪl",       "pos": "명사",   "ko": "(버스·극장의) 통로"},
+    "steps":    {"ipa": "steps",     "pos": "명사",   "ko": "계단"},
+    "dash":     {"ipa": "dæʃ",       "pos": "동사",   "ko": "뛰어가다"},
+    "fuss":     {"ipa": "fʌs",       "pos": "명사",   "ko": "소란, 난리"},
+    "huge":     {"ipa": "hjuːdʒ",    "pos": "형용사", "ko": "거대한"},
+    "noisy":    {"ipa": "ˈnɔɪzi",    "pos": "형용사", "ko": "시끄러운"},
+    "hairy":    {"ipa": "ˈheri",     "pos": "형용사", "ko": "털이 많은"},
+    "noticed":  {"ipa": "ˈnoʊtɪst",  "pos": "동사",   "ko": "알아챘다 (notice)"},
+    "scary":    {"ipa": "ˈskeri",    "pos": "형용사", "ko": "무서운"},
+    "furry":    {"ipa": "ˈfɜːri",    "pos": "형용사", "ko": "털로 덮인"},
+    "plain":    {"ipa": "pleɪn",     "pos": "형용사", "ko": "평범한, 눈에 안 띄는"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Kids are zooming! Zipping! Whizzing past!", "ko": "아이들이 쌩! 휙! 스쳐 지나가요!"},
+      {"en": "Feet scurry, hurry, rush by fast!", "ko": "발들이 허둥지둥, 서둘러, 빠르게 지나가요!"}
+    ]},
+    {"sents": [
+      {"en": "In the aisle, down the steps.", "ko": "통로를 지나, 계단을 내려가요."},
+      {"en": "Kids dash past one by one.", "ko": "아이들이 하나씩 뛰어 지나가요."},
+      {"en": "I'm the last off the bus, and they're still on the run!", "ko": "저는 버스에서 마지막으로 내렸는데, 아이들은 아직도 달리고 있어요!"}
+    ]},
+    {"sents": [
+      {"en": "Why are they running? What's all the fuss?", "ko": "왜 달리는 걸까요? 무슨 소란일까요?"},
+      {"en": "You'd think there was a monster on the bus!", "ko": "버스에 괴물이 있었나 싶을 정도예요!"}
+    ]},
+    {"sents": [
+      {"en": "A monster?", "ko": "괴물이라고요?"},
+      {"en": "No. That just can't be so.", "ko": "아니에요. 그럴 리가 없어요."},
+      {"en": "If a monster was on the bus, I would know.", "ko": "버스에 괴물이 있었다면 제가 알았을 거예요."}
+    ]},
+    {"sents": [
+      {"en": "A monster is huge and noisy and hairy.", "ko": "괴물은 거대하고 시끄럽고 털이 많아요."},
+      {"en": "I would have noticed something so scary.", "ko": "그렇게 무서운 걸 제가 못 봤을 리 없어요."}
+    ]},
+    {"sents": [
+      {"en": "But what if the monster wasn't so loud?", "ko": "그런데 만약 괴물이 그렇게 시끄럽지 않았다면요?"},
+      {"en": "What if it wasn't so furry?", "ko": "털이 그렇게 많지 않았다면요?"},
+      {"en": "Wasn't so tall?", "ko": "그렇게 크지 않았다면요?"}
+    ]},
+    {"sents": [
+      {"en": "Instead, was quiet, plain, and small.", "ko": "오히려 조용하고 평범하고 작았다면요."},
+      {"en": "Then would I have noticed it at all?", "ko": "그럼 제가 알아챘을까요?"}
+    ]}
+  ],
+
+  "closing": []
+}

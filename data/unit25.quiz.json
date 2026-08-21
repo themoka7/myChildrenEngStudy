@@ -1,0 +1,68 @@
+{
+  "title": "A Monster on the Bus (1)",
+  "title_ko": "버스에 탄 괴물 (1)",
+
+  "paras": [
+    ["Kids are zooming! Zipping! Whizzing past!", "Feet scurry, hurry, rush by fast!"],
+    ["In the aisle, down the steps.", "Kids dash past one by one.", "I'm the last off the bus, and they're still on the run!"],
+    ["Why are they running? What's all the fuss?", "You'd think there was a monster on the bus!"],
+    ["A monster?", "No. That just can't be so.", "If a monster was on the bus, I would know."],
+    ["A monster is huge and noisy and hairy.", "I would have noticed something so scary."],
+    ["But what if the monster wasn't so loud?", "What if it wasn't so furry?", "Wasn't so tall?"],
+    ["Instead, was quiet, plain, and small.", "Then would I have noticed it at all?"]
+  ],
+
+  "match": [
+    {"en": "scurry", "ko": "허둥지둥 달리다"},
+    {"en": "aisle",  "ko": "통로"},
+    {"en": "fuss",   "ko": "소란"},
+    {"en": "hairy",  "ko": "털이 많은"}
+  ],
+  "match_ko_order": ["통로", "털이 많은", "허둥지둥 달리다", "소란"],
+
+  "phonics": [
+    {"q": "k_ds",      "a": "i", "ko": "아이들"},
+    {"q": "st_ps",     "a": "e", "ko": "계단"},
+    {"q": "r_sh",      "a": "u", "ko": "서둘러 가다"},
+    {"q": "d_sh",      "a": "a", "ko": "뛰어가다"},
+    {"q": "m_nster",   "a": "o", "ko": "괴물"},
+    {"q": "f_ss",      "a": "u", "ko": "소란"}
+  ],
+
+  "scan": [
+    {"q": "아이들은 어디를 지나 내려가나요? (두 곳)", "a": "the aisle / the steps",   "sent": "3"},
+    {"q": "화자는 버스에서 몇 번째로 내렸나요?",      "a": "the last",              "sent": "5"},
+    {"q": "괴물은 어떤 모습이라고 했나요? (세 가지)", "a": "huge, noisy, hairy",    "sent": "11"},
+    {"q": "조용한 괴물은 어떤 모습일까요? (세 가지)", "a": "quiet, plain, small",   "sent": "16"}
+  ],
+
+  "tf": [
+    {"en": "Kids run past fast.", "answer": "O",
+     "why": "아이들이 빠르게 지나가요.", "sent": "1·2"},
+    {"en": "I am the last off the bus.", "answer": "O",
+     "why": "화자가 마지막으로 내렸어요.", "sent": "5"},
+    {"en": "Kids walk slowly off the bus.", "gloss": "slowly 천천히", "answer": "X",
+     "why": "반대예요. 아이들은 뛰어 내려갔어요.", "sent": "4"},
+    {"en": "There really was a monster on the bus.", "gloss": "really 정말로", "answer": "X",
+     "why": "화자는 \"그럴 리 없다\"고 했어요.", "sent": "9"}
+  ],
+
+  "fill_bank": ["scary", "furry", "tall", "loud"],
+  "fill": [
+    {"en": "I would have noticed something so ___.", "a": "scary", "ko": "그렇게 무서운 걸 제가 못 봤을 리 없어요."},
+    {"en": "What if it wasn't so ___?",              "a": "furry", "ko": "털이 그렇게 많지 않았다면요?"},
+    {"en": "Wasn't so ___?",                         "a": "tall",  "ko": "그렇게 크지 않았다면요?"}
+  ],
+
+  "trace": [
+    {"en": "Kids dash past one by one.", "ko": "아이들이 하나씩 뛰어 지나가요."},
+    {"en": "In the aisle, down the steps.", "ko": "통로를 지나, 계단을 내려가요."}
+  ],
+
+  "notes": {
+    "phonics": "<b>m_nster</b>는 이 이야기의 열쇠 낱말입니다. <b>r_sh와 f_ss가 둘 다 u</b>라 나란히 놓으면 오히려 쉬워요. d_sh는 dash·dish가 다 단어이니 옆의 한글 뜻을 보게 하세요.",
+    "scan": "이 유닛은 <b>답이 세 낱말짜리인 문항이 둘</b>(3·4번) 있습니다. 하나만 찾아도 칭찬해 주시고, 같은 문장에서 나머지를 더 찾게 해 보세요.",
+    "tf": "이 지문은 <b>지금까지와 성격이 다릅니다</b> — 사실을 알려 주는 글이 아니라 화자가 혼자 상상하며 되묻는 이야기예요. 그래서 4번처럼 <b>화자가 부정한 내용</b>을 O로 착각하기 쉽습니다. \"그런 일이 정말 있었어?\"라고 되물어 주세요.",
+    "trace": "운문이라 <b>쉼표가 많습니다</b>. 쉼표 자리를 빠뜨리지 않았는지만 함께 봐 주세요."
+  }
+}

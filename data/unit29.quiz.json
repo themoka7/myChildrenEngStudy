@@ -1,0 +1,67 @@
+{
+  "title": "The Town Mouse and the Country Mouse",
+  "title_ko": "도시 쥐와 시골 쥐",
+
+  "paras": [
+    ["One day, Town Mouse went to visit his cousin.", "Country Mouse welcomed Town Mouse into his home."],
+    ["'Your home is small,' Town Mouse said.", "'But it's warm and peaceful,' Country Mouse said."],
+    ["Country Mouse served Town Mouse dinner.", "'Everything is much better in town,' Town Mouse said.", "'Come with me and I'll show you how to live,' Town Mouse said."],
+    ["'Your home is very large,' Country Mouse said.", "'Are you hungry, cousin?' Town Mouse asked.", "'Yes, I am,' said Country Mouse.", "'This is what we eat in town,' Town Mouse said."],
+    ["Suddenly, the cousins heard barking.", "They had to run and hide."],
+    ["Once the dogs left, Country Mouse said good-bye to Town Mouse.", "'Better beans and bacon in peace than cakes in fear,' he said."],
+    ["The moral of the story is: Better a little in safety, than much surrounded by danger."]
+  ],
+
+  "match": [
+    {"en": "cousin",   "ko": "사촌"},
+    {"en": "peaceful", "ko": "평화로운"},
+    {"en": "moral",    "ko": "교훈"},
+    {"en": "danger",   "ko": "위험"}
+  ],
+  "match_ko_order": ["교훈", "위험", "사촌", "평화로운"],
+
+  "phonics": [
+    {"q": "h_d",      "a": "a", "ko": "~해야 했다"},
+    {"q": "w_nt",     "a": "e", "ko": "갔다"},
+    {"q": "d_nner",   "a": "i", "ko": "저녁"},
+    {"q": "d_gs",     "a": "o", "ko": "개들"},
+    {"q": "r_n",      "a": "u", "ko": "달리다"},
+    {"q": "l_ft",     "a": "e", "ko": "떠났다"}
+  ],
+
+  "scan": [
+    {"q": "도시 쥐는 누구를 찾아갔나요?",                  "a": "his cousin",        "sent": "1"},
+    {"q": "시골 쥐의 집은 어떻다고 했나요? (두 낱말)",      "a": "warm / peaceful",   "sent": "4"},
+    {"q": "시골 쥐는 도시 쥐에게 무엇을 차려 주었나요?",    "a": "dinner",            "sent": "5"},
+    {"q": "개들이 떠난 뒤 시골 쥐는 무엇을 했나요?",        "a": "said good-bye",     "sent": "14"}
+  ],
+
+  "tf": [
+    {"en": "Country Mouse welcomed Town Mouse into his home.", "answer": "O",
+     "why": "시골 쥐가 도시 쥐를 반갑게 맞았어요.", "sent": "2"},
+    {"en": "Country Mouse said Town Mouse's home was very large.", "answer": "O",
+     "why": "\"네 집은 정말 크구나\"라고 했어요.", "sent": "8"},
+    {"en": "The cousins heard a cat.", "gloss": "cat 고양이", "answer": "X",
+     "why": "개 짖는 소리를 듣고 숨었어요. 고양이가 아니에요.", "sent": "12·13"},
+    {"en": "Country Mouse thought the town was better.", "gloss": "thought 생각했다", "answer": "X",
+     "why": "시골 쥐는 두려움 속의 케이크보다 평화로운 콩과 베이컨이 좋다고 했어요.", "sent": "15"}
+  ],
+
+  "fill_bank": ["small", "hungry", "moral", "large"],
+  "fill": [
+    {"en": "'Your home is ___,' Town Mouse said.",        "a": "small",  "ko": "\"네 집은 작구나.\" 도시 쥐가 말했어요."},
+    {"en": "'Are you ___, cousin?' Town Mouse asked.",    "a": "hungry", "ko": "\"사촌, 배고프니?\" 도시 쥐가 물었어요."}
+  ],
+
+  "trace": [
+    {"en": "Suddenly, the cousins heard barking.", "ko": "갑자기 사촌들은 개 짖는 소리를 들었어요."},
+    {"en": "They had to run and hide.", "ko": "둘은 달려가 숨어야 했어요."}
+  ],
+
+  "notes": {
+    "phonics": "<b>w_nt과 l_ft가 둘 다 e</b>입니다. h_d는 had·hid·hod이 다 되고 r_n도 ran·run이 되니, 옆의 한글 뜻을 꼭 보게 하세요.",
+    "scan": "이 이야기는 <b>말한 사람이 누구인지 헷갈리기 쉽습니다</b> — 도시 쥐와 시골 쥐가 번갈아 말하니까요. 답을 찾을 때 <b>따옴표 뒤의 이름</b>을 함께 짚어 주세요.",
+    "tf": "4번이 이 이야기의 <b>교훈 그 자체</b>입니다. 시골 쥐는 끝까지 도시를 부러워하지 않았어요. 아이가 O로 골랐다면 마지막 두 문장을 다시 읽게 해 주세요 — 이 우화에서 제일 중요한 대목입니다.",
+    "trace": "따옴표가 없는 두 문장을 골랐습니다. 대문자와 마침표, 그리고 <b>Suddenly 뒤의 쉼표</b>만 봐 주세요."
+  }
+}

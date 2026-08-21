@@ -1,0 +1,66 @@
+{
+  "title": "A Monster on the Bus (2)",
+  "eyebrow": "Unit 26 · Story · 앞부분은 Unit 25",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "escaped":   {"ipa": "ɪˈskeɪpt",   "pos": "동사",   "ko": "도망쳤다 (escape)"},
+    "scare":     {"ipa": "sker",       "pos": "동사",   "ko": "놀래다, 겁주다"},
+    "except":    {"ipa": "ɪkˈsept",    "pos": "전치사", "ko": "~를 빼고"},
+    "tiptoe":    {"ipa": "ˈtɪptoʊ",    "pos": "동사",   "ko": "살금살금 걷다"},
+    "watchful":  {"ipa": "ˈwɑːtʃfəl",  "pos": "형용사", "ko": "눈을 크게 뜨고 살피는"},
+    "sneak":     {"ipa": "sniːk",      "pos": "동사",   "ko": "몰래 다가가다"},
+    "knob":      {"ipa": "nɑːb",       "pos": "명사",   "ko": "문손잡이"},
+    "bush":      {"ipa": "bʊʃ",        "pos": "명사",   "ko": "덤불"},
+    "furless":   {"ipa": "ˈfɜːrləs",   "pos": "형용사", "ko": "털이 없는"},
+    "closer":    {"ipa": "ˈkloʊsər",   "pos": "부사",   "ko": "더 가까이"},
+    "mask":      {"ipa": "mæsk",       "pos": "명사",   "ko": "가면"},
+    "peek":      {"ipa": "piːk",       "pos": "명사",   "ko": "살짝 들여다보기"},
+    "discover":  {"ipa": "dɪˈskʌvər",  "pos": "동사",   "ko": "발견하다"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "But something quiet and small doesn't seem too scary.", "ko": "그런데 조용하고 작은 건 그렇게 무섭지 않아 보여요."},
+      {"en": "Unless, oh no!", "ko": "그런데 혹시… 어머!"},
+      {"en": "This is no good at all!", "ko": "이건 정말 큰일이에요!"}
+    ]},
+    {"sents": [
+      {"en": "If the monster escaped, where is it now?", "ko": "괴물이 도망쳤다면, 지금 어디 있을까요?"},
+      {"en": "Did the monster on the bus escape on my street?", "ko": "버스에 있던 괴물이 우리 동네로 도망친 걸까요?"},
+      {"en": "Did it scare all the kids home?", "ko": "그래서 아이들을 모두 집으로 놀래 보낸 걸까요?"},
+      {"en": "Everyone, except me?", "ko": "저만 빼고 모두를요?"}
+    ]},
+    {"sents": [
+      {"en": "I tiptoe to my house, keeping a watchful eye for any monster trying to sneak by.", "ko": "저는 살금살금 집으로 가면서, 몰래 다가오는 괴물이 없는지 눈을 크게 뜨고 살펴요."},
+      {"en": "I reach my front door, turn the knob, and push.", "ko": "현관에 도착해서 손잡이를 돌리고 밀어요."}
+    ]},
+    {"sents": [
+      {"en": "Rawr!", "ko": "어흥!"},
+      {"en": "Ahhhh!!!!", "ko": "아아악!!!!"},
+      {"en": "Just as the monster jumps out from a bush!", "ko": "바로 그때 괴물이 덤불에서 튀어나와요!"}
+    ]},
+    {"sents": [
+      {"en": "I was right about this monster.", "ko": "이 괴물에 대해 제 생각이 맞았어요."},
+      {"en": "He is furless and small.", "ko": "털이 없고 작아요."},
+      {"en": "But I look a little closer and find he's no monster at all.", "ko": "그런데 조금 더 가까이 보니, 괴물이 전혀 아니었어요."}
+    ]},
+    {"sents": [
+      {"en": "I lift up the mask... and take a peek under.", "ko": "가면을 들어 올리고… 아래를 살짝 들여다봐요."},
+      {"en": "And just who do I discover?", "ko": "그런데 누구를 발견했을까요?"}
+    ]},
+    {"sents": [
+      {"en": "I've found that monsters don't ride the bus home from school.", "ko": "괴물은 학교에서 버스를 타고 집에 오지 않는다는 걸 알았어요."},
+      {"en": "But most of the time, little brothers do.", "ko": "하지만 남동생은 대체로 그렇게 오지요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Oh! What would it be like if there are monsters around you?", "ko": "오! 여러분 주변에 괴물이 있다면 어떨까요?"},
+      {"en": "Would you be scared? Or would you become friends with the monsters?", "ko": "무서울까요? 아니면 괴물과 친구가 될까요?"},
+      {"en": "I think I will be friends with the monster.", "ko": "저는 괴물과 친구가 될 것 같아요."},
+      {"en": "If I make monster friends, I'll introduce you. I promise.", "ko": "괴물 친구를 만들면 소개해 줄게요. 약속해요."}
+    ]}
+  ]
+}

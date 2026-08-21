@@ -1,0 +1,68 @@
+{
+  "title": "A Monster on the Bus (2)",
+  "title_ko": "버스에 탄 괴물 (2)",
+
+  "paras": [
+    ["But something quiet and small doesn't seem too scary.", "Unless, oh no!", "This is no good at all!"],
+    ["If the monster escaped, where is it now?", "Did the monster on the bus escape on my street?", "Did it scare all the kids home?", "Everyone, except me?"],
+    ["I tiptoe to my house, keeping a watchful eye for any monster trying to sneak by.", "I reach my front door, turn the knob, and push."],
+    ["Rawr!", "Ahhhh!!!!", "Just as the monster jumps out from a bush!"],
+    ["I was right about this monster.", "He is furless and small.", "But I look a little closer and find he's no monster at all."],
+    ["I lift up the mask... and take a peek under.", "And just who do I discover?"],
+    ["I've found that monsters don't ride the bus home from school.", "But most of the time, little brothers do."]
+  ],
+
+  "match": [
+    {"en": "tiptoe",  "ko": "살금살금 걷다"},
+    {"en": "sneak",   "ko": "몰래 다가가다"},
+    {"en": "knob",    "ko": "문손잡이"},
+    {"en": "furless", "ko": "털이 없는"}
+  ],
+  "match_ko_order": ["몰래 다가가다", "털이 없는", "살금살금 걷다", "문손잡이"],
+
+  "phonics": [
+    {"q": "kn_b",     "a": "o", "ko": "문손잡이"},
+    {"q": "m_sk",     "a": "a", "ko": "가면"},
+    {"q": "j_mps",    "a": "u", "ko": "뛰어오르다"},
+    {"q": "k_ds",     "a": "i", "ko": "아이들"},
+    {"q": "l_ttle",   "a": "i", "ko": "작은"},
+    {"q": "_xcept",   "a": "e", "ko": "~를 빼고"}
+  ],
+
+  "scan": [
+    {"q": "화자는 집까지 어떻게 걸어갔나요?",        "a": "tiptoe",       "sent": "8"},
+    {"q": "문을 열려고 무엇을 돌렸나요?",            "a": "the knob",     "sent": "9"},
+    {"q": "괴물은 어디에서 튀어나왔나요?",            "a": "from a bush",  "sent": "12"},
+    {"q": "버스를 타고 집에 오는 건 누구인가요?",      "a": "little brothers", "sent": "19"}
+  ],
+
+  "tf": [
+    {"en": "He is furless and small.", "answer": "O",
+     "why": "털이 없고 작아요.", "sent": "14"},
+    {"en": "He is really a monster.", "gloss": "really 정말로", "answer": "X",
+     "why": "가까이 보니 괴물이 전혀 아니었어요.", "sent": "15"},
+    {"en": "I take a peek under the mask.", "answer": "O",
+     "why": "가면을 들어 올리고 아래를 들여다봤어요.", "sent": "16"},
+    {"en": "Monsters ride the bus home from school.", "answer": "X",
+     "why": "괴물은 버스를 타고 집에 오지 않아요.", "sent": "18"}
+  ],
+
+  "fill_bank": ["escaped", "scare", "discover", "sneak"],
+  "fill": [
+    {"en": "If the monster ___, where is it now?", "a": "escaped",  "ko": "괴물이 도망쳤다면, 지금 어디 있을까요?"},
+    {"en": "Did it ___ all the kids home?",        "a": "scare",    "ko": "아이들을 모두 집으로 놀래 보낸 걸까요?"},
+    {"en": "And just who do I ___?",               "a": "discover", "ko": "그런데 누구를 발견했을까요?"}
+  ],
+
+  "trace": [
+    {"en": "I was right about this monster.", "ko": "이 괴물에 대해 제 생각이 맞았어요."},
+    {"en": "This is no good at all!", "ko": "이건 정말 큰일이에요!"}
+  ],
+
+  "notes": {
+    "phonics": "<b>kn_b은 k가 소리 나지 않습니다</b> — /n/ /ɑː/ /b/ 로만 읽어요. 이 지문에서 가장 어려운 문항이니 먼저 소리를 들려주세요. <b>_xcept는 맨 앞 글자</b>를 채웁니다.",
+    "scan": "이 유닛은 <b>이야기의 뒷부분</b>입니다 (앞부분은 Unit 25). 4번은 <b>이 이야기의 반전</b>이에요 — 괴물이 아니라 남동생이었지요. 답을 맞히면 \"그래서 괴물이 누구였어?\" 하고 한 번 더 물어봐 주세요.",
+    "tf": "3번과 5번은 <b>둘 다 이야기를 거꾸로</b> 뒤집었습니다. 이 이야기는 마지막에 뒤집히는 구조라, 끝까지 읽지 않으면 3번을 O로 고르기 쉽습니다 — 틀렸다면 마지막 두 문장을 다시 읽게 해 주세요.",
+    "trace": "느낌표를 빠뜨리지 않았는지 봐 주세요."
+  }
+}

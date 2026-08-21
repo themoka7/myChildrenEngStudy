@@ -1,0 +1,55 @@
+{
+  "title": "A Monster in the Park (1)",
+  "eyebrow": "Unit 27 · Story · Amanda Huneke",
+
+  "dict": {
+    "splash":    {"ipa": "splæʃ",       "pos": "명사",   "ko": "첨벙 소리"},
+    "splatter":  {"ipa": "ˈsplætər",    "pos": "명사",   "ko": "철퍼덕 튀는 소리"},
+    "scattered": {"ipa": "ˈskætərd",    "pos": "동사",   "ko": "흩어졌다 (scatter)"},
+    "giggle":    {"ipa": "ˈɡɪɡəl",      "pos": "명사",   "ko": "킥킥 웃음"},
+    "chatter":   {"ipa": "ˈtʃætər",     "pos": "명사",   "ko": "재잘거림"},
+    "clatter":   {"ipa": "ˈklætər",     "pos": "명사",   "ko": "덜그럭거리는 소리"},
+    "odd":       {"ipa": "ɑːd",         "pos": "형용사", "ko": "희한한, 이상한"},
+    "mystery":   {"ipa": "ˈmɪstəri",    "pos": "명사",   "ko": "수수께끼"},
+    "swings":    {"ipa": "swɪŋz",       "pos": "명사",   "ko": "그네"},
+    "bare":      {"ipa": "ber",         "pos": "형용사", "ko": "텅 빈, 아무것도 없는"},
+    "spy":       {"ipa": "spaɪ",        "pos": "동사",   "ko": "발견하다, 몰래 보다"},
+    "clue":      {"ipa": "kluː",        "pos": "명사",   "ko": "단서"},
+    "muddy":     {"ipa": "ˈmʌdi",       "pos": "형용사", "ko": "진흙투성이의"},
+    "tracks":    {"ipa": "træks",       "pos": "명사",   "ko": "발자국, 흔적"},
+    "messiest":  {"ipa": "ˈmesiɪst",    "pos": "형용사", "ko": "가장 엉망인"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "I heard a splash! A splatter!", "ko": "첨벙 소리가 들렸어요! 철퍼덕 소리도요!"},
+      {"en": "Footsteps scurried and scattered.", "ko": "발소리가 허둥지둥 흩어졌어요."},
+      {"en": "I heard a soft giggle, quiet chatter.", "ko": "조그맣게 킥킥 웃는 소리, 조용히 재잘거리는 소리가 들렸어요."}
+    ]},
+    {"sents": [
+      {"en": "But, who's behind this playground clatter?", "ko": "그런데 이 놀이터의 덜그럭 소리는 누가 낸 걸까요?"},
+      {"en": "It's strange. It's odd. It's a mystery — these sounds.", "ko": "이상해요. 희한해요. 이 소리들은 수수께끼예요."},
+      {"en": "Because whoever made them is nowhere to be found.", "ko": "소리를 낸 사람이 어디에도 보이지 않으니까요."}
+    ]},
+    {"sents": [
+      {"en": "The swings are empty. The jungle gym is bare.", "ko": "그네는 비어 있고, 정글짐에도 아무도 없어요."},
+      {"en": "I search the monkey bars and merry-go-round.", "ko": "정글 사다리와 회전 놀이기구도 찾아봐요."},
+      {"en": "I find no one there.", "ko": "거기에도 아무도 없어요."}
+    ]},
+    {"sents": [
+      {"en": "I climb to the top of the rock wall to get a better view.", "ko": "더 잘 보려고 암벽 놀이대 맨 위로 올라가요."},
+      {"en": "I look high, I look low.", "ko": "위도 보고, 아래도 봐요."},
+      {"en": "Then I spy it. A clue!", "ko": "그때 그것을 발견했어요. 단서예요!"}
+    ]},
+    {"sents": [
+      {"en": "Muddy tracks trail down the soccer field and over the tennis court.", "ko": "진흙 발자국이 축구장을 따라, 테니스 코트를 지나 이어져요."},
+      {"en": "They're stamped down the sidewalk and circle around the park.", "ko": "발자국은 인도에 찍혀 공원을 한 바퀴 돌아요."}
+    ]},
+    {"sents": [
+      {"en": "I saw tracks everywhere from up there on the wall.", "ko": "벽 위에서 보니 발자국이 온 데 있었어요."},
+      {"en": "But, there's one place that looked the messiest of all.", "ko": "그런데 한 곳이 가장 엉망으로 보였어요."}
+    ]}
+  ],
+
+  "closing": []
+}

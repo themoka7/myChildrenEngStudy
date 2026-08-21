@@ -1,0 +1,65 @@
+{
+  "title": "The Town Mouse and the Country Mouse",
+  "eyebrow": "Unit 29 · Story · Aesop's Fable",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "visit":      {"ipa": "ˈvɪzɪt",       "pos": "동사",   "ko": "찾아가다, 방문하다"},
+    "cousin":     {"ipa": "ˈkʌzən",       "pos": "명사",   "ko": "사촌"},
+    "welcomed":   {"ipa": "ˈwelkəmd",     "pos": "동사",   "ko": "반갑게 맞았다 (welcome)"},
+    "peaceful":   {"ipa": "ˈpiːsfəl",     "pos": "형용사", "ko": "평화로운"},
+    "served":     {"ipa": "sɜːrvd",       "pos": "동사",   "ko": "(음식을) 차려 주었다 (serve)"},
+    "hungry":     {"ipa": "ˈhʌŋɡri",      "pos": "형용사", "ko": "배고픈"},
+    "suddenly":   {"ipa": "ˈsʌdənli",     "pos": "부사",   "ko": "갑자기"},
+    "barking":    {"ipa": "ˈbɑːrkɪŋ",     "pos": "명사",   "ko": "개 짖는 소리"},
+    "hide":       {"ipa": "haɪd",         "pos": "동사",   "ko": "숨다"},
+    "bacon":      {"ipa": "ˈbeɪkən",      "pos": "명사",   "ko": "베이컨"},
+    "peace":      {"ipa": "piːs",         "pos": "명사",   "ko": "평화"},
+    "moral":      {"ipa": "ˈmɔːrəl",      "pos": "명사",   "ko": "(이야기의) 교훈"},
+    "safety":     {"ipa": "ˈseɪfti",      "pos": "명사",   "ko": "안전"},
+    "surrounded": {"ipa": "səˈraʊndɪd",   "pos": "동사",   "ko": "둘러싸인 (surround)"},
+    "danger":     {"ipa": "ˈdeɪndʒər",    "pos": "명사",   "ko": "위험"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "One day, Town Mouse went to visit his cousin.", "ko": "어느 날, 도시 쥐가 사촌을 찾아갔어요."},
+      {"en": "Country Mouse welcomed Town Mouse into his home.", "ko": "시골 쥐는 도시 쥐를 집으로 반갑게 맞았어요."}
+    ]},
+    {"sents": [
+      {"en": "'Your home is small,' Town Mouse said.", "ko": "\"네 집은 작구나.\" 도시 쥐가 말했어요."},
+      {"en": "'But it's warm and peaceful,' Country Mouse said.", "ko": "\"하지만 따뜻하고 평화로워.\" 시골 쥐가 말했어요."}
+    ]},
+    {"sents": [
+      {"en": "Country Mouse served Town Mouse dinner.", "ko": "시골 쥐는 도시 쥐에게 저녁을 차려 주었어요."},
+      {"en": "'Everything is much better in town,' Town Mouse said.", "ko": "\"도시가 모든 게 훨씬 좋아.\" 도시 쥐가 말했어요."},
+      {"en": "'Come with me and I'll show you how to live,' Town Mouse said.", "ko": "\"나랑 같이 가자. 어떻게 사는지 보여 줄게.\" 도시 쥐가 말했어요."}
+    ]},
+    {"sents": [
+      {"en": "'Your home is very large,' Country Mouse said.", "ko": "\"네 집은 정말 크구나.\" 시골 쥐가 말했어요."},
+      {"en": "'Are you hungry, cousin?' Town Mouse asked.", "ko": "\"사촌, 배고프니?\" 도시 쥐가 물었어요."},
+      {"en": "'Yes, I am,' said Country Mouse.", "ko": "\"응, 배고파.\" 시골 쥐가 말했어요."},
+      {"en": "'This is what we eat in town,' Town Mouse said.", "ko": "\"도시에서는 이런 걸 먹어.\" 도시 쥐가 말했어요."}
+    ]},
+    {"sents": [
+      {"en": "Suddenly, the cousins heard barking.", "ko": "갑자기 사촌들은 개 짖는 소리를 들었어요."},
+      {"en": "They had to run and hide.", "ko": "둘은 달려가 숨어야 했어요."}
+    ]},
+    {"sents": [
+      {"en": "Once the dogs left, Country Mouse said good-bye to Town Mouse.", "ko": "개들이 떠나자, 시골 쥐는 도시 쥐에게 작별 인사를 했어요."},
+      {"en": "'Better beans and bacon in peace than cakes in fear,' he said.", "ko": "\"두려움 속의 케이크보다, 평화로운 콩과 베이컨이 더 좋아.\" 시골 쥐가 말했어요."}
+    ]},
+    {"sents": [
+      {"en": "The moral of the story is: Better a little in safety, than much surrounded by danger.", "ko": "이 이야기의 교훈은 이래요 — 위험에 둘러싸인 많은 것보다, 안전한 조금이 더 낫다."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "That was an interesting story.", "ko": "정말 재미있는 이야기였어요."},
+      {"en": "The Town Mouse and the Country Mouse were so different.", "ko": "도시 쥐와 시골 쥐는 정말 달랐어요."},
+      {"en": "Which one do you like better?", "ko": "여러분은 어느 쪽이 더 좋나요?"},
+      {"en": "The Town Mouse? Or the Country Mouse?", "ko": "도시 쥐? 아니면 시골 쥐?"}
+    ]}
+  ]
+}

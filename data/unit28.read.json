@@ -1,0 +1,61 @@
+{
+  "title": "A Monster in the Park (2)",
+  "eyebrow": "Unit 28 · Story · 앞부분은 Unit 27",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "puddle":     {"ipa": "ˈpʌdəl",      "pos": "명사",   "ko": "물웅덩이"},
+    "muddiest":   {"ipa": "ˈmʌdiɪst",    "pos": "형용사", "ko": "가장 진흙투성이인"},
+    "muddle":     {"ipa": "ˈmʌdəl",      "pos": "명사",   "ko": "난장판, 뒤죽박죽"},
+    "marks":      {"ipa": "mɑːrks",      "pos": "명사",   "ko": "자국"},
+    "fear":       {"ipa": "fɪr",         "pos": "동사",   "ko": "~할까 봐 걱정하다"},
+    "hides":      {"ipa": "haɪdz",       "pos": "동사",   "ko": "숨다 (hide)"},
+    "ladder":     {"ipa": "ˈlædər",      "pos": "명사",   "ko": "사다리"},
+    "tunnel":     {"ipa": "ˈtʌnəl",      "pos": "명사",   "ko": "터널"},
+    "fright":     {"ipa": "fraɪt",       "pos": "명사",   "ko": "깜짝 놀람"},
+    "fanged":     {"ipa": "fæŋd",        "pos": "형용사", "ko": "송곳니가 난"},
+    "spikes":     {"ipa": "spaɪks",      "pos": "명사",   "ko": "가시, 뾰족한 것"},
+    "peer":       {"ipa": "pɪr",         "pos": "동사",   "ko": "들여다보다"},
+    "muck":       {"ipa": "mʌk",         "pos": "명사",   "ko": "오물, 더러운 것"},
+    "grime":      {"ipa": "ɡraɪm",       "pos": "명사",   "ko": "때, 검은 먼지"},
+    "uncover":    {"ipa": "ʌnˈkʌvər",    "pos": "동사",   "ko": "덮인 것을 걷어 내다"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "I look around the puddle.", "ko": "물웅덩이 주변을 둘러봐요."},
+      {"en": "That's the site of the messiest, muddiest, muckiest muddle!", "ko": "여기가 가장 엉망이고 가장 진흙투성이인 난장판이에요!"}
+    ]},
+    {"sents": [
+      {"en": "So great is the mess!", "ko": "엉망이 정말 심해요!"},
+      {"en": "So large are the marks!", "ko": "자국이 정말 커요!"},
+      {"en": "I fear there must be a monster in the park!", "ko": "공원에 괴물이 있는 게 틀림없어요!"}
+    ]},
+    {"sents": [
+      {"en": "Yes, a monster! That's it!", "ko": "맞아요, 괴물이에요! 바로 그거예요!"},
+      {"en": "I must find where it hides.", "ko": "어디에 숨어 있는지 찾아야 해요."}
+    ]},
+    {"sents": [
+      {"en": "I follow the tracks through the puddle, up the ladder, and to the top of the tunnel slide.", "ko": "발자국을 따라 물웅덩이를 지나, 사다리를 올라, 터널 미끄럼틀 맨 위까지 가요."}
+    ]},
+    {"sents": [
+      {"en": "Inside waits a monster sure to give a fright.", "ko": "안에는 깜짝 놀랄 만한 괴물이 기다리고 있어요."},
+      {"en": "A monster that is furry, fanged, and covered in spikes!", "ko": "털이 많고, 송곳니가 났고, 온몸이 가시로 덮인 괴물이요!"},
+      {"en": "I peer in, climb on, slide down, and... YIKES!", "ko": "들여다보고, 올라타고, 미끄러져 내려가고… 으악!"}
+    ]},
+    {"sents": [
+      {"en": "He's monstrous mass from his hat to his boots, covered in mud and muck, his clothes soaked through.", "ko": "모자부터 장화까지 괴물처럼 커다랗고, 진흙과 오물로 덮였고, 옷은 흠뻑 젖었어요."},
+      {"en": "But, under the mess of dirt and grime, I uncover — not a monster — but that silly brother of mine.", "ko": "그런데 흙과 때를 걷어 내니, 괴물이 아니라 우스꽝스러운 제 동생이었어요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Oh, how was that story?", "ko": "오, 이야기가 어땠나요?"},
+      {"en": "Don't you think it was adventurous? Or was it scary?", "ko": "모험 같지 않았나요? 아니면 무서웠나요?"},
+      {"en": "I would like to spy on some monsters in the park.", "ko": "저는 공원에서 괴물을 몰래 살펴보고 싶어요."},
+      {"en": "Will you come and join me?", "ko": "함께 갈래요?"},
+      {"en": "Okay. I'll wait for you in the park. See you there.", "ko": "좋아요. 공원에서 기다릴게요. 거기서 만나요."}
+    ]}
+  ]
+}
