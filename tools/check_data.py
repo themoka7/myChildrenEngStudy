@@ -70,6 +70,15 @@ def main():
             if v.count('<b>') != v.count('</b>') or re.search(r'<[^>]*<|</b\s+>', v):
                 errors.append(f"{tag} notes.{k} 의 HTML 태그가 깨짐")
 
+        # notes 를 뺀 나머지 필드는 빌더가 이스케이프하므로 <b> 를 쓰면
+        # 태그가 글자 그대로 인쇄된다. 문항 안에서는 강조를 쓸 수 없다.
+        for key in ('match', 'phonics', 'scan', 'tf', 'fill', 'trace'):
+            for item in d[key]:
+                for f, v in item.items():
+                    if isinstance(v, str) and '<' in v:
+                        errors.append(f"{tag} {key}.{f} 에 HTML 태그 — "
+                                      f"이 필드는 이스케이프되어 태그가 그대로 찍힌다")
+
         ko = [m['ko'] for m in d['match']]
         if sorted(ko) != sorted(d['match_ko_order']):
             errors.append(f"{tag} match_ko_order 가 match 와 다름")

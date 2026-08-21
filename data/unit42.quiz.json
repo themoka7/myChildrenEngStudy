@@ -1,0 +1,69 @@
+{
+  "title": "Planes",
+  "title_ko": "비행기",
+
+  "paras": [
+    ["Planes fly in the sky.", "They move people from place to place.", "Many people travel by planes.", "They are used all over the world."],
+    ["The front of the plane is called the nose.", "The back is called the tail."],
+    ["Pilots sit in the cockpit.", "Computers help pilots fly the plane."],
+    ["The plane's hold is on the bottom.", "This is where the luggage is kept."],
+    ["People sit in the cabin.", "There are seats, TVs, and bathrooms here."],
+    ["Engines power the plane.", "Wings help them fly."],
+    ["Planes take off and land on a runway.", "They have wheels to move on the ground."],
+    ["People get on and off planes at an airport.", "Airports are full of people traveling all over the world."]
+  ],
+
+  "match": [
+    {"en": "tail",      "ko": "꼬리 (뒤쪽)"},
+    {"en": "bathrooms", "ko": "화장실"},
+    {"en": "cabin",     "ko": "객실"},
+    {"en": "engines",   "ko": "엔진"}
+  ],
+  "match_ko_order": ["화장실", "엔진", "꼬리 (뒤쪽)", "객실"],
+
+  "phonics": [
+    {"q": "s_t",       "a": "i", "ko": "앉다"},
+    {"q": "g_t",       "a": "e", "ko": "타다, 얻다"},
+    {"q": "b_ttom",    "a": "o", "ko": "아래쪽"},
+    {"q": "b_ck",      "a": "a", "ko": "뒤쪽"},
+    {"q": "l_ggage",   "a": "u", "ko": "짐"},
+    {"q": "k_pt",      "a": "e", "ko": "보관된"}
+  ],
+
+  "scan": [
+    {"q": "비행기의 앞쪽을 무엇이라고 부르나요?",     "a": "the nose",     "sent": "5"},
+    {"q": "조종사는 어디에 앉나요?",                  "a": "the cockpit",  "sent": "7"},
+    {"q": "비행기의 화물칸은 어디에 있나요?",         "a": "on the bottom","sent": "9"},
+    {"q": "비행기는 어디에서 뜨고 내리나요?",         "a": "a runway",     "sent": "15"}
+  ],
+
+  "tf": [
+    {"en": "Planes fly in the sky.", "answer": "O",
+     "why": "비행기는 하늘을 날아요.", "sent": "1"},
+    {"en": "Planes have wheels to move on the ground.", "answer": "O",
+     "why": "땅에서 움직이도록 바퀴가 있어요.", "sent": "16"},
+    {"en": "The back of the plane is called the nose.", "answer": "X",
+     "why": "기수(nose)는 앞쪽이에요. 뒤쪽은 꼬리(tail)예요.", "sent": "6"},
+    {"en": "Planes are used in only one country.", "gloss": "only 오직 / country 나라",
+     "answer": "X", "why": "세계 곳곳에서 쓰여요.", "sent": "4"}
+  ],
+
+  "fill_bank": ["place", "fly", "world", "wings"],
+  "fill": [
+    {"en": "They move people from ___ to place.",                     "a": "place", "ko": "사람들을 여기서 저기로 옮겨 줘요."},
+    {"en": "Computers help pilots ___ the plane.",                    "a": "fly",   "ko": "컴퓨터가 조종사를 도와 비행기를 조종해요."},
+    {"en": "Airports are full of people traveling all over the ___.", "a": "world", "ko": "공항은 세계 곳곳으로 여행하는 사람들로 가득해요."}
+  ],
+
+  "trace": [
+    {"en": "Many people travel by planes.", "ko": "많은 사람이 비행기로 여행해요."},
+    {"en": "There are seats, TVs, and bathrooms here.", "ko": "여기에는 좌석과 TV, 화장실이 있어요."}
+  ],
+
+  "notes": {
+    "phonics": "여섯 문항이 <b>a·e·i·o·u 다섯 소리를 모두</b> 담고 있습니다. <b>s_t은 sit·set·sat</b>이 다 단어라 가장 헷갈립니다 — 옆의 한글 뜻(앉다)을 꼭 보게 하세요.",
+    "scan": "네 문항이 <b>비행기의 부위를 앞에서 뒤로</b> 따라갑니다 — 기수·조종실·화물칸·활주로. 답을 다 찾은 뒤 비행기 그림을 떠올리며 짚어 주면 좋습니다.",
+    "tf": "3번은 <b>앞 유닛(배)과 똑같은 함정</b>입니다 — 배는 bow가 앞·stern이 뒤, 비행기는 nose가 앞·tail이 뒤. 두 유닛을 이어서 풀면 아이가 규칙을 스스로 알아챕니다. 4번은 지문에 없는 내용이에요.",
+    "trace": "두 번째 문장에 <b>TVs</b> 같은 대문자와 쉼표가 여러 개 있습니다. 쉼표 자리를 함께 봐 주세요."
+  }
+}

@@ -91,16 +91,16 @@
       "theme": "교통수단",
       "units": [
         {"n": 39, "en": "Cars", "ko": "자동차", "status": "todo", "min": 14, "ready": true},
-        {"n": 40, "en": "Spaceships", "ko": "우주선", "status": "todo", "min": 14},
-        {"n": 41, "en": "Boats", "ko": "배", "status": "todo", "min": 15},
-        {"n": 42, "en": "Planes", "ko": "비행기", "status": "todo", "min": 15}
+        {"n": 40, "en": "Spaceships", "ko": "우주선", "status": "todo", "min": 14, "ready": true},
+        {"n": 41, "en": "Boats", "ko": "배", "status": "todo", "min": 15, "ready": true},
+        {"n": 42, "en": "Planes", "ko": "비행기", "status": "todo", "min": 15, "ready": true}
       ]
     },
     {
       "theme": "곤충",
       "units": [
-        {"n": 43, "en": "Ants", "ko": "개미", "status": "todo", "min": 14},
-        {"n": 44, "en": "Bees", "ko": "벌", "status": "todo", "min": 14},
+        {"n": 43, "en": "Ants", "ko": "개미", "status": "todo", "min": 14, "ready": true},
+        {"n": 44, "en": "Bees", "ko": "벌", "status": "todo", "min": 14, "ready": true},
         {"n": 45, "en": "Butterflies", "ko": "나비", "status": "todo", "min": 14},
         {"n": 46, "en": "Mosquitoes", "ko": "모기", "status": "todo", "min": 14}
       ]

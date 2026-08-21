@@ -1,0 +1,70 @@
+{
+  "title": "Bees",
+  "eyebrow": "Unit 44 · Nonfiction · Insects",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "insects":    {"ipa": "ˈɪnsekts",     "pos": "명사",   "ko": "곤충"},
+    "beetles":    {"ipa": "ˈbiːtəlz",     "pos": "명사",   "ko": "딱정벌레"},
+    "backyard":   {"ipa": "ˈbækjɑːrd",    "pos": "명사",   "ko": "뒤뜰"},
+    "stripes":    {"ipa": "straɪps",      "pos": "명사",   "ko": "줄무늬"},
+    "hairy":      {"ipa": "ˈheri",        "pos": "형용사", "ko": "털이 많은"},
+    "thorax":     {"ipa": "ˈθɔːræks",     "pos": "명사",   "ko": "가슴 (곤충의 가운데 부분)"},
+    "abdomen":    {"ipa": "ˈæbdəmən",     "pos": "명사",   "ko": "배 (곤충의 뒷부분)"},
+    "antennae":   {"ipa": "ænˈteni",      "pos": "명사",   "ko": "더듬이"},
+    "mouthpart":  {"ipa": "ˈmaʊθpɑːrt",   "pos": "명사",   "ko": "입 부분"},
+    "straw":      {"ipa": "strɔː",        "pos": "명사",   "ko": "빨대"},
+    "stingers":   {"ipa": "ˈstɪŋərz",     "pos": "명사",   "ko": "침"},
+    "colonies":   {"ipa": "ˈkɑːləniz",    "pos": "명사",   "ko": "군집 (함께 사는 무리)"},
+    "beehives":   {"ipa": "ˈbiːhaɪvz",    "pos": "명사",   "ko": "벌집"},
+    "pollen":     {"ipa": "ˈpɑːlən",      "pos": "명사",   "ko": "꽃가루"},
+    "produce":    {"ipa": "prəˈduːs",     "pos": "동사",   "ko": "만들어 내다"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Bees are insects.", "ko": "벌은 곤충이에요."},
+      {"en": "Ants, beetles, and butterflies are insects too.", "ko": "개미와 딱정벌레, 나비도 곤충이에요."}
+    ]},
+    {"sents": [
+      {"en": "Bees live in many places.", "ko": "벌은 여러 곳에 살아요."},
+      {"en": "You can even find them in your backyard.", "ko": "우리 집 뒤뜰에서도 볼 수 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Many bees have black and yellow stripes.", "ko": "많은 벌은 검은색과 노란색 줄무늬가 있어요."},
+      {"en": "Some bees are hairy!", "ko": "어떤 벌은 털이 많아요!"}
+    ]},
+    {"sents": [
+      {"en": "Bees have three main body parts.", "ko": "벌의 몸은 크게 세 부분이에요."},
+      {"en": "They are the head, thorax, and the abdomen.", "ko": "머리, 가슴, 배예요."}
+    ]},
+    {"sents": [
+      {"en": "Bees have six legs and four wings.", "ko": "벌은 다리가 여섯 개, 날개가 네 개예요."},
+      {"en": "They have five eyes and two antennae.", "ko": "눈은 다섯 개, 더듬이는 두 개예요."}
+    ]},
+    {"sents": [
+      {"en": "Bees have a special mouthpart.", "ko": "벌은 특별한 입을 가지고 있어요."},
+      {"en": "It looks like a straw.", "ko": "빨대처럼 생겼어요."},
+      {"en": "Ouch! Watch out! All female bees have stingers.", "ko": "아! 조심하세요! 암컷 벌은 모두 침이 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Some bees live alone.", "ko": "어떤 벌은 혼자 살아요."},
+      {"en": "Other bees live in large groups called colonies.", "ko": "어떤 벌은 군집이라는 큰 무리를 이루어 살아요."},
+      {"en": "Colonies live in nests or beehives.", "ko": "군집은 둥지나 벌집에 살아요."}
+    ]},
+    {"sents": [
+      {"en": "Bees carry pollen from flower to flower.", "ko": "벌은 꽃에서 꽃으로 꽃가루를 옮겨요."},
+      {"en": "Some bees produce honey for us to eat.", "ko": "어떤 벌은 우리가 먹을 꿀을 만들어요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Wow! Bees have five eyes.", "ko": "와! 벌은 눈이 다섯 개래요."},
+      {"en": "I didn't know that.", "ko": "저는 몰랐어요."},
+      {"en": "But, I knew that bees make really yummy honey.", "ko": "그런데 벌이 아주 맛있는 꿀을 만드는 건 알고 있었어요."},
+      {"en": "This book taught us a lot about bees.", "ko": "이 책은 벌에 대해 많이 알려 줬어요."},
+      {"en": "I'll see you next time! Good-bye!", "ko": "다음에 또 만나요! 안녕!"}
+    ]}
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "title": "Planes",
+  "eyebrow": "Unit 42 · Nonfiction · Vehicles",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "world":     {"ipa": "wɜːrld",      "pos": "명사",   "ko": "세계"},
+    "nose":      {"ipa": "noʊz",        "pos": "명사",   "ko": "기수 (비행기의 앞쪽)"},
+    "tail":      {"ipa": "teɪl",        "pos": "명사",   "ko": "꼬리 (비행기의 뒤쪽)"},
+    "pilots":    {"ipa": "ˈpaɪləts",    "pos": "명사",   "ko": "조종사"},
+    "cockpit":   {"ipa": "ˈkɑːkpɪt",    "pos": "명사",   "ko": "조종실"},
+    "hold":      {"ipa": "hoʊld",       "pos": "명사",   "ko": "화물칸"},
+    "bottom":    {"ipa": "ˈbɑːtəm",     "pos": "명사",   "ko": "아래쪽, 밑바닥"},
+    "luggage":   {"ipa": "ˈlʌɡɪdʒ",     "pos": "명사",   "ko": "짐, 수하물"},
+    "kept":      {"ipa": "kept",        "pos": "동사",   "ko": "보관된 (keep)"},
+    "cabin":     {"ipa": "ˈkæbɪn",      "pos": "명사",   "ko": "객실"},
+    "bathrooms": {"ipa": "ˈbæθruːmz",   "pos": "명사",   "ko": "화장실"},
+    "engines":   {"ipa": "ˈendʒɪnz",    "pos": "명사",   "ko": "엔진"},
+    "wings":     {"ipa": "wɪŋz",        "pos": "명사",   "ko": "날개"},
+    "runway":    {"ipa": "ˈrʌnweɪ",     "pos": "명사",   "ko": "활주로"},
+    "airport":   {"ipa": "ˈerpɔːrt",    "pos": "명사",   "ko": "공항"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Planes fly in the sky.", "ko": "비행기는 하늘을 날아요."},
+      {"en": "They move people from place to place.", "ko": "사람들을 여기서 저기로 옮겨 줘요."},
+      {"en": "Many people travel by planes.", "ko": "많은 사람이 비행기로 여행해요."},
+      {"en": "They are used all over the world.", "ko": "세계 곳곳에서 쓰여요."}
+    ]},
+    {"sents": [
+      {"en": "The front of the plane is called the nose.", "ko": "비행기의 앞쪽을 기수라고 불러요."},
+      {"en": "The back is called the tail.", "ko": "뒤쪽은 꼬리라고 불러요."}
+    ]},
+    {"sents": [
+      {"en": "Pilots sit in the cockpit.", "ko": "조종사는 조종실에 앉아요."},
+      {"en": "Computers help pilots fly the plane.", "ko": "컴퓨터가 조종사를 도와 비행기를 조종해요."}
+    ]},
+    {"sents": [
+      {"en": "The plane's hold is on the bottom.", "ko": "비행기의 화물칸은 아래쪽에 있어요."},
+      {"en": "This is where the luggage is kept.", "ko": "여기에 짐을 실어요."}
+    ]},
+    {"sents": [
+      {"en": "People sit in the cabin.", "ko": "사람들은 객실에 앉아요."},
+      {"en": "There are seats, TVs, and bathrooms here.", "ko": "여기에는 좌석과 TV, 화장실이 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Engines power the plane.", "ko": "엔진이 비행기를 움직여요."},
+      {"en": "Wings help them fly.", "ko": "날개가 나는 것을 도와줘요."}
+    ]},
+    {"sents": [
+      {"en": "Planes take off and land on a runway.", "ko": "비행기는 활주로에서 뜨고 내려요."},
+      {"en": "They have wheels to move on the ground.", "ko": "땅에서 움직이도록 바퀴가 있어요."}
+    ]},
+    {"sents": [
+      {"en": "People get on and off planes at an airport.", "ko": "사람들은 공항에서 비행기를 타고 내려요."},
+      {"en": "Airports are full of people traveling all over the world.", "ko": "공항은 세계 곳곳으로 여행하는 사람들로 가득해요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Wow! Planes are amazing.", "ko": "와! 비행기는 정말 대단해요."},
+      {"en": "I can't believe something so big and heavy can fly in the sky.", "ko": "그렇게 크고 무거운 것이 하늘을 난다니 믿기지 않아요."},
+      {"en": "Isn't it cool? What do you think?", "ko": "멋지지 않나요? 어떻게 생각하나요?"},
+      {"en": "I'll see you for the next book.", "ko": "다음 책에서 만나요."},
+      {"en": "Bye for now!", "ko": "이제 안녕!"}
+    ]}
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "title": "Ants",
+  "eyebrow": "Unit 43 · Nonfiction · Insects",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "insects":     {"ipa": "ˈɪnsekts",       "pos": "명사",   "ko": "곤충"},
+    "mosquitoes":  {"ipa": "məˈskiːtoʊz",    "pos": "명사",   "ko": "모기"},
+    "everywhere":  {"ipa": "ˈevriwer",       "pos": "부사",   "ko": "어디에나"},
+    "nests":       {"ipa": "nests",          "pos": "명사",   "ko": "둥지, 집"},
+    "main":        {"ipa": "meɪn",           "pos": "형용사", "ko": "주된, 큰"},
+    "thorax":      {"ipa": "ˈθɔːræks",       "pos": "명사",   "ko": "가슴 (곤충의 가운데 부분)"},
+    "abdomen":     {"ipa": "ˈæbdəmən",       "pos": "명사",   "ko": "배 (곤충의 뒷부분)"},
+    "antennae":    {"ipa": "ænˈteni",        "pos": "명사",   "ko": "더듬이"},
+    "colony":      {"ipa": "ˈkɑːləni",       "pos": "명사",   "ko": "군집 (함께 사는 무리)"},
+    "members":     {"ipa": "ˈmembərz",       "pos": "명사",   "ko": "구성원"},
+    "queen":       {"ipa": "kwiːn",          "pos": "명사",   "ko": "여왕"},
+    "female":      {"ipa": "ˈfiːmeɪl",       "pos": "형용사", "ko": "암컷의"},
+    "protect":     {"ipa": "prəˈtekt",       "pos": "동사",   "ko": "지켜 주다, 보호하다"},
+    "underground": {"ipa": "ˌʌndərˈɡraʊnd",  "pos": "형용사", "ko": "땅속의"},
+    "soil":        {"ipa": "sɔɪl",           "pos": "명사",   "ko": "흙, 토양"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Ants are insects.", "ko": "개미는 곤충이에요."},
+      {"en": "Butterflies, bees, and mosquitoes are insects too.", "ko": "나비와 벌, 모기도 곤충이에요."}
+    ]},
+    {"sents": [
+      {"en": "Ants live almost everywhere on Earth.", "ko": "개미는 지구 거의 모든 곳에 살아요."},
+      {"en": "Most ants live in nests in the ground.", "ko": "대부분의 개미는 땅속 집에 살아요."}
+    ]},
+    {"sents": [
+      {"en": "Ants can be black, red, and brown.", "ko": "개미는 검은색, 붉은색, 갈색일 수 있어요."},
+      {"en": "Ants can be yellow and green too.", "ko": "노란색과 초록색 개미도 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Ants have three main body parts.", "ko": "개미의 몸은 크게 세 부분이에요."},
+      {"en": "They are the head, thorax, and abdomen.", "ko": "머리, 가슴, 배예요."},
+      {"en": "An ant's head has two eyes, a mouth, and two antennae.", "ko": "개미 머리에는 눈 두 개, 입, 더듬이 두 개가 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Ants have six legs.", "ko": "개미는 다리가 여섯 개예요."},
+      {"en": "Some ants have wings.", "ko": "어떤 개미는 날개가 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Ants live together in a group called a colony.", "ko": "개미는 군집이라는 무리를 이루어 함께 살아요."},
+      {"en": "Each ant has an important job to do in the colony.", "ko": "군집에서 개미마다 중요한 일이 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Ant colonies have three main members.", "ko": "개미 군집에는 크게 세 구성원이 있어요."},
+      {"en": "They are the queen, female workers, and males.", "ko": "여왕개미, 암컷 일개미, 수개미예요."}
+    ]},
+    {"sents": [
+      {"en": "Ants protect plants by eating other insects.", "ko": "개미는 다른 곤충을 먹어서 식물을 지켜 줘요."},
+      {"en": "Their underground homes keep the soil healthy.", "ko": "개미의 땅속 집은 흙을 건강하게 해 줘요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Ha~ How interesting!", "ko": "하~ 정말 흥미롭네요!"},
+      {"en": "Did you know that ants can fly?", "ko": "개미가 날 수 있다는 걸 알았나요?"},
+      {"en": "I didn't know that!", "ko": "저는 몰랐어요!"},
+      {"en": "This book taught us a lot about ants.", "ko": "이 책은 개미에 대해 많이 알려 줬어요."},
+      {"en": "Let's find out what the next book is next time!", "ko": "다음 책이 무엇인지 다음에 알아봐요!"},
+      {"en": "I'll see you! Good-bye!", "ko": "또 만나요! 안녕!"}
+    ]}
+  ]
+}

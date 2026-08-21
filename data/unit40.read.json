@@ -1,0 +1,65 @@
+{
+  "title": "Spaceships",
+  "eyebrow": "Unit 40 · Nonfiction · Vehicles",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "travel":      {"ipa": "ˈtrævəl",       "pos": "동사",   "ko": "이동하다, 여행하다"},
+    "landed":      {"ipa": "ˈlændɪd",       "pos": "동사",   "ko": "착륙했다 (land)"},
+    "important":   {"ipa": "ɪmˈpɔːrtənt",   "pos": "형용사", "ko": "중요한"},
+    "rockets":     {"ipa": "ˈrɑːkɪts",      "pos": "명사",   "ko": "로켓"},
+    "blast":       {"ipa": "blæst",         "pos": "동사",   "ko": "세게 밀어 올리다"},
+    "continues":   {"ipa": "kənˈtɪnjuːz",   "pos": "동사",   "ko": "계속 나아가다"},
+    "further":     {"ipa": "ˈfɜːrðər",      "pos": "부사",   "ko": "더 멀리"},
+    "astronauts":  {"ipa": "ˈæstrənɔːts",   "pos": "명사",   "ko": "우주인"},
+    "experiments": {"ipa": "ɪkˈsperɪmənts", "pos": "명사",   "ko": "실험"},
+    "robots":      {"ipa": "ˈroʊbɑːts",     "pos": "명사",   "ko": "로봇"},
+    "explore":     {"ipa": "ɪkˈsplɔːr",     "pos": "동사",   "ko": "탐사하다"},
+    "satellites":  {"ipa": "ˈsætəlaɪts",    "pos": "명사",   "ko": "인공위성"},
+    "shuttles":    {"ipa": "ˈʃʌtəlz",       "pos": "명사",   "ko": "왕복선"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Spaceships travel in space.", "ko": "우주선은 우주를 다녀요."},
+      {"en": "Some have even landed on the moon!", "ko": "어떤 우주선은 달에 착륙하기도 했어요!"},
+      {"en": "Spaceships are important!", "ko": "우주선은 중요해요!"},
+      {"en": "They help us learn more about space.", "ko": "우주에 대해 더 알 수 있게 도와줘요."}
+    ]},
+    {"sents": [
+      {"en": "Spaceships have rockets.", "ko": "우주선에는 로켓이 있어요."},
+      {"en": "These blast them into space.", "ko": "로켓이 우주선을 우주로 밀어 올려요."},
+      {"en": "The rockets fall away.", "ko": "그다음 로켓은 떨어져 나가요."},
+      {"en": "The spaceship continues further into space.", "ko": "우주선은 우주로 더 멀리 나아가요."}
+    ]},
+    {"sents": [
+      {"en": "Spaceships are used for many different things.", "ko": "우주선은 여러 가지 일에 쓰여요."},
+      {"en": "Some carry astronauts.", "ko": "어떤 우주선은 우주인을 태워요."},
+      {"en": "The astronauts do experiments.", "ko": "우주인은 실험을 해요."},
+      {"en": "They help us learn about space.", "ko": "그래서 우주에 대해 알 수 있게 도와줘요."}
+    ]},
+    {"sents": [
+      {"en": "Some spaceships carry robots.", "ko": "어떤 우주선은 로봇을 태워요."},
+      {"en": "The robots explore other planets.", "ko": "로봇은 다른 행성을 탐사해요."}
+    ]},
+    {"sents": [
+      {"en": "Other spaceships carry satellites.", "ko": "어떤 우주선은 인공위성을 실어요."},
+      {"en": "They take pictures in space.", "ko": "인공위성은 우주에서 사진을 찍어요."}
+    ]},
+    {"sents": [
+      {"en": "Space shuttles are spaceships.", "ko": "우주 왕복선도 우주선이에요."},
+      {"en": "They take off like a rocket.", "ko": "로켓처럼 이륙해요."},
+      {"en": "They land like an airplane.", "ko": "그리고 비행기처럼 착륙해요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Wow! Spaceships are really fun.", "ko": "와! 우주선은 정말 재미있어요."},
+      {"en": "Don't you want to know what it's like to ride inside of a spaceship?", "ko": "우주선 안에 타면 어떤 느낌일지 알고 싶지 않나요?"},
+      {"en": "Wouldn't it be scary or shaky?", "ko": "무섭거나 많이 흔들리지 않을까요?"},
+      {"en": "I don't know. But it might be fun.", "ko": "잘 모르겠어요. 하지만 재미있을 것 같아요."},
+      {"en": "Let's go and ride on one!", "ko": "우리 한번 타 보러 가요!"}
+    ]}
+  ]
+}

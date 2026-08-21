@@ -1,0 +1,72 @@
+{
+  "title": "Boats",
+  "eyebrow": "Unit 41 · Nonfiction · Vehicles",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "oceans":     {"ipa": "ˈoʊʃənz",     "pos": "명사",   "ko": "바다, 대양"},
+    "hull":       {"ipa": "hʌl",         "pos": "명사",   "ko": "선체 (배의 몸통)"},
+    "bow":        {"ipa": "baʊ",         "pos": "명사",   "ko": "뱃머리 (배의 앞쪽)"},
+    "stern":      {"ipa": "stɜːrn",      "pos": "명사",   "ko": "선미 (배의 뒤쪽)"},
+    "sizes":      {"ipa": "ˈsaɪzɪz",     "pos": "명사",   "ko": "크기"},
+    "cruising":   {"ipa": "ˈkruːzɪŋ",    "pos": "명사",   "ko": "유람, 천천히 항해하기"},
+    "nets":       {"ipa": "nets",        "pos": "명사",   "ko": "그물"},
+    "speed":      {"ipa": "spiːd",       "pos": "명사",   "ko": "속도, 빠르기"},
+    "ferryboats": {"ipa": "ˈferibòʊts",  "pos": "명사",   "ko": "여객선, 연락선"},
+    "sails":      {"ipa": "seɪlz",       "pos": "명사",   "ko": "돛"},
+    "rudder":     {"ipa": "ˈrʌdər",      "pos": "명사",   "ko": "방향키"},
+    "guides":     {"ipa": "ɡaɪdz",       "pos": "동사",   "ko": "방향을 잡아 주다"},
+    "canoes":     {"ipa": "kəˈnuːz",     "pos": "명사",   "ko": "카누"},
+    "paddles":    {"ipa": "ˈpædəlz",     "pos": "명사",   "ko": "노"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Boats travel on water.", "ko": "배는 물 위를 다녀요."},
+      {"en": "They are used on lakes, rivers, and oceans.", "ko": "호수와 강, 바다에서 써요."}
+    ]},
+    {"sents": [
+      {"en": "The body of a boat is called the hull.", "ko": "배의 몸통을 선체라고 불러요."},
+      {"en": "The front of a boat is the bow.", "ko": "배의 앞쪽은 뱃머리예요."},
+      {"en": "The back is the stern.", "ko": "뒤쪽은 선미예요."}
+    ]},
+    {"sents": [
+      {"en": "There are many kinds of boats.", "ko": "배에는 여러 종류가 있어요."},
+      {"en": "Boats can be used for traveling, fishing, or just for fun.", "ko": "여행이나 낚시, 그냥 놀이로도 써요."}
+    ]},
+    {"sents": [
+      {"en": "Motorboats come in many sizes.", "ko": "모터보트는 크기가 여러 가지예요."},
+      {"en": "They can be used for fishing, waterskiing, or cruising.", "ko": "낚시나 수상스키, 유람에 써요."}
+    ]},
+    {"sents": [
+      {"en": "Big fishing boats use nets to catch fish.", "ko": "큰 낚싯배는 그물로 고기를 잡아요."},
+      {"en": "They can stay out at sea for weeks at a time.", "ko": "한 번에 몇 주씩 바다에 머물 수 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Racing boats are made for speed.", "ko": "경주용 배는 빠르게 달리도록 만들어요."},
+      {"en": "Some go as fast as 150 mph (240 km/h)!", "ko": "어떤 배는 시속 240km까지 달려요!"}
+    ]},
+    {"sents": [
+      {"en": "Ferryboats carry people and cars.", "ko": "여객선은 사람과 자동차를 실어요."},
+      {"en": "Some people ride ferryboats to work.", "ko": "어떤 사람들은 여객선을 타고 일하러 가요."}
+    ]},
+    {"sents": [
+      {"en": "Sailboats have big sails that catch the wind.", "ko": "돛배에는 바람을 받는 큰 돛이 있어요."},
+      {"en": "Moving the rudder guides the boat.", "ko": "방향키를 움직여 배의 방향을 잡아요."}
+    ]},
+    {"sents": [
+      {"en": "Kayaks and canoes can be fun to use.", "ko": "카약과 카누는 타면 재미있어요."},
+      {"en": "Paddles are used to move these boats.", "ko": "이런 배는 노로 움직여요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Wow! Many different types of boats.", "ko": "와! 배 종류가 정말 많네요."},
+      {"en": "This book makes me want to go on a boat, and go swimming.", "ko": "이 책을 보니 배도 타고 수영도 하고 싶어져요."},
+      {"en": "Looks really fun.", "ko": "정말 재미있어 보여요."},
+      {"en": "Okay. I'll see you next time.", "ko": "좋아요. 다음에 또 만나요."},
+      {"en": "I'm gonna go swimming.", "ko": "저는 수영하러 갈 거예요."}
+    ]}
+  ]
+}

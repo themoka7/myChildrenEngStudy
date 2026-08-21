@@ -1,0 +1,69 @@
+{
+  "title": "Bees",
+  "title_ko": "벌",
+
+  "paras": [
+    ["Bees are insects.", "Ants, beetles, and butterflies are insects too."],
+    ["Bees live in many places.", "You can even find them in your backyard."],
+    ["Many bees have black and yellow stripes.", "Some bees are hairy!"],
+    ["Bees have three main body parts.", "They are the head, thorax, and the abdomen."],
+    ["Bees have six legs and four wings.", "They have five eyes and two antennae."],
+    ["Bees have a special mouthpart.", "It looks like a straw.", "Ouch! Watch out! All female bees have stingers."],
+    ["Some bees live alone.", "Other bees live in large groups called colonies.", "Colonies live in nests or beehives."],
+    ["Bees carry pollen from flower to flower.", "Some bees produce honey for us to eat."]
+  ],
+
+  "match": [
+    {"en": "stripes",  "ko": "줄무늬"},
+    {"en": "stingers", "ko": "침"},
+    {"en": "beehives", "ko": "벌집"},
+    {"en": "pollen",   "ko": "꽃가루"}
+  ],
+  "match_ko_order": ["침", "꽃가루", "줄무늬", "벌집"],
+
+  "phonics": [
+    {"q": "bl_ck",      "a": "a", "ko": "검은색"},
+    {"q": "s_x",        "a": "i", "ko": "여섯"},
+    {"q": "l_gs",       "a": "e", "ko": "다리"},
+    {"q": "c_lonies",   "a": "o", "ko": "군집"},
+    {"q": "n_sts",      "a": "e", "ko": "둥지"},
+    {"q": "str_w",      "a": "a", "ko": "빨대"}
+  ],
+
+  "scan": [
+    {"q": "벌은 다리와 날개가 각각 몇 개인가요?",   "a": "six legs / four wings", "sent": "9"},
+    {"q": "벌은 눈이 몇 개인가요?",                 "a": "five",                  "sent": "10"},
+    {"q": "벌의 입은 무엇처럼 생겼나요?",           "a": "a straw",               "sent": "12"},
+    {"q": "어떤 벌은 우리를 위해 무엇을 만드나요?",  "a": "honey",                 "sent": "18"}
+  ],
+
+  "tf": [
+    {"en": "Bees are insects.", "answer": "O",
+     "why": "벌은 곤충이에요.", "sent": "1"},
+    {"en": "All female bees have stingers.", "answer": "O",
+     "why": "암컷 벌은 모두 침이 있어요.", "sent": "13"},
+    {"en": "All bees live alone.", "gloss": "all 모든", "answer": "X",
+     "why": "혼자 사는 벌도 있고, 군집을 이루어 사는 벌도 있어요.", "sent": "14·15"},
+    {"en": "Bees carry water from flower to flower.", "gloss": "water 물", "answer": "X",
+     "why": "꽃가루(pollen)를 옮겨요. 물이 아니에요.", "sent": "17"}
+  ],
+
+  "fill_bank": ["body", "mouthpart", "backyard", "hairy"],
+  "fill": [
+    {"en": "Bees have three main ___ parts.",           "a": "body",      "ko": "벌의 몸은 크게 세 부분이에요."},
+    {"en": "Bees have a special ___.",                  "a": "mouthpart", "ko": "벌은 특별한 입을 가지고 있어요."},
+    {"en": "You can even find them in your ___.",       "a": "backyard",  "ko": "우리 집 뒤뜰에서도 볼 수 있어요."}
+  ],
+
+  "trace": [
+    {"en": "Some bees are hairy!", "ko": "어떤 벌은 털이 많아요!"},
+    {"en": "They are the head, thorax, and the abdomen.", "ko": "머리, 가슴, 배예요."}
+  ],
+
+  "notes": {
+    "phonics": "이 지문에는 짧은 u 소리 단어가 없어서 <b>a와 e를 두 번씩</b> 냈습니다. <b>l_gs는 legs·lags·logs</b>가 다 단어라 헷갈리니 옆의 한글 뜻을 보게 하세요.",
+    "scan": "1번은 답이 <b>두 개</b>(다리 여섯·날개 네 개)이고 2번은 눈 개수예요. <b>숫자가 셋이나 나오니</b> 어느 것을 묻는지 짚어 주세요 — 6, 4, 5.",
+    "tf": "4번이 이 유닛의 핵심입니다 — 벌이 옮기는 건 <b>물이 아니라 꽃가루</b>예요. 이게 벌이 하는 가장 중요한 일이라, 맞히면 \"꽃가루를 옮기면 뭐가 좋을까?\" 하고 한 번 얘기해 주세요. 3번은 some을 all로 바꾼 함정이에요.",
+    "trace": "두 번째 문장의 <b>head·thorax·abdomen</b>은 <b>앞 유닛(개미)과 똑같습니다</b>. 곤충은 다 이 세 부분이에요 — 개미 문제지를 옆에 놓고 비교해 주면 아이가 규칙을 알아챕니다."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "title": "Spaceships",
+  "title_ko": "우주선",
+
+  "paras": [
+    ["Spaceships travel in space.", "Some have even landed on the moon!", "Spaceships are important!", "They help us learn more about space."],
+    ["Spaceships have rockets.", "These blast them into space.", "The rockets fall away.", "The spaceship continues further into space."],
+    ["Spaceships are used for many different things.", "Some carry astronauts.", "The astronauts do experiments.", "They help us learn about space."],
+    ["Some spaceships carry robots.", "The robots explore other planets."],
+    ["Other spaceships carry satellites.", "They take pictures in space."],
+    ["Space shuttles are spaceships.", "They take off like a rocket.", "They land like an airplane."]
+  ],
+
+  "match": [
+    {"en": "blast",       "ko": "세게 밀어 올리다"},
+    {"en": "astronauts",  "ko": "우주인"},
+    {"en": "experiments", "ko": "실험"},
+    {"en": "satellites",  "ko": "인공위성"}
+  ],
+  "match_ko_order": ["실험", "인공위성", "세게 밀어 올리다", "우주인"],
+
+  "phonics": [
+    {"q": "bl_st",      "a": "a", "ko": "세게 밀어 올리다"},
+    {"q": "h_lp",       "a": "e", "ko": "돕다"},
+    {"q": "th_ngs",     "a": "i", "ko": "일, 것들"},
+    {"q": "r_ckets",    "a": "o", "ko": "로켓"},
+    {"q": "sh_ttles",   "a": "u", "ko": "왕복선"},
+    {"q": "l_nd",       "a": "a", "ko": "착륙하다"}
+  ],
+
+  "scan": [
+    {"q": "어떤 우주선은 어디에 착륙한 적이 있나요?",     "a": "the moon",              "sent": "2"},
+    {"q": "무엇이 우주선을 우주로 밀어 올리나요?",        "a": "rockets",               "sent": "5·6"},
+    {"q": "우주인은 우주선에서 무엇을 하나요?",           "a": "experiments",           "sent": "11"},
+    {"q": "로봇은 무엇을 하나요?",                        "a": "explore other planets", "sent": "14"}
+  ],
+
+  "tf": [
+    {"en": "Spaceships help us learn more about space.", "answer": "O",
+     "why": "우주에 대해 더 알 수 있게 도와줘요.", "sent": "4"},
+    {"en": "Some spaceships carry robots.", "answer": "O",
+     "why": "어떤 우주선은 로봇을 태워요.", "sent": "13"},
+    {"en": "Space shuttles land like a rocket.", "answer": "X",
+     "why": "로켓처럼 이륙하고, 비행기처럼 착륙해요. 둘이 달라요.", "sent": "18·19"},
+    {"en": "Spaceships travel under the ocean.", "gloss": "under ~아래로 / ocean 바다",
+     "answer": "X", "why": "우주선은 우주를 다녀요. 바다 이야기는 지문에 없어요.", "sent": "1"}
+  ],
+
+  "fill_bank": ["away", "further", "spaceships", "rockets"],
+  "fill": [
+    {"en": "The rockets fall ___.",                        "a": "away",       "ko": "그다음 로켓은 떨어져 나가요."},
+    {"en": "The spaceship continues ___ into space.",       "a": "further",    "ko": "우주선은 우주로 더 멀리 나아가요."},
+    {"en": "Space shuttles are ___.",                       "a": "spaceships", "ko": "우주 왕복선도 우주선이에요."}
+  ],
+
+  "trace": [
+    {"en": "Spaceships travel in space.", "ko": "우주선은 우주를 다녀요."},
+    {"en": "They land like an airplane.", "ko": "그리고 비행기처럼 착륙해요."}
+  ],
+
+  "notes": {
+    "phonics": "여섯 문항이 <b>a·e·i·o·u 다섯 소리를 모두</b> 담고 있습니다. <b>sh_ttles</b>는 길지만 첫 소리만 찾으면 돼요 — /ʃ/ /ʌ/. bl_st와 l_nd가 둘 다 a입니다.",
+    "scan": "이 유닛은 <b>우주선이 무엇을 태우는지</b>가 뼈대입니다 — 우주인(실험), 로봇(탐사), 인공위성(사진). 셋을 짝지어 정리해 주면 지문이 한눈에 잡힙니다.",
+    "tf": "3번이 이 지문의 핵심입니다 — <b>이륙은 로켓처럼, 착륙은 비행기처럼</b>. 두 문장이 나란히 있어서 하나만 읽으면 틀려요. 4번은 지문에 <b>없는</b> 내용입니다 — \"우주선이 바다로 간다는 말 있었어?\"라고 되물어 주세요.",
+    "trace": "짧은 두 문장을 골랐습니다. 대문자와 마침표만 봐 주세요."
+  }
+}

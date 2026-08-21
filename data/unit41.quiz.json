@@ -1,0 +1,70 @@
+{
+  "title": "Boats",
+  "title_ko": "배",
+
+  "paras": [
+    ["Boats travel on water.", "They are used on lakes, rivers, and oceans."],
+    ["The body of a boat is called the hull.", "The front of a boat is the bow.", "The back is the stern."],
+    ["There are many kinds of boats.", "Boats can be used for traveling, fishing, or just for fun."],
+    ["Motorboats come in many sizes.", "They can be used for fishing, waterskiing, or cruising."],
+    ["Big fishing boats use nets to catch fish.", "They can stay out at sea for weeks at a time."],
+    ["Racing boats are made for speed.", "Some go as fast as 150 mph (240 km/h)!"],
+    ["Ferryboats carry people and cars.", "Some people ride ferryboats to work."],
+    ["Sailboats have big sails that catch the wind.", "Moving the rudder guides the boat."],
+    ["Kayaks and canoes can be fun to use.", "Paddles are used to move these boats."]
+  ],
+
+  "match": [
+    {"en": "hull",   "ko": "선체 (배의 몸통)"},
+    {"en": "bow",    "ko": "뱃머리 (앞쪽)"},
+    {"en": "stern",  "ko": "선미 (뒤쪽)"},
+    {"en": "rudder", "ko": "방향키"}
+  ],
+  "match_ko_order": ["선미 (뒤쪽)", "방향키", "선체 (배의 몸통)", "뱃머리 (앞쪽)"],
+
+  "phonics": [
+    {"q": "f_st",   "a": "a", "ko": "빠른"},
+    {"q": "n_ts",   "a": "e", "ko": "그물"},
+    {"q": "f_sh",   "a": "i", "ko": "고기, 물고기"},
+    {"q": "b_dy",   "a": "o", "ko": "몸통"},
+    {"q": "h_ll",   "a": "u", "ko": "선체"},
+    {"q": "f_n",    "a": "u", "ko": "재미"}
+  ],
+
+  "scan": [
+    {"q": "배의 몸통을 무엇이라고 부르나요?",           "a": "the hull",            "sent": "3"},
+    {"q": "경주용 배는 얼마나 빠를 수 있나요?",          "a": "150 mph (240 km/h)",  "sent": "13"},
+    {"q": "어떤 사람들은 무엇을 타고 일하러 가나요?",     "a": "ferryboats",          "sent": "15"},
+    {"q": "카약과 카누는 무엇으로 움직이나요?",          "a": "paddles",             "sent": "19"}
+  ],
+
+  "tf": [
+    {"en": "Boats travel on water.", "answer": "O",
+     "why": "배는 물 위를 다녀요.", "sent": "1"},
+    {"en": "Big fishing boats use nets to catch fish.", "answer": "O",
+     "why": "큰 낚싯배는 그물로 고기를 잡아요.", "sent": "10"},
+    {"en": "The back of a boat is the bow.", "answer": "X",
+     "why": "뱃머리(bow)는 앞쪽이에요. 뒤쪽은 선미(stern)예요.", "sent": "4·5"},
+    {"en": "Sailboats have big engines that catch the wind.", "gloss": "engines 엔진",
+     "answer": "X", "why": "돛(sails)이 바람을 받아요. 엔진이 아니에요.", "sent": "16"}
+  ],
+
+  "fill_bank": ["oceans", "speed", "canoes", "sails"],
+  "fill": [
+    {"en": "They are used on lakes, rivers, and ___.", "a": "oceans", "ko": "호수와 강, 바다에서 써요."},
+    {"en": "Racing boats are made for ___.",           "a": "speed",  "ko": "경주용 배는 빠르게 달리도록 만들어요."},
+    {"en": "Kayaks and ___ can be fun to use.",        "a": "canoes", "ko": "카약과 카누는 타면 재미있어요."}
+  ],
+
+  "trace": [
+    {"en": "There are many kinds of boats.", "ko": "배에는 여러 종류가 있어요."},
+    {"en": "They can stay out at sea for weeks at a time.", "ko": "한 번에 몇 주씩 바다에 머물 수 있어요."}
+  ],
+
+  "notes": {
+    "phonics": "<b>h_ll과 f_n이 둘 다 u</b>입니다. f_sh는 fish·fash 중 헷갈릴 수 있으니 옆의 한글 뜻을 보게 하세요.",
+    "scan": "①번의 <b>hull·bow·stern</b>은 배의 부위 이름 한 묶음입니다. 다 맞히면 아이 몸으로 짚어 보게 해 주세요 — 앞이 bow, 뒤가 stern.",
+    "tf": "3번이 이 유닛의 핵심입니다 — <b>bow는 앞, stern은 뒤</b>인데 일부러 바꿔 놓았어요. 다음 유닛(비행기)에도 똑같은 문항이 나옵니다(nose는 앞, tail은 뒤). 4번은 돛(sails)을 엔진으로 바꾼 함정이에요.",
+    "trace": "두 번째 문장이 조금 깁니다. 다 못 써도 괜찮으니 대문자와 마침표만 봐 주세요."
+  }
+}

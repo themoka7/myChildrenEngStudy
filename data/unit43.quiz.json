@@ -1,0 +1,69 @@
+{
+  "title": "Ants",
+  "title_ko": "개미",
+
+  "paras": [
+    ["Ants are insects.", "Butterflies, bees, and mosquitoes are insects too."],
+    ["Ants live almost everywhere on Earth.", "Most ants live in nests in the ground."],
+    ["Ants can be black, red, and brown.", "Ants can be yellow and green too."],
+    ["Ants have three main body parts.", "They are the head, thorax, and abdomen.", "An ant's head has two eyes, a mouth, and two antennae."],
+    ["Ants have six legs.", "Some ants have wings."],
+    ["Ants live together in a group called a colony.", "Each ant has an important job to do in the colony."],
+    ["Ant colonies have three main members.", "They are the queen, female workers, and males."],
+    ["Ants protect plants by eating other insects.", "Their underground homes keep the soil healthy."]
+  ],
+
+  "match": [
+    {"en": "thorax",   "ko": "가슴 (가운데 부분)"},
+    {"en": "abdomen",  "ko": "배 (뒷부분)"},
+    {"en": "antennae", "ko": "더듬이"},
+    {"en": "protect",  "ko": "지켜 주다"}
+  ],
+  "match_ko_order": ["더듬이", "지켜 주다", "가슴 (가운데 부분)", "배 (뒷부분)"],
+
+  "phonics": [
+    {"q": "bl_ck",         "a": "a", "ko": "검은색"},
+    {"q": "n_sts",         "a": "e", "ko": "둥지, 집"},
+    {"q": "s_x",           "a": "i", "ko": "여섯"},
+    {"q": "j_b",           "a": "o", "ko": "일, 할 일"},
+    {"q": "_nderground",   "a": "u", "ko": "땅속의"},
+    {"q": "r_d",           "a": "e", "ko": "붉은색"}
+  ],
+
+  "scan": [
+    {"q": "대부분의 개미는 어디에 사나요?",             "a": "in nests in the ground",       "sent": "4"},
+    {"q": "개미는 다리가 몇 개인가요?",                 "a": "six",                          "sent": "10"},
+    {"q": "군집에서 개미마다 무엇이 있나요?",            "a": "an important job",             "sent": "13"},
+    {"q": "개미 군집의 세 구성원은 누구인가요?",         "a": "queen, female workers, males", "sent": "15"}
+  ],
+
+  "tf": [
+    {"en": "Ants are insects.", "answer": "O",
+     "why": "개미는 곤충이에요.", "sent": "1"},
+    {"en": "Ants live together in a group called a colony.", "answer": "O",
+     "why": "군집이라는 무리를 이루어 함께 살아요.", "sent": "12"},
+    {"en": "Ants are only black.", "gloss": "only 오직", "answer": "X",
+     "why": "검은색, 붉은색, 갈색, 노란색, 초록색 개미도 있어요.", "sent": "5·6"},
+    {"en": "Ants eat plants.", "answer": "X",
+     "why": "다른 곤충을 먹어서 식물을 지켜 줘요. 식물을 먹는 게 아니에요.", "sent": "16"}
+  ],
+
+  "fill_bank": ["body", "wings", "soil", "queen"],
+  "fill": [
+    {"en": "Ants have three main ___ parts.",              "a": "body",  "ko": "개미의 몸은 크게 세 부분이에요."},
+    {"en": "Some ants have ___.",                          "a": "wings", "ko": "어떤 개미는 날개가 있어요."},
+    {"en": "Their underground homes keep the ___ healthy.", "a": "soil",  "ko": "개미의 땅속 집은 흙을 건강하게 해 줘요."}
+  ],
+
+  "trace": [
+    {"en": "Butterflies, bees, and mosquitoes are insects too.", "ko": "나비와 벌, 모기도 곤충이에요."},
+    {"en": "Ants live almost everywhere on Earth.", "ko": "개미는 지구 거의 모든 곳에 살아요."}
+  ],
+
+  "notes": {
+    "phonics": "<b>_nderground는 맨 앞 글자</b>를 채웁니다. n_sts와 r_d가 둘 다 e예요. j_b는 job·jab이 다 단어이니 옆의 한글 뜻을 보게 하세요.",
+    "scan": "4번은 답이 <b>세 낱말</b>입니다(여왕·암컷 일개미·수개미). 하나만 찾아도 잘한 거예요.",
+    "tf": "4번이 가장 헷갈립니다 — 개미는 식물을 <b>먹는</b> 게 아니라 다른 곤충을 먹어서 식물을 <b>지켜 줘요</b>. 문장을 끝까지 읽어야 걸리는 문항이에요. 3번은 some을 only로 바꾼 함정입니다.",
+    "trace": "첫 문장이 <b>다음 세 유닛의 예고</b>입니다 — 나비(45)·벌(44)·모기(46)가 다 이어서 나와요. 쓰면서 \"다음엔 벌 나온다\" 하고 알려 주면 아이가 기대합니다. 쉼표 자리도 함께 봐 주세요."
+  }
+}
