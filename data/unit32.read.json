@@ -1,0 +1,74 @@
+{
+  "title": "Mercury",
+  "eyebrow": "Unit 32 · Nonfiction · Space",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "planet":    {"ipa": "ˈplænɪt",    "pos": "명사",   "ko": "행성"},
+    "orbit":     {"ipa": "ˈɔːrbɪt",    "pos": "동사",   "ko": "~의 주위를 돌다"},
+    "solar":     {"ipa": "ˈsoʊlər",    "pos": "형용사", "ko": "태양의 (solar system 태양계)"},
+    "closest":   {"ipa": "ˈkloʊsɪst",  "pos": "형용사", "ko": "가장 가까운"},
+    "spins":     {"ipa": "spɪnz",      "pos": "동사",   "ko": "스스로 회전하다 (spin)"},
+    "slowly":    {"ipa": "ˈsloʊli",    "pos": "부사",   "ko": "천천히"},
+    "layers":    {"ipa": "ˈleɪərz",    "pos": "명사",   "ko": "층"},
+    "core":      {"ipa": "kɔːr",       "pos": "명사",   "ko": "핵, 중심"},
+    "mantle":    {"ipa": "ˈmæntəl",    "pos": "명사",   "ko": "맨틀"},
+    "crust":     {"ipa": "krʌst",      "pos": "명사",   "ko": "지각 (겉껍질)"},
+    "iron":      {"ipa": "ˈaɪərn",     "pos": "명사",   "ko": "철"},
+    "terrain":   {"ipa": "təˈreɪn",    "pos": "명사",   "ko": "지형, 땅의 모양"},
+    "rough":     {"ipa": "rʌf",        "pos": "형용사", "ko": "울퉁불퉁한"},
+    "craters":   {"ipa": "ˈkreɪtərz",  "pos": "명사",   "ko": "크레이터 (움푹 파인 구덩이)"},
+    "telescope": {"ipa": "ˈteləskoʊp", "pos": "명사",   "ko": "망원경"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Mercury is a planet.", "ko": "수성은 행성이에요."},
+      {"en": "Planets orbit stars.", "ko": "행성은 별 주위를 돌아요."},
+      {"en": "Planets in our solar system orbit the sun.", "ko": "우리 태양계의 행성들은 태양 주위를 돌아요."}
+    ]},
+    {"sents": [
+      {"en": "Mercury is the closest planet to the sun.", "ko": "수성은 태양에서 가장 가까운 행성이에요."},
+      {"en": "It is about 36 million miles (58 million km) from the sun.", "ko": "태양에서 약 3,600만 마일(5,800만 km) 떨어져 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Mercury orbits the sun every 88 days.", "ko": "수성은 88일마다 태양을 한 바퀴 돌아요."},
+      {"en": "One year on Mercury is 88 days on Earth.", "ko": "수성의 1년은 지구의 88일이에요."}
+    ]},
+    {"sents": [
+      {"en": "Mercury spins while it orbits the sun.", "ko": "수성은 태양을 도는 동안 스스로 회전해요."},
+      {"en": "It spins very slowly.", "ko": "아주 천천히 회전해요."},
+      {"en": "The spin makes day and night.", "ko": "그 회전이 낮과 밤을 만들어요."},
+      {"en": "One day on Mercury is 59 days on Earth.", "ko": "수성의 하루는 지구의 59일이에요."}
+    ]},
+    {"sents": [
+      {"en": "Mercury has three layers.", "ko": "수성은 세 개의 층으로 되어 있어요."},
+      {"en": "It has a core, mantle, and crust.", "ko": "핵, 맨틀, 지각이 있어요."},
+      {"en": "Its core is made of iron.", "ko": "핵은 철로 되어 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Mercury's terrain is rough.", "ko": "수성의 지형은 울퉁불퉁해요."},
+      {"en": "It is covered in large craters.", "ko": "큰 크레이터로 덮여 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Mercury can be very hot or cold.", "ko": "수성은 아주 뜨겁거나 아주 추울 수 있어요."},
+      {"en": "Humans and animals cannot live there.", "ko": "사람과 동물은 거기서 살 수 없어요."},
+      {"en": "Plants cannot live there either.", "ko": "식물도 살 수 없어요."}
+    ]},
+    {"sents": [
+      {"en": "You can see Mercury from Earth.", "ko": "지구에서 수성을 볼 수 있어요."},
+      {"en": "You can see it without a telescope.", "ko": "망원경 없이도 볼 수 있어요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Oh, Mercury is very different from Earth.", "ko": "오, 수성은 지구와 아주 다르네요."},
+      {"en": "It's kind of gloomy.", "ko": "조금 쓸쓸해 보여요."},
+      {"en": "There is no grass, there are no flowers, no animals.", "ko": "풀도 없고, 꽃도 없고, 동물도 없어요."},
+      {"en": "But, Mercury is still such a cool planet.", "ko": "그래도 수성은 정말 멋진 행성이에요."},
+      {"en": "I'll see you next time.", "ko": "다음에 또 만나요."},
+      {"en": "And I hope you come here again. Bye!", "ko": "또 와 주면 좋겠어요. 안녕!"}
+    ]}
+  ]
+}

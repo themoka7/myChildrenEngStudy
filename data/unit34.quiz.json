@@ -1,0 +1,70 @@
+{
+  "title": "Mars",
+  "title_ko": "화성",
+
+  "paras": [
+    ["Mars is a planet.", "Planets orbit stars.", "Planets in our solar system orbit the sun."],
+    ["Mars is the fourth planet from the sun.", "It is about 142 million miles (229 million km) from the sun."],
+    ["Mars fully orbits the sun every 687 days.", "One year on Mars is 1.8 years on Earth."],
+    ["Mars spins while in orbit.", "One full spin takes a little longer than 24 hours.", "One day on Mars lasts nearly as long as one day on Earth."],
+    ["The air is very thin on Mars.", "It is made mostly of a gas called carbon dioxide."],
+    ["Dust that is rich in iron covers Mars.", "That is why Mars is red."],
+    ["Mars is very dry.", "It can be windy.", "The wind causes large dust storms."],
+    ["Mars is tilted like Earth.", "Mars has seasons just like Earth.", "But, its seasons last longer."],
+    ["Mars can be seen from Earth in the night sky.", "You just have to know where to look!"]
+  ],
+
+  "match": [
+    {"en": "thin",    "ko": "얇은, 희박한"},
+    {"en": "dust",    "ko": "먼지"},
+    {"en": "storms",  "ko": "폭풍"},
+    {"en": "tilted",  "ko": "기울어진"}
+  ],
+  "match_ko_order": ["폭풍", "기울어진", "얇은, 희박한", "먼지"],
+
+  "phonics": [
+    {"q": "s_n",     "a": "u", "ko": "태양"},
+    {"q": "r_d",     "a": "e", "ko": "붉은"},
+    {"q": "th_n",    "a": "i", "ko": "얇은"},
+    {"q": "pl_net",  "a": "a", "ko": "행성"},
+    {"q": "l_ng",    "a": "o", "ko": "긴"},
+    {"q": "d_st",    "a": "u", "ko": "먼지"}
+  ],
+
+  "scan": [
+    {"q": "화성은 태양에서 몇 번째 행성인가요?",        "a": "the fourth",       "sent": "4"},
+    {"q": "화성은 며칠마다 태양을 한 바퀴 도나요?",     "a": "687 days",         "sent": "6"},
+    {"q": "화성의 공기는 주로 무슨 기체인가요?",        "a": "carbon dioxide",   "sent": "12"},
+    {"q": "화성이 붉은 이유는 무엇인가요?",             "a": "dust rich in iron", "sent": "13·14"}
+  ],
+
+  "tf": [
+    {"en": "The air is very thin on Mars.", "answer": "O",
+     "why": "화성의 공기는 아주 희박해요.", "sent": "11"},
+    {"en": "Mars has seasons just like Earth.", "answer": "O",
+     "why": "화성에도 지구처럼 계절이 있어요.", "sent": "19"},
+    {"en": "Mars is very wet.", "gloss": "wet 젖은", "answer": "X",
+     "why": "반대예요. 화성은 아주 건조해요.", "sent": "15"},
+    {"en": "Mars cannot be seen from Earth.", "gloss": "cannot ~할 수 없다", "answer": "X",
+     "why": "밤하늘에서 볼 수 있어요. 어디를 볼지만 알면 돼요.", "sent": "21"}
+  ],
+
+  "fill_bank": ["windy", "storms", "tilted", "seasons"],
+  "fill": [
+    {"en": "It can be ___.",                     "a": "windy",  "ko": "바람이 불 수도 있어요."},
+    {"en": "The wind causes large dust ___.",    "a": "storms", "ko": "그 바람이 커다란 모래 폭풍을 일으켜요."},
+    {"en": "Mars is ___ like Earth.",            "a": "tilted", "ko": "화성은 지구처럼 기울어져 있어요."}
+  ],
+
+  "trace": [
+    {"en": "Mars is a planet.", "ko": "화성은 행성이에요."},
+    {"en": "But, its seasons last longer.", "ko": "하지만 계절이 더 길어요."}
+  ],
+
+  "notes": {
+    "phonics": "여섯 문항이 <b>a·e·i·o·u 다섯 소리를 모두</b> 담고 있습니다. <b>r_d는 red·rid·rod</b>, <b>th_n은 thin·than·then</b>이 다 단어라 헷갈립니다 — 옆의 한글 뜻을 꼭 보게 하세요.",
+    "scan": "4번은 답이 <b>한 낱말이 아니라 구절</b>입니다. 'dust'만 써도 절반은 맞은 거예요. \"먼지에 뭐가 많이 들었대?\"라고 한 번 더 물어봐 주세요 — 철(iron) 때문에 붉다는 게 이 유닛의 핵심입니다.",
+    "tf": "3번과 4번은 둘 다 지문을 <b>뒤집은</b> 문장입니다. 이 유닛은 <b>지구와 닮은 점(계절·하루 길이)과 다른 점(공기·건조함)</b>이 섞여 있으니, 헷갈리면 \"지구랑 같아? 달라?\"로 나눠서 짚어 주세요.",
+    "trace": "짧은 두 문장을 골랐습니다. <b>But 뒤의 쉼표</b>도 함께 봐 주세요."
+  }
+}

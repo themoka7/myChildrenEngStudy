@@ -1,0 +1,69 @@
+{
+  "title": "Earth",
+  "title_ko": "지구",
+
+  "paras": [
+    ["Earth is a planet.", "Planets travel around stars.", "Planets in our solar system orbit the sun."],
+    ["Earth is the third closest planet to the sun.", "It is about 93 million miles (150 million km) from the sun."],
+    ["Earth orbits the sun every 365 days, that is equal to one year.", "Earth spins while it orbits the sun.", "One full spin takes 24 hours.", "The spin makes day and night."],
+    ["Earth spins on an axis.", "Earth's axis is tilted.", "The tilt creates the seasons."],
+    ["Earth is made of three layers.", "They are the core, mantle, and crust."],
+    ["Water covers 70% of the earth.", "Earth has 7 landmasses called continents."],
+    ["Earth's atmosphere is made of gases.", "It is made mostly of nitrogen and oxygen.", "Living things need these to breathe and live."],
+    ["People, plants, and animals live on Earth."]
+  ],
+
+  "match": [
+    {"en": "orbit",      "ko": "주위를 돌다"},
+    {"en": "axis",       "ko": "축"},
+    {"en": "continents", "ko": "대륙"},
+    {"en": "atmosphere", "ko": "대기"}
+  ],
+  "match_ko_order": ["대륙", "대기", "주위를 돌다", "축"],
+
+  "phonics": [
+    {"q": "s_n",      "a": "u", "ko": "태양"},
+    {"q": "sp_n",     "a": "i", "ko": "회전하다"},
+    {"q": "pl_net",   "a": "a", "ko": "행성"},
+    {"q": "cr_st",    "a": "u", "ko": "지각 (겉껍질)"},
+    {"q": "t_lt",     "a": "i", "ko": "기울기"},
+    {"q": "_xygen",   "a": "o", "ko": "산소"}
+  ],
+
+  "scan": [
+    {"q": "지구는 태양에서 몇 번째로 가까운 행성인가요?", "a": "the third",              "sent": "4"},
+    {"q": "지구는 며칠마다 태양을 한 바퀴 도나요?",       "a": "365 days",               "sent": "6"},
+    {"q": "지구의 세 층은 무엇인가요?",                   "a": "core, mantle, crust",    "sent": "14"},
+    {"q": "물은 지구의 몇 %를 덮고 있나요?",              "a": "70%",                    "sent": "15"}
+  ],
+
+  "tf": [
+    {"en": "One full spin takes 24 hours.", "answer": "O",
+     "why": "한 바퀴 회전에 24시간이 걸려요.", "sent": "8"},
+    {"en": "The tilt creates the seasons.", "answer": "O",
+     "why": "축이 기울어져 있어서 계절이 생겨요.", "sent": "12"},
+    {"en": "Earth is made of two layers.", "gloss": "two 두 개의", "answer": "X",
+     "why": "세 개의 층이에요 — 핵, 맨틀, 지각.", "sent": "13"},
+    {"en": "Earth's air is made mostly of carbon dioxide.", "gloss": "carbon dioxide 이산화탄소",
+     "answer": "X", "why": "주로 질소와 산소예요. 이산화탄소는 화성 이야기예요.", "sent": "18"}
+  ],
+
+  "fill_bank": ["night", "tilted", "animals", "seasons"],
+  "fill": [
+    {"en": "The spin makes day and ___.",           "a": "night",   "ko": "그 회전이 낮과 밤을 만들어요."},
+    {"en": "Earth's axis is ___.",                  "a": "tilted",  "ko": "지구의 축은 기울어져 있어요."},
+    {"en": "People, plants, and ___ live on Earth.", "a": "animals", "ko": "사람과 식물, 동물이 지구에 살아요."}
+  ],
+
+  "trace": [
+    {"en": "Earth is a planet.", "ko": "지구는 행성이에요."},
+    {"en": "Living things need these to breathe and live.", "ko": "생물은 숨 쉬고 살아가려면 이것들이 필요해요."}
+  ],
+
+  "notes": {
+    "phonics": "이 지문에는 짧은 e 소리 단어가 없어서 <b>u와 i를 두 번씩</b> 냈습니다. <b>_xygen은 맨 앞 글자</b>를 채웁니다 — 앞이 비어 있으면 당황하기 쉬우니 \"산소를 영어로 어떻게 시작하지?\" 하고 힌트를 주세요.",
+    "scan": "이 유닛은 <b>답이 숫자인 문항이 셋</b>입니다. 영어를 다 읽지 못해도 숫자는 눈에 띄니, 어느 문장에 있는지만 짚게 해 주세요. 3번은 세 낱말을 다 찾아야 하는데 하나만 찾아도 잘한 거예요.",
+    "tf": "4번은 <b>다음에 나올 화성 이야기와 헷갈리게</b> 만든 문항입니다. 지구 공기는 질소와 산소, 화성 공기는 이산화탄소예요 — 행성 유닛을 이어서 볼 때 이 구별이 제일 중요합니다.",
+    "trace": "숫자와 % 기호가 없는 문장을 골랐습니다. 대문자와 마침표만 봐 주세요."
+  }
+}

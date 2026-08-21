@@ -1,0 +1,69 @@
+{
+  "title": "Mercury",
+  "title_ko": "수성",
+
+  "paras": [
+    ["Mercury is a planet.", "Planets orbit stars.", "Planets in our solar system orbit the sun."],
+    ["Mercury is the closest planet to the sun.", "It is about 36 million miles (58 million km) from the sun."],
+    ["Mercury orbits the sun every 88 days.", "One year on Mercury is 88 days on Earth."],
+    ["Mercury spins while it orbits the sun.", "It spins very slowly.", "The spin makes day and night.", "One day on Mercury is 59 days on Earth."],
+    ["Mercury has three layers.", "It has a core, mantle, and crust.", "Its core is made of iron."],
+    ["Mercury's terrain is rough.", "It is covered in large craters."],
+    ["Mercury can be very hot or cold.", "Humans and animals cannot live there.", "Plants cannot live there either."],
+    ["You can see Mercury from Earth.", "You can see it without a telescope."]
+  ],
+
+  "match": [
+    {"en": "craters",   "ko": "크레이터 (구덩이)"},
+    {"en": "terrain",   "ko": "지형"},
+    {"en": "rough",     "ko": "울퉁불퉁한"},
+    {"en": "telescope", "ko": "망원경"}
+  ],
+  "match_ko_order": ["울퉁불퉁한", "망원경", "크레이터 (구덩이)", "지형"],
+
+  "phonics": [
+    {"q": "s_n",        "a": "u", "ko": "태양"},
+    {"q": "h_t",        "a": "o", "ko": "뜨거운"},
+    {"q": "sp_n",       "a": "i", "ko": "회전하다"},
+    {"q": "pl_net",     "a": "a", "ko": "행성"},
+    {"q": "t_lescope",  "a": "e", "ko": "망원경"},
+    {"q": "cr_st",      "a": "u", "ko": "지각 (겉껍질)"}
+  ],
+
+  "scan": [
+    {"q": "수성은 태양에서 몇 번째로 가까운 행성인가요?", "a": "the closest", "sent": "4"},
+    {"q": "수성의 1년은 지구의 며칠인가요?",              "a": "88 days",     "sent": "7"},
+    {"q": "수성의 하루는 지구의 며칠인가요?",             "a": "59 days",     "sent": "11"},
+    {"q": "수성의 핵은 무엇으로 되어 있나요?",            "a": "iron",        "sent": "14"}
+  ],
+
+  "tf": [
+    {"en": "Mercury spins very slowly.", "answer": "O",
+     "why": "수성은 아주 천천히 회전해요.", "sent": "9"},
+    {"en": "Mercury has three layers.", "answer": "O",
+     "why": "핵, 맨틀, 지각 세 층이에요.", "sent": "12"},
+    {"en": "Humans can live on Mercury.", "gloss": "humans 사람", "answer": "X",
+     "why": "사람도 동물도 식물도 살 수 없어요.", "sent": "18"},
+    {"en": "Mercury is the hottest planet in our solar system.", "gloss": "hottest 가장 뜨거운",
+     "answer": "X", "why": "수성은 뜨겁기도 하고 춥기도 해요. 가장 뜨거운 행성은 금성이에요.", "sent": "17"}
+  ],
+
+  "fill_bank": ["rough", "craters", "telescope", "cold"],
+  "fill": [
+    {"en": "Mercury's terrain is ___.",            "a": "rough",     "ko": "수성의 지형은 울퉁불퉁해요."},
+    {"en": "It is covered in large ___.",          "a": "craters",   "ko": "큰 크레이터로 덮여 있어요."},
+    {"en": "You can see it without a ___.",        "a": "telescope", "ko": "망원경 없이도 볼 수 있어요."}
+  ],
+
+  "trace": [
+    {"en": "Mercury is a planet.", "ko": "수성은 행성이에요."},
+    {"en": "You can see Mercury from Earth.", "ko": "지구에서 수성을 볼 수 있어요."}
+  ],
+
+  "notes": {
+    "phonics": "여섯 문항이 <b>a·e·i·o·u 다섯 소리를 모두</b> 담고 있습니다. <b>h_t은 hot·hat·hit·hut이 다 단어</b>라 이 지문에서 가장 헷갈립니다 — 옆의 한글 뜻(뜨거운)을 꼭 보게 하세요.",
+    "scan": "2번과 3번이 <b>이 유닛의 핵심</b>입니다 — 1년은 88일, 하루는 59일. 숫자가 둘 다 나오니 <b>'1년'과 '하루'를 구별</b>해서 읽어야 맞힙니다. 틀렸다면 두 문장을 나란히 짚어 주세요.",
+    "tf": "4번은 <b>가장 가까운 행성과 가장 뜨거운 행성이 다르다</b>는 걸 묻습니다. 태양에 제일 가까우니 제일 뜨거울 것 같지만, 수성은 밤에 아주 춥고 가장 뜨거운 건 금성이에요. 아이가 O로 골라도 자연스러운 오답이니 혼내지 말고 17번 문장을 다시 읽게 해 주세요.",
+    "trace": "짧은 두 문장을 골랐습니다. 대문자와 마침표만 봐 주세요."
+  }
+}

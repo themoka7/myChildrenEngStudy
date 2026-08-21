@@ -1,0 +1,76 @@
+{
+  "title": "Mars",
+  "eyebrow": "Unit 34 · Nonfiction · Space",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "planet":  {"ipa": "ˈplænɪt",       "pos": "명사",   "ko": "행성"},
+    "orbit":   {"ipa": "ˈɔːrbɪt",       "pos": "동사",   "ko": "~의 주위를 돌다; 궤도"},
+    "solar":   {"ipa": "ˈsoʊlər",       "pos": "형용사", "ko": "태양의 (solar system 태양계)"},
+    "fourth":  {"ipa": "fɔːrθ",         "pos": "형용사", "ko": "네 번째의"},
+    "spins":   {"ipa": "spɪnz",         "pos": "동사",   "ko": "스스로 회전하다 (spin)"},
+    "lasts":   {"ipa": "læsts",         "pos": "동사",   "ko": "(시간이) 이어지다 (last)"},
+    "thin":    {"ipa": "θɪn",           "pos": "형용사", "ko": "얇은, 희박한"},
+    "dioxide": {"ipa": "daɪˈɑːksaɪd",   "pos": "명사",   "ko": "(carbon dioxide) 이산화탄소"},
+    "dust":    {"ipa": "dʌst",          "pos": "명사",   "ko": "먼지"},
+    "iron":    {"ipa": "ˈaɪərn",        "pos": "명사",   "ko": "철"},
+    "dry":     {"ipa": "draɪ",          "pos": "형용사", "ko": "건조한"},
+    "windy":   {"ipa": "ˈwɪndi",        "pos": "형용사", "ko": "바람이 많이 부는"},
+    "storms":  {"ipa": "stɔːrmz",       "pos": "명사",   "ko": "폭풍"},
+    "tilted":  {"ipa": "ˈtɪltɪd",       "pos": "형용사", "ko": "기울어진"},
+    "seasons": {"ipa": "ˈsiːzənz",      "pos": "명사",   "ko": "계절"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Mars is a planet.", "ko": "화성은 행성이에요."},
+      {"en": "Planets orbit stars.", "ko": "행성은 별 주위를 돌아요."},
+      {"en": "Planets in our solar system orbit the sun.", "ko": "우리 태양계의 행성들은 태양 주위를 돌아요."}
+    ]},
+    {"sents": [
+      {"en": "Mars is the fourth planet from the sun.", "ko": "화성은 태양에서 네 번째 행성이에요."},
+      {"en": "It is about 142 million miles (229 million km) from the sun.", "ko": "태양에서 약 1억 4,200만 마일(2억 2,900만 km) 떨어져 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Mars fully orbits the sun every 687 days.", "ko": "화성은 687일마다 태양을 완전히 한 바퀴 돌아요."},
+      {"en": "One year on Mars is 1.8 years on Earth.", "ko": "화성의 1년은 지구의 1.8년이에요."}
+    ]},
+    {"sents": [
+      {"en": "Mars spins while in orbit.", "ko": "화성은 궤도를 도는 동안 스스로 회전해요."},
+      {"en": "One full spin takes a little longer than 24 hours.", "ko": "한 바퀴 회전하는 데 24시간보다 조금 더 걸려요."},
+      {"en": "One day on Mars lasts nearly as long as one day on Earth.", "ko": "화성의 하루는 지구의 하루와 거의 같아요."}
+    ]},
+    {"sents": [
+      {"en": "The air is very thin on Mars.", "ko": "화성의 공기는 아주 희박해요."},
+      {"en": "It is made mostly of a gas called carbon dioxide.", "ko": "주로 이산화탄소라는 기체로 되어 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Dust that is rich in iron covers Mars.", "ko": "철이 많이 든 먼지가 화성을 덮고 있어요."},
+      {"en": "That is why Mars is red.", "ko": "그래서 화성이 붉어요."}
+    ]},
+    {"sents": [
+      {"en": "Mars is very dry.", "ko": "화성은 아주 건조해요."},
+      {"en": "It can be windy.", "ko": "바람이 불 수도 있어요."},
+      {"en": "The wind causes large dust storms.", "ko": "그 바람이 커다란 모래 폭풍을 일으켜요."}
+    ]},
+    {"sents": [
+      {"en": "Mars is tilted like Earth.", "ko": "화성은 지구처럼 기울어져 있어요."},
+      {"en": "Mars has seasons just like Earth.", "ko": "화성에도 지구처럼 계절이 있어요."},
+      {"en": "But, its seasons last longer.", "ko": "하지만 계절이 더 길어요."}
+    ]},
+    {"sents": [
+      {"en": "Mars can be seen from Earth in the night sky.", "ko": "화성은 밤하늘에서 볼 수 있어요."},
+      {"en": "You just have to know where to look!", "ko": "어디를 봐야 하는지만 알면 돼요!"}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "What did you think?", "ko": "어떻게 생각했나요?"},
+      {"en": "Did you like Mars?", "ko": "화성이 마음에 들었나요?"},
+      {"en": "Would you go with me if we could?", "ko": "갈 수 있다면 저와 함께 갈래요?"},
+      {"en": "I hope that we can all go to Mars together someday.", "ko": "언젠가 우리 모두 함께 화성에 갈 수 있으면 좋겠어요."},
+      {"en": "Okay. That's all for now. See you next time!", "ko": "좋아요. 오늘은 여기까지예요. 다음에 또 만나요!"}
+    ]}
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "title": "The Lion and the Mouse",
+  "title_ko": "사자와 쥐",
+
+  "paras": [
+    ["One day, a bored mouse was watching a sleeping lion.", "The mouse decided it would be fun to surf down the lion.", "So, the mouse slid down the lion's leg."],
+    ["Suddenly, the lion woke up and saw the mouse.", "The lion caught the mouse with his paw."],
+    ["'Please, please let me go!' the mouse begged.", "'I'll do anything to pay you back!' the mouse cried."],
+    ["The lion found the mouse's begging funny.", "'Okay, you may go,' the lion said."],
+    ["That afternoon, the lion continued on his way.", "He was soon trapped in a hunter's net."],
+    ["The lion roared his anger, and the mouse heard him.", "The mouse chewed through the ropes and freed the lion."],
+    ["The lion was surprised the mouse had freed him.", "Together, the lion and his new friend walked away."],
+    ["The moral of the story is: Little friends may prove to be great friends."]
+  ],
+
+  "match": [
+    {"en": "paw",     "ko": "(동물의) 발"},
+    {"en": "begged",  "ko": "애원했다"},
+    {"en": "trapped", "ko": "갇힌"},
+    {"en": "freed",   "ko": "풀어 주었다"}
+  ],
+  "match_ko_order": ["갇힌", "풀어 주었다", "(동물의) 발", "애원했다"],
+
+  "phonics": [
+    {"q": "h_d",   "a": "a", "ko": "~했다"},
+    {"q": "n_t",   "a": "e", "ko": "그물"},
+    {"q": "sl_d",  "a": "i", "ko": "미끄러져 내려갔다"},
+    {"q": "f_n",   "a": "u", "ko": "재미"},
+    {"q": "l_g",   "a": "e", "ko": "다리"},
+    {"q": "b_ck",  "a": "a", "ko": "되돌려, 갚아"}
+  ],
+
+  "scan": [
+    {"q": "쥐는 무엇을 하고 있는 사자를 보고 있었나요?", "a": "a sleeping lion",  "sent": "1"},
+    {"q": "사자는 무엇으로 쥐를 붙잡았나요?",            "a": "his paw",         "sent": "5"},
+    {"q": "사자는 어디에 갇혔나요?",                     "a": "a hunter's net",  "sent": "11"},
+    {"q": "쥐는 무엇을 물어뜯어 사자를 풀어 주었나요?",   "a": "the ropes",       "sent": "13"}
+  ],
+
+  "tf": [
+    {"en": "The mouse slid down the lion's leg.", "answer": "O",
+     "why": "쥐가 사자의 다리를 타고 미끄러져 내려갔어요.", "sent": "3"},
+    {"en": "The lion ate the mouse.", "gloss": "ate 먹었다", "answer": "X",
+     "why": "사자는 \"가도 된다\"며 놓아 주었어요.", "sent": "9"},
+    {"en": "The lion was surprised.", "answer": "O",
+     "why": "쥐가 자기를 풀어 준 것에 놀랐어요.", "sent": "14"},
+    {"en": "The lion stayed trapped forever.", "gloss": "stayed 계속 있었다 / forever 영원히",
+     "answer": "X", "why": "쥐가 풀어 주어서 둘이 함께 걸어갔어요.", "sent": "15"}
+  ],
+
+  "fill_bank": ["woke", "roared", "moral", "paw"],
+  "fill": [
+    {"en": "Suddenly, the lion ___ up and saw the mouse.",        "a": "woke",   "ko": "갑자기 사자가 깨어나 쥐를 봤어요."},
+    {"en": "The lion ___ his anger, and the mouse heard him.",     "a": "roared", "ko": "사자가 화가 나서 으르렁거렸고, 쥐가 들었어요."}
+  ],
+
+  "trace": [
+    {"en": "One day, a bored mouse was watching a sleeping lion.", "ko": "어느 날, 심심한 쥐가 잠든 사자를 보고 있었어요."},
+    {"en": "Together, the lion and his new friend walked away.", "ko": "사자와 새 친구는 함께 걸어갔어요."}
+  ],
+
+  "notes": {
+    "phonics": "이 지문에는 짧은 o 소리 단어가 없어서 <b>a와 e를 두 번씩</b> 냈습니다. <b>h_d는 had·hid·hod</b>, <b>sl_d는 slid·sled</b>이 다 단어라 헷갈립니다 — 옆의 한글 뜻을 꼭 보게 하세요.",
+    "scan": "네 문항이 <b>이야기 순서대로</b> 놓여 있습니다 (보다 → 붙잡히다 → 갇히다 → 풀어 주다). 답을 다 찾은 뒤 순서대로 읽어 주면 줄거리가 그대로 정리됩니다.",
+    "tf": "2번과 4번은 <b>이야기가 그렇게 흘렀을 것 같지만 아닌</b> 것들입니다 — 사자가 쥐를 먹었을 것 같고, 그물에 계속 갇혔을 것 같지요. \"그래서 어떻게 됐어?\"라고 끝까지 확인하게 해 주세요.",
+    "trace": "이야기의 <b>첫 문장과 마지막 장면</b>을 골랐습니다. 두 문장을 나란히 쓰면 '심심한 쥐'가 '새 친구'가 되는 변화가 눈에 보입니다."
+  }
+}

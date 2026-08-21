@@ -1,0 +1,73 @@
+{
+  "title": "Earth",
+  "eyebrow": "Unit 31 · Nonfiction · Space",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "planet":     {"ipa": "ˈplænɪt",     "pos": "명사",   "ko": "행성"},
+    "orbit":      {"ipa": "ˈɔːrbɪt",     "pos": "동사",   "ko": "~의 주위를 돌다"},
+    "solar":      {"ipa": "ˈsoʊlər",     "pos": "형용사", "ko": "태양의 (solar system 태양계)"},
+    "closest":    {"ipa": "ˈkloʊsɪst",   "pos": "형용사", "ko": "가장 가까운"},
+    "spins":      {"ipa": "spɪnz",       "pos": "동사",   "ko": "스스로 회전하다 (spin)"},
+    "axis":       {"ipa": "ˈæksɪs",      "pos": "명사",   "ko": "축"},
+    "tilted":     {"ipa": "ˈtɪltɪd",     "pos": "형용사", "ko": "기울어진"},
+    "seasons":    {"ipa": "ˈsiːzənz",    "pos": "명사",   "ko": "계절"},
+    "layers":     {"ipa": "ˈleɪərz",     "pos": "명사",   "ko": "층"},
+    "core":       {"ipa": "kɔːr",        "pos": "명사",   "ko": "핵, 중심"},
+    "mantle":     {"ipa": "ˈmæntəl",     "pos": "명사",   "ko": "맨틀"},
+    "crust":      {"ipa": "krʌst",       "pos": "명사",   "ko": "지각 (겉껍질)"},
+    "continents": {"ipa": "ˈkɑːntɪnənts","pos": "명사",   "ko": "대륙"},
+    "atmosphere": {"ipa": "ˈætməsfɪr",   "pos": "명사",   "ko": "대기"},
+    "oxygen":     {"ipa": "ˈɑːksɪdʒən",  "pos": "명사",   "ko": "산소"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Earth is a planet.", "ko": "지구는 행성이에요."},
+      {"en": "Planets travel around stars.", "ko": "행성은 별 주위를 돌아요."},
+      {"en": "Planets in our solar system orbit the sun.", "ko": "우리 태양계의 행성들은 태양 주위를 돌아요."}
+    ]},
+    {"sents": [
+      {"en": "Earth is the third closest planet to the sun.", "ko": "지구는 태양에서 세 번째로 가까운 행성이에요."},
+      {"en": "It is about 93 million miles (150 million km) from the sun.", "ko": "태양에서 약 9,300만 마일(1억 5천만 km) 떨어져 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Earth orbits the sun every 365 days, that is equal to one year.", "ko": "지구는 365일마다 태양을 한 바퀴 도는데, 그것이 1년이에요."},
+      {"en": "Earth spins while it orbits the sun.", "ko": "지구는 태양을 도는 동안 스스로 회전해요."},
+      {"en": "One full spin takes 24 hours.", "ko": "한 바퀴 회전하는 데 24시간이 걸려요."},
+      {"en": "The spin makes day and night.", "ko": "그 회전이 낮과 밤을 만들어요."}
+    ]},
+    {"sents": [
+      {"en": "Earth spins on an axis.", "ko": "지구는 축을 중심으로 회전해요."},
+      {"en": "Earth's axis is tilted.", "ko": "지구의 축은 기울어져 있어요."},
+      {"en": "The tilt creates the seasons.", "ko": "그 기울기가 계절을 만들어요."}
+    ]},
+    {"sents": [
+      {"en": "Earth is made of three layers.", "ko": "지구는 세 개의 층으로 되어 있어요."},
+      {"en": "They are the core, mantle, and crust.", "ko": "핵, 맨틀, 지각이에요."}
+    ]},
+    {"sents": [
+      {"en": "Water covers 70% of the earth.", "ko": "물이 지구의 70%를 덮고 있어요."},
+      {"en": "Earth has 7 landmasses called continents.", "ko": "지구에는 대륙이라고 부르는 큰 땅덩어리가 7개 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Earth's atmosphere is made of gases.", "ko": "지구의 대기는 기체로 되어 있어요."},
+      {"en": "It is made mostly of nitrogen and oxygen.", "ko": "주로 질소와 산소로 되어 있어요."},
+      {"en": "Living things need these to breathe and live.", "ko": "생물은 숨 쉬고 살아가려면 이것들이 필요해요."}
+    ]},
+    {"sents": [
+      {"en": "People, plants, and animals live on Earth.", "ko": "사람과 식물, 동물이 지구에 살아요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Oh, yes! Earth is where we live.", "ko": "오, 그래요! 지구는 우리가 사는 곳이에요."},
+      {"en": "After reading this book, I think I love Earth even more.", "ko": "이 책을 읽고 나니 지구가 더 좋아졌어요."},
+      {"en": "Earth is so beautiful and lovely.", "ko": "지구는 정말 아름답고 사랑스러워요."},
+      {"en": "What about you? What do you think now?", "ko": "여러분은요? 지금 어떤 생각이 드나요?"},
+      {"en": "Okay. That's all for today. I'll see you next time.", "ko": "좋아요. 오늘은 여기까지예요. 다음에 또 만나요."},
+      {"en": "Bye for now!", "ko": "이제 안녕!"}
+    ]}
+  ]
+}

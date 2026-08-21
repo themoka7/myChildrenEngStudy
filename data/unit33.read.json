@@ -1,0 +1,75 @@
+{
+  "title": "Venus",
+  "eyebrow": "Unit 33 · Nonfiction · Space",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "planet":       {"ipa": "ˈplænɪt",       "pos": "명사",   "ko": "행성"},
+    "orbit":        {"ipa": "ˈɔːrbɪt",       "pos": "동사",   "ko": "~의 주위를 돌다; 궤도"},
+    "solar":        {"ipa": "ˈsoʊlər",       "pos": "형용사", "ko": "태양의 (solar system 태양계)"},
+    "fully":        {"ipa": "ˈfʊli",         "pos": "부사",   "ko": "완전히"},
+    "spins":        {"ipa": "spɪnz",         "pos": "동사",   "ko": "스스로 회전하다 (spin)"},
+    "thick":        {"ipa": "θɪk",           "pos": "형용사", "ko": "두꺼운"},
+    "traps":        {"ipa": "træps",         "pos": "동사",   "ko": "갇히게 하다"},
+    "hottest":      {"ipa": "ˈhɑːtɪst",      "pos": "형용사", "ko": "가장 뜨거운"},
+    "temperatures": {"ipa": "ˈtemprətʃərz",  "pos": "명사",   "ko": "온도"},
+    "volcanoes":    {"ipa": "vɑːlˈkeɪnoʊz",  "pos": "명사",   "ko": "화산"},
+    "flat":         {"ipa": "flæt",          "pos": "형용사", "ko": "평평한"},
+    "smooth":       {"ipa": "smuːð",         "pos": "형용사", "ko": "매끄러운"},
+    "clouds":       {"ipa": "klaʊdz",        "pos": "명사",   "ko": "구름"},
+    "brighter":     {"ipa": "ˈbraɪtər",      "pos": "형용사", "ko": "더 밝은"},
+    "reflect":      {"ipa": "rɪˈflekt",      "pos": "동사",   "ko": "반사하다"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "Venus is a planet.", "ko": "금성은 행성이에요."},
+      {"en": "Planets orbit stars.", "ko": "행성은 별 주위를 돌아요."},
+      {"en": "Planets in our solar system orbit the sun.", "ko": "우리 태양계의 행성들은 태양 주위를 돌아요."}
+    ]},
+    {"sents": [
+      {"en": "Venus is the second-closest planet to the sun.", "ko": "금성은 태양에서 두 번째로 가까운 행성이에요."},
+      {"en": "It is about 67 million miles (108 million km) away from the sun.", "ko": "태양에서 약 6,700만 마일(1억 800만 km) 떨어져 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Venus fully orbits the sun every 225 days.", "ko": "금성은 225일마다 태양을 완전히 한 바퀴 돌아요."},
+      {"en": "One year on Venus is 225 days on Earth.", "ko": "금성의 1년은 지구의 225일이에요."}
+    ]},
+    {"sents": [
+      {"en": "Venus spins while in orbit.", "ko": "금성은 궤도를 도는 동안 스스로 회전해요."},
+      {"en": "The spin makes day and night.", "ko": "그 회전이 낮과 밤을 만들어요."},
+      {"en": "One full spin takes about 243 Earth days.", "ko": "한 바퀴 회전하는 데 지구 시간으로 약 243일이 걸려요."}
+    ]},
+    {"sents": [
+      {"en": "Venus has thick air.", "ko": "금성은 공기가 두꺼워요."},
+      {"en": "The air traps heat.", "ko": "그 공기가 열을 갇히게 해요."},
+      {"en": "Venus is the hottest planet in our solar system.", "ko": "금성은 태양계에서 가장 뜨거운 행성이에요."},
+      {"en": "Temperatures on Venus can reach 870°F (466°C).", "ko": "금성의 온도는 870°F(466°C)까지 올라갈 수 있어요."}
+    ]},
+    {"sents": [
+      {"en": "Venus has many volcanoes.", "ko": "금성에는 화산이 많아요."},
+      {"en": "Other parts of Venus are flat and smooth.", "ko": "금성의 다른 부분은 평평하고 매끄러워요."}
+    ]},
+    {"sents": [
+      {"en": "Venus has clouds.", "ko": "금성에는 구름이 있어요."},
+      {"en": "The top layer of clouds move about 224 mph (360 kph).", "ko": "구름의 맨 위층은 시속 약 224마일(360km)로 움직여요."},
+      {"en": "This is fast for how slow Venus spins.", "ko": "금성이 느리게 회전하는 것에 비하면 아주 빠른 거예요."}
+    ]},
+    {"sents": [
+      {"en": "Venus is brighter than any other planet.", "ko": "금성은 어떤 행성보다도 더 밝아요."},
+      {"en": "Its clouds reflect light.", "ko": "구름이 빛을 반사하기 때문이에요."},
+      {"en": "You can see Venus from Earth at night.", "ko": "밤에 지구에서 금성을 볼 수 있어요."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Oh, the story is done already.", "ko": "오, 이야기가 벌써 끝났네요."},
+      {"en": "Venus is the brightest planet in the sky.", "ko": "금성은 하늘에서 가장 밝은 행성이에요."},
+      {"en": "It is also a similar size to Earth.", "ko": "크기도 지구와 비슷해요."},
+      {"en": "What else do you remember?", "ko": "또 무엇이 기억나나요?"},
+      {"en": "Okay. Let's look for Venus together.", "ko": "좋아요. 함께 금성을 찾아봐요."},
+      {"en": "You're ready? Venus!", "ko": "준비됐나요? 금성!"}
+    ]}
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "title": "The Lion and the Mouse",
+  "eyebrow": "Unit 30 · Story · Aesop's Fable",
+  "closing_label": "읽고 나서",
+
+  "dict": {
+    "bored":     {"ipa": "bɔːrd",       "pos": "형용사", "ko": "심심한"},
+    "decided":   {"ipa": "dɪˈsaɪdɪd",   "pos": "동사",   "ko": "결심했다 (decide)"},
+    "slid":      {"ipa": "slɪd",        "pos": "동사",   "ko": "미끄러져 내려갔다 (slide)"},
+    "caught":    {"ipa": "kɔːt",        "pos": "동사",   "ko": "붙잡았다 (catch)"},
+    "paw":       {"ipa": "pɔː",         "pos": "명사",   "ko": "(동물의) 발"},
+    "begged":    {"ipa": "beɡd",        "pos": "동사",   "ko": "애원했다 (beg)"},
+    "continued": {"ipa": "kənˈtɪnjuːd", "pos": "동사",   "ko": "계속 갔다 (continue)"},
+    "trapped":   {"ipa": "træpt",       "pos": "형용사", "ko": "갇힌"},
+    "hunter":    {"ipa": "ˈhʌntər",     "pos": "명사",   "ko": "사냥꾼"},
+    "net":       {"ipa": "net",         "pos": "명사",   "ko": "그물"},
+    "roared":    {"ipa": "rɔːrd",       "pos": "동사",   "ko": "으르렁거렸다 (roar)"},
+    "chewed":    {"ipa": "tʃuːd",       "pos": "동사",   "ko": "물어뜯었다 (chew)"},
+    "ropes":     {"ipa": "roʊps",       "pos": "명사",   "ko": "밧줄"},
+    "freed":     {"ipa": "friːd",       "pos": "동사",   "ko": "풀어 주었다 (free)"},
+    "moral":     {"ipa": "ˈmɔːrəl",     "pos": "명사",   "ko": "(이야기의) 교훈"}
+  },
+
+  "paras": [
+    {"sents": [
+      {"en": "One day, a bored mouse was watching a sleeping lion.", "ko": "어느 날, 심심한 쥐가 잠든 사자를 보고 있었어요."},
+      {"en": "The mouse decided it would be fun to surf down the lion.", "ko": "쥐는 사자를 타고 미끄러져 내려가면 재미있겠다고 생각했어요."},
+      {"en": "So, the mouse slid down the lion's leg.", "ko": "그래서 쥐는 사자의 다리를 타고 미끄러져 내려갔어요."}
+    ]},
+    {"sents": [
+      {"en": "Suddenly, the lion woke up and saw the mouse.", "ko": "갑자기 사자가 깨어나 쥐를 봤어요."},
+      {"en": "The lion caught the mouse with his paw.", "ko": "사자는 발로 쥐를 붙잡았어요."}
+    ]},
+    {"sents": [
+      {"en": "'Please, please let me go!' the mouse begged.", "ko": "\"제발, 제발 놓아 주세요!\" 쥐가 애원했어요."},
+      {"en": "'I'll do anything to pay you back!' the mouse cried.", "ko": "\"은혜를 갚기 위해 무엇이든 할게요!\" 쥐가 외쳤어요."}
+    ]},
+    {"sents": [
+      {"en": "The lion found the mouse's begging funny.", "ko": "사자는 쥐가 애원하는 모습이 재미있었어요."},
+      {"en": "'Okay, you may go,' the lion said.", "ko": "\"좋아, 가도 된다.\" 사자가 말했어요."}
+    ]},
+    {"sents": [
+      {"en": "That afternoon, the lion continued on his way.", "ko": "그날 오후, 사자는 가던 길을 계속 갔어요."},
+      {"en": "He was soon trapped in a hunter's net.", "ko": "그런데 곧 사냥꾼의 그물에 갇혔어요."}
+    ]},
+    {"sents": [
+      {"en": "The lion roared his anger, and the mouse heard him.", "ko": "사자가 화가 나서 으르렁거렸고, 쥐가 그 소리를 들었어요."},
+      {"en": "The mouse chewed through the ropes and freed the lion.", "ko": "쥐는 밧줄을 물어뜯어 사자를 풀어 주었어요."}
+    ]},
+    {"sents": [
+      {"en": "The lion was surprised the mouse had freed him.", "ko": "사자는 쥐가 자기를 풀어 준 것에 놀랐어요."},
+      {"en": "Together, the lion and his new friend walked away.", "ko": "사자와 새 친구는 함께 걸어갔어요."}
+    ]},
+    {"sents": [
+      {"en": "The moral of the story is: Little friends may prove to be great friends.", "ko": "이 이야기의 교훈은 이래요 — 작은 친구가 큰 친구가 되어 줄 수 있다."}
+    ]}
+  ],
+
+  "closing": [
+    {"sents": [
+      {"en": "Wow, the lion and the mouse!", "ko": "와, 사자와 쥐라니요!"},
+      {"en": "They became such good friends.", "ko": "둘은 정말 좋은 친구가 되었어요."},
+      {"en": "How great is it that they became friends after helping each other!", "ko": "서로 도운 뒤에 친구가 되었다니 정말 멋지지 않나요!"},
+      {"en": "I hope we can make friends that also want to help each other.", "ko": "우리도 서로 돕고 싶어 하는 친구를 만들면 좋겠어요."},
+      {"en": "That'll be so great!", "ko": "정말 멋질 거예요!"}
+    ]}
+  ]
+}

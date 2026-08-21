@@ -66,16 +66,16 @@
         {"n": 27, "en": "A Monster in the Park (1)", "ko": "공원의 괴물 (1)", "status": "todo", "min": 15, "ready": true},
         {"n": 28, "en": "A Monster in the Park (2)", "ko": "공원의 괴물 (2)", "status": "todo", "min": 14, "ready": true},
         {"n": 29, "en": "The Town Mouse and the Country Mouse", "ko": "도시 쥐와 시골 쥐", "status": "todo", "min": 14, "ready": true},
-        {"n": 30, "en": "The Lion and the Mouse", "ko": "사자와 쥐", "status": "todo", "min": 15}
+        {"n": 30, "en": "The Lion and the Mouse", "ko": "사자와 쥐", "status": "todo", "min": 15, "ready": true}
       ]
     },
     {
       "theme": "우주",
       "units": [
-        {"n": 31, "en": "Earth", "ko": "지구", "status": "todo", "min": 14},
-        {"n": 32, "en": "Mercury", "ko": "수성", "status": "todo", "min": 13},
-        {"n": 33, "en": "Venus", "ko": "금성", "status": "todo", "min": 15},
-        {"n": 34, "en": "Mars", "ko": "화성", "status": "todo", "min": 14},
+        {"n": 31, "en": "Earth", "ko": "지구", "status": "todo", "min": 14, "ready": true},
+        {"n": 32, "en": "Mercury", "ko": "수성", "status": "todo", "min": 13, "ready": true},
+        {"n": 33, "en": "Venus", "ko": "금성", "status": "todo", "min": 15, "ready": true},
+        {"n": 34, "en": "Mars", "ko": "화성", "status": "todo", "min": 14, "ready": true},
         {"n": 35, "en": "Jupiter", "ko": "목성", "status": "todo", "min": 13},
         {"n": 36, "en": "Saturn", "ko": "토성", "status": "todo", "min": 14}
       ]

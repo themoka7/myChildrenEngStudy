@@ -1,0 +1,69 @@
+{
+  "title": "Venus",
+  "title_ko": "금성",
+
+  "paras": [
+    ["Venus is a planet.", "Planets orbit stars.", "Planets in our solar system orbit the sun."],
+    ["Venus is the second-closest planet to the sun.", "It is about 67 million miles (108 million km) away from the sun."],
+    ["Venus fully orbits the sun every 225 days.", "One year on Venus is 225 days on Earth."],
+    ["Venus spins while in orbit.", "The spin makes day and night.", "One full spin takes about 243 Earth days."],
+    ["Venus has thick air.", "The air traps heat.", "Venus is the hottest planet in our solar system.", "Temperatures on Venus can reach 870°F (466°C)."],
+    ["Venus has many volcanoes.", "Other parts of Venus are flat and smooth."],
+    ["Venus has clouds.", "The top layer of clouds move about 224 mph (360 kph).", "This is fast for how slow Venus spins."],
+    ["Venus is brighter than any other planet.", "Its clouds reflect light.", "You can see Venus from Earth at night."]
+  ],
+
+  "match": [
+    {"en": "traps",     "ko": "갇히게 하다"},
+    {"en": "volcanoes", "ko": "화산"},
+    {"en": "smooth",    "ko": "매끄러운"},
+    {"en": "reflect",   "ko": "반사하다"}
+  ],
+  "match_ko_order": ["화산", "반사하다", "갇히게 하다", "매끄러운"],
+
+  "phonics": [
+    {"q": "s_n",       "a": "u", "ko": "태양"},
+    {"q": "h_ttest",   "a": "o", "ko": "가장 뜨거운"},
+    {"q": "sp_n",      "a": "i", "ko": "회전하다"},
+    {"q": "fl_t",      "a": "a", "ko": "평평한"},
+    {"q": "r_flect",   "a": "e", "ko": "반사하다"},
+    {"q": "th_ck",     "a": "i", "ko": "두꺼운"}
+  ],
+
+  "scan": [
+    {"q": "금성의 1년은 지구의 며칠인가요?",              "a": "225 days",         "sent": "7"},
+    {"q": "금성이 한 바퀴 회전하는 데 며칠이 걸리나요?",   "a": "243 Earth days",   "sent": "10"},
+    {"q": "금성의 온도는 몇 도까지 올라갈 수 있나요?",     "a": "870°F (466°C)",    "sent": "14"},
+    {"q": "금성의 구름은 무엇을 하나요?",                 "a": "reflect light",    "sent": "21"}
+  ],
+
+  "tf": [
+    {"en": "Venus has thick air.", "answer": "O",
+     "why": "금성은 공기가 두꺼워요.", "sent": "11"},
+    {"en": "Venus is the hottest planet in our solar system.", "answer": "O",
+     "why": "태양계에서 가장 뜨거운 행성이에요.", "sent": "13"},
+    {"en": "Venus is the closest planet to the sun.", "answer": "X",
+     "why": "두 번째로 가까워요. 가장 가까운 건 수성이에요.", "sent": "4"},
+    {"en": "Venus is darker than any other planet.", "gloss": "darker 더 어두운", "answer": "X",
+     "why": "반대예요. 어떤 행성보다도 더 밝아요.", "sent": "20"}
+  ],
+
+  "fill_bank": ["volcanoes", "smooth", "night", "clouds"],
+  "fill": [
+    {"en": "Venus has many ___.",                        "a": "volcanoes", "ko": "금성에는 화산이 많아요."},
+    {"en": "Other parts of Venus are flat and ___.",     "a": "smooth",    "ko": "다른 부분은 평평하고 매끄러워요."},
+    {"en": "The spin makes day and ___.",                "a": "night",     "ko": "그 회전이 낮과 밤을 만들어요."}
+  ],
+
+  "trace": [
+    {"en": "Venus is a planet.", "ko": "금성은 행성이에요."},
+    {"en": "You can see Venus from Earth at night.", "ko": "밤에 지구에서 금성을 볼 수 있어요."}
+  ],
+
+  "notes": {
+    "phonics": "여섯 문항이 <b>a·e·i·o·u 다섯 소리를 모두</b> 담고 있습니다. <b>fl_t은 flat·flit</b>, <b>th_ck은 thick·thack</b>이 헷갈리니 옆의 한글 뜻을 보게 하세요.",
+    "scan": "1번과 2번을 나란히 보면 <b>이 유닛에서 가장 놀라운 사실</b>이 나옵니다 — 금성의 1년은 225일인데 <b>한 바퀴 도는 데는 243일</b>이 걸려요. 즉 <b>하루가 1년보다 깁니다.</b> 아이가 답을 다 찾으면 이 얘기를 꼭 해 주세요.",
+    "tf": "3번은 <b>앞 유닛(수성)과 헷갈리게</b> 만든 문항입니다 — 가장 가까운 건 수성, 가장 뜨거운 건 금성이에요. 두 유닛을 이어서 본 아이에게 가장 값진 구별입니다.",
+    "trace": "숫자와 기호가 없는 두 문장을 골랐습니다. 대문자와 마침표만 봐 주세요."
+  }
+}
