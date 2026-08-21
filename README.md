@@ -42,6 +42,14 @@ python3 tools/build_index.py       # 메인 목차 다시 생성
 두 JSON의 스키마는 각 스킬 문서에 있다 (`eng-make-question`, `english-reading-html`).
 `build_unit.py` 는 기본적으로 `~/.claude/skills/synced` 에서 두 스킬의 빌더를 찾는다. 다른 곳에 있으면 `--skills` 로 알려준다.
 
+### 데이터 전수 검사
+
+```bash
+python3 tools/check_data.py
+```
+
+빌더가 잡아 주지 않거나 경고로만 넘기는 것들을 오류로 세운다 — 파닉스 단어가 자기 지문에 없는지(아이가 답을 확인할 수 없게 된다), 빈칸 정답이 보기에 없는지, 인용한 문장 번호가 지문 범위를 벗어나는지, O/X가 한쪽으로 몰렸는지(전부 O면 읽지 않고도 만점이다), 목차·출력 링크가 깨졌는지. 유닛을 추가한 뒤 커밋 전에 돌린다.
+
 ### A4가 3쪽을 넘칠 때
 
 `build_unit.py` 는 문제지를 만들 때 실제로 렌더링해서 **3쪽인지, 잘린 곳이 없는지** 검사하고, 넘치면 실패로 멈춘다.
@@ -56,12 +64,7 @@ Unit 1이 실제로 그랬다: ⑤ 빈칸의 `fast` 가 ②·③과 겹쳐 그�
 ## 배포
 
 `main` 또는 `claude/**` 브랜치에 푸시하면 GitHub Actions가 저장소를 그대로 Pages에 올린다 (`.github/workflows/pages.yml`).
-Pages는 워크플로 첫 실행에서 자동으로 켜지므로 저장소 설정을 따로 만질 필요가 없다.
 
-### 데이터 전수 검사
+**Pages는 저장소 설정에서 한 번 켜 줘야 한다** — Settings → Pages → Build and deployment → Source를 `GitHub Actions`로. 워크플로에 `configure-pages`의 `enablement: true`가 들어 있지만, 워크플로 토큰으로는 Pages를 처음 켤 권한이 없어 `Resource not accessible by integration`으로 실패한다. 한 번 켜 두면 그 뒤 배포는 전부 자동이다.
 
-```bash
-python3 tools/check_data.py
-```
-
-빌더가 잡아 주지 않거나 경고로만 넘기는 것들을 오류로 세운다 — 파닉스 단어가 자기 지문에 없는지(아이가 답을 확인할 수 없게 된다), 빈칸 정답이 보기에 없는지, 인용한 문장 번호가 지문 범위를 벗어나는지, O/X가 한쪽으로 몰렸는지(전부 O면 읽지 않고도 만점이다), 목차·출력 링크가 깨졌는지. 유닛을 추가한 뒤 커밋 전에 돌린다.
+이 저장소는 첫 푸시가 `claude/skill-utilization-6jr45t` 였고 저장소가 비어 있었기 때문에 그 브랜치가 기본 브랜치로 잡혔다. Pages는 기본 브랜치에서만 배포되므로 결과적으로 맞아떨어졌지만, 브랜치 이름을 바꿀 때는 기본 브랜치 설정도 함께 옮겨야 한다.
